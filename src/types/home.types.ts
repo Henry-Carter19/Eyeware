@@ -12,6 +12,12 @@ export interface Brand {
   category: "Premium" | "Essentials";
 }
 
+export interface FaqItem {
+  id: number;
+  title: string;
+  content: string;
+}
+
 export interface Category {
   id: number;
   title: string;
@@ -26,7 +32,8 @@ export interface Offer {
 
 export interface HomePageData {
   heroBanners: HeroBanner[];
-  brands: Brand[]
+  brands: Brand[];
+  faq: FaqItem[];
   categories: Category[];
   offers: Offer[];
 }

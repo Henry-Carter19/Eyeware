@@ -71,6 +71,38 @@
       "category": "Essentials"
     }
   ],
+  "faq": [
+    {
+      "id": 1,
+      "title": "About Titan Eye+",
+      "content": "Whether you are a fashion-forward trendsetter or a refined professional, all your requirements will be fulfilled here! At Titan Eye+, we understand eyewear’s profound impact on one’s appearance, confidence, and overall well-being. Hence, we have carefully handpicked each item in our expansive range."
+    },
+    {
+      "id": 2,
+      "title": "Range of Sunglasses",
+      "content": "Explore our wide range of sunglasses designed for style and protection."
+    },
+    {
+      "id": 3,
+      "title": "Range of Frames & Lenses",
+      "content": "Discover premium frames and high-quality lenses for every need."
+    },
+    {
+      "id": 4,
+      "title": "Range of Contact Lenses",
+      "content": "Choose from daily, monthly and colored contact lenses."
+    },
+    {
+      "id": 5,
+      "title": "Range of Computer Glasses",
+      "content": "Protect your eyes from harmful blue light with computer glasses."
+    },
+    {
+      "id": 6,
+      "title": "Frequently Asked Questions",
+      "content": "Find answers to common questions about Titan Eye+ products and services."
+    }
+  ],
   "categories": [
     {
       "id": 1,
