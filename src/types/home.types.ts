@@ -1,8 +1,15 @@
 export interface HeroBanner {
   id: number;
   image: string;
-  title: string;
-  subtitle: string;
+}
+
+export interface Brand {
+  id: number;
+  name: string;
+  tagline: string;
+  modelImage: string;  
+  brandLogo: string;   
+  category: "Premium" | "Essentials";
 }
 
 export interface Category {
@@ -19,6 +26,7 @@ export interface Offer {
 
 export interface HomePageData {
   heroBanners: HeroBanner[];
+  brands: Brand[]
   categories: Category[];
   offers: Offer[];
 }

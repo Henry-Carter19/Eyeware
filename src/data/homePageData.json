@@ -2,15 +2,73 @@
   "heroBanners": [
     {
       "id": 1,
-      "image": "https://images.unsplash.com/photo-1511497584788-876760111969",
-      "title": "Flat 40% Off",
-      "subtitle": "On Premium Frames"
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/home-banner/02-RB-Clubmaster----3000-x-1500_New_1.jpg?height=800&width=1300&fit=cover"
     },
     {
       "id": 2,
-      "image": "https://images.unsplash.com/photo-1588776814546-b1d91e6c6c2f",
-      "title": "Buy 1 Get 1",
-      "subtitle": "Limited Period Offer"
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/01_Barbra_Skyler_-_3000_x_1500_px.jpg?height=800&width=1300&fit=cover"
+    },
+    {
+      "id": 3,
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/home-banner/Silhouette-3000x1500_New-min_01.jpg?height=800&width=1300&fit=cover"
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "Fastrack",
+      "tagline": "Trendy frames for the young and edgy",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
+      "category": "Essentials"
+    },
+    {
+      "id": 2,
+      "name": "Ray-Ban",
+      "tagline": "Timeless icons, always in style",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
+      "category": "Premium"
+    },
+    {
+      "id": 3,
+      "name": "NeoFrame",
+      "tagline": "Fresh designs for modern lifestyles",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
+      "category": "Essentials"
+    },
+    {
+      "id": 4,
+      "name": "EliteLens",
+      "tagline": "Sophisticated vision solutions",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
+      "category": "Premium"
+    },
+    {
+      "id": 5,
+      "name": "StreetSight",
+      "tagline": "Urban fashion meets clarity",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
+      "category": "Essentials"
+    },
+    {
+      "id": 6,
+      "name": "PrimeOptic",
+      "tagline": "Refined style for premium taste",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
+      "category": "Premium"
+    },
+    {
+      "id": 7,
+      "name": "ClearEdge",
+      "tagline": "Sharp looks for sharp minds",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
+      "category": "Essentials"
     }
   ],
   "categories": [
