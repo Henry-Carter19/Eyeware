@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1588776814546-b1d91e6c6c2f",
+    "title": "Flat 40% Off",
+    "subtitle": "On Premium Eyewear Collection"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1511497584788-876760111969",
+    "title": "Buy 1 Get 1 Free",
+    "subtitle": "On Selected Frames"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+    "title": "Titan Sunglasses",
+    "subtitle": "Summer Collection 2026"
+  }
+]
