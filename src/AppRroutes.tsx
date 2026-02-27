@@ -1,17 +1,23 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import NotFoundPage from "./pages/NotFoundPage";
+import MainLayout from "./components/layout/MainLayout";
+// import SignIn from "./pages/SignIn";
+// import Cart from "./pages/Cart";
+// import TrackOrder from "./pages/TrackOrder";
 
-const RoutesConfig = () => {
+const AppRoutes = () => {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-   {/* <Route path="/products" element={<ProductListPage />} /> */}
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HomePage />} />
+          {/* <Route path="signin" element={<SignIn />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="track-order" element={<TrackOrder />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
-export default RoutesConfig;
+export default AppRoutes;
