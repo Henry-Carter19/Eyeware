@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap");
+
+/* ================================
+   GLOBAL DESIGN TOKENS
+================================ */
+:root {
+  /* Layout */
+  --navbar-height: 52px;
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 52px;
+
+  /* Colors */
+  --color-sidebar-bg: #6b1f00;
+  --color-sidebar-bg-active: #7a2a00;
+  --color-navbar-bg: #fbc02d;
+  --color-text-light: #ffffff;
+  --color-accent: #ffb300;
+  --orange-dark: #ff6f00;   /* Radical Number */
+  --orange-light: #ff9800;  /* Destiny Number */
+  --blue-primary: #1a73e8;  /* Name Number */
+
+  /* Borders */
+  --border-light: rgba(255, 255, 255, 0.12);
+  --border-dark: rgba(0, 0, 0, 0.15);
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 6px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 18px;
+  --space-xxl: 24px;
+
+  /* Font families */
+  --font-primary: "Roboto", Arial, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+
+  /* Fonts */
+  --font-xs: 12px;
+  --font-sm: 12.5px;
+  --font-md: 14px;
+  --font-lg: 16px;
+  --font-xl: 18px;
+  --font-xxl: 22px;
+
+  /* Z-index */
+  --z-navbar: 1000;
+  --z-sidebar: 900;
+  --z-overlay: 899;
+
+  /* Animation */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  /* #################################################### */
+  /* Colors */
+  --black: #000;
+  --gray: #888;
+  --dark-gray: #555;
+  --red: #e53935;
+
+  --white: #ffffff;
+  --cream: #fff6dc;
+  --off-white: #f5f5f5;
+  --lightest-gray: #f0f0f0;
+  --charcoal: #222;
+  --teal: #1aa3a3;
+  --very-light-teal: #f8fafa;
+
+  --white: #fff;
+  --light-gray: #e0e0e0;
+
+  --orange: #ff6f00;
+  --gold: #9a7b00;
+  --dark-orange: #e65c00;
+
+  --light-beige: #f0e6c8;
+  --dark-brown: #3a2a00;
+  --bronze: #6b5a2a;
+
+  /* Font sizes */
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 20px;
+  --fs-xxl: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Courier New", Courier, monospace;
+  font-size: var(--font-md);
+  background: #f5f5f5;
+}
