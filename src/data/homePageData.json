@@ -1,0 +1,45 @@
+{
+  "heroBanners": [
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1511497584788-876760111969",
+      "title": "Flat 40% Off",
+      "subtitle": "On Premium Frames"
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1588776814546-b1d91e6c6c2f",
+      "title": "Buy 1 Get 1",
+      "subtitle": "Limited Period Offer"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Men",
+      "image": "https://images.unsplash.com/photo-1520975922284-8b456906c813"
+    },
+    {
+      "id": 2,
+      "title": "Women",
+      "image": "https://images.unsplash.com/photo-1533738363-b7f9aef128ce"
+    },
+    {
+      "id": 3,
+      "title": "Kids",
+      "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+    }
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "title": "Zero Cost EMI",
+      "description": "Available on all premium eyewear"
+    },
+    {
+      "id": 2,
+      "title": "Free Eye Test",
+      "description": "At 800+ stores across India"
+    }
+  ]
+}
