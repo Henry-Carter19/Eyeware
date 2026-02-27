@@ -3,6 +3,7 @@ import FilterMenu from "../components/product/filters/FilterMenu";
 import ProductCarousel from "../components/product/ProductCard/ProductCarousel";
 import SelectionCard from "../components/product/SelectionCard/SelectionCard";
 
+import productData from "../data/productsData.json";
 import frameStyleData from "../data/frameStyle.json";
 import frameColor from "../data/frameColor.json";
 import priceRange from "../data/priceData.json";
@@ -11,8 +12,8 @@ import { mapToSelectionData } from "../utils/selectionMapper";
 
 const ProductsPage = () => {
   const frameStyle = mapToSelectionData(frameStyleData);
-  const frameColorData = mapToSelectionData(frameColor);
-  const priceData = mapToSelectionData(priceRange);
+  const frameColorMapped = mapToSelectionData(frameColor);
+  const priceMapped = mapToSelectionData(priceRange);
 
   return (
     <div className="products-page">
@@ -23,12 +24,18 @@ const ProductsPage = () => {
 
       {/* RIGHT CONTENT */}
       <div className="right-section">
-        <ProductCarousel />
+        {/* Product Grid */}
+        <ProductCarousel products={productData.products} />
 
+        {/* Selection Cards Below */}
         <SelectionCard data={frameStyle} />
+        <ProductCarousel products={productData.products} />
 
-        <SelectionCard data={frameColorData} />
-        <SelectionCard data={priceData} />
+        <SelectionCard data={frameColorMapped} />
+        <ProductCarousel products={productData.products} />
+
+        <SelectionCard data={priceMapped} />
+        <ProductCarousel products={productData.products} />
       </div>
     </div>
   );

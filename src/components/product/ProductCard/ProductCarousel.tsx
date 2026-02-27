@@ -1,12 +1,32 @@
 import React, { useEffect, useState } from "react";
 import "./ProductCarousel.css";
-import productData from "../../../data/productsData.json";
 
-const ProductCarousel = () => {
+export interface Product {
+  id: number;
+  brand: string;
+  title: string;
+  price: number;
+  size: string;
+  rating?: number;
+  ratingCount?: number;
+  images?: string[];
+  image?: string;
+  isNew?: boolean;
+}
+
+interface ProductCarouselProps {
+  products: Product[];
+}
+
+/* ============================= */
+/* Product Carousel */
+/* ============================= */
+
+const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
   return (
     <div className="carousel-container">
       <div className="carousel">
-        {productData.products.map((product) => (
+        {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
@@ -14,11 +34,17 @@ const ProductCarousel = () => {
   );
 };
 
-const ProductCard = ({ product }: any) => {
+/* ============================= */
+/* Product Card */
+/* ============================= */
+
+const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const images =
     product.images && product.images.length > 0
       ? product.images
-      : [product.image];
+      : product.image
+        ? [product.image]
+        : [];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -26,9 +52,7 @@ const ProductCard = ({ product }: any) => {
     if (images.length <= 1) return;
 
     const interval = setInterval(() => {
-      setCurrentIndex((prev: number) =>
-        prev === images.length - 1 ? 0 : prev + 1,
-      );
+      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     }, 2500);
 
     return () => clearInterval(interval);
@@ -41,12 +65,13 @@ const ProductCard = ({ product }: any) => {
         {product.isNew && <span className="new-badge">+ New</span>}
         <span className="wishlist">♡</span>
 
-        <img src={images[currentIndex]} alt={product.title} />
+        {images.length > 0 && (
+          <img src={images[currentIndex]} alt={product.title} />
+        )}
 
-        {/* Image Indicator */}
         {images.length > 1 && (
           <div className="image-indicator">
-            {images.map((_: any, index: number) => (
+            {images.map((_, index) => (
               <div
                 key={index}
                 className={`indicator-bar ${
@@ -60,10 +85,10 @@ const ProductCard = ({ product }: any) => {
 
       {/* Rating + Try On */}
       <div className="rating-section">
-        {product.rating && (
+        {product.rating !== undefined && (
           <div className="rating-badge">
             {product.rating} ⭐
-            {product.ratingCount && (
+            {product.ratingCount !== undefined && (
               <span className="rating-count">{product.ratingCount}</span>
             )}
           </div>
