@@ -1,14 +1,19 @@
 import React from "react";
-import Carousel from "../components/ui/Carousel";
-import bannersData from "../data/banners.json";
-import { Banner } from "../types/banner.types";
+import homeData from "../data/homePageData.json";
+import { HomePageData } from "../types/home.types";
+
+import HeroCarousel from "../components/ui/HeroCarousel";
+import CategorySection from "../components/ui/CategorySection";
+import OfferBannerSection from "../components/ui/OfferBannerSection";
 
 const HomePage = () => {
-  const banners: Banner[] = bannersData;
+  const data: HomePageData = homeData;
 
   return (
     <div>
-      <Carousel items={banners} />
+      <HeroCarousel banners={data.heroBanners} />
+      <CategorySection categories={data.categories} />
+      <OfferBannerSection offers={data.offers} />
     </div>
   );
 };
