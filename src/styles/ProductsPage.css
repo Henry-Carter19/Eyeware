@@ -1,0 +1,30 @@
+.products-page {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  padding: 20px;
+}
+
+/* Left sidebar */
+.left-section {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+/* Right content */
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .products-page {
+    grid-template-columns: 1fr;
+  }
+
+  .left-section {
+    position: relative;
+  }
+}

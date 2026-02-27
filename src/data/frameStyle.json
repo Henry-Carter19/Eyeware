@@ -1,0 +1,21 @@
+{
+    "id": "frameStyle",
+    "title": "What is your frame style?",
+    "type": "multi",
+    "options": [
+        {
+            "label": "Rimmed",
+            "value": "rimmed"
+        },
+        {
+            "label": "Semi-Rimmed",
+            "value": "semi_rimmed"
+        },
+        {
+            "label": "Rimless",
+            "value": "rimless"
+        }
+    ],
+    "applyButton": true,
+    "clearAll": true
+}
