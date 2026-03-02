@@ -18,22 +18,17 @@ export interface FaqItem {
   content: string;
 }
 
-export interface Category {
+export interface HypeCard {
   id: number;
-  title: string;
-  image: string;
+  username: string;
+  backgroundImage: string;
+  brandLogo: string;
 }
 
-export interface Offer {
-  id: number;
-  title: string;
-  description: string;
-}
 
 export interface HomePageData {
   heroBanners: HeroBanner[];
   brands: Brand[];
+  hypeCards: HypeCard[];
   faq: FaqItem[];
-  categories: Category[];
-  offers: Offer[];
 }
