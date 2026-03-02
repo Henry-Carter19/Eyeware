@@ -37,6 +37,7 @@ export interface HomePageData {
   heroBanners: HeroBanner[];
   brands: Brand[];
   curations: CurationCard[];
+  curationsDeals: CurationCard[];
   hypeCards: HypeCard[];
   faq: FaqItem[];
 }
