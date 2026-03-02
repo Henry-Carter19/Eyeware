@@ -2,44 +2,131 @@
   "heroBanners": [
     {
       "id": 1,
-      "image": "https://images.unsplash.com/photo-1511497584788-876760111969",
-      "title": "Flat 40% Off",
-      "subtitle": "On Premium Frames"
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/home-banner/02-RB-Clubmaster----3000-x-1500_New_1.jpg?height=800&width=1300&fit=cover"
     },
     {
       "id": 2,
-      "image": "https://images.unsplash.com/photo-1588776814546-b1d91e6c6c2f",
-      "title": "Buy 1 Get 1",
-      "subtitle": "Limited Period Offer"
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "title": "Men",
-      "image": "https://images.unsplash.com/photo-1520975922284-8b456906c813"
-    },
-    {
-      "id": 2,
-      "title": "Women",
-      "image": "https://images.unsplash.com/photo-1533738363-b7f9aef128ce"
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/01_Barbra_Skyler_-_3000_x_1500_px.jpg?height=800&width=1300&fit=cover"
     },
     {
       "id": 3,
-      "title": "Kids",
-      "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/home-banner/Silhouette-3000x1500_New-min_01.jpg?height=800&width=1300&fit=cover"
     }
   ],
-  "offers": [
+  "brands": [
     {
       "id": 1,
-      "title": "Zero Cost EMI",
-      "description": "Available on all premium eyewear"
+      "name": "Fastrack",
+      "tagline": "Trendy frames for the young and edgy",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
+      "category": "Essentials"
     },
     {
       "id": 2,
-      "title": "Free Eye Test",
-      "description": "At 800+ stores across India"
+      "name": "Ray-Ban",
+      "tagline": "Timeless icons, always in style",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
+      "category": "Premium"
+    },
+    {
+      "id": 3,
+      "name": "NeoFrame",
+      "tagline": "Fresh designs for modern lifestyles",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
+      "category": "Essentials"
+    },
+    {
+      "id": 4,
+      "name": "EliteLens",
+      "tagline": "Sophisticated vision solutions",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
+      "category": "Premium"
+    },
+    {
+      "id": 5,
+      "name": "StreetSight",
+      "tagline": "Urban fashion meets clarity",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
+      "category": "Essentials"
+    },
+    {
+      "id": 6,
+      "name": "PrimeOptic",
+      "tagline": "Refined style for premium taste",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
+      "category": "Premium"
+    },
+    {
+      "id": 7,
+      "name": "ClearEdge",
+      "tagline": "Sharp looks for sharp minds",
+      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
+      "category": "Essentials"
+    }
+  ],
+  "hypeCards": [
+    {
+      "id": 1,
+      "username": "titaneyeplus",
+      "backgroundImage": "https://images.unsplash.com/photo-1598300188904-6287d52746d4",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Titan_Company_Logo.png"
+    },
+    {
+      "id": 2,
+      "username": "titaneyeplus",
+      "backgroundImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Titan_Company_Logo.png"
+    },
+    {
+      "id": 3,
+      "username": "titaneyeplus",
+      "backgroundImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Titan_Company_Logo.png"
+    },
+    {
+      "id": 4,
+      "username": "titaneyeplus",
+      "backgroundImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Titan_Company_Logo.png"
+    }
+  ],
+  "faq": [
+    {
+      "id": 1,
+      "title": "About Titan Eye+",
+      "content": "Whether you are a fashion-forward trendsetter or a refined professional, all your requirements will be fulfilled here! At Titan Eye+, we understand eyewear’s profound impact on one’s appearance, confidence, and overall well-being. Hence, we have carefully handpicked each item in our expansive range."
+    },
+    {
+      "id": 2,
+      "title": "Range of Sunglasses",
+      "content": "Explore our wide range of sunglasses designed for style and protection."
+    },
+    {
+      "id": 3,
+      "title": "Range of Frames & Lenses",
+      "content": "Discover premium frames and high-quality lenses for every need."
+    },
+    {
+      "id": 4,
+      "title": "Range of Contact Lenses",
+      "content": "Choose from daily, monthly and colored contact lenses."
+    },
+    {
+      "id": 5,
+      "title": "Range of Computer Glasses",
+      "content": "Protect your eyes from harmful blue light with computer glasses."
+    },
+    {
+      "id": 6,
+      "title": "Frequently Asked Questions",
+      "content": "Find answers to common questions about Titan Eye+ products and services."
     }
   ]
 }

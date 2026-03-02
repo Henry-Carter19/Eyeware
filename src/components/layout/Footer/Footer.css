@@ -1,0 +1,168 @@
+.footer {
+  background: #0f4b4b;
+  padding: 80px 60px;
+  color: white;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #a9dfe0;
+  letter-spacing: 1px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* =============================== */
+/* Correct Left Alignment Animation */
+/* =============================== */
+
+.footer-link {
+  position: relative;
+  margin-bottom: 14px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Dot (absolute, no layout space) */
+.hover-dot {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: #4dd0d0;
+  border-radius: 50%;
+  transform: translateY(-50%) scale(0);
+  transition: transform 0.3s ease;
+}
+
+/* Hover animation */
+.footer-link:hover {
+  padding-left: 14px;
+  color: #4dd0d0;
+}
+
+.footer-link:hover .hover-dot {
+  transform: translateY(-50%) scale(1);
+}
+
+
+
+/* ================================= */
+/* Footer Bottom Section */
+/* ================================= */
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 70px 0 50px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.footer-bottom-left {
+  max-width: 450px;
+}
+
+.footer-logo {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.footer-logo span {
+  color: #4dd0d0;
+}
+
+.footer-contact {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.footer-copy {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* RIGHT SIDE */
+.footer-bottom-right {
+  display: flex;
+  gap: 70px;
+  align-items: flex-start;
+}
+
+/* App Section */
+.app-section p,
+.social-section p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.store-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  padding: 14px 22px;
+  border-radius: 14px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.store-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Social */
+.social-icons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #4dd0d0;
+  color: #0f4b4b;
+}

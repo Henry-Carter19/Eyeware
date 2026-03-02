@@ -1,24 +1,34 @@
 export interface HeroBanner {
   id: number;
   image: string;
-  title: string;
-  subtitle: string;
 }
 
-export interface Category {
+export interface Brand {
   id: number;
-  title: string;
-  image: string;
+  name: string;
+  tagline: string;
+  modelImage: string;  
+  brandLogo: string;   
+  category: "Premium" | "Essentials";
 }
 
-export interface Offer {
+export interface FaqItem {
   id: number;
   title: string;
-  description: string;
+  content: string;
 }
+
+export interface HypeCard {
+  id: number;
+  username: string;
+  backgroundImage: string;
+  brandLogo: string;
+}
+
 
 export interface HomePageData {
   heroBanners: HeroBanner[];
-  categories: Category[];
-  offers: Offer[];
+  brands: Brand[];
+  hypeCards: HypeCard[];
+  faq: FaqItem[];
 }
