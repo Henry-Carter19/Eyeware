@@ -1,0 +1,144 @@
+{
+    "filters": [
+        {
+            "title": "Frame Style",
+            "type": "checkbox",
+            "options": [
+                "Rimmed",
+                "Semi-Rimmed",
+                "Rimless"
+            ]
+        },
+        {
+            "title": "Frame Shape",
+            "type": "image",
+            "options": [
+                {
+                    "label": "Aviator",
+                    "icon": "🕶"
+                },
+                {
+                    "label": "Butterfly",
+                    "icon": "👓"
+                },
+                {
+                    "label": "Phantos",
+                    "icon": "🥽"
+                },
+                {
+                    "label": "Pillow",
+                    "icon": "😎"
+                },
+                {
+                    "label": "Sporty",
+                    "icon": "🧿"
+                },
+                {
+                    "label": "Bugeye",
+                    "icon": "🕶️"
+                }
+            ]
+        },
+        {
+            "title": "Frame Color",
+            "type": "color",
+            "options": [
+                {
+                    "label": "Bronze",
+                    "color": "#cd7f32"
+                },
+                {
+                    "label": "Burgundy",
+                    "color": "#800020"
+                },
+                {
+                    "label": "Copper",
+                    "color": "#b87333"
+                },
+                {
+                    "label": "Crystal",
+                    "color": "#e0e0e0"
+                },
+                {
+                    "label": "Gold",
+                    "color": "#d4af37"
+                },
+                {
+                    "label": "Gun Metal",
+                    "color": "#5f5f5f"
+                },
+                {
+                    "label": "Maroon",
+                    "color": "#800000"
+                }
+            ]
+        },
+        {
+            "title": "Frame Size",
+            "type": "checkbox",
+            "options": [
+                "Extra Small",
+                "Small",
+                "Medium",
+                "Large"
+            ]
+        },
+        {
+            "title": "Frame Material",
+            "type": "checkbox",
+            "options": [
+                "Aluminium",
+                "Carbon",
+                "Nickel Silver",
+                "Acetate",
+                "Metal",
+                "Nylon"
+            ]
+        },
+        {
+            "title": "Brands",
+            "type": "checkbox",
+            "options": [
+                "Titan",
+                "Ray-Ban",
+                "Fastrack",
+                "Vogue",
+                "Oakley",
+                "Carrera"
+            ]
+        },
+        {
+            "title": "Gender",
+            "type": "checkbox",
+            "options": [
+                "Men",
+                "Women",
+                "Unisex",
+                "Kids"
+            ]
+        },
+        {
+            "title": "Collections",
+            "type": "checkbox",
+            "options": [
+                "Trending",
+                "New Arrivals",
+                "Best Sellers",
+                "Premium",
+                "Budget"
+            ]
+        },
+        {
+            "title": "Price",
+            "type": "checkbox",
+            "options": [
+                "Below 500",
+                "501 - 1000",
+                "1001 - 1500",
+                "1501 - 2000",
+                "2001 - 2500",
+                "2501 - 4000"
+            ]
+        }
+    ]
+}

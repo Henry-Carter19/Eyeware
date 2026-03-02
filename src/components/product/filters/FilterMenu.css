@@ -1,0 +1,232 @@
+.filter-menu {
+  width: 300px;
+  height: 600px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  margin-left: 20px;
+  overflow-y: auto;
+}
+
+/* Scrollbar */
+.filter-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filter-menu::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 10px;
+}
+
+/* Header */
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  padding-bottom: 12px;
+  z-index: 5;
+}
+
+.filter-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.reset {
+  font-size: 14px;
+  color: #00a3c8;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.reset:hover {
+  text-decoration: underline;
+}
+
+/* Section */
+.filter-section {
+  border-top: 1px solid #eee;
+  padding: 16px 0;
+}
+
+/* Title */
+.filter-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.filter-title:hover {
+  color: #00a3c8;
+}
+
+/* Options */
+.filter-options {
+  margin-top: 14px;
+  /* padding-left: 4px; */
+}
+
+/* Add this new class */
+.shape-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* Checkbox Option */
+.checkbox-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+.checkbox-option input {
+  width: 16px;
+  height: 16px;
+  accent-color: #00a3c8;
+}
+
+/* Color Option */
+.color-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.color-option-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.color-option input {
+  width: 16px;
+  height: 16px;
+  accent-color: #00a3c8;
+}
+
+/* Shape Cards */
+.shape-card {
+   background: #f9f9f9;
+  border-radius: 14px;
+  padding: 18px 10px;
+  text-align: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.shape-card:hover {
+  background: #ffffff;
+  border: 1px solid #00a3c8;
+  box-shadow: 0 6px 14px rgba(0, 163, 200, 0.15);
+}
+
+.shape-card.selected {
+  border: 2px solid #00a3c8;
+  background: #e6f7fb;
+}
+
+.shape-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+/* Applied Filters */
+.applied-filters {
+  margin-bottom: 20px;
+}
+
+.applied-filters p {
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.applied-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-tag {
+  background: #e6f7fb;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.remove-tag {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.remove-tag:hover {
+  color: red;
+}
+
+/* Count Badge */
+.filter-count {
+  background: #00a3c8;
+  color: white;
+  font-size: 12px;
+  padding: 2px 7px;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+
+
+/* Chrome, Edge, Safari */
+.filter-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filter-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filter-menu::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf;
+  border-radius: 10px;
+}
+
+.filter-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #b5b5b5;
+}
+
+
+@media (max-width: 768px) {
+  .shape-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

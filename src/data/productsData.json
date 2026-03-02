@@ -1,0 +1,64 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "brand": "Fastrack",
+            "title": "Grey Rectangle Eyeglasses",
+            "price": 1100,
+            "size": "Medium",
+            "rating": 5.0,
+            "ratingCount": 1,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg"
+            ],
+            "isNew": false
+        },
+        {
+            "id": 2,
+            "brand": "Fastrack",
+            "title": "Olive Wayfarer Eyeglasses For Men",
+            "price": 800,
+            "size": "Medium",
+            "ratingCount": 1,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg"
+            ],
+            "isNew": true,
+            "rating": 4
+        },
+        {
+            "id": 3,
+            "brand": "Fastrack",
+            "title": "Grey Rounded Eyeglasses For Men And Women",
+            "price": 800,
+            "size": "Small",
+            "ratingCount": 2,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg"
+            ],
+            "isNew": true,
+            "rating": 4
+        },
+        {
+            "id": 4,
+            "brand": "Ray-Ban",
+            "title": "Black Classic Frame",
+            "price": 1500,
+            "size": "Large",
+            "ratingCount": 3,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg"
+            ],
+            "isNew": false,
+            "rating": 5
+        }
+    ]
+}
