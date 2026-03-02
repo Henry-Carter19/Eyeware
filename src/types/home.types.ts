@@ -25,10 +25,18 @@ export interface HypeCard {
   brandLogo: string;
 }
 
+export interface CurationCard {
+  id: number;
+  image: string;
+  buttonText: string;
+  route: string;
+}
+
 
 export interface HomePageData {
   heroBanners: HeroBanner[];
   brands: Brand[];
+  curations: CurationCard[];
   hypeCards: HypeCard[];
   faq: FaqItem[];
 }

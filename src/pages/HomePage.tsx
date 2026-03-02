@@ -5,6 +5,7 @@ import HeroCarousel from "../components/ui/HeroCarousel/HeroCarousel";
 import BrandsCarousel from "../components/ui/BrandsCarousel/BrandsCarousel";
 import FaqSection from "../components/ui/FaqSection/FaqSection";
 import HypeSection from "../components/ui/HypeSection/HypeSection";
+import NewCurations from "../components/ui/NewCurations/NewCurations";
 
 const HomePage = () => {
   const data = homeData as HomePageData;
@@ -13,10 +14,11 @@ const HomePage = () => {
     <div>
       <HeroCarousel banners={data.heroBanners} />
       <BrandsCarousel brands={data.brands} />
+      <NewCurations curations={data.curations} />
       <HypeSection hypeData={data.hypeCards} />
       <FaqSection faqData={data.faq} />
     </div>
   );
 };
 
-export default HomePage;
+export default HomePage;  

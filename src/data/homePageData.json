@@ -71,30 +71,68 @@
       "category": "Essentials"
     }
   ],
+   "curations": [
+    {
+      "id": 1,
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
+      "buttonText": "SHOP COLLECTION",
+      "route": "/eyeglasses/collection/ft_shapes"
+    },
+    {
+      "id": 2,
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
+      "buttonText": "SHOP COLLECTION",
+      "route": "/sunglasses/biking"
+    },
+    {
+      "id": 3,
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
+      "buttonText": "SHOP COLLECTION",
+      "route": "/eyeglasses/new"
+    },
+    {
+      "id": 4,
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
+      "buttonText": "SHOP COLLECTION",
+      "route": "/eyeglasses/collection/ft_shapes"
+    },
+    {
+      "id": 5,
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
+      "buttonText": "SHOP COLLECTION",
+      "route": "/sunglasses/biking"
+    },
+    {
+      "id": 6,
+      "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
+      "buttonText": "SHOP COLLECTION",
+      "route": "/eyeglasses/new"
+    }
+  ],
   "hypeCards": [
     {
       "id": 1,
       "username": "titaneyeplus",
-      "backgroundImage": "https://images.unsplash.com/photo-1598300188904-6287d52746d4",
-      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Titan_Company_Logo.png"
+      "backgroundImage": "https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=900&q=80",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     },
     {
       "id": 2,
       "username": "titaneyeplus",
-      "backgroundImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
-      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Titan_Company_Logo.png"
+      "backgroundImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     },
     {
       "id": 3,
       "username": "titaneyeplus",
-      "backgroundImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
-      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Titan_Company_Logo.png"
+      "backgroundImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     },
     {
       "id": 4,
       "username": "titaneyeplus",
-      "backgroundImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
-      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Titan_Company_Logo.png"
+      "backgroundImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     }
   ],
   "faq": [
