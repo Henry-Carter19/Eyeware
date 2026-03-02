@@ -201,3 +201,38 @@
     0 0 0 1px rgba(0, 166, 199, 0.15);
   letter-spacing: 0.5px;
 }
+
+
+/* Gold background variation */
+.gold-bg {
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    #000000 4%,
+    #d4b06a 40%,
+    #b9914f 60%,
+    #000000 90%,
+    #000000 100%
+  );
+}
+
+/* Arrow button (for Exclusive Deals) */
+.arrow-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.curation-card:hover .arrow-btn {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}

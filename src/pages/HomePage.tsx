@@ -10,18 +10,14 @@ import NewCurations from "../components/ui/NewCurations/NewCurations";
 const HomePage = () => {
   const data = homeData as HomePageData;
 
-const viewAllObj = {
-    "label": "View All",
-    "route": "/curations"
-  }
 
   return (
     <div>
       <HeroCarousel banners={data.heroBanners} />
       <BrandsCarousel brands={data.brands} />
-      <NewCurations curations={data.curations} />
-      <NewCurations curations={data.curationsDeals} viewAll={viewAllObj} />
+      <NewCurations sectionConfig={data.newCurationsSection} />
       <HypeSection hypeData={data.hypeCards} />
+      <NewCurations sectionConfig={data.exclusiveDealsSection} />
       <FaqSection faqData={data.faq} />
     </div>
   );

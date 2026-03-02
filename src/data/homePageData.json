@@ -71,7 +71,13 @@
       "category": "Essentials"
     }
   ],
-  "curations": [
+  "newCurationsSection": {
+    "title": "New",
+    "highlight": "Curations",
+    "background": "dark",
+    "showArrowButton": false,
+    "viewAll": null,
+    "cards":  [
     {
       "id": 1,
       "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
@@ -107,9 +113,18 @@
       "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
       "buttonText": "SHOP COLLECTION",
       "route": "/eyeglasses/new"
-    }
-  ],
-  "curationsDeals": [
+    }]
+  },
+   "exclusiveDealsSection": {
+    "title": "Exclusive",
+    "highlight": "Deals",
+    "background": "gold",
+    "showArrowButton": true,
+    "viewAll": {
+      "label": "View All",
+      "route": "/exclusive-deals"
+    },
+    "cards": [
     {
       "id": 1,
       "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_SG_1158X750.jpg?height=415&width=740&fit=cover",
@@ -145,8 +160,8 @@
       "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
       "buttonText": "SHOP COLLECTION",
       "route": "/eyeglasses/new"
-    }
-  ],
+    }]
+  },
   "hypeCards": [
     {
       "id": 1,
