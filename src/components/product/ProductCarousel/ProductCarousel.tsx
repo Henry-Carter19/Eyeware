@@ -4,6 +4,7 @@ import ProductCard from "../ProductCard/ProductCard";
 
 export interface Product {
   id: number;
+  layoutType?: "grid" | "detail";
   brand: string;
   title: string;
   price: number;

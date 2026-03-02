@@ -1,0 +1,60 @@
+{
+    "productsDetail": [
+        {
+            "id": 1,
+            "layoutType": "detail",
+            "title": "Premium Sunglasses",
+            "price": 2500,
+            "size": "Large",
+            "rating": 5.0,
+            "ratingCount": 1,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_2_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_5_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_6_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_4_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_lar_10.jpg"
+            ],
+            "isNew": true
+        },
+        {
+            "id": 2,
+            "layoutType": "detail",
+            "brand": "Fastrack",
+            "title": "Premium Sunglasses",
+            "price": 2500,
+            "size": "Large",
+            "rating": 5.0,
+            "ratingCount": 1,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_2_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_5_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_6_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_4_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_lar_10.jpg"
+            ],
+            "isNew": true
+        },
+        {
+            "id": 3,
+            "layoutType": "detail",
+            "brand": "Fastrack",
+            "title": "Premium Sunglasses",
+            "price": 2500,
+            "size": "Large",
+            "rating": 5.0,
+            "ratingCount": 1,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_2_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_5_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_6_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_4_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_lar_10.jpg"
+            ],
+            "isNew": true
+        }
+    ]
+}

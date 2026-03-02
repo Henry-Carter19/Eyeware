@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Product } from "../ProductCarousel/ProductCarousel";
 import "./ProductCard.css";
 
@@ -12,62 +12,73 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    if (images.length <= 1) return;
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
 
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 2500);
+  const prevImage = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
 
-    return () => clearInterval(interval);
-  }, [images]);
+  /* ============================= */
+  /* DETAIL LAYOUT */
+  /* ============================= */
+
+  if (product.layoutType === "detail") {
+    return (
+      <div className="detail-card">
+        <div className="detail-image-container">
+          <button className="try-btn">📷 TRY ON</button>
+
+          <div className="icon-group">
+            <span className="icon">♡</span>
+            <span className="icon">↗</span>
+          </div>
+
+          <img
+            src={images[currentIndex]}
+            alt={product.title}
+            className="detail-main-image"
+          />
+
+          <button className="arrow left" onClick={prevImage}>
+            ‹
+          </button>
+          <button className="arrow right" onClick={nextImage}>
+            ›
+          </button>
+        </div>
+
+        <div className="thumbnail-row">
+          {images.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              className={`thumbnail ${
+                index === currentIndex ? "active-thumb" : ""
+              }`}
+              onClick={() => setCurrentIndex(index)}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  /* ============================= */
+  /* GRID LAYOUT */
+  /* ============================= */
 
   return (
     <div className="product-card">
-      {/* Image Section */}
       <div className="image-wrapper">
-        {product.isNew && <span className="new-badge">+ New</span>}
         <span className="wishlist">♡</span>
-
-        {images.length > 0 && (
-          <img src={images[currentIndex]} alt={product.title} />
-        )}
-
-        {images.length > 1 && (
-          <div className="image-indicator">
-            {images.map((_, index) => (
-              <div
-                key={index}
-                className={`indicator-bar ${
-                  currentIndex === index ? "active" : ""
-                }`}
-              />
-            ))}
-          </div>
-        )}
+        <img src={images[currentIndex]} alt={product.title} />
       </div>
 
-      {/* Rating + Try On */}
-      <div className="rating-section">
-        {product.rating !== undefined && (
-          <div className="rating-badge">
-            {product.rating} ⭐
-            {product.ratingCount !== undefined && (
-              <span className="rating-count">{product.ratingCount}</span>
-            )}
-          </div>
-        )}
-
-        <div className="try-on">
-          👓 <span>Try on</span>
-        </div>
-      </div>
-
-      {/* Product Info */}
       <div className="product-info">
         <p className="brand">{product.brand}</p>
         <p className="title">{product.title}</p>
-        <p className="size">Size: {product.size}</p>
         <p className="price">₹{product.price}</p>
         <p className="tax">Inclusive of all taxes</p>
       </div>
