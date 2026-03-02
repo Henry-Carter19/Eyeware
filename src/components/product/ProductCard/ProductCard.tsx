@@ -1,42 +1,6 @@
-import React, { useEffect, useState } from "react";
-import "./ProductCarousel.css";
-
-export interface Product {
-  id: number;
-  brand: string;
-  title: string;
-  price: number;
-  size: string;
-  rating?: number;
-  ratingCount?: number;
-  images?: string[];
-  image?: string;
-  isNew?: boolean;
-}
-
-interface ProductCarouselProps {
-  products: Product[];
-}
-
-/* ============================= */
-/* Product Carousel */
-/* ============================= */
-
-const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
-  return (
-    <div className="carousel-container">
-      <div className="carousel">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-/* ============================= */
-/* Product Card */
-/* ============================= */
+import { useState, useEffect } from "react";
+import { Product } from "../ProductCarousel/ProductCarousel";
+import "./ProductCard.css";
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const images =
@@ -111,4 +75,4 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   );
 };
 
-export default ProductCarousel;
+export default ProductCard;

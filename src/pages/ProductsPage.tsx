@@ -1,6 +1,6 @@
 import "../styles/ProductsPage.css";
 import FilterMenu from "../components/product/filters/FilterMenu";
-import ProductCarousel from "../components/product/ProductCard/ProductCarousel";
+import ProductCarousel from "../components/product/ProductCarousel/ProductCarousel";
 import SelectionCard from "../components/product/SelectionCard/SelectionCard";
 
 import productData from "../data/productsData.json";

@@ -1,28 +1,4 @@
 /* ============================= */
-/* Carousel Container */
-/* ============================= */
-
-.carousel-container {
-  padding: 30px 20px;
-  margin-left: 20px; /* align with selection card */
-}
-
-.carousel {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.carousel::-webkit-scrollbar {
-  height: 6px;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-  background: #d6d6d6;
-  border-radius: 10px;
-}
-
-/* ============================= */
 /* Product Card */
 /* ============================= */
 
@@ -233,17 +209,5 @@
   .product-card {
     flex: 0 0 90%;
     max-width: 90%;
-  }
-}
-
-@media (max-width: 992px) {
-  .carousel {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .carousel {
-    grid-template-columns: 1fr;
   }
 }
