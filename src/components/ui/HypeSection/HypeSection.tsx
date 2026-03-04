@@ -7,6 +7,7 @@ interface Props {
 }
 
 const HypeSection: React.FC<Props> = ({ hypeData }) => {
+    
   return (
     <section className="hype-section">
       <h2 className="hype-title">
