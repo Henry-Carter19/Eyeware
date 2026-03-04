@@ -77,45 +77,46 @@
     "background": "dark",
     "showArrowButton": false,
     "viewAll": null,
-    "cards":  [
-    {
-      "id": 1,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/eyeglasses/collection/ft_shapes"
-    },
-    {
-      "id": 2,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/sunglasses/biking"
-    },
-    {
-      "id": 3,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/eyeglasses/new"
-    },
-    {
-      "id": 4,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/eyeglasses/collection/ft_shapes"
-    },
-    {
-      "id": 5,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/sunglasses/biking"
-    },
-    {
-      "id": 6,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/eyeglasses/new"
-    }]
+    "cards": [
+      {
+        "id": 1,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/eyeglasses/collection/ft_shapes"
+      },
+      {
+        "id": 2,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/sunglasses/biking"
+      },
+      {
+        "id": 3,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/eyeglasses/new"
+      },
+      {
+        "id": 4,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/eyeglasses/collection/ft_shapes"
+      },
+      {
+        "id": 5,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/sunglasses/biking"
+      },
+      {
+        "id": 6,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/eyeglasses/new"
+      }
+    ]
   },
-   "exclusiveDealsSection": {
+  "exclusiveDealsSection": {
     "title": "Exclusive",
     "highlight": "Deals",
     "background": "gold",
@@ -125,42 +126,43 @@
       "route": "/exclusive-deals"
     },
     "cards": [
-    {
-      "id": 1,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_SG_1158X750.jpg?height=415&width=740&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/eyeglasses/collection/ft_shapes"
-    },
-    {
-      "id": 2,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/sunglasses/biking"
-    },
-    {
-      "id": 3,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/eyeglasses/new"
-    },
-    {
-      "id": 4,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_Vibes_1158X750.jpg?height=415&width=740&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/eyeglasses/collection/ft_shapes"
-    },
-    {
-      "id": 5,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/sunglasses/biking"
-    },
-    {
-      "id": 6,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
-      "buttonText": "SHOP COLLECTION",
-      "route": "/eyeglasses/new"
-    }]
+      {
+        "id": 1,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_SG_1158X750.jpg?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/eyeglasses/collection/ft_shapes"
+      },
+      {
+        "id": 2,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/sunglasses/biking"
+      },
+      {
+        "id": 3,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/eyeglasses/new"
+      },
+      {
+        "id": 4,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_Vibes_1158X750.jpg?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/eyeglasses/collection/ft_shapes"
+      },
+      {
+        "id": 5,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/sunglasses/biking"
+      },
+      {
+        "id": 6,
+        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/eyeglasses/new"
+      }
+    ]
   },
   "hypeCards": [
     {
@@ -188,6 +190,72 @@
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     }
   ],
+  "bestsellersSection": {
+    "title": "Our",
+    "highlight": "Bestsellers",
+    "cards": [
+      {
+        "id": 1,
+        "badge": "Bestseller",
+        "image": "https://api.titaneyeplus.com/media/catalog/product/t/s/tsr0028wfc4mbkv_1_lar.jpg",
+        "brand": "Tees By Fastrack",
+        "name": "Crystal Wayfarer Eyeglasses For Men And Women",
+        "size": "Medium",
+        "price": 420,
+        "oldPrice": 1050,
+        "discount": "60% Off",
+        "rating": null
+      },
+      {
+        "id": 2,
+        "badge": "New",
+        "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+        "brand": "Ace by Titan",
+        "name": "Black CatEye Eyeglasses For Women",
+        "size": "Medium",
+        "price": 1100,
+        "rating": null
+      },
+      {
+        "id": 3,
+        "badge": "New",
+        "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025il020558_1_lar.jpg",
+        "brand": "Fastrack",
+        "name": "Black Wayfarer Eyeglasses For Men",
+        "price": 800,
+        "rating": null
+      },
+      {
+        "id": 4,
+        "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+        "brand": "Fastrack",
+        "name": "Green Wayfarer Sunglasses For Men",
+        "size": "Medium",
+        "price": 950,
+        "rating": 4.8,
+        "ratingCount": 16
+      },
+      {
+        "id": 5,
+        "badge": "New",
+        "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+        "brand": "Ace by Titan",
+        "name": "Black CatEye Eyeglasses For Women",
+        "size": "Medium",
+        "price": 1100,
+        "rating": null
+      },
+      {
+        "id": 6,
+        "badge": "New",
+        "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025il020558_1_lar.jpg",
+        "brand": "Fastrack",
+        "name": "Black Wayfarer Eyeglasses For Men",
+        "price": 800,
+        "rating": null
+      }
+    ]
+  },
   "faq": [
     {
       "id": 1,

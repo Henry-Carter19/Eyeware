@@ -7,6 +7,7 @@ import FaqSection from "../components/ui/FaqSection/FaqSection";
 import HypeSection from "../components/ui/HypeSection/HypeSection";
 import NewCurations from "../components/ui/NewCurations/NewCurations";
 import FindStoreSection from "../components/ui/FindStoreSection/FindStoreSection";
+import BestsellersCarousel from "../components/ui/BestsellersCarousel/BestsellersCarousel";
 
 const HomePage = () => {
   const data = homeData as HomePageData;
@@ -20,6 +21,7 @@ const HomePage = () => {
       <FindStoreSection />
       <HypeSection hypeData={data.hypeCards} />
       <NewCurations sectionConfig={data.exclusiveDealsSection} />
+      <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <FaqSection faqData={data.faq} />
     </div>
   );
