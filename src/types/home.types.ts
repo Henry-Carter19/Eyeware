@@ -46,11 +46,33 @@ export interface CurationSection {
   cards: CurationCard[];
 }
 
+
+export interface BestsellerCard {
+  id: number;
+  badge?: "New" | "Bestseller";
+  image: string;
+  brand: string;
+  name: string;
+  size?: string;
+  price: number;
+  oldPrice?: number;
+  discount?: string;
+  rating?: number | null;
+  ratingCount?: number;
+}
+
+export interface BestsellerSection {
+  title: string;
+  highlight: string;
+  cards: BestsellerCard[];
+}
+
 export interface HomePageData {
   heroBanners: HeroBanner[];
   brands: Brand[];
   newCurationsSection: CurationSection;
   exclusiveDealsSection: CurationSection;
   hypeCards: HypeCard[];
+  bestsellersSection: BestsellerSection;
   faq: FaqItem[];
 }
