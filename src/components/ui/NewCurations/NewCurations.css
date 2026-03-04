@@ -1,0 +1,238 @@
+/* =============================== */
+/* Section */
+/* =============================== */
+
+.curation-section {
+    padding: 100px 60px;
+    background: linear-gradient(to right, #000000, #0a0a0a);
+    color: white;
+    text-align: center;
+}
+
+.curation-title {
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.curation-title span {
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+/* =============================== */
+/* Card */
+/* =============================== */
+
+.curation-card {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    height: 400px;
+    width: 530px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.curation-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+}
+
+/* =============================== */
+/* Button */
+/* =============================== */
+
+.curation-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 26px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Smooth Scale on Hover */
+.curation-card:hover .curation-btn {
+    transform: translateX(-50%) scale(1.1);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Swiper Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+    color: white;
+}
+
+
+/* =============================== */
+/* Swiper Wrapper */
+/* =============================== */
+
+.curation-swiper-wrapper {
+    position: relative;
+}
+
+/* =============================== */
+/* Cinematic Edge Fade Effect */
+/* =============================== */
+
+.edge-left,
+.edge-right {
+    position: absolute;
+    top: 0;
+    width: 160px;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.edge-left {
+    left: 0;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.2),
+            transparent);
+}
+
+.edge-right {
+    right: 0;
+    background: linear-gradient(to left,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.2),
+            transparent);
+}
+
+
+/* =============================== */
+/* Premium Transparent Arrows */
+/* =============================== */
+
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    /* Transparent glass look */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 20;
+
+    transition: all 0.35s ease;
+}
+
+.custom-prev {
+    left: 10px;
+}
+
+.custom-next {
+    right: 10px;
+}
+
+/* Hover Effect */
+.custom-prev:hover,
+.custom-next:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-50%) scale(1.08);
+}
+
+
+/* =============================== */
+/* Header Layout */
+/* =============================== */
+
+.curation-header {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.view-all-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #f2f2f2;
+  color: #00a6c7;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    letter-spacing 0.3s ease;
+}
+
+/* Smooth premium hover */
+.view-all-btn:hover {
+  background: #ffffff;
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(0, 166, 199, 0.15);
+  letter-spacing: 0.5px;
+}
+
+
+/* Gold background variation */
+.gold-bg {
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    #000000 4%,
+    #d4b06a 40%,
+    #b9914f 60%,
+    #000000 90%,
+    #000000 100%
+  );
+}
+
+/* Arrow button (for Exclusive Deals) */
+.arrow-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.curation-card:hover .arrow-btn {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
