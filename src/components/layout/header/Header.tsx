@@ -101,6 +101,7 @@ import React, { useState } from "react";
 import { FaSearch, FaHeadphones, FaEye, FaUser, FaTruck, FaMapMarkerAlt } from "react-icons/fa";
 import "./Header.css";
 
+
 const Header: React.FC = () => {
   const [showMegaMenu, setShowMegaMenu] = useState(false);
   const [showEyeglasses, setShowEyeglasses] = useState(false);

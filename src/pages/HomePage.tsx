@@ -9,6 +9,7 @@ import NewCurations from "../components/ui/NewCurations/NewCurations";
 import FindStoreSection from "../components/ui/FindStoreSection/FindStoreSection";
 import BestsellersCarousel from "../components/ui/BestsellersCarousel/BestsellersCarousel";
 import FeaturedCollectionsOnlyFocus from "../components/ui/FeautredCollection/FeautredCollection";
+import ShopCollections from "../components/ui/ShopCollections/ShopCollections";
 
 const HomePage = () => {
   const data = homeData as HomePageData;
@@ -24,6 +25,7 @@ const HomePage = () => {
       <HypeSection hypeData={data.hypeCards} />
       <NewCurations sectionConfig={data.exclusiveDealsSection} />
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
+      <ShopCollections />
       <FaqSection faqData={data.faq} />
     </div>
   );

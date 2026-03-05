@@ -76,3 +76,10 @@ export interface HomePageData {
   bestsellersSection: BestsellerSection;
   faq: FaqItem[];
 }
+
+export interface CollectionItem {
+  id: number
+  title: string
+  image: string
+  url: string
+}
