@@ -1,258 +1,130 @@
-/* ===== TOP NAVBAR ===== */
-.top-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1f2937;
-  color: white;
-  padding: 8px 20px;
-  font-size: 14px;
+/* SEARCH BOX */
+
+
+.search-box {
+  width: 350px;
+  height: 30px;
 }
 
-.top-navbar span {
-  margin-left: 20px;
-  cursor: pointer;
+.search-box input {
+  font-size: 13px;
+  height: 28px;
+  padding: 2px;
 }
 
-.top-navbar .phone {
-  color: #38bdf8;
-  font-weight: bold;
+/* TOP NAVBAR SMALL HEIGHT */
+
+.top-bar {
+  padding: 4px 0;
+  font-size: 13px;
 }
 
-/* ===== MAIN NAVBAR ===== */
-.main-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 15px 20px;
-  border-bottom: 1px solid #e5e7eb;
+/* TOP NAVBAR DROPDOWN FONT SIZE */
+
+.top-bar .dropdown-menu {
+  font-size: 13px;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
+.top-bar .dropdown-item {
+  font-size: 13px;
 }
 
-.logo span {
-  color: #0ea5e9;
+/* MOBILE TOP BAR */
+
+@media (max-width: 768px) {
+
+  .search-box {
+    display: none;
+  }
+
+  .help-text {
+    font-size: 12px;
+  }
+
+  .top-bar {
+    font-size: 12px;
+  }
+
+}
+/* MEGA MENU IMAGE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .mega-menu img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+
 }
 
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
+/* ICON SIZE ADJUST */
+
+.top-bar svg {
+  width: 14px;
+  height: 14px;
 }
+/* HOVER DROPDOWN */
 
-.menu li {
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-/* .menu li:hover {
-  color: #0ea5e9;
-} */
-
-.cart {
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.menu .mega-parent {
-  cursor: pointer;
+.hover-dropdown {
   position: relative;
 }
-/* ===== MEGA MENU ===== */
+
+.hover-dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 7px;
+}
+
+/* DROPDOWN LINK STYLE */
+
+.dropdown-menu a {
+  position: relative;
+  color: #272932;
+  display: block;
+  margin-bottom: 5px;
+  width: max-content;
+  text-decoration: none;
+}
+
+/* UNDERLINE ANIMATION */
+
+.dropdown-menu a::after {
+  content: "";
+  height: 1px;
+  width: 10%;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  background-color: currentColor;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown-item:hover {
+    background-color: white!important;
+    
+}
+/* HOVER EFFECT */
+
+.dropdown-menu a:hover::after {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* MEGA MENU */
 
 .mega-menu {
-  position: fixed;     
-  top: 70px;             /* adjust based on navbar height */
-  left: 0;
-  width: 100vw;          /* full viewport width */
-  margin-top: 40px;
-  background: #ffffff;
-  padding: 40px;       /* remove side padding */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  width: 900px;
 }
 
-.mega-content {
-  display: flex;
-  gap: 60px;
-  max-width: 1400px;
-  margin: auto;
-}
-
-.mega-column {
-  display: flex;
-  flex-direction: column;
-  min-width: 200px;
-}
-
-.mega-column h4 {
-  margin-bottom: 10px;
+.mega-menu h6 {
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.mega-column p {
-  margin: 4px 0;
-  cursor: pointer;
-  font-size: 14px;
+.mega-menu a {
+  display: block;
+  margin-bottom: 6px;
 }
 
-
-
-
-/* ===== RIGHT IMAGE ===== */
-.mega-image {
-  margin-left: auto;
-  position: relative;
-}
-
-.mega-image img {
-  width: 350px;
-  border-radius: 10px;
-}
-
-.image-text {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  color: white;
-  font-size: 26px;
-  font-weight: bold;
-}
-
-/* ===== Search Bar ===== */
-
-.search-container {
-  display: flex;
-  align-items: center;
-  background-color: #fff;   /* Same white background */
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 0 10px;
-  width: 400px; /* adjust as needed */
-}
-
-.search-icon {
-  color: #666;
-  font-size: 16px;
-  margin-right: 8px;
-}
-
-.search-input {
-  border: none;
-  outline: none;
-  background: transparent; /* Important */
-  flex: 1;
-  padding: 10px 0;
-  font-size: 14px;
-}
-
-
-
-/*   ====     dropdown      ==== */
-
-/* Make parent relative */
-.nav-item {
-  position: relative;
-  list-style: none;
-  cursor: pointer;
-}
-
-/* Dropdown container */
-.dropdown {
-  position: absolute;
-  top: 100%;          /* appears just below */
-  left: 0;
-  background: white;
-  min-width: 200px;
-  border-radius: 6px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  padding: 8px 0;
-  z-index: 1000;
-}
-
-/* Remove default ul styling */
-.dropdown ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Dropdown items */
-.dropdown ul li {
-  padding: 10px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-/* Hover effect */
-.dropdown ul li:hover {
-      padding: 10px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-  background-color: #f3f4f6;
-  color: #00a3ad;
-}
-
-/*  ==== alignment code of to right nav  ====  */
-
-.top-right {
-  display: flex;
-  align-items: center;      /* Vertical center */
-  justify-content: center;  /* Horizontal center */
-  gap: 25px;
-}
-
-.nav-item-top {
-  display: flex;
-  align-items: center;      /* Icon + text vertical center */
-  gap: 6px;
-  cursor: pointer;
-  position: relative;
-}
-
-.dropdown-top {
-  position: absolute;
-  top: 100%;          /* appears just below */
-  left: 0;
-  background: white;
-  min-width: 200px;
-  border-radius: 6px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  padding: 8px 0;
-  z-index: 1000;
-  color: black;
-}
-
-/* Dropdown items */
-.dropdown-top ul li {
-  padding: 10px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-/* Hover effect */
-.dropdown-top ul li:hover {
-      padding: 10px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-  background-color: #f3f4f6;
-  color: #00a3ad;
-}
-
-/* Remove default ul styling */
-.dropdown-top ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
