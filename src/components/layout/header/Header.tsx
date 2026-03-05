@@ -30,14 +30,14 @@ const Header: React.FC = () => {
             </div>
 
             {/* SEARCH (Hidden on small screens) */}
-            <div className="search-box d-none d-md-flex align-items-center bg-white rounded px-2">
+            {/* <div className="search-box d-none d-md-flex align-items-center bg-white rounded px-2">
               <Search size={14} className="text-muted me-2" />
               <input
                 type="text"
                 className="form-control border-0 shadow-none"
                 placeholder="Search for Eyeglasses, Sunglasses"
               />
-            </div>
+            </div> */}
 
             {/* RIGHT MENU */}
             <div className="d-flex align-items-center gap-3">
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
                   </ul>
                 </div>
 
-                <span>Hearing Test</span>
+                {/* <span>Hearing Test</span>
 
                 <span className="d-flex align-items-center gap-1">
                   <User size={14}/> Sign In
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
 
                 <span className="d-flex align-items-center gap-1">
                   <Truck size={14}/> Track Order
-                </span>
+                </span> */}
 
                 <span className="d-flex align-items-center gap-1">
                   <MapPin size={14}/> Find Store
@@ -230,7 +230,7 @@ const Header: React.FC = () => {
               </div>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <span className="nav-link">Power Sunglasses</span>
               </li>
 
@@ -240,7 +240,7 @@ const Header: React.FC = () => {
 
               <li className="nav-item">
                 <span className="nav-link">Hearing Aids</span>
-              </li>
+              </li> */}
 
               {/* Contact Lenses */}
               <li className="nav-item dropdown hover-dropdown">
