@@ -1,0 +1,20 @@
+.description-wrapper {
+  font-size: var(--font-xs);
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+.description-text {
+  margin: 0;
+}
+
+.toggle-btn {
+  color: var(--blue-primary);
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: var(--space-xs);
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}

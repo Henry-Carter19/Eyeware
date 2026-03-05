@@ -1,0 +1,68 @@
+/* =============================== */
+/* DELIVERY BOX */
+/* =============================== */
+
+.delivery-box {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+/* =============================== */
+/* INPUT */
+/* =============================== */
+
+.delivery-box input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--light-gray);
+  background: var(--off-white);
+  font-size: var(--font-xs);
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.delivery-box input:focus {
+  border-color: var(--teal);
+  background: var(--white);
+}
+
+/* =============================== */
+/* BUTTON (Outline Style Like Image 1) */
+/* =============================== */
+
+.delivery-box button {
+  padding: 6px 18px;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--teal);
+  border: 1px solid var(--teal);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.delivery-box button:hover {
+  background: var(--very-light-teal);
+}
+
+/* =============================== */
+/* SMALL CHECK BUTTON */
+/* =============================== */
+
+.check-btn {
+  padding: 8px 16px;
+  font-size: var(--font-xs);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--teal);
+  border: 1px solid var(--teal);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.check-btn:hover {
+  background: var(--very-light-teal);
+}

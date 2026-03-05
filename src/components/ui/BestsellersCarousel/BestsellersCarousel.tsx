@@ -26,10 +26,10 @@ const BestsellersCarousel: React.FC<Props> = ({ bestsellersSection }) => {
                 spaceBetween={28}
                 loop={true}
                 speed={900}
-                // autoplay={{
-                //     delay: 1500,
-                //     disableOnInteraction: false
-                // }}
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: false
+                }}
                 navigation={{
                     nextEl: ".best-next",
                     prevEl: ".best-prev"

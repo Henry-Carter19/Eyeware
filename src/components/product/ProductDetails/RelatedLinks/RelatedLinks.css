@@ -1,0 +1,30 @@
+/* .link-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.link-item:hover {
+  color: #0077cc;
+} */
+
+.related-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--light-gray);
+  cursor: pointer;
+  font-size: var(--font-md);
+  color: var(--charcoal);
+  transition: var(--transition-fast);
+}
+
+.link-item:hover {
+  color: var(--teal);
+}
