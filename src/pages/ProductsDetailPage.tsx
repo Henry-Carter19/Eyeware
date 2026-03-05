@@ -13,6 +13,9 @@ import RelatedLinks from "../components/product/ProductDetails/RelatedLinks/Rela
 import SectionWrapper from "../components/product/ProductDetails/SectionWrapper/SectionWrapper";
 import TrustBadges from "../components/product/ProductDetails/TrustBadges/TrustBadges";
 import { Container, Row, Col } from "react-bootstrap";
+import { FaWhatsapp } from "react-icons/fa";
+import ButtonComponent from "../components/ui/ButtonComponent/ButtonComponent";
+import { MessageCircle } from "lucide-react";
 
 const ProductDetailPage = () => {
   const { id } = useParams();
@@ -99,6 +102,15 @@ const ProductDetailPage = () => {
                     ›
                   </button>
                 </div>
+              </div>
+              <div className="sticky-btn-container">
+                <ButtonComponent
+                  label="Buy on"
+                  variant="whatsapp"
+                  icon={<MessageCircle size={16} />}
+                />
+
+                <ButtonComponent label="Buy now" variant="buy" fullWidth />
               </div>
             </div>
           </Col>
