@@ -1,37 +1,75 @@
-
-
 /* ============================= */
 /* Carousel Container */
 /* ============================= */
 
 .carousel-container {
-  padding: 30px 20px;
-  margin-left: 20px; /* align with selection card */
+  padding: var(--space-xxl) var(--space-lg);
+  margin-left: var(--space-lg);
 }
 
 .carousel {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: var(--space-xl);
 }
+
+/* Scrollbar */
 
 .carousel::-webkit-scrollbar {
   height: 6px;
 }
 
 .carousel::-webkit-scrollbar-thumb {
-  background: #d6d6d6;
+  background: var(--light-gray);
   border-radius: 10px;
 }
+
+/* ============================= */
+/* Laptop */
+/* ============================= */
+
+@media (max-width: 1200px) {
+  .carousel {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+/* ============================= */
+/* Tablet */
+/* ============================= */
 
 @media (max-width: 992px) {
   .carousel {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .carousel-container {
+    margin-left: 0;
+  }
 }
+
+/* ============================= */
+/* Mobile */
+/* ============================= */
 
 @media (max-width: 600px) {
   .carousel {
     grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .carousel-container {
+    padding: var(--space-lg);
+  }
+}
+
+/* ============================= */
+/* Small Mobile */
+/* ============================= */
+
+@media (max-width: 480px) {
+  .carousel {
+    gap: var(--space-md);
   }
 }
