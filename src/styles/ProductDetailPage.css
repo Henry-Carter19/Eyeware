@@ -207,3 +207,12 @@
     gap: 12px;
   }
 }
+
+.sticky-btn-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  background: #f3f3f3;
+  padding: 12px;
+  border-radius: 10px;
+}

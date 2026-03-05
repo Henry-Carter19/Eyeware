@@ -1,4 +1,5 @@
 import React from "react";
+import { ChevronRight } from "lucide-react";
 import "./RelatedLinks.css";
 
 interface LinkItem {
@@ -15,7 +16,8 @@ const RelatedLinks: React.FC<Props> = ({ links }) => {
     <div className="related-links">
       {links.map((link) => (
         <div key={link.id} className="link-item">
-          {link.label}
+          <span>{link.label}</span>
+          <ChevronRight size={16} />
         </div>
       ))}
     </div>
