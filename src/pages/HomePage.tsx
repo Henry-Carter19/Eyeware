@@ -11,6 +11,7 @@ import BestsellersCarousel from "../components/ui/BestsellersCarousel/Bestseller
 import FeaturedCollectionsOnlyFocus from "../components/ui/FeautredCollection/FeautredCollection";
 import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel";
 import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
+import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
 
 const HomePage = () => {
   const data = homeData as HomePageData;
@@ -24,11 +25,23 @@ const HomePage = () => {
       <FindStoreSection />
       <HypeSection hypeData={data.hypeCards} />
       <NewCurations sectionConfig={data.exclusiveDealsSection} />
-      <FeaturedCollectionsOnlyFocus/>
+      <FeaturedCollectionsOnlyFocus />
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <TrendingCarousel trendingSection={data.trendingSection} />
       <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
       <FaqSection faqData={data.faq} />
+      {/* <ProductCarousel
+        title={data.bestsellersSection.title}
+        highlight={data.bestsellersSection.highlight}
+        cards={data.bestsellersSection.cards}
+      />
+      <ProductCarousel
+        subtitle="Trending Searches"
+        title="Most"
+        highlight="Loved"
+        filters={data.trendingSection.filters}
+        filteredCards={data.trendingSection.cards}
+      /> */}
     </div>
   );
 };

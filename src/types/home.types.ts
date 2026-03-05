@@ -47,6 +47,31 @@ export interface CurationSection {
 }
 
 
+
+
+
+
+export interface TestimonialCard {
+  id: number;
+  name: string;
+  date: string;
+  rating: number;
+  review: string;
+}
+
+export interface TestimonialsSection {
+  title: string;
+  highlight: string;
+  cards: TestimonialCard[];
+}
+
+
+
+
+
+
+
+
 export interface BestsellerCard {
   id: number;
   badge?: "New" | "Bestseller";
@@ -66,6 +91,7 @@ export interface BestsellerSection {
   highlight: string;
   cards: BestsellerCard[];
 }
+
 
 export interface TrendingCard {
   id: number;
@@ -89,20 +115,6 @@ export interface TrendingSection {
   highlight: string;
   filters: TrendingFilter[];
   cards: Record<string, TrendingCard[]>;
-}
-
-export interface TestimonialCard {
-  id: number;
-  name: string;
-  date: string;
-  rating: number;
-  review: string;
-}
-
-export interface TestimonialsSection {
-  title: string;
-  highlight: string;
-  cards: TestimonialCard[];
 }
 
 export interface HomePageData {
