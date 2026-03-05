@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import productData from "../data/prodcutsDetailData.json";
 import "../styles/ProductDetailPage.css";
-
 import DeliverySection from "../components/product/ProductDetails/DeliverySection/DeliverySection";
 import FrameDimensions from "../components/product/ProductDetails/FrameDimensions/FrameDimensions";
 import OfferSection from "../components/product/ProductDetails/OfferSection/OfferSection";

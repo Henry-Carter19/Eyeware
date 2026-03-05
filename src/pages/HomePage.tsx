@@ -9,6 +9,8 @@ import NewCurations from "../components/ui/NewCurations/NewCurations";
 import FindStoreSection from "../components/ui/FindStoreSection/FindStoreSection";
 import BestsellersCarousel from "../components/ui/BestsellersCarousel/BestsellersCarousel";
 import FeaturedCollectionsOnlyFocus from "../components/ui/FeautredCollection/FeautredCollection";
+import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel";
+import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
 
 const HomePage = () => {
   const data = homeData as HomePageData;
@@ -16,7 +18,6 @@ const HomePage = () => {
 
   return (
     <div>
-      <FeaturedCollectionsOnlyFocus/>
       <HeroCarousel banners={data.heroBanners} />
       <BrandsCarousel brands={data.brands} />
       <NewCurations sectionConfig={data.newCurationsSection} />
@@ -24,6 +25,9 @@ const HomePage = () => {
       <HypeSection hypeData={data.hypeCards} />
       <NewCurations sectionConfig={data.exclusiveDealsSection} />
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
+      <FeaturedCollectionsOnlyFocus/>
+      <TrendingCarousel trendingSection={data.trendingSection} />
+      <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
       <FaqSection faqData={data.faq} />
     </div>
   );
