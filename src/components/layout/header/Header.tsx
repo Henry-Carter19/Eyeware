@@ -1,104 +1,13 @@
-// import React, { useState } from "react";
-// import "./Header.css";
-
-// const Header: React.FC = () => {
-//   const [showMegaMenu, setShowMegaMenu] = useState(false);
-
-//   return (
-//     <div className="navbar-wrapper">
-//       {/* Main Navbar */}
-//       <div className="main-navbar">
-//         <div className="logo">
-//           TITAN <span>EYE+</span>
-//         </div>
-
-//         <ul className="menu">
-//           <li>Eyeglasses</li>
-
-//           {/* Sunglasses with Mega Menu */}
-//           <li
-//             className="mega-parent"
-//             onMouseEnter={() => setShowMegaMenu(true)}
-//             onMouseLeave={() => setShowMegaMenu(false)}
-//           >
-//             Sunglasses ▾
-
-//             {showMegaMenu && (
-//               <div className="mega-menu">
-//                 <div className="mega-content">
-
-//                   {/* Column 1 */}
-//                   <div className="mega-column">
-//                     <h4>GENDER</h4>
-//                     <p>All</p>
-//                     <p>Men</p>
-//                     <p>Women</p>
-//                     <p>Kids</p>
-
-//                     <h4>STYLE</h4>
-//                     <p>Mirrored</p>
-//                     <p>Tinted</p>
-//                     <p>UV Protection</p>
-//                     <p>Polarized</p>
-
-//                     <h4>USAGE</h4>
-//                     <p>Regular</p>
-//                     <p>Power</p>
-//                   </div>
-
-//                   {/* Column 2 */}
-//                   <div className="mega-column">
-//                     <h4>COLLECTION</h4>
-//                     <p>Smart Sunglasses</p>
-//                     <p>Donald</p>
-//                     <p>Glow Up</p>
-//                     <p>Whiplash</p>
-//                     <p>Vivid Geometry</p>
-
-//                     <h4>SHAPE</h4>
-//                     <p>Aviator</p>
-//                     <p>Wayfarer</p>
-//                     <p>Wraparound</p>
-//                     <p>Rectangle</p>
-//                     <p>Round</p>
-//                   </div>
-
-//                   {/* Column 3 */}
-//                   <div className="mega-column">
-//                     <h4>BRANDS</h4>
-//                     <p>Titan</p>
-//                     <p>Fastrack</p>
-//                     <p>Rayban</p>
-//                     <p>Oakley</p>
-//                     <p>Burberry</p>
-//                   </div>
-
-//                   {/* Right Image */}
-//                   <div className="mega-image">
-//                     <img
-//                       src="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
-//                       alt="Sunglasses"
-//                     />
-//                     <span className="image-text">Sunglasses</span>
-//                   </div>
-//                 </div>
-//               </div>
-//             )}
-//           </li>
-
-//           <li>Power Sunglasses</li>
-//           <li>Computer Glasses</li>
-//           <li>Contact Lenses</li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Header;
-
 import React, { useState } from "react";
-import { FaSearch, FaHeadphones, FaEye, FaUser, FaTruck, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  Search,
+  Eye,
+  User,
+  Truck,
+  MapPin,
+  ShoppingCart,
+  Headphones
+} from "lucide-react";
 import "./Header.css";
 
 const Header: React.FC = () => {
@@ -106,7 +15,7 @@ const Header: React.FC = () => {
   const [showEyeglasses, setShowEyeglasses] = useState(false);
   const [showContact, setShowContact] = useState(false);
   const [showAccessories, setShowAccessories] = useState(false);
-  const [showBrands, setShowBrads] = useState(false);
+  const [showBrands, setShowBrands] = useState(false);
   const [eyeTest, setEyeTest] = useState(false);
 
   return (
@@ -114,46 +23,52 @@ const Header: React.FC = () => {
       {/* Top Navbar */}
       <div className="top-navbar">
         <div className="top-left">
-          🎧 Need Help? <span className="phone">Call 1800-266-0123</span>
+          <Headphones size={16} /> Need Help?{" "}
+          <span className="phone">Call 1800-266-0123</span>
         </div>
 
-        {/* Center Search Bar */}
+        {/* Search */}
         <div className="search-container">
           <input
             type="text"
             placeholder="Search for Eyeglasses, Sunglasses"
             className="search-input"
           />
-          <FaSearch className="search-icon" />
+          <Search className="search-icon" size={18} />
         </div>
 
         <div className="top-right">
-          {/* <span><FaEye /> Eye Testing</span> */}
-          {/* <span><FaEye /> Eye Testing</span> */}
           <span>
-               <li
-            className="nav-item-top"
-            onMouseEnter={() => setEyeTest(true)}
-            onMouseLeave={() => setEyeTest(false)}
-          >
-           <FaEye /> Eye Testing ▾
-            {eyeTest && (
-              <div className="dropdown-top">
-                <ul>
-                <li>Digital Eye Strain Test</li>
-                <li>Online Eye Screening</li>
-                <li>Instore Free Eye Test</li>
-                <li>Book Appointment</li>
-                </ul>
-              </div>
-            )}
-          </li>
+            <li
+              className="nav-item-top"
+              onMouseEnter={() => setEyeTest(true)}
+              onMouseLeave={() => setEyeTest(false)}
+            >
+              <Eye size={16} /> Eye Testing ▾
+
+              {eyeTest && (
+                <div className="dropdown-top">
+                  <ul>
+                    <li>Digital Eye Strain Test</li>
+                    <li>Online Eye Screening</li>
+                    <li>Instore Free Eye Test</li>
+                    <li>Book Appointment</li>
+                  </ul>
+                </div>
+              )}
+            </li>
           </span>
-          
+
           <span>Hearing Test</span>
-          <span><FaUser /> Sign In</span>
-          <span><FaTruck /> Track Order</span>
-          <span><FaMapMarkerAlt /> Find A Store</span>
+          <span>
+            <User size={16} /> Sign In
+          </span>
+          <span>
+            <Truck size={16} /> Track Order
+          </span>
+          <span>
+            <MapPin size={16} /> Find A Store
+          </span>
         </div>
       </div>
 
@@ -164,16 +79,16 @@ const Header: React.FC = () => {
         </div>
 
         <ul className="menu">
+          {/* Eyeglasses */}
           <li
             onMouseEnter={() => setShowEyeglasses(true)}
             onMouseLeave={() => setShowEyeglasses(false)}
-          >Eyeglasses ▾
+          >
+            Eyeglasses ▾
 
             {showEyeglasses && (
               <div className="mega-menu">
                 <div className="mega-content">
-
-                  {/* Column 1 */}
                   <div className="mega-column">
                     <h4>GENDER</h4>
                     <p>All</p>
@@ -190,7 +105,6 @@ const Header: React.FC = () => {
                     <p>Emily in Paris</p>
                   </div>
 
-                  {/* Column 2 */}
                   <div className="mega-column">
                     <h4>SHAPE</h4>
                     <p>Rectangle</p>
@@ -205,7 +119,6 @@ const Header: React.FC = () => {
                     <p>Rimless</p>
                   </div>
 
-                  {/* Column 3 */}
                   <div className="mega-column">
                     <h4>TOP BRANDS</h4>
                     <p>Zefr</p>
@@ -220,7 +133,6 @@ const Header: React.FC = () => {
                     <p>ZEISS</p>
                   </div>
 
-                  {/* Column 4 */}
                   <div className="mega-column">
                     <h4>FEATURED BRANDS</h4>
                     <p>Oakley</p>
@@ -235,7 +147,6 @@ const Header: React.FC = () => {
                     <p>Calvin Klein</p>
                   </div>
 
-                  {/* Right Image */}
                   <div className="mega-image">
                     <img
                       src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371"
@@ -243,11 +154,12 @@ const Header: React.FC = () => {
                     />
                     <span className="image-text">Eyeglasses</span>
                   </div>
-
                 </div>
               </div>
             )}
           </li>
+
+          {/* Sunglasses */}
           <li
             className="mega-parent"
             onMouseEnter={() => setShowMegaMenu(true)}
@@ -258,8 +170,6 @@ const Header: React.FC = () => {
             {showMegaMenu && (
               <div className="mega-menu">
                 <div className="mega-content">
-
-                  {/* Column 1 */}
                   <div className="mega-column">
                     <h4>GENDER</h4>
                     <p>All</p>
@@ -278,7 +188,6 @@ const Header: React.FC = () => {
                     <p>Power</p>
                   </div>
 
-                  {/* Column 2 */}
                   <div className="mega-column">
                     <h4>COLLECTION</h4>
                     <p>Smart Sunglasses</p>
@@ -295,7 +204,6 @@ const Header: React.FC = () => {
                     <p>Round</p>
                   </div>
 
-                  {/* Column 3 */}
                   <div className="mega-column">
                     <h4>BRANDS</h4>
                     <p>Titan</p>
@@ -305,7 +213,6 @@ const Header: React.FC = () => {
                     <p>Burberry</p>
                   </div>
 
-                  {/* Right Image */}
                   <div className="mega-image">
                     <img
                       src="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
@@ -317,10 +224,12 @@ const Header: React.FC = () => {
               </div>
             )}
           </li>
+
           <li>Power Sunglasses</li>
           <li>Computer Glasses</li>
           <li>Hearing Aids</li>
-          {/* <li>Contact Lenses</li> */}
+
+          {/* Contact */}
           <li
             className="nav-item"
             onMouseEnter={() => setShowContact(true)}
@@ -339,7 +248,8 @@ const Header: React.FC = () => {
               </div>
             )}
           </li>
-          {/* <li>Accessories</li> */}
+
+          {/* Accessories */}
           <li
             className="nav-item"
             onMouseEnter={() => setShowAccessories(true)}
@@ -362,11 +272,12 @@ const Header: React.FC = () => {
               </div>
             )}
           </li>
-          {/* <li>Brands</li> */}
+
+          {/* Brands */}
           <li
             className="nav-item"
-            onMouseEnter={() => setShowBrads(true)}
-            onMouseLeave={() => setShowBrads(false)}
+            onMouseEnter={() => setShowBrands(true)}
+            onMouseLeave={() => setShowBrands(false)}
           >
             Brands ▾
 
@@ -387,14 +298,14 @@ const Header: React.FC = () => {
                   <li>ZEISS</li>
                   <li>ARISTO</li>
                 </ul>
-           
               </div>
             )}
           </li>
         </ul>
 
+        {/* Cart */}
         <div className="cart">
-          🛒
+          <ShoppingCart size={22} />
         </div>
       </div>
     </>
