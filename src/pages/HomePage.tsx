@@ -24,8 +24,8 @@ const HomePage = () => {
       <FindStoreSection />
       <HypeSection hypeData={data.hypeCards} />
       <NewCurations sectionConfig={data.exclusiveDealsSection} />
-      <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <FeaturedCollectionsOnlyFocus/>
+      <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <TrendingCarousel trendingSection={data.trendingSection} />
       <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
       <FaqSection faqData={data.faq} />
