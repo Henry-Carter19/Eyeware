@@ -1,0 +1,68 @@
+/* =============================== */
+/* OFFER CARD */
+/* =============================== */
+
+.offer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  padding: var(--space-xl) var(--space-lg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: var(--transition-fast);
+}
+
+.offer-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* =============================== */
+/* LEFT SIDE */
+/* =============================== */
+
+.offer-left {
+  flex: 1;
+}
+
+.offer-left h4 {
+  font-size: var(--font-md);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  color: var(--charcoal);
+}
+
+.offer-left p {
+  font-size: var(--font-sm);
+  color: var(--dark-gray);
+  margin-bottom: var(--space-sm);
+}
+
+.code {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--blue-primary);
+}
+
+/* =============================== */
+/* RIGHT SIDE */
+/* =============================== */
+
+.offer-right {
+  padding-left: var(--space-lg);
+}
+
+.copyBtn {
+  background: none;
+  border: none;
+  font-size: var(--font-xs);
+  font-weight: 500;
+  color: var(--blue-primary);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.copyBtn:hover {
+  text-decoration: underline;
+}

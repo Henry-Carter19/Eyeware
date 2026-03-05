@@ -1,6 +1,8 @@
 import "../styles/ProductsPage.css";
 import FilterMenu from "../components/product/filters/FilterMenu";
-import ProductCarousel from "../components/product/ProductCarousel/ProductCarousel";
+import ProductCarousel, {
+  Product,
+} from "../components/product/ProductCarousel/ProductCarousel";
 import SelectionCard from "../components/product/SelectionCard/SelectionCard";
 
 import productData from "../data/productsData.json";
@@ -15,27 +17,29 @@ const ProductsPage = () => {
   const frameColorMapped = mapToSelectionData(frameColor);
   const priceMapped = mapToSelectionData(priceRange);
 
+  // 🔥 CAST JSON PRODUCTS TO Product[]
+  const typedProducts: Product[] = productData.products.map((p) => ({
+    ...p,
+    layoutType: p.layoutType === "detail" ? "detail" : "grid",
+  }));
+
   return (
     <div className="products-page">
-      {/* LEFT SIDEBAR */}
       <div className="left-section">
         <FilterMenu />
       </div>
 
-      {/* RIGHT CONTENT */}
       <div className="right-section">
-        {/* Product Grid */}
-        <ProductCarousel products={productData.products} />
+        <ProductCarousel products={typedProducts} />
 
-        {/* Selection Cards Below */}
         <SelectionCard data={frameStyle} />
-        <ProductCarousel products={productData.products} />
+        <ProductCarousel products={typedProducts} />
 
         <SelectionCard data={frameColorMapped} />
-        <ProductCarousel products={productData.products} />
+        <ProductCarousel products={typedProducts} />
 
         <SelectionCard data={priceMapped} />
-        <ProductCarousel products={productData.products} />
+        <ProductCarousel products={typedProducts} />
       </div>
     </div>
   );

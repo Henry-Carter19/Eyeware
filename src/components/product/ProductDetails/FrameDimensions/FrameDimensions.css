@@ -1,0 +1,44 @@
+/* =============================== */
+/* WRAPPER */
+/* =============================== */
+
+.dimension-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  background: var(--off-white);
+  border: 1px solid var(--light-gray);
+  border-radius: 14px;
+  padding: var(--space-xl);
+}
+
+/* =============================== */
+/* EACH ITEM */
+/* =============================== */
+
+.dimension-item {
+  text-align: center;
+}
+
+.dimension-item img {
+  height: 40px;
+  margin-bottom: var(--space-sm);
+}
+
+.dimension-value {
+  font-size: var(--font-md);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  color: var(--charcoal);
+}
+
+.dimension-label {
+  font-size: var(--font-sm);
+  color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .dimension-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
