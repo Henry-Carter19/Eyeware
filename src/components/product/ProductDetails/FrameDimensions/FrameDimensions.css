@@ -1,0 +1,44 @@
+/* =============================== */
+/* WRAPPER */
+/* =============================== */
+
+.dimension-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background: #fafafa;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+/* =============================== */
+/* EACH ITEM */
+/* =============================== */
+
+.dimension-item {
+  text-align: center;
+}
+
+.dimension-item img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.dimension-value {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+.dimension-label {
+  font-size: 13px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .dimension-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

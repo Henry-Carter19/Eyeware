@@ -1,0 +1,20 @@
+.description-wrapper {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.description-text {
+  margin: 0;
+}
+
+.toggle-btn {
+  color: #0077cc;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}

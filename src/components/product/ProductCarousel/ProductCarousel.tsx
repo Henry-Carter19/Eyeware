@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./ProductCarousel.css";
 import ProductCard from "../ProductCard/ProductCard";
+import { useNavigate } from "react-router-dom";
 
 export interface Product {
   id: number;
+  layoutType?: "grid" | "detail";
   brand: string;
   title: string;
   price: number;
@@ -20,11 +22,21 @@ interface ProductCarouselProps {
 }
 
 const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
+  const navigate = useNavigate();
+
+  const handleClick = (productId: number) => {
+    navigate(`/products/details/${productId}`);
+  };
+
   return (
     <div className="carousel-container">
       <div className="carousel">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard
+            key={product.id}
+            product={product}
+            onClick={() => handleClick(product.id)}
+          />
         ))}
       </div>
     </div>

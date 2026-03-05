@@ -2,6 +2,7 @@
     "products": [
         {
             "id": 1,
+            "layoutType": "grid",
             "brand": "Fastrack",
             "title": "Grey Rectangle Eyeglasses",
             "price": 1100,
@@ -17,6 +18,7 @@
         },
         {
             "id": 2,
+            "layoutType": "grid",
             "brand": "Fastrack",
             "title": "Olive Wayfarer Eyeglasses For Men",
             "price": 800,
@@ -32,6 +34,7 @@
         },
         {
             "id": 3,
+            "layoutType": "grid",
             "brand": "Fastrack",
             "title": "Grey Rounded Eyeglasses For Men And Women",
             "price": 800,
@@ -47,6 +50,7 @@
         },
         {
             "id": 4,
+            "layoutType": "grid",
             "brand": "Ray-Ban",
             "title": "Black Classic Frame",
             "price": 1500,

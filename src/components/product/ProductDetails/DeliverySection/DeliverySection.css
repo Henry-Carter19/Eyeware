@@ -1,0 +1,68 @@
+/* =============================== */
+/* DELIVERY BOX */
+/* =============================== */
+
+.delivery-box {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* =============================== */
+/* INPUT */
+/* =============================== */
+
+.delivery-box input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+  font-size: 12px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.delivery-box input:focus {
+  border-color: #00a3c8;
+  background: #ffffff;
+}
+
+/* =============================== */
+/* BUTTON (Outline Style Like Image 1) */
+/* =============================== */
+
+.delivery-box button {
+  padding: 6px 18px;
+  border-radius: 9px;
+  background: transparent;
+  color: #00a3c8;
+  border: 1px solid #00a3c8;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.delivery-box button:hover {
+  background: #e6f7fb;
+}
+
+/* =============================== */
+/* SMALL CHECK BUTTON */
+/* =============================== */
+
+.check-btn {
+  padding: 8px 16px; /* smaller */
+  font-size: 12px; /* slightly smaller text */
+  border-radius: 8px;
+  background: transparent;
+  color: #00a3c8;
+  border: 1px solid #00a3c8;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.check-btn:hover {
+  background: #e6f7fb;
+}

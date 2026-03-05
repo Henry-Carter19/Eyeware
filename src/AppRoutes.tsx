@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MainLayout from "./components/layout/MainLayout";
 import ProductsPage from "./pages/ProductsPage";
+import ProductsDetailPage from "./pages/ProductsDetailPage";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
           <Route path="cart" element={<Cart />} />
           <Route path="track-order" element={<TrackOrder />} /> */}
           <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products/details/:id" element={<ProductsDetailPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
