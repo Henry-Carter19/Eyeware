@@ -1,8 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Product } from "../ProductCarousel/ProductCarousel";
 import "./ProductCard.css";
 
-const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
+interface ProductCardProps {
+  product: Product;
+  onClick?: () => void;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
   const images =
     product.images && product.images.length > 0
       ? product.images
@@ -12,11 +17,13 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextImage = () => {
+  const nextImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  const prevImage = () => {
+  const prevImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
@@ -44,6 +51,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
           <button className="arrow left" onClick={prevImage}>
             ‹
           </button>
+
           <button className="arrow right" onClick={nextImage}>
             ›
           </button>
@@ -70,9 +78,10 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   /* ============================= */
 
   return (
-    <div className="product-card">
+    <div className="product-card" onClick={onClick}>
       <div className="image-wrapper">
         <span className="wishlist">♡</span>
+
         <img src={images[currentIndex]} alt={product.title} />
       </div>
 

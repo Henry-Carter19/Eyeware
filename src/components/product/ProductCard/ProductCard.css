@@ -162,28 +162,6 @@
   transform: scale(1.05);
 }
 
-/* Arrows */
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #ffffff;
-  border: none;
-  font-size: 22px;
-  padding: 8px 14px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-.arrow.left {
-  left: 12px;
-}
-
-.arrow.right {
-  right: 12px;
-}
 
 /* Thumbnail Row */
 

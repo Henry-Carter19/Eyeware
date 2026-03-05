@@ -1,28 +1,49 @@
 /* ================================= */
-/* IMAGE CARD (GREY OUTER BOX) */
+/* PAGE BACKGROUND */
 /* ================================= */
 
-/* .image-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 5px 5px 5px 5px;
-  position: relative;
+.detail-page {
+  background: #f3f4f6;
+  padding: 30px 0;
+}
 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  width: 80%;
-} */
+/* ================================= */
+/* OPTIONAL: WIDER CONTAINER (SAFE WAY) */
+/* ================================= */
+
+/* Instead of overriding global .container */
+.detail-page .container {
+  max-width: 1200px;
+}
+
+/* ================================= */
+/* BREADCRUMB */
+/* ================================= */
+
+.breadcrumb {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================================= */
+/* LEFT PANEL */
+/* ================================= */
+
+.detail-left {
+  position: sticky;
+  top: 100px; /* adjust based on header height */
+}
+
+/* ================================= */
+/* IMAGE CARD */
+/* ================================= */
 
 .image-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 40px 30px 30px 30px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 24px 24px;
   position: relative;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-
-  width: 80%;
-  max-width: 650px; /* important */
-  overflow: hidden; /* 🔥 IMPORTANT FIX */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* ================================= */
@@ -32,8 +53,8 @@
 .main-image {
   display: block;
   margin: 0 auto;
-  max-width: 70%;
-  max-height: 350px;
+  max-width: 60%;
+  max-height: 280px;
   object-fit: contain;
 }
 
@@ -51,6 +72,11 @@
   border-radius: 20px;
   font-size: 12px;
   cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.try-btn:hover {
+  background: #d4eef3;
 }
 
 /* ================================= */
@@ -67,20 +93,16 @@
   cursor: pointer;
 }
 
+.icon-group span:hover {
+  color: #00a3c8;
+}
+
 /* ================================= */
 /* THUMBNAIL SECTION */
 /* ================================= */
 
-/* .thumb-wrapper {
-  margin-top: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-} */
-
 .thumb-wrapper {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,6 +118,11 @@
   font-size: 26px;
   cursor: pointer;
   color: #00a3c8;
+  transition: 0.2s ease;
+}
+
+.thumb-arrow:hover {
+  transform: scale(1.1);
 }
 
 /* THUMB ROW */
@@ -104,22 +131,26 @@
   display: flex;
   gap: 15px;
   align-items: center;
-
-  overflow: hidden; /* prevent spill */
+  overflow: hidden;
 }
 
 /* THUMB BOX */
 
 .thumb-box {
-  width: 80px;
-  height: 80px;
-  background: white;
+  width: 65px;
+  height: 65px;
+  background: #ffffff;
   border-radius: 14px;
   border: 1px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.thumb-box:hover {
+  transform: translateY(-2px);
 }
 
 .thumb-box img {
@@ -128,90 +159,51 @@
   object-fit: contain;
 }
 
-/* ACTIVE BORDER */
+/* ACTIVE THUMB */
 
 .thumb-box.active {
   border: 2px solid #00a3c8;
+  background: #eef7f7;
 }
 
-/* MAIN TWO COLUMN LAYOUT */
-.detail-container {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-}
+/* ================================= */
+/* RIGHT PANEL */
+/* ================================= */
 
-/* LEFT SIDE */
-.detail-left {
-  flex: 1;
-  position: sticky;
-  top: 100px;
-  display: flex;
-  justify-content: center; /* centers card */
-}
-
-/* RIGHT SIDE */
 .detail-right {
-  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.detail-page {
-  background: #f3f4f6; /* light grey like screenshot */
-  padding: 40px 80px; /* left & right spacing */
-}
-/* RIGHT CARD */
-.product-info-card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 20px;
+.detail-right .section-wrapper {
+  width: 100%;
 }
 
-/* BRAND */
-.brand {
-  color: #00a3c8;
-  font-size: 14px;
-  margin-bottom: 10px;
+/* ================================= */
+/* RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 992px) {
+  .detail-left {
+    position: relative;
+    top: 0;
+    margin-bottom: 30px;
+  }
 }
 
-/* TITLE */
-.title {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
+@media (max-width: 768px) {
+  .main-image {
+    max-width: 90%;
+  }
 
-/* PRICE */
-.price {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
+  .thumb-box {
+    width: 65px;
+    height: 65px;
+  }
 
-.tax-text {
-  font-size: 13px;
-  color: #777;
-  margin-bottom: 25px;
-}
-
-/* OFFER */
-.offer-section {
-  margin-bottom: 25px;
-}
-
-.offer-card {
-  background: #f3f4f6;
-  padding: 20px;
-  border-radius: 16px;
-}
-
-.coupon-code {
-  display: inline-block;
-  margin-top: 10px;
-  font-weight: 600;
-  color: #00a3c8;
-}
-
-/* DESCRIPTION */
-.description p {
-  line-height: 1.6;
-  color: #444;
+  .thumb-wrapper {
+    margin-top: 20px;
+    gap: 12px;
+  }
 }

@@ -3,6 +3,17 @@ import { useParams } from "react-router-dom";
 import productData from "../data/prodcutsDetailData.json";
 import "../styles/ProductDetailPage.css";
 
+import DeliverySection from "../components/product/ProductDetails/DeliverySection/DeliverySection";
+import FrameDimensions from "../components/product/ProductDetails/FrameDimensions/FrameDimensions";
+import OfferSection from "../components/product/ProductDetails/OfferSection/OfferSection";
+import ProductDescription from "../components/product/ProductDetails/ProductDescription/ProductDescription";
+import ProductHeader from "../components/product/ProductDetails/ProductHeader/ProductHeader";
+import ProductInformation from "../components/product/ProductDetails/ProductInformation/ProductInformation";
+import RelatedLinks from "../components/product/ProductDetails/RelatedLinks/RelatedLinks";
+import SectionWrapper from "../components/product/ProductDetails/SectionWrapper/SectionWrapper";
+import TrustBadges from "../components/product/ProductDetails/TrustBadges/TrustBadges";
+import { Container, Row, Col } from "react-bootstrap";
+
 const ProductDetailPage = () => {
   const { id } = useParams();
   const product = productData.productsDetail.find((p) => p.id === Number(id));
@@ -15,99 +26,126 @@ const ProductDetailPage = () => {
 
   return (
     <div className="detail-page">
-      {/* BREADCRUMB */}
-      <div className="breadcrumb">
-        Home &gt; Sunglasses &gt; Men &gt; {product.brand}
-      </div>
-
-      <div className="detail-container">
-        {/* LEFT SECTION */}
-        <div className="detail-left">
-          <div className="image-card">
-            <button className="try-btn">📷 TRY ON</button>
-
-            <div className="icon-group">
-              <span>♡</span>
-              <span>↗</span>
+      <Container>
+        {/* ================= BREADCRUMB ================= */}
+        <Row className="mb-4">
+          <Col xs={12}>
+            <div className="breadcrumb">
+              {/* Home &gt; Sunglasses &gt; Men &gt; {product.brand} */}
             </div>
+          </Col>
+        </Row>
 
-            <img
-              src={images[currentIndex]}
-              alt={product.title}
-              className="main-image"
-            />
+        {/* ================= MAIN CONTENT ================= */}
+        <Row className="gx-3">
+          {/* ================= LEFT SECTION ================= */}
+          <Col lg={5} md={12}>
+            <div className="detail-left">
+              <div className="image-card">
+                <button className="try-btn">📷 TRY ON</button>
 
-            <div className="thumb-wrapper">
-              <button
-                className="thumb-arrow"
-                onClick={() =>
-                  setCurrentIndex(
-                    currentIndex === 0 ? images.length - 1 : currentIndex - 1,
-                  )
-                }
-              >
-                ‹
-              </button>
+                <div className="icon-group">
+                  <span>♡</span>
+                  <span>↗</span>
+                </div>
 
-              <div className="thumbnail-row">
-                {images.map((img, index) => (
-                  <div
-                    key={index}
-                    className={`thumb-box ${
-                      index === currentIndex ? "active" : ""
-                    }`}
-                    onClick={() => setCurrentIndex(index)}
+                <img
+                  src={images[currentIndex]}
+                  alt={product.title}
+                  className="main-image"
+                />
+
+                <div className="thumb-wrapper">
+                  {/* Left Arrow */}
+                  <button
+                    className="thumb-arrow"
+                    onClick={() =>
+                      setCurrentIndex(
+                        currentIndex === 0
+                          ? images.length - 1
+                          : currentIndex - 1,
+                      )
+                    }
                   >
-                    <img src={img} alt="" />
+                    ‹
+                  </button>
+
+                  {/* Thumbnails */}
+                  <div className="thumbnail-row">
+                    {images.map((img, index) => (
+                      <div
+                        key={index}
+                        className={`thumb-box ${
+                          index === currentIndex ? "active" : ""
+                        }`}
+                        onClick={() => setCurrentIndex(index)}
+                      >
+                        <img src={img} alt="" />
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
 
-              <button
-                className="thumb-arrow"
-                onClick={() =>
-                  setCurrentIndex(
-                    currentIndex === images.length - 1 ? 0 : currentIndex + 1,
-                  )
-                }
-              >
-                ›
-              </button>
-            </div>
-          </div>
-
-          
-        </div>
-
-        {/* RIGHT SECTION */}
-        <div className="detail-right">
-          {/* PRODUCT INFO CARD */}
-          <div className="info-card">
-            <h4 className="brand">{product.brand}</h4>
-            <h1 className="title">{product.title}</h1>
-
-            <h2 className="price">MRP ₹{product.price}</h2>
-            <p className="tax-text">Inclusive of all taxes</p>
-
-            <div className="buyers">1,661 People already bought this</div>
-          </div>
-
-          {/* OFFER CARD */}
-          <div className="offer-card-main">
-            <h3>Offers & Coupons</h3>
-
-            <div className="offer-inner">
-              <strong>Flat 65% Off on Selected Sunglasses</strong>
-              <p>Offer applicable on selected products only</p>
-
-              <div className="offer-footer">
-                <span className="coupon-code">FLAT65</span>
-                <span className="copy-code">Copy Code</span>
+                  {/* Right Arrow */}
+                  <button
+                    className="thumb-arrow"
+                    onClick={() =>
+                      setCurrentIndex(
+                        currentIndex === images.length - 1
+                          ? 0
+                          : currentIndex + 1,
+                      )
+                    }
+                  >
+                    ›
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+
+          {/* ================= RIGHT SECTION ================= */}
+          <Col lg={7} md={12}>
+            <div className="detail-right">
+              <SectionWrapper>
+                <ProductHeader
+                  brand={product.brand}
+                  title={product.title}
+                  price={product.price}
+                  peopleBought={product.peopleBought}
+                />
+              </SectionWrapper>
+
+              <SectionWrapper title="Offers & Coupons">
+                <OfferSection offers={product.offers} />
+              </SectionWrapper>
+
+              <SectionWrapper title="Check Delivery Date">
+                <DeliverySection />
+              </SectionWrapper>
+
+              <SectionWrapper title="Frame Dimensions">
+                <FrameDimensions dimensions={product.frameDimensions} />
+              </SectionWrapper>
+
+              <SectionWrapper>
+                <TrustBadges badges={product.trustBadges} />
+              </SectionWrapper>
+
+              <SectionWrapper title="Description">
+                <ProductDescription text={product.description.text} />
+              </SectionWrapper>
+
+              <SectionWrapper title="Product Information">
+                <ProductInformation info={product.productInformation} />
+              </SectionWrapper>
+
+              <SectionWrapper>
+                <RelatedLinks links={product.relatedLinks} />
+              </SectionWrapper>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
