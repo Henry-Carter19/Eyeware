@@ -1,7 +1,7 @@
 .description-wrapper {
-  font-size: 12px;
+  font-size: var(--font-xs);
   line-height: 1.6;
-  color: #444;
+  color: var(--dark-gray);
 }
 
 .description-text {
@@ -9,10 +9,10 @@
 }
 
 .toggle-btn {
-  color: #0077cc;
+  color: var(--blue-primary);
   cursor: pointer;
   font-weight: 500;
-  margin-left: 4px;
+  margin-left: var(--space-xs);
 }
 
 .toggle-btn:hover {
