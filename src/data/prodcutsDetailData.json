@@ -1,0 +1,107 @@
+{
+    "productsDetail": [
+        {
+            "id": 1,
+            "layoutType": "detail",
+            "brand": "Fastrack",
+            "title": "Grey Wayfarer Sunglasses for Men",
+            "price": 1600,
+            "currency": "INR",
+            "taxIncluded": true,
+            "peopleBought": 1661,
+            "size": "Large",
+            "rating": 5.0,
+            "ratingCount": 1,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_2_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_5_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_6_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_4_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_lar_10.jpg"
+            ],
+            "isNew": true,
+            "offers": [
+                {
+                    "id": 1,
+                    "title": "Flat 65% Off on Selected Sunglasses",
+                    "description": "Offer Applicable on Selected Tees and Fastrack Sunglasses",
+                    "code": "FLAT65",
+                    "discountType": "percentage",
+                    "discountValue": 65
+                }
+            ],
+            "delivery": {
+                "isAvailable": true,
+                "estimatedDays": 5,
+                "codAvailable": true
+            },
+            "frameDimensions": {
+                "lensWidth": 56,
+                "bridgeWidth": 19,
+                "templeLength": 150,
+                "lensHeight": 45,
+                "unit": "mm",
+                "images": [
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/bridge.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/temple.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg"
+                ]
+            },
+            "trustBadges": [
+                {
+                    "id": 1,
+                    "title": "7 days\nreturns",
+                    "icon": "/7_icon.svg",
+                    "bgColor": "#dff4e6"
+                },
+                {
+                    "id": 2,
+                    "title": "TATA\nTrust",
+                    "icon": "/tata-icon.svg",
+                    "bgColor": "#dff3fb"
+                },
+                {
+                    "id": 3,
+                    "title": "6 months\nwarranty",
+                    "icon": "https://api.titaneyeplus.com/media/theme/product-details/trust-badge/warranty.svg",
+                    "bgColor": "#fff4dc"
+                }
+            ],
+            "description": {
+                "text": "Black Square Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style.",
+                "sku": "P449BK3TIEV"
+            },
+            "productInformation": {
+                "sku": "P449BK3TIEV",
+                "brand": "Fastrack",
+                "gender": "Men",
+                "lensColor": "Grey",
+                "frameShape": "Wayfarer",
+                "frameMaterial": "Plastic",
+                "lensType": "100% UV Protected",
+                "rimDetails": "Rimmed",
+                "warranty": "6 months",
+                "countryOfOrigin": "India"
+            },
+            "relatedLinks": [
+                {
+                    "id": 1,
+                    "label": "Try on all wayfarer frames",
+                    "type": "wayfarer"
+                },
+                {
+                    "id": 2,
+                    "label": "Try on all fastrack sunglasses",
+                    "type": "brand"
+                },
+                {
+                    "id": 3,
+                    "label": "Explore all sunglasses",
+                    "type": "all"
+                }
+            ]
+        }
+    ]
+}
