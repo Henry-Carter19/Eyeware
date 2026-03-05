@@ -1,0 +1,127 @@
+import React, { useState } from "react";
+import "./TrendingCarousel.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { TrendingSection } from "../../../types/home.types";
+
+interface Props {
+  trendingSection: TrendingSection;
+}
+
+const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
+
+  const [activeFilter, setActiveFilter] = useState(
+    trendingSection.filters[0].key
+  );
+
+  const cards = trendingSection.cards[activeFilter] || [];
+
+  return (
+    <section className="TrendingCarousel-section">
+
+      <div className="TrendingCarousel-header">
+
+        <div className="subtitle">
+          {trendingSection.subtitle}
+        </div>
+
+        <h2 className="title">
+          {trendingSection.title}
+          <span>{trendingSection.highlight} </span>
+          ❤️
+        </h2>
+
+        <div className="filters">
+
+          {trendingSection.filters.map((filter) => (
+            <button
+              key={filter.key}
+              className={`filter-btn ${
+                activeFilter === filter.key ? "active" : ""
+              }`}
+              onClick={() => setActiveFilter(filter.key)}
+            >
+              {filter.label} ↗
+            </button>
+          ))}
+
+        </div>
+
+      </div>
+
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        slidesPerView={4}
+        spaceBetween={28}
+        loop
+        autoplay={{ delay: 1500, disableOnInteraction: false }}
+        navigation={{
+          nextEl: ".trend-next",
+          prevEl: ".trend-prev"
+        }}
+        pagination={{
+          el: ".trend-pagination",
+          clickable: true
+        }}
+      >
+
+        {cards.map((item) => (
+          <SwiperSlide key={item.id}>
+
+            <div className="trend-card">
+
+              <img src={item.image} className="trend-img" />
+
+              {item.rating && (
+                <div className="trend-rating">
+                  {item.rating}
+                  <Star className="star"/>
+                  <span className="divider"></span>
+                  {item.ratingCount}
+                </div>
+              )}
+
+              <div className="trend-info">
+
+                <div className="brand">{item.brand}</div>
+
+                <div className="name">{item.name}</div>
+
+                {item.size && (
+                  <div className="size">Size: {item.size}</div>
+                )}
+
+                <div className="price">₹{item.price}</div>
+
+                <div className="tax">Inclusive of all taxes</div>
+
+              </div>
+
+            </div>
+
+          </SwiperSlide>
+        ))}
+
+      </Swiper>
+
+      <div className="trend-prev">
+        <ChevronLeft />
+      </div>
+
+      <div className="trend-next">
+        <ChevronRight />
+      </div>
+
+      <div className="trend-pagination"></div>
+
+    </section>
+  );
+};
+
+export default TrendingCarousel;

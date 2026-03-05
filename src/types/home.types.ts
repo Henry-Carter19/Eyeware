@@ -47,6 +47,31 @@ export interface CurationSection {
 }
 
 
+
+
+
+
+export interface TestimonialCard {
+  id: number;
+  name: string;
+  date: string;
+  rating: number;
+  review: string;
+}
+
+export interface TestimonialsSection {
+  title: string;
+  highlight: string;
+  cards: TestimonialCard[];
+}
+
+
+
+
+
+
+
+
 export interface BestsellerCard {
   id: number;
   badge?: "New" | "Bestseller";
@@ -67,6 +92,31 @@ export interface BestsellerSection {
   cards: BestsellerCard[];
 }
 
+
+export interface TrendingCard {
+  id: number;
+  image: string;
+  brand: string;
+  name: string;
+  size?: string;
+  price: number;
+  rating?: number;
+  ratingCount?: number;
+}
+
+export interface TrendingFilter {
+  label: string;
+  key: string;
+}
+
+export interface TrendingSection {
+  subtitle: string;
+  title: string;
+  highlight: string;
+  filters: TrendingFilter[];
+  cards: Record<string, TrendingCard[]>;
+}
+
 export interface HomePageData {
   heroBanners: HeroBanner[];
   brands: Brand[];
@@ -74,5 +124,7 @@ export interface HomePageData {
   exclusiveDealsSection: CurationSection;
   hypeCards: HypeCard[];
   bestsellersSection: BestsellerSection;
+  trendingSection: TrendingSection;
+  testimonialsSection: TestimonialsSection;
   faq: FaqItem[];
 }
