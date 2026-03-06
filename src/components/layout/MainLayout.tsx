@@ -5,13 +5,13 @@ import Footer from "./Footer/Footer";
 const MainLayout = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
 
       <main style={{ minHeight: "80vh" }}>
         <Outlet />
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
