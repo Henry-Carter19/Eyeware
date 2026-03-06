@@ -10,6 +10,7 @@ export interface Brand {
   modelImage: string;
   brandLogo: string;
   category: "Premium" | "Essentials";
+  route: string;
 }
 
 export interface FaqItem {
