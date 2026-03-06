@@ -46,17 +46,32 @@ const BlogCarousel: React.FC<Props> = ({ blogSection }) => {
           modules={[Navigation]}
           slidesPerView={6}
           spaceBetween={18}
+          centeredSlides={true}
           navigation={{
             nextEl: ".blog-next",
             prevEl: ".blog-prev",
           }}
           breakpoints={{
-            0: { slidesPerView: 1.2 },
-            480: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 },
-            1280: { slidesPerView: 5 },
-            1440: { slidesPerView: 6 },
+            0: {
+              slidesPerView: 1.2,
+              centeredSlides: true,
+            },
+            480: {
+              slidesPerView: 2,
+              centeredSlides: false,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+            1280: {
+              slidesPerView: 5,
+            },
+            1440: {
+              slidesPerView: 6,
+            },
           }}
         >
           {cards.map((blog) => (
