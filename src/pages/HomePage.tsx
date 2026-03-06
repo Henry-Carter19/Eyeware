@@ -38,7 +38,7 @@ const HomePage = () => {
       <ShopCollections shopCollection={data.collections} />
       <FaqSection faqData={data.faq} />
       <GoToTop />
-       <ProductCarousel
+      {/* <ProductCarousel
         title={data.bestsellersSection.title}
         highlight={data.bestsellersSection.highlight}
         cards={data.bestsellersSection.cards}
@@ -49,7 +49,7 @@ const HomePage = () => {
         highlight="Loved"
         filters={data.trendingSection.filters}
         filteredCards={data.trendingSection.cards}
-      />
+      /> */}
     </div>
   );
 };

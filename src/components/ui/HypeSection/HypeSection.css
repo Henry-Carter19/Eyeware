@@ -11,7 +11,7 @@
 .hype-title {
   font-size: 38px;
   font-weight: 500;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   color: #1f2a37;
 }
 
@@ -19,16 +19,6 @@
   font-style: italic;
   font-weight: 600;
   margin-left: 6px;
-}
-
-/* =============================== */
-/* Grid */
-/* =============================== */
-
-.hype-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
 }
 
 /* =============================== */
@@ -40,17 +30,18 @@
   border-radius: 22px;
   overflow: hidden;
   cursor: pointer;
-  transition: 
-    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 0.4s cubic-bezier(0.4,0,0.2,1),
+    box-shadow 0.4s cubic-bezier(0.4,0,0.2,1);
 }
 
 .hype-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
 }
 
-/* Background Image */
+/* Background */
+
 .hype-bg {
   width: 100%;
   height: 420px;
@@ -71,7 +62,6 @@
   gap: 10px;
 }
 
-/* Circle Logo */
 .hype-logo-wrapper {
   width: 42px;
   height: 42px;
@@ -90,10 +80,50 @@
   border-radius: 50%;
 }
 
-/* Username */
 .hype-username {
   color: white;
   font-size: 14px;
   font-weight: 500;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* =============================== */
+/* Tablet */
+/* =============================== */
+
+@media (max-width: 1024px) {
+
+  .hype-section {
+    padding: 40px 40px;
+  }
+
+  .hype-title {
+    font-size: 32px;
+  }
+
+  .hype-bg {
+    height: 360px;
+  }
+
+}
+
+/* =============================== */
+/* Mobile */
+/* =============================== */
+
+@media (max-width: 600px) {
+
+  .hype-section {
+    padding: 30px 20px;
+  }
+
+  .hype-title {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+
+  .hype-bg {
+    height: 320px;
+  }
+
 }

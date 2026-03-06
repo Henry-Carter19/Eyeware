@@ -59,7 +59,7 @@ export const cards: CardItem[] = [
     id: "c7",
     title: "Model 7",
     subtitle: "Beautiful Model",
-    image: "/images/model5.png",
+    image: "/images/feature6.webp",
     bg: "#6366f1",
   },
 ];

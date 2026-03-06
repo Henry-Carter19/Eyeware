@@ -259,67 +259,42 @@
 /* ============================= */
 
 @media (max-width: 768px) {
-  .curation-section {
-    padding: 40px 18px;
+  .curation-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
 
   .curation-title {
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-size: 22px;
+    margin-bottom: 0;
   }
 
-  .curation-card {
-    height: 300px;
-    max-width: 100%;
+  .view-all-btn {
+    position: static;
+    font-size: 12px;
+    padding: 6px 14px;
   }
 
-  .curation-btn {
-    font-size: 11px;
-    padding: 8px 18px;
-  }
-
-  .arrow-btn {
-    width: 46px;
-    height: 46px;
-    font-size: 18px;
-  }
-
-  .custom-prev,
-  .custom-next {
-    width: 44px;
-    height: 44px;
-    font-size: 18px;
-  }
-
-  .edge-left,
-  .edge-right {
-    width: 80px;
+  .curation-swiper-wrapper {
+    padding: 0 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .curation-section {
-    padding: 30px 14px;
-  }
-
-  .curation-title {
-    font-size: 20px;
-  }
-
-  .curation-card {
-    height: 260px;
-  }
-
-  .view-all-btn {
-    position: relative;
-    margin-top: 10px;
-    font-size: 12px;
-    padding: 8px 16px;
-  }
-
   .custom-prev,
   .custom-next {
-    display: none;
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .custom-prev {
+    left: 5px;
+  }
+
+  .custom-next {
+    right: 5px;
   }
 }
-

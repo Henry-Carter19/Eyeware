@@ -45,15 +45,31 @@ const FindStoreSection: React.FC = () => {
         </div>
 
         <div className="store-rating">
-          <div className="laurel left">❮</div>
+
+          <img
+            src="https://api.titaneyeplus.com/media/wysiwyg/home-page/store/left-leaf.png"
+            alt="laurel left"
+            className="laurel left"
+          />
 
           <div className="rating-content">
-            <div className="rating-score">4.9 <span>/5</span></div>
+            <div className="rating-score">
+              4.9 <span>/5</span>
+            </div>
+
             <div className="stars">★★★★★</div>
-            <div className="rating-text">8Lakh + Ratings</div>
+
+            <div className="rating-text">
+              8Lakh + Ratings
+            </div>
           </div>
 
-          <div className="laurel right">❯</div>
+          <img
+            src="https://api.titaneyeplus.com/media/wysiwyg/home-page/store/right-leaf.png"
+            alt="laurel right"
+            className="laurel right"
+          />
+
         </div>
 
       </div>
