@@ -232,3 +232,44 @@
     padding: 14px;
   }
 }
+
+.store-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: white;
+}
+
+.rating-content {
+  text-align: center;
+}
+
+.rating-score {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.rating-score span {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.rating-text {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.laurel {
+  height: 60px;
+}
+
+/* .laurel.left {
+  transform: scaleX(-1);
+} */
