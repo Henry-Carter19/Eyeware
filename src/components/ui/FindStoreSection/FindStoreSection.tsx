@@ -1,8 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./FindStoreSection.css";
 import { Store, Eye, UserRound, Glasses } from "lucide-react";
 
 const FindStoreSection: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleExploreStore = () => {
+    navigate("/products");
+  };
+
   return (
     <section className="store-section">
 
@@ -51,7 +58,9 @@ const FindStoreSection: React.FC = () => {
 
       </div>
 
-      <button className="find-store-btn">Explore Store</button>
+      <button className="find-store-btn" onClick={handleExploreStore}>
+        Explore Store
+      </button>
 
     </section>
   );

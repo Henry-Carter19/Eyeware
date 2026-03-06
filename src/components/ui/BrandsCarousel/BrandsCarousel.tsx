@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Brand } from "../../../types/home.types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
+import { useNavigate } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -14,6 +14,7 @@ interface Props {
 }
 
 const BrandsCarousel: React.FC<Props> = ({ brands }) => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<"All" | "Premium" | "Essentials">(
     "All",
   );
@@ -94,7 +95,11 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
         >
           {filtered.map((brand) => (
             <SwiperSlide key={brand.id}>
-              <div className="brand-frame">
+              <div
+                className="brand-frame"
+                onClick={() => navigate(brand.route)}
+                style={{ cursor: "pointer" }}
+              >
                 <div className="brand-card">
                   <img
                     src={brand.modelImage}
