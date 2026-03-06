@@ -40,32 +40,41 @@ const NewCurations: React.FC<Props> = ({ sectionConfig }) => {
       <div className="curation-swiper-wrapper">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
-          slidesPerView={2.1}
-          spaceBetween={40}
-          loop
+          spaceBetween={24}
           centeredSlides
+          loop
           speed={1000}
           autoplay={{
             delay: 2500,
-            disableOnInteraction: false
+            disableOnInteraction: false,
           }}
           navigation={{
             nextEl: ".custom-next",
-            prevEl: ".custom-prev"
+            prevEl: ".custom-prev",
           }}
           pagination={{
             el: ".custom-pagination",
-            clickable: true
+            clickable: true,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1.2,
+            },
+            480: {
+              slidesPerView: 1.4,
+            },
+            768: {
+              slidesPerView: 1.8,
+            },
+            1024: {
+              slidesPerView: 2.1,
+            },
           }}
         >
           {sectionConfig.cards.map((item) => (
             <SwiperSlide key={item.id}>
               <div className="curation-card">
-                <img
-                  src={item.image}
-                  alt="img"
-                  className="curation-image"
-                />
+                <img src={item.image} alt="img" className="curation-image" />
 
                 {sectionConfig.showArrowButton ? (
                   <button
