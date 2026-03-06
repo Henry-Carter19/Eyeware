@@ -3,15 +3,14 @@
 /* ================================= */
 
 .detail-page {
-  background: #f3f4f6;
-  padding: 30px 0;
+  background: var(--off-white);
+  padding: var(--space-xxl) 0;
 }
 
 /* ================================= */
-/* OPTIONAL: WIDER CONTAINER (SAFE WAY) */
+/* OPTIONAL: WIDER CONTAINER */
 /* ================================= */
 
-/* Instead of overriding global .container */
 .detail-page .container {
   max-width: 1200px;
 }
@@ -21,8 +20,8 @@
 /* ================================= */
 
 .breadcrumb {
-  font-size: 14px;
-  color: #555;
+  font-size: var(--font-sm);
+  color: var(--dark-gray);
 }
 
 /* ================================= */
@@ -31,7 +30,7 @@
 
 .detail-left {
   position: sticky;
-  top: 100px; /* adjust based on header height */
+  top: 100px;
 }
 
 /* ================================= */
@@ -39,9 +38,9 @@
 /* ================================= */
 
 .image-card {
-  background: #fff;
+  background: var(--white);
   border-radius: 16px;
-  padding: 30px 24px 24px;
+  padding: var(--space-xxl) var(--space-xl) var(--space-xl);
   position: relative;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
@@ -64,19 +63,19 @@
 
 .try-btn {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  background: #e6f3f6;
+  top: var(--space-lg);
+  left: var(--space-lg);
+  background: var(--very-light-teal);
   border: none;
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: var(--font-xs);
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: var(--transition-fast);
 }
 
 .try-btn:hover {
-  background: #d4eef3;
+  background: var(--very-light-teal);
 }
 
 /* ================================= */
@@ -85,16 +84,16 @@
 
 .icon-group {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: var(--space-lg);
+  right: var(--space-lg);
   display: flex;
-  gap: 10px;
-  font-size: 18px;
+  gap: var(--space-sm);
+  font-size: var(--font-lg);
   cursor: pointer;
 }
 
 .icon-group span:hover {
-  color: #00a3c8;
+  color: var(--teal);
 }
 
 /* ================================= */
@@ -102,11 +101,11 @@
 /* ================================= */
 
 .thumb-wrapper {
-  margin-top: 20px;
+  margin-top: var(--space-lg);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: var(--space-md);
   width: 100%;
 }
 
@@ -117,8 +116,8 @@
   border: none;
   font-size: 26px;
   cursor: pointer;
-  color: #00a3c8;
-  transition: 0.2s ease;
+  color: var(--teal);
+  transition: var(--transition-fast);
 }
 
 .thumb-arrow:hover {
@@ -129,7 +128,7 @@
 
 .thumbnail-row {
   display: flex;
-  gap: 15px;
+  gap: var(--space-md);
   align-items: center;
   overflow: hidden;
 }
@@ -139,14 +138,14 @@
 .thumb-box {
   width: 65px;
   height: 65px;
-  background: #ffffff;
+  background: var(--white);
   border-radius: 14px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--light-gray);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: var(--transition-fast);
 }
 
 .thumb-box:hover {
@@ -162,8 +161,8 @@
 /* ACTIVE THUMB */
 
 .thumb-box.active {
-  border: 2px solid #00a3c8;
-  background: #eef7f7;
+  border: 2px solid var(--teal);
+  background: var(--very-light-teal);
 }
 
 /* ================================= */
@@ -173,11 +172,24 @@
 .detail-right {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--space-lg);
 }
 
 .detail-right .section-wrapper {
   width: 100%;
+}
+
+/* ================================= */
+/* STICKY BUTTON CONTAINER */
+/* ================================= */
+
+.sticky-btn-container {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+  background: var(--off-white);
+  padding: var(--space-md);
+  border-radius: 10px;
 }
 
 /* ================================= */
@@ -188,7 +200,11 @@
   .detail-left {
     position: relative;
     top: 0;
-    margin-bottom: 30px;
+    margin-bottom: var(--space-xl);
+  }
+
+  .main-image {
+    max-width: 75%;
   }
 }
 
@@ -198,12 +214,29 @@
   }
 
   .thumb-box {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
   }
 
   .thumb-wrapper {
-    margin-top: 20px;
-    gap: 12px;
+    gap: var(--space-sm);
+  }
+
+  .image-card {
+    padding: var(--space-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-page {
+    padding: var(--space-lg) 0;
+  }
+
+  .sticky-btn-container {
+    flex-direction: column;
+  }
+
+  .thumb-wrapper {
+    flex-wrap: wrap;
   }
 }

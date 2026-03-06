@@ -14,8 +14,9 @@ interface Props {
 }
 
 const BrandsCarousel: React.FC<Props> = ({ brands }) => {
-  const [activeTab, setActiveTab] =
-    useState<"All" | "Premium" | "Essentials">("All");
+  const [activeTab, setActiveTab] = useState<"All" | "Premium" | "Essentials">(
+    "All",
+  );
 
   const tabs = ["All", "Premium", "Essentials"] as const;
 
@@ -60,8 +61,9 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={4}
+          centeredSlides={true}
           spaceBetween={40}
-          loop
+          loop={true}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -76,9 +78,18 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
             type: "fraction",
           }}
           breakpoints={{
-            0: { slidesPerView: 1.2 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
+            0: {
+              slidesPerView: 1.3,
+              centeredSlides: true,
+            },
+            640: {
+              slidesPerView: 2,
+              centeredSlides: true,
+            },
+            1024: {
+              slidesPerView: 4,
+              centeredSlides: false,
+            },
           }}
         >
           {filtered.map((brand) => (
@@ -107,13 +118,11 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
           ))}
         </Swiper>
 
-        <button className="brand-arrow brand-prev">
-          &#10094;
-        </button>
-        <button className="brand-arrow brand-next">
-          &#10095;
-        </button>
+        {/* Navigation */}
+        <button className="brand-arrow brand-prev">&#10094;</button>
+        <button className="brand-arrow brand-next">&#10095;</button>
 
+        {/* Pagination */}
         <div className="brand-pagination" />
       </div>
     </section>

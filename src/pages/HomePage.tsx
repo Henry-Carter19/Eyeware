@@ -9,6 +9,10 @@ import NewCurations from "../components/ui/NewCurations/NewCurations";
 import FindStoreSection from "../components/ui/FindStoreSection/FindStoreSection";
 import BestsellersCarousel from "../components/ui/BestsellersCarousel/BestsellersCarousel";
 import FeaturedCollectionsOnlyFocus from "../components/ui/FeautredCollection/FeautredCollection";
+import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel";
+import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
+import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
+
 import ShopCollections from "../components/ui/ShopCollections/ShopCollections";
 
 const HomePage = () => {
@@ -17,16 +21,31 @@ const HomePage = () => {
 
   return (
     <div>
-      <FeaturedCollectionsOnlyFocus/>
       <HeroCarousel banners={data.heroBanners} />
       <BrandsCarousel brands={data.brands} />
       <NewCurations sectionConfig={data.newCurationsSection} />
       <FindStoreSection />
       <HypeSection hypeData={data.hypeCards} />
       <NewCurations sectionConfig={data.exclusiveDealsSection} />
+      <FeaturedCollectionsOnlyFocus />
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
+      <TrendingCarousel trendingSection={data.trendingSection} />
+      <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
       <ShopCollections />
       <FaqSection faqData={data.faq} />
+
+      <ProductCarousel
+        title={data.bestsellersSection.title}
+        highlight={data.bestsellersSection.highlight}
+        cards={data.bestsellersSection.cards}
+      />
+      <ProductCarousel
+        subtitle="Trending Searches"
+        title="Most"
+        highlight="Loved"
+        filters={data.trendingSection.filters}
+        filteredCards={data.trendingSection.cards}
+      />
     </div>
   );
 };
