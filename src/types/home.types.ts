@@ -118,6 +118,13 @@ export interface TrendingSection {
   cards: Record<string, TrendingCard[]>;
 }
 
+export interface CollectionItem {
+  id: number
+  title: string
+  image: string
+  url: string
+}
+
 export interface HomePageData {
   heroBanners: HeroBanner[];
   brands: Brand[];
@@ -127,5 +134,6 @@ export interface HomePageData {
   bestsellersSection: BestsellerSection;
   trendingSection: TrendingSection;
   testimonialsSection: TestimonialsSection;
+  collections: CollectionItem[];
   faq: FaqItem[];
 }

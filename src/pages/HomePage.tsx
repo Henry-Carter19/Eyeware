@@ -14,10 +14,10 @@ import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/Testimon
 import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
 import GoToTop from "../components/ui/GoToTop/GoToTop";
 
+import ShopCollections from "../components/ui/ShopCollections/ShopCollections";
 
 const HomePage = () => {
   const data = homeData as HomePageData;
-
 
   return (
     <div>
@@ -31,6 +31,7 @@ const HomePage = () => {
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <TrendingCarousel trendingSection={data.trendingSection} />
       <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
+      <ShopCollections shopCollection={data.collections} />
       <FaqSection faqData={data.faq} />
       <GoToTop />
       {/* <ProductCarousel
@@ -49,4 +50,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;  
+export default HomePage; 
