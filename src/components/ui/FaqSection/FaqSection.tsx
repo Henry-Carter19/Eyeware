@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import "./FaqSection.css";
 import { FaqItem } from "../../../types/home.types";
-
+import { ChevronDown } from "lucide-react";
 
 interface Props {
   faqData: FaqItem[];
 }
 
 const FaqSection: React.FC<Props> = ({ faqData }) => {
-  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggle = (index: number) => {
-    setActiveIndex(activeIndex === index ? -1 : index);
+    setActiveIndex(prev => (prev === index ? null : index));
   };
-
-  const faqs = faqData;
 
   return (
     <section className="faq-section">
@@ -23,21 +21,32 @@ const FaqSection: React.FC<Props> = ({ faqData }) => {
       </h2>
 
       <div className="faq-container">
-        {faqs.map((item, index) => (
-          <div
-            key={item.id}
-            className={`faq-item ${activeIndex === index ? "active" : ""}`}
-          >
-            <div className="faq-header" onClick={() => toggle(index)}>
-              <h4>{item.title}</h4>
-              <div className="faq-icon" />
-            </div>
+        {faqData?.map((item, index) => {
+          const isActive = activeIndex === index;
 
-            <div className="faq-content">
-              <p>{item.content}</p>
+          return (
+            <div
+              key={item.id}
+              className={`faq-item ${isActive ? "active" : ""}`}
+            >
+              <div
+                className="faq-header"
+                onClick={() => toggle(index)}
+                aria-expanded={isActive}
+              >
+                <h4>{item.title}</h4>
+
+                <div className="faq-icon-box">
+                  <ChevronDown size={16} />
+                </div>
+              </div>
+
+              <div className="faq-content">
+                <p>{item.content}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

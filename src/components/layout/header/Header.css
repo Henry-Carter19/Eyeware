@@ -1,6 +1,5 @@
 /* SEARCH BOX */
 
-
 .search-box {
   width: 350px;
   height: 30px;
@@ -32,7 +31,6 @@
 /* MOBILE TOP BAR */
 
 @media (max-width: 768px) {
-
   .search-box {
     display: none;
   }
@@ -44,19 +42,16 @@
   .top-bar {
     font-size: 12px;
   }
-
 }
 /* MEGA MENU IMAGE RESPONSIVE */
 
 @media (max-width: 768px) {
-
   .mega-menu img {
     max-width: 150px;
     height: auto;
     display: block;
     margin: 10px auto;
   }
-
 }
 
 /* ICON SIZE ADJUST */
@@ -101,8 +96,7 @@
 }
 
 .dropdown-item:hover {
-    background-color: white!important;
-    
+  background-color: white !important;
 }
 /* HOVER EFFECT */
 
@@ -127,4 +121,3 @@
   display: block;
   margin-bottom: 6px;
 }
-
