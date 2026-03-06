@@ -73,9 +73,31 @@
 
 .hover-dropdown:hover .dropdown-menu {
   display: block;
-  margin-top: 7px;
-  /* max-width: 100%; */
-  
+}
+
+.dropdown-menu {
+  margin-top: 0 !important;
+  top: 100%;
+}
+
+/* HOVER ONLY FOR DESKTOP */
+
+@media (min-width: 992px) {
+
+  .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+  }
+
+  .hover-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
 }
 
 /* DROPDOWN LINK STYLE */
