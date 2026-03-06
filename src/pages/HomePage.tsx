@@ -13,6 +13,7 @@ import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel
 import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
 import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
 
+
 const HomePage = () => {
   const data = homeData as HomePageData;
 
@@ -30,7 +31,8 @@ const HomePage = () => {
       <TrendingCarousel trendingSection={data.trendingSection} />
       <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
       <FaqSection faqData={data.faq} />
-      {/* <ProductCarousel
+
+      <ProductCarousel
         title={data.bestsellersSection.title}
         highlight={data.bestsellersSection.highlight}
         cards={data.bestsellersSection.cards}
@@ -41,7 +43,7 @@ const HomePage = () => {
         highlight="Loved"
         filters={data.trendingSection.filters}
         filteredCards={data.trendingSection.cards}
-      /> */}
+      />
     </div>
   );
 };
