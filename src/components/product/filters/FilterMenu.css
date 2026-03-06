@@ -26,11 +26,6 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: var(--space-lg);
-  position: sticky;
-  top: 0;
-  background: var(--white);
-  padding-bottom: var(--space-md);
-  z-index: 5;
 }
 
 .filter-header h3 {
@@ -225,5 +220,62 @@
 @media (max-width: 768px) {
   .shape-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =============================== */
+/* TABLET */
+/* =============================== */
+
+@media (max-width: 1024px) {
+  .filter-menu {
+    width: 260px;
+    height: auto;
+    max-height: 80vh;
+  }
+}
+
+/* =============================== */
+/* MOBILE */
+/* =============================== */
+
+@media (max-width: 768px) {
+  .filter-menu {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    margin-left: 0;
+    border-radius: 0;
+  }
+
+  .filter-header h3 {
+    font-size: var(--font-lg);
+  }
+
+  .filter-title {
+    font-size: var(--font-sm);
+  }
+
+  .checkbox-option,
+  .color-option {
+    font-size: var(--font-sm);
+  }
+
+  .shape-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =============================== */
+/* SMALL MOBILE */
+/* =============================== */
+
+@media (max-width: 480px) {
+  .shape-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filter-menu {
+    padding: var(--space-md);
   }
 }

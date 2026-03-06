@@ -70,3 +70,50 @@
   cursor: pointer;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* ============================= */
+/* Tablet */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .selection-card {
+    margin-left: 0;
+  }
+}
+
+/* ============================= */
+/* Mobile */
+/* ============================= */
+
+@media (max-width: 600px) {
+  .selection-card {
+    padding: var(--space-md);
+  }
+
+  .selection-header h3 {
+    font-size: var(--font-lg);
+  }
+
+  .selection-chip {
+    font-size: var(--font-sm);
+    padding: 6px 12px;
+  }
+
+  .apply-btn {
+    width: 100%;
+  }
+
+  .selection-footer {
+    justify-content: stretch;
+  }
+}
+
+/* ============================= */
+/* Small Mobile */
+/* ============================= */
+
+@media (max-width: 480px) {
+  .selection-options {
+    gap: var(--space-sm);
+  }
+}

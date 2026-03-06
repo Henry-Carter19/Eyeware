@@ -12,6 +12,9 @@ import FeaturedCollectionsOnlyFocus from "../components/ui/FeautredCollection/Fe
 import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel";
 import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
 import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
+import GoToTop from "../components/ui/GoToTop/GoToTop";
+
+import ShopCollections from "../components/ui/ShopCollections/ShopCollections";
 
 const HomePage = () => {
   const data = homeData as HomePageData;
@@ -28,8 +31,10 @@ const HomePage = () => {
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <TrendingCarousel trendingSection={data.trendingSection} />
       <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
+      <ShopCollections shopCollection={data.collections} />
       <FaqSection faqData={data.faq} />
-      <ProductCarousel
+      <GoToTop />
+       <ProductCarousel
         title={data.bestsellersSection.title}
         highlight={data.bestsellersSection.highlight}
         cards={data.bestsellersSection.cards}
@@ -45,4 +50,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePage; 

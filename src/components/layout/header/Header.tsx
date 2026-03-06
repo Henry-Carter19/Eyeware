@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import "./Header.css";
 
+
 const Header: React.FC = () => {
   return (
     <>
@@ -168,67 +169,70 @@ const Header: React.FC = () => {
               </div>
               </li>
 
-              <li className="nav-item  dropdown hover-dropdown">
-                <span className="nav-link">Sunglasses ▾</span>
-                <div className="dropdown-menu mega-menu p-4">
+            <li className="nav-item dropdown hover-dropdown">
+  <span className="nav-link">Sunglasses ▾</span>
 
-                <div className="row">
+  <div className="dropdown-menu mega-menu mega-menu-full p-4">
 
-                  <div className="col-12 col-md-3">
-                    <h6>GENDER</h6>
-                    <a href="#">All</a>
-                    <a href="#">Men</a>
-                    <a href="#">Women</a>
-                    <a href="#">Kids</a>
+    <div className="container-fluid">
+      <div className="row g-3">
 
-                    <h6 className="mt-3">STYLE</h6>
-                    <a href="#">Mirrored</a>
-                    <a href="#">Tinted</a>
-                    <a href="#">UV Protection</a>
-                    <a href="#">Polarized</a>
+        <div className="col-12 col-md-3">
+          <h6>GENDER</h6>
+          <a href="#">All</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
 
-                    <h6 className="mt-3">USAGE</h6>
-                    <a href="#">Regular</a>
-                    <a href="#">Power</a>
-                  </div>
+          <h6 className="mt-3">STYLE</h6>
+          <a href="#">Mirrored</a>
+          <a href="#">Tinted</a>
+          <a href="#">UV Protection</a>
+          <a href="#">Polarized</a>
 
-                  <div className="col-12 col-md-3">
-                    <h6>COLLECTION</h6>
-                    <a href="#">Smart Sunglasses</a>
-                    <a href="#">Donald</a>
-                    <a href="#">Glow Up</a>
-                    <a href="#">Whiplash</a>
-                    <a href="#">Vivid Geometry</a>
+          <h6 className="mt-3">USAGE</h6>
+          <a href="#">Regular</a>
+          <a href="#">Power</a>
+        </div>
 
-                    <h6 className="mt-3">SHAPE</h6>
-                    <a href="#">Aviator</a>
-                    <a href="#">Wayfarer</a>
-                    <a href="#">Wraparound</a>
-                    <a href="#">Rectangle</a>
-                    <a href="#">Round</a>
-                  </div>
+        <div className="col-12 col-md-3">
+          <h6>COLLECTION</h6>
+          <a href="#">Smart Sunglasses</a>
+          <a href="#">Donald</a>
+          <a href="#">Glow Up</a>
+          <a href="#">Whiplash</a>
+          <a href="#">Vivid Geometry</a>
 
-                  <div className="col-12 col-md-3">
-                    <h6>BRANDS</h6>
-                    <a href="#">Titan</a>
-                    <a href="#">Fastrack</a>
-                    <a href="#">Rayban</a>
-                    <a href="#">Oakley</a>
-                    <a href="#">Burberry</a>
-                  </div>
+          <h6 className="mt-3">SHAPE</h6>
+          <a href="#">Aviator</a>
+          <a href="#">Wayfarer</a>
+          <a href="#">Wraparound</a>
+          <a href="#">Rectangle</a>
+          <a href="#">Round</a>
+        </div>
 
-                  <div className="col-12 col-md-3 text-center">
-                    <img
-                      src="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
-                      className="img-fluid rounded"
-                      alt="Sunglasses"
-                    />
-                  </div>
+        <div className="col-12 col-md-3">
+          <h6>BRANDS</h6>
+          <a href="#">Titan</a>
+          <a href="#">Fastrack</a>
+          <a href="#">Rayban</a>
+          <a href="#">Oakley</a>
+          <a href="#">Burberry</a>
+        </div>
 
-                </div>
+        <div className="col-12 col-md-3 text-center">
+          <img
+            src="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
+            className="img-fluid rounded"
+            alt="Sunglasses"
+          />
+        </div>
 
-              </div>
-              </li>
+      </div>
+    </div>
+
+  </div>
+</li>
 
               {/* <li className="nav-item">
                 <span className="nav-link">Power Sunglasses</span>

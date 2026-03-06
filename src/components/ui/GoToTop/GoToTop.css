@@ -1,0 +1,50 @@
+.goTop-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #1fb6c9;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.25s ease;
+}
+
+.goTop-icon {
+  width: 28px;
+  height: 28px;
+  color: #1fb6c9;
+}
+
+/* Hover effect */
+
+.goTop-btn:hover {
+  background: #1fb6c9;
+}
+
+.goTop-btn:hover .goTop-icon {
+  color: white;
+}
+
+/* Mobile */
+
+@media (max-width:768px) {
+
+  .goTop-btn {
+    width: 48px;
+    height: 48px;
+    bottom: 35px;
+    right: 20px;
+  }
+
+  .goTop-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+}
