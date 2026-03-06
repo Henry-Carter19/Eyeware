@@ -127,9 +127,6 @@ export default function FeaturedCollectionsOnlyFocus() {
       // const focusX = wrapRect.left + wrapRect.width * 0.55;
       // const focusY = wrapRect.top + wrapRect.height * 0.46;
 
-      // const focusX = wrapRect.left + wrapRect.width / 2;
-      // const focusY = wrapRect.top + wrapRect.height / 2;
-
       const focusX = wrapRect.left + wrapRect.width / 2;
       const focusY = wrapRect.top + wrapRect.height * 0.45;
 
@@ -177,9 +174,6 @@ export default function FeaturedCollectionsOnlyFocus() {
     // Use SAME focus point as your existing focus effect
     // const focusX = wrapRect.left + wrapRect.width * 0.55;
     // const focusY = wrapRect.top + wrapRect.height * 0.46;
-
-    // const focusX = wrapRect.left + wrapRect.width / 2;
-    // const focusY = wrapRect.top + wrapRect.height / 2;
 
     const focusX = wrapRect.left + wrapRect.width / 2;
     const focusY = wrapRect.top + wrapRect.height * 0.45;
@@ -356,7 +350,7 @@ export default function FeaturedCollectionsOnlyFocus() {
                 }}
               >
                 <img alt={c.title} src={c.image} loading="lazy" />
-                <button
+                {/* <button
                   className="fc__itemButton"
                   type="button"
                   aria-label="View details"
@@ -366,7 +360,7 @@ export default function FeaturedCollectionsOnlyFocus() {
                   }}
                 >
                   ›
-                </button>
+                </button> */}
               </div>
             );
           })}
