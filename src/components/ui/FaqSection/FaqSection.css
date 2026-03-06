@@ -66,19 +66,29 @@
   color: #000;
 }
 
-/* Chevron Icon */
-.faq-icon {
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid #7a7a7a;
-  border-bottom: 2px solid #7a7a7a;
-  transform: rotate(45deg);
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+/* Icon container */
+
+.faq-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #e9eef0;
+  color: #1f2a37;
+  transition: all 0.3s ease;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
-.faq-item.active .faq-icon {
-  transform: rotate(-135deg);
-  border-color: #1f2a37;
+/* Active icon */
+
+.faq-item.active .faq-icon-box {
+  background: #d7e4e7;
+  color: #000;
 }
 
 /* Content */
@@ -107,4 +117,12 @@
 
 .faq-item.active .faq-content p {
   transform: translateY(0);
+}
+
+.faq-icon-box svg {
+  transition: transform 0.35s ease;
+}
+
+.faq-item.active .faq-icon-box svg {
+  transform: rotate(180deg);
 }
