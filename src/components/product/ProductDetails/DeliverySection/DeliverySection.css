@@ -4,7 +4,7 @@
 
 .delivery-box {
   display: flex;
-  gap: 12px;
+  gap: var(--space-md);
   align-items: center;
 }
 
@@ -16,16 +16,16 @@
   flex: 1;
   padding: 12px 14px;
   border-radius: 10px;
-  border: 1px solid #e6e6e6;
-  background: #fafafa;
-  font-size: 12px;
+  border: 1px solid var(--light-gray);
+  background: var(--off-white);
+  font-size: var(--font-xs);
   outline: none;
-  transition: 0.2s ease;
+  transition: var(--transition-fast);
 }
 
 .delivery-box input:focus {
-  border-color: #00a3c8;
-  background: #ffffff;
+  border-color: var(--teal);
+  background: var(--white);
 }
 
 /* =============================== */
@@ -36,15 +36,15 @@
   padding: 6px 18px;
   border-radius: 9px;
   background: transparent;
-  color: #00a3c8;
-  border: 1px solid #00a3c8;
+  color: var(--teal);
+  border: 1px solid var(--teal);
   font-weight: 500;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: var(--transition-fast);
 }
 
 .delivery-box button:hover {
-  background: #e6f7fb;
+  background: var(--very-light-teal);
 }
 
 /* =============================== */
@@ -52,17 +52,17 @@
 /* =============================== */
 
 .check-btn {
-  padding: 8px 16px; /* smaller */
-  font-size: 12px; /* slightly smaller text */
+  padding: 8px 16px;
+  font-size: var(--font-xs);
   border-radius: 8px;
   background: transparent;
-  color: #00a3c8;
-  border: 1px solid #00a3c8;
+  color: var(--teal);
+  border: 1px solid var(--teal);
   font-weight: 500;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: var(--transition-fast);
 }
 
 .check-btn:hover {
-  background: #e6f7fb;
+  background: var(--very-light-teal);
 }

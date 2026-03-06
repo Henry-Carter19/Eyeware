@@ -1,13 +1,13 @@
 .section-wrapper {
-  background: #ffffff;
-  padding: 20px 24px;
+  background: var(--white);
+  padding: var(--space-lg) var(--space-xxl);
   border-radius: 16px;
-  margin-bottom: 20px;
+  margin-bottom: var(--space-lg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .section-title {
-  font-size: 18px;
+  font-size: var(--font-xl);
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: var(--space-lg);
 }

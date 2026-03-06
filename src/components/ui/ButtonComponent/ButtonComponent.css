@@ -1,0 +1,63 @@
+/* Base button */
+
+.custom-btn {
+  border-radius: 12px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: 0.2s ease;
+}
+
+/* =======================
+   WhatsApp Button
+======================= */
+
+.custom-btn.whatsapp {
+  border: 1px solid #2aa7a5;
+  background: #e6f7f6;
+  color: #137a78;
+}
+
+.custom-btn.whatsapp:hover {
+  background: #d8f0ee;
+}
+
+/* =======================
+   Buy Now Button
+======================= */
+
+.custom-btn.buy {
+  flex: 1;
+  color: white;
+  background: linear-gradient(135deg, #1d2233, #161a27);
+  position: relative;
+  overflow: hidden;
+}
+
+/* turquoise glow */
+
+.custom-btn.buy::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  right: -35px;
+  width: 110px;
+  height: 110px;
+  background: radial-gradient(circle, #1dd4d4 0%, transparent 70%);
+}
+
+/* Full width */
+
+.custom-btn.full {
+  width: 100%;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
