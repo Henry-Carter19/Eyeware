@@ -19,7 +19,6 @@ import ShopCollections from "../components/ui/ShopCollections/ShopCollections";
 const HomePage = () => {
   const data = homeData as HomePageData;
 
-
   return (
     <div>
       <HeroCarousel banners={data.heroBanners} />
@@ -32,7 +31,7 @@ const HomePage = () => {
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <TrendingCarousel trendingSection={data.trendingSection} />
       <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
-      <ShopCollections />
+      <ShopCollections shopCollection={data.collections} />
       <FaqSection faqData={data.faq} />
       <GoToTop />
       {/* <ProductCarousel
@@ -51,4 +50,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;  
+export default HomePage; 

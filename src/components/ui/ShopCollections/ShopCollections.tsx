@@ -1,16 +1,16 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules"
-
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/effect-coverflow"
 import "swiper/css/autoplay"
-
 import "./ShopCollections.css"
-
-import data from "../../../data/collections.json"
 import { CollectionItem } from "../../../types/home.types"
 import { Link } from "react-router-dom"
+
+interface Props {
+    shopCollection: CollectionItem[]
+}
 
 const spotlight =
     "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-collection/spotlight_1.png"
@@ -21,13 +21,13 @@ const platform =
 const exploreBtn =
     "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-collection/explore-button.png"
 
-export default function ShopCollections() {
+export default function ShopCollections({ shopCollection }: Props) {
 
-    const collections = data.collections as CollectionItem[]
+    const collections = [...shopCollection, ...shopCollection]
 
     return (
 
-        <section className="sc-home-section">
+        <section className="choosebycatagory sc-home-section">
 
             <Swiper
                 modules={[EffectCoverflow, Navigation, Autoplay]}
@@ -42,8 +42,8 @@ export default function ShopCollections() {
 
                 autoplay={{
                     delay: 1500,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true
+                    disableOnInteraction: true,
+                    // pauseOnMouseEnter: true      
                 }}
 
                 speed={1200}
@@ -64,7 +64,7 @@ export default function ShopCollections() {
                         <div className="sc-item">
 
                             <div className="sc-title">
-                                Shop for <span>{item.title}</span>
+                                Shop for <span><i>{item.title}</i></span>
                             </div>
 
                             <div className="sc-image-wrap">
