@@ -5,10 +5,12 @@ import "swiper/css/navigation"
 import "swiper/css/effect-coverflow"
 import "swiper/css/autoplay"
 import "./ShopCollections.css"
-
-import data from "../../../data/collections.json"
 import { CollectionItem } from "../../../types/home.types"
 import { Link } from "react-router-dom"
+
+interface Props {
+    shopCollection: CollectionItem[]
+}
 
 const spotlight =
     "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-collection/spotlight_1.png"
@@ -19,9 +21,9 @@ const platform =
 const exploreBtn =
     "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-collection/explore-button.png"
 
-export default function ShopCollections() {
+export default function ShopCollections({ shopCollection }: Props) {
 
-    const collections = data.collections as CollectionItem[]
+    const collections = [...shopCollection, ...shopCollection]
 
     return (
 
@@ -40,8 +42,8 @@ export default function ShopCollections() {
 
                 autoplay={{
                     delay: 1500,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true
+                    disableOnInteraction: true,
+                    // pauseOnMouseEnter: true      
                 }}
 
                 speed={1200}

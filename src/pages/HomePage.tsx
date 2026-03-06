@@ -30,9 +30,8 @@ const HomePage = () => {
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <TrendingCarousel trendingSection={data.trendingSection} />
       <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
-      <ShopCollections />
+      <ShopCollections shopCollection={data.collections} />
       <FaqSection faqData={data.faq} />
-
       <ProductCarousel
         title={data.bestsellersSection.title}
         highlight={data.bestsellersSection.highlight}
@@ -49,4 +48,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;  
+export default HomePage; 
