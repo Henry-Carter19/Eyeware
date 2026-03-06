@@ -11,6 +11,7 @@ import BestsellersCarousel from "../components/ui/BestsellersCarousel/Bestseller
 import FeaturedCollectionsOnlyFocus from "../components/ui/FeautredCollection/FeautredCollection";
 import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel";
 import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
+import BlogCarousel from "../components/ui/BlogCarousel/BlogCarousel";
 import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
 import GoToTop from "../components/ui/GoToTop/GoToTop";
 
@@ -31,6 +32,9 @@ const HomePage = () => {
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <TrendingCarousel trendingSection={data.trendingSection} />
       <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
+
+      <BlogCarousel blogSection={data.blogSection} />
+
       <ShopCollections shopCollection={data.collections} />
       <FaqSection faqData={data.faq} />
       <GoToTop />
