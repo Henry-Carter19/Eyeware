@@ -18,7 +18,6 @@ import ShopCollections from "../components/ui/ShopCollections/ShopCollections";
 const HomePage = () => {
   const data = homeData as HomePageData;
 
-
   return (
     <div>
       <HeroCarousel banners={data.heroBanners} />

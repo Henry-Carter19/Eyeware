@@ -1,11 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules"
-
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/effect-coverflow"
 import "swiper/css/autoplay"
-
 import "./ShopCollections.css"
 
 import data from "../../../data/collections.json"
@@ -27,7 +25,7 @@ export default function ShopCollections() {
 
     return (
 
-        <section className="sc-home-section">
+        <section className="choosebycatagory sc-home-section">
 
             <Swiper
                 modules={[EffectCoverflow, Navigation, Autoplay]}

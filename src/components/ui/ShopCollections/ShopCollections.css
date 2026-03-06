@@ -1,18 +1,18 @@
-.sc-home-section {
+section.choosebycatagory.sc-home-section {
     background: #000;
 }
 
 /* IMPORTANT */
 
-.sc-slide {
-    width: 280px !important;
+.choosebycatagory .sc-slide {
+    width: 300px !important;
     display: flex;
     justify-content: center;
 }
 
 /* SIDE SLIDES */
 
-.swiper-slide {
+.choosebycatagory .swiper-slide {
     opacity: .35;
     filter: blur(2px);
     transition: all .4s ease;
@@ -20,7 +20,7 @@
 
 /* ACTIVE SLIDE */
 
-.swiper-slide-active {
+.choosebycatagory .swiper-slide-active {
     opacity: 1;
     filter: none;
     transform: scale(1.15);
@@ -28,7 +28,7 @@
 
 /* ITEM */
 
-.sc-item {
+.choosebycatagory .sc-item {
     width: 260px;
     text-align: center;
     margin-bottom: 30px;
@@ -37,19 +37,19 @@
 
 /* TITLE */
 
-.sc-title {
+.choosebycatagory .sc-title {
     color: #fff;
     font-size: 22px;
     margin-top: 30px;
 }
 
-.sc-title span {
+.choosebycatagory .sc-title span {
     font-weight: 700;
 }
 
 /* IMAGE */
 
-.sc-image-wrap {
+.choosebycatagory .sc-image-wrap {
     position: relative;
     height: 340px;
     display: flex;
@@ -57,14 +57,19 @@
     align-items: flex-end;
 }
 
-.sc-character {
+.choosebycatagory .sc-character {
     height: 330px;
     z-index: 3;
+    transition: transform .5s ease;
+}
+
+.choosebycatagory .swiper-slide-active .sc-character {
+    transform: translateY(-10px);
 }
 
 /* SPOTLIGHT */
 
-.sc-spotlight {
+.choosebycatagory .sc-spotlight {
     position: absolute;
     bottom: 20px;
     width: 503px;
@@ -78,105 +83,166 @@
 
 /* PLATFORM */
 
-.sc-footer {
-    margin-top: -25px;
+.choosebycatagory .sc-footer {
+    margin-top: -45px;
     opacity: 0;
+    transform: translateY(30px);
+    transition: all .5s ease;
 }
 
-.sc-platform {
-    width: 230px;
+.choosebycatagory .sc-platform {
+    width: 250px;
 }
 
 /* EXPLORE */
 
-.sc-explore {
+.choosebycatagory .sc-explore {
     position: relative;
     display: inline-block;
     margin-top: -10px;
     opacity: 0;
+    transition: opacity .3s ease;
 }
 
 
 
-.sc-explore-img {
+.choosebycatagory .sc-explore-img {
     width: 150px;
     border-radius: 20px;
 }
 
-.sc-explore {
-  position: relative;
-  display: inline-block;
-  margin-top: -10px;
-  opacity: 0;
-}
 
-/* BUTTON */
-
-.sc-explore-btn {
-  padding: 10px 40px;
-  border-radius: 40px;
-  border: 1px solid rgba(0,255,255,0.3);
-  background: radial-gradient(circle at 80% 50%, #0ff3 0%, transparent 40%),
-              linear-gradient(180deg, #0a0f13 0%, #050708 100%);
-  color: #e8e8e8;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 13px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-
-  box-shadow:
-    inset 0 2px 4px rgba(255,255,255,0.1),
-    inset 0 -4px 8px rgba(0,0,0,0.8),
-    0 0 10px rgba(0,255,255,0.2);
-
-  transition: all .3s ease;
-}
-
-/* CYAN GLOW */
-
-.sc-explore-btn::after {
-  content: "";
-  position: absolute;
-  right: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 80px;
-  background: radial-gradient(circle, rgba(0,255,255,0.6), transparent 70%);
-  filter: blur(15px);
-}
-
-/* HOVER EFFECT */
-
-.sc-explore-btn:hover {
-  box-shadow:
-    inset 0 2px 4px rgba(255,255,255,0.1),
-    inset 0 -4px 8px rgba(0,0,0,0.8),
-    0 0 20px rgba(0,255,255,0.5);
-}
-
-.sc-explore span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: wheat;
-    font-weight: 700;
-}
 
 /* SHOW ONLY ACTIVE */
 
-.swiper-slide-active .sc-spotlight,
-.swiper-slide-active .sc-footer,
-.swiper-slide-active .sc-explore {
+.choosebycatagory .swiper-slide-active .sc-spotlight {
+    opacity: 1;
+}
+
+/* FADE UP PLATFORM */
+
+.choosebycatagory .swiper-slide-active .sc-footer {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .2s;
+}
+
+/* FADE UP EXPLORE BUTTON */
+
+.choosebycatagory .swiper-slide-active .sc-explore {
     opacity: 1;
 }
 
 /* NAV */
+/* NAV BUTTON BASE */
 
-.swiper-button-prev,
-.swiper-button-next {
-    color: #d8d8d8;
+.choosebycatagory .swiper-button-prev,
+.choosebycatagory .swiper-button-next {
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    transition: all .35s ease;
+}
+
+
+/* POSITION */
+
+.choosebycatagory .swiper-button-prev {
+    left: 20px;
+}
+
+.choosebycatagory .swiper-button-next {
+    right: 20px;
+}
+
+
+/* REMOVE DEFAULT SWIPER ICON */
+
+.choosebycatagory .swiper-button-prev::after,
+.choosebycatagory .swiper-button-next::after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* HOVER EFFECT */
+
+.choosebycatagory .swiper-button-prev:hover,
+.choosebycatagory .swiper-button-next:hover {
+
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    transform: translateY(-50%) scale(1.08);
+}
+
+svg.swiper-navigation-icon {
+    font-size: 10px;
+    height: 21px;
+}
+
+/* ========================================================= */
+
+/* BUTTON */
+
+.choosebycatagory .sc-explore-btn {
+
+    margin-top: 10px;
+    padding: 12px 42px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background-image: linear-gradient(to right, black 0%, #162332 51%, black 100%);
+    background-size: 200% auto;
+
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+
+    border-radius: 40px;
+    border: 1px solid rgba(173, 216, 230, 0.286);
+    outline: none;
+
+    cursor: pointer;
+    display: inline-block;
+
+    transition: 0.5s;
+
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    margin-bottom: 40px;
+}
+
+/* Hover gradient movement */
+
+.choosebycatagory .sc-explore-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
