@@ -38,7 +38,7 @@ export default function FeaturedCollectionsOnlyFocus() {
     stage.style.setProperty("--ty", `${ty}px`);
   };
 
-  const [activeIndex, setActiveIndex] = useState<number>(3);
+  const [activeIndex, setActiveIndex] = useState<number>(2);
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   const layout: CardLayout[] = useMemo(
@@ -163,6 +163,30 @@ export default function FeaturedCollectionsOnlyFocus() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
     // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const stage = stageRef.current;
+    const item = itemRefs.current[0];
+    const wrap = wrapRef.current;
+
+    if (!stage || !item || !wrap) return;
+
+    requestAnimationFrame(() => {
+      const wrapRect = wrap.getBoundingClientRect();
+      const itemRect = item.getBoundingClientRect();
+
+      const focusX = wrapRect.left + wrapRect.width / 2;
+      const focusY = wrapRect.top + wrapRect.height * 0.45;
+
+      const itemCenterX = itemRect.left + itemRect.width / 2;
+      const itemCenterY = itemRect.top + itemRect.height / 2;
+
+      const dx = focusX - itemCenterX;
+      const dy = focusY - itemCenterY;
+
+      setStage(dx, dy);
+    });
   }, []);
 
   const snapToNearest = () => {
