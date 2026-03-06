@@ -11,7 +11,6 @@ import BestsellersCarousel from "../components/ui/BestsellersCarousel/Bestseller
 import FeaturedCollectionsOnlyFocus from "../components/ui/FeautredCollection/FeautredCollection";
 import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel";
 import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
-import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
 
 const HomePage = () => {
   const data = homeData as HomePageData;
