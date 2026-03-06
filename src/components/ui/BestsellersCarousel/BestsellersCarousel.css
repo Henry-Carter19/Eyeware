@@ -14,10 +14,10 @@
 
 .BestsellersCarousel-section .BestsellersCarousel-title {
     text-align: center;
-    font-size: 36px;
+    font-size: 33px;
     font-weight: 500;
     margin-bottom: 35px;
-    color: white;
+    color: #141414;
 }
 
 .BestsellersCarousel-section .BestsellersCarousel-title span {
@@ -206,11 +206,11 @@
 }
 
 .BestsellersCarousel-section .best-prev {
-    left: 30px;
+    left: 5px;
 }
 
 .BestsellersCarousel-section .best-next {
-    right: 30px;
+    right: 5px;
 }
 
 .BestsellersCarousel-section .best-prev:hover,
