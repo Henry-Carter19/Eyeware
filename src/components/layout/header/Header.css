@@ -118,11 +118,26 @@
 
 /* MEGA MENU FIX */
 
+.nav-item.dropdown {
+  position: static;   /* allows full-width dropdown */
+}
+
 .mega-menu {
-  width: 100%;          /* full screen width */
-  left: 0%;        
-  right: 0%;
+  width: 100%;
+  left: 0;
+  right: 0;
   border-radius: 0;
+}
+
+/* keep proper spacing inside */
+.mega-menu .row {
+  width: 100%;
+}
+
+/* links */
+.mega-menu a {
+  display: block;
+  margin-bottom: 6px;
 }
 
 .mega-menu h6 {
@@ -130,15 +145,12 @@
   margin-bottom: 10px;
 }
 
-.mega-menu a {
-  display: block;
-  margin-bottom: 6px;
-}
+
 
 
 .navbar{
-   position: sticky;
+  position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   background: white;
 }
