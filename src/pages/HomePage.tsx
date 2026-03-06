@@ -11,6 +11,7 @@ import BestsellersCarousel from "../components/ui/BestsellersCarousel/Bestseller
 import FeaturedCollectionsOnlyFocus from "../components/ui/FeautredCollection/FeautredCollection";
 import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel";
 import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
+import BlogCarousel from "../components/ui/BlogCarousel/BlogCarousel";
 
 const HomePage = () => {
   const data = homeData as HomePageData;
@@ -28,6 +29,9 @@ const HomePage = () => {
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <TrendingCarousel trendingSection={data.trendingSection} />
       <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
+
+      <BlogCarousel blogSection={data.blogSection} />
+
       <FaqSection faqData={data.faq} />
       {/* <ProductCarousel
         title={data.bestsellersSection.title}
