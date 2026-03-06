@@ -64,7 +64,7 @@ export default function ShopCollections({ shopCollection }: Props) {
                         <div className="sc-item">
 
                             <div className="sc-title">
-                                Shop for <span>{item.title}</span>
+                                Shop for <span><i>{item.title}</i></span>
                             </div>
 
                             <div className="sc-image-wrap">
