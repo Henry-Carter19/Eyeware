@@ -116,8 +116,13 @@
 
 /* MEGA MENU */
 
+/* MEGA MENU FIX */
+
 .mega-menu {
-  width: 100vmin;
+  width: 100%;          /* full screen width */
+  left: 0%;        
+  right: 0%;
+  border-radius: 0;
 }
 
 .mega-menu h6 {
@@ -132,8 +137,8 @@
 
 
 .navbar{
-  position: sticky;
+   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
   background: white;
 }

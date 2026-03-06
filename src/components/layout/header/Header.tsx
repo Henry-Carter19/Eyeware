@@ -131,7 +131,7 @@ const Header: React.FC = () => {
 
                 <div className="row">
 
-                  <div className="col-12 col-md-3">
+                  <div className="col-12 col-md-3 col-sm-6">
                     <h6>GENDER</h6>
                     <a href="#">All</a>
                     <a href="#">Men</a>
@@ -139,7 +139,7 @@ const Header: React.FC = () => {
                     <a href="#">Kids</a>
                   </div>
 
-                  <div className="col-12 col-md-3">
+                  <div className="col-12 col-md-3 col-sm-6">
                     <h6>SHAPE</h6>
                     <a href="#">Rectangle</a>
                     <a href="#">Round</a>
@@ -147,7 +147,7 @@ const Header: React.FC = () => {
                     <a href="#">Wayfarer</a>
                   </div>
 
-                  <div className="col-12 col-md-3">
+                  <div className="col-12 col-md-3 col-sm-6">
                     <h6>TOP BRANDS</h6>
                     <a href="#">Titan</a>
                     <a href="#">Rayban</a>
@@ -155,7 +155,7 @@ const Header: React.FC = () => {
                     <a href="#">Vogue</a>
                   </div>
 
-                  <div className="col-12 col-md-3 text-center">
+                  <div className="col-12 col-md-3 col-sm-6">
                     <img
                       src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371"
                       className="img-fluid rounded"
@@ -173,10 +173,9 @@ const Header: React.FC = () => {
 
   <div className="dropdown-menu mega-menu mega-menu-full p-4">
 
-    <div className="container-fluid">
-      <div className="row g-3">
+      <div className="row">
 
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-3 col-sm-6">
           <h6>GENDER</h6>
           <a href="#">All</a>
           <a href="#">Men</a>
@@ -194,7 +193,7 @@ const Header: React.FC = () => {
           <a href="#">Power</a>
         </div>
 
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-3 col-sm-6">
           <h6>COLLECTION</h6>
           <a href="#">Smart Sunglasses</a>
           <a href="#">Donald</a>
@@ -210,7 +209,7 @@ const Header: React.FC = () => {
           <a href="#">Round</a>
         </div>
 
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-3 col-sm-6">
           <h6>BRANDS</h6>
           <a href="#">Titan</a>
           <a href="#">Fastrack</a>
@@ -219,7 +218,7 @@ const Header: React.FC = () => {
           <a href="#">Burberry</a>
         </div>
 
-        <div className="col-12 col-md-3 text-center">
+        <div className="col-12 col-md-3">
           <img
             src="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
             className="img-fluid rounded"
@@ -228,7 +227,7 @@ const Header: React.FC = () => {
         </div>
 
       </div>
-    </div>
+   
 
   </div>
 </li>
