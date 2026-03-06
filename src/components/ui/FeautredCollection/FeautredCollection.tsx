@@ -1,6 +1,13 @@
-import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import React, {
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import "./FeautredCollection.css";
 import { CardLayout, cards, layouts } from "./FeaturedCollections.data";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type CssVars = React.CSSProperties & {
   ["--tx"]?: string;
@@ -31,13 +38,12 @@ export default function FeaturedCollectionsOnlyFocus() {
     stage.style.setProperty("--ty", `${ty}px`);
   };
 
-
   const [activeIndex, setActiveIndex] = useState<number>(3);
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   const layout: CardLayout[] = useMemo(
     () => (isMobile ? layouts.mobile : layouts.desktop),
-    [isMobile]
+    [isMobile],
   );
 
   useEffect(() => {
@@ -50,7 +56,7 @@ export default function FeaturedCollectionsOnlyFocus() {
 
   const clampIndex = (i: number) => {
     const n = cards.length;
-    return (i % n + n) % n;
+    return ((i % n) + n) % n;
   };
 
   const goPrev = () => setActiveIndex((i) => clampIndex(i - 1));
@@ -63,7 +69,7 @@ export default function FeaturedCollectionsOnlyFocus() {
       animRef.current = null;
     }
     const stiffness = 0.02; // try 0.10 - 0.16
-    const damping = 0.65;   // try 0.72 - 0.85
+    const damping = 0.65; // try 0.72 - 0.85
     const epsilon = 0.15;
 
     const tick = () => {
@@ -94,7 +100,8 @@ export default function FeaturedCollectionsOnlyFocus() {
 
       if (done) {
         setStage(t.x, t.y);
-        v.x = 0; v.y = 0;
+        v.x = 0;
+        v.y = 0;
         animRef.current = null;
         return;
       }
@@ -117,8 +124,11 @@ export default function FeaturedCollectionsOnlyFocus() {
       const itemRect = item.getBoundingClientRect();
 
       // Focus point: slightly above center
-      const focusX = wrapRect.left + wrapRect.width * 0.55;
-      const focusY = wrapRect.top + wrapRect.height * 0.46;
+      // const focusX = wrapRect.left + wrapRect.width * 0.55;
+      // const focusY = wrapRect.top + wrapRect.height * 0.46;
+
+      const focusX = wrapRect.left + wrapRect.width / 2;
+      const focusY = wrapRect.top + wrapRect.height * 0.45;
 
       const itemCenterX = itemRect.left + itemRect.width / 2;
       const itemCenterY = itemRect.top + itemRect.height / 2;
@@ -162,8 +172,11 @@ export default function FeaturedCollectionsOnlyFocus() {
     const wrapRect = wrap.getBoundingClientRect();
 
     // Use SAME focus point as your existing focus effect
-    const focusX = wrapRect.left + wrapRect.width * 0.55;
-    const focusY = wrapRect.top + wrapRect.height * 0.46;
+    // const focusX = wrapRect.left + wrapRect.width * 0.55;
+    // const focusY = wrapRect.top + wrapRect.height * 0.46;
+
+    const focusX = wrapRect.left + wrapRect.width / 2;
+    const focusY = wrapRect.top + wrapRect.height * 0.45;
 
     let bestIdx = activeIndex;
     let bestDist = Number.POSITIVE_INFINITY;
@@ -197,17 +210,17 @@ export default function FeaturedCollectionsOnlyFocus() {
 
       <div className="fc__controls" aria-label="Carousel controls">
         <button type="button" aria-label="Previous" onClick={goPrev}>
-          ‹
+          <ChevronLeft />
         </button>
         <button type="button" aria-label="Next" onClick={goNext}>
-          ›
+          <ChevronRight />
         </button>
       </div>
 
       <div
         className="fc__stageWrap"
         ref={wrapRef}
-        style={{ touchAction: "none" }}  // important for mobile
+        style={{ touchAction: "none" }} // important for mobile
         onPointerDown={(e) => {
           const stage = stageRef.current;
           if (!stage) return;
@@ -241,7 +254,9 @@ export default function FeaturedCollectionsOnlyFocus() {
           isDownRef.current = false;
 
           if (isDraggingRef.current) {
-            (e.currentTarget as HTMLDivElement).releasePointerCapture(e.pointerId);
+            (e.currentTarget as HTMLDivElement).releasePointerCapture(
+              e.pointerId,
+            );
 
             // SNAP after drag
             snapToNearest();
@@ -259,18 +274,47 @@ export default function FeaturedCollectionsOnlyFocus() {
           isDraggingRef.current = false;
         }}
       >
-        <div className="fc__stage" ref={stageRef} style={{ "--tx": "0px", "--ty": "0px" } as CssVars}>
+        <div
+          className="fc__stage"
+          ref={stageRef}
+          style={{ "--tx": "0px", "--ty": "0px" } as CssVars}
+        >
           <div className="fc__bg" aria-hidden="true">
             <svg className="fc__bgSvg" preserveAspectRatio="none">
               <defs>
-                <pattern id="fc-bg-pattern" patternUnits="userSpaceOnUse" width="240" height="240">
-                  <path d="M0 240 L240 0" stroke="rgba(15, 29, 42, 0.10)" strokeWidth="2" />
+                <pattern
+                  id="fc-bg-pattern"
+                  patternUnits="userSpaceOnUse"
+                  width="240"
+                  height="240"
+                >
+                  <path
+                    d="M0 240 L240 0"
+                    stroke="rgba(15, 29, 42, 0.10)"
+                    strokeWidth="2"
+                  />
                   <circle cx="40" cy="40" r="3" fill="rgba(15, 29, 42, 0.18)" />
-                  <circle cx="200" cy="120" r="2.5" fill="rgba(15, 29, 42, 0.14)" />
-                  <circle cx="120" cy="200" r="2" fill="rgba(15, 29, 42, 0.12)" />
+                  <circle
+                    cx="200"
+                    cy="120"
+                    r="2.5"
+                    fill="rgba(15, 29, 42, 0.14)"
+                  />
+                  <circle
+                    cx="120"
+                    cy="200"
+                    r="2"
+                    fill="rgba(15, 29, 42, 0.12)"
+                  />
                 </pattern>
               </defs>
-              <rect x="0" y="0" width="100%" height="100%" fill="url(#fc-bg-pattern)" />
+              <rect
+                x="0"
+                y="0"
+                width="100%"
+                height="100%"
+                fill="url(#fc-bg-pattern)"
+              />
             </svg>
           </div>
 
@@ -288,7 +332,7 @@ export default function FeaturedCollectionsOnlyFocus() {
                     left: pos.left,
                     top: pos.top,
                     ["--rot" as any]: `${pos.rotate}deg`,
-                    background: `linear-gradient(273deg, transparent 2%, rgba(0,0,0,.78) 97%), ${c.bg}`
+                    background: `linear-gradient(273deg, transparent 2%, rgba(0,0,0,.78) 97%), ${c.bg}`,
                   } as React.CSSProperties
                 }
                 onClick={() => {
@@ -306,7 +350,7 @@ export default function FeaturedCollectionsOnlyFocus() {
                 }}
               >
                 <img alt={c.title} src={c.image} loading="lazy" />
-                <button
+                {/* <button
                   className="fc__itemButton"
                   type="button"
                   aria-label="View details"
@@ -316,14 +360,12 @@ export default function FeaturedCollectionsOnlyFocus() {
                   }}
                 >
                   ›
-                </button>
+                </button> */}
               </div>
             );
           })}
         </div>
       </div>
-
-      <p className="fc__hint">Tip: click any card to focus it. Use ← / → keys too.</p>
     </section>
   );
 }
