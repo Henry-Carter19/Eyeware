@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import productData from "../data/prodcutsDetailData.json";
 import "../styles/ProductDetailPage.css";
@@ -14,7 +14,7 @@ import TrustBadges from "../components/product/ProductDetails/TrustBadges/TrustB
 import { Container, Row, Col } from "react-bootstrap";
 import { FaWhatsapp } from "react-icons/fa";
 import ButtonComponent from "../components/ui/ButtonComponent/ButtonComponent";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Heart, ArrowUpRight, Camera } from "lucide-react";
 
 const ProductDetailPage = () => {
   const { id } = useParams();
@@ -22,9 +22,31 @@ const ProductDetailPage = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  /* ===== ZOOM STATES ADDED ===== */
+  const imgRef = useRef<HTMLImageElement | null>(null);
+  const [showZoom, setShowZoom] = useState(false);
+  const [zoomPos, setZoomPos] = useState("50% 50%");
+  /* ============================= */
+
   if (!product) return <div>Product Not Found</div>;
 
   const images = product.images ?? [];
+
+  /* ===== ZOOM FUNCTION ===== */
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!imgRef.current) return;
+
+    const rect = imgRef.current.getBoundingClientRect();
+
+    let x = ((e.clientX - rect.left) / rect.width) * 100;
+    let y = ((e.clientY - rect.top) / rect.height) * 100;
+
+    x = Math.max(0, Math.min(100, x));
+    y = Math.max(0, Math.min(100, y));
+
+    setZoomPos(`${x}% ${y}%`);
+  };
+  /* ========================= */
 
   return (
     <div className="detail-page">
@@ -44,18 +66,44 @@ const ProductDetailPage = () => {
           <Col lg={5} md={12}>
             <div className="detail-left">
               <div className="image-card">
-                <button className="try-btn">📷 TRY ON</button>
+                <button className="try-btn">
+                  <Camera size={18} /> <span className="try-btn-text">TRY ON</span>
+                </button>
 
                 <div className="icon-group">
-                  <span>♡</span>
-                  <span>↗</span>
+                  <span>
+                    <Heart />
+                  </span>
+                  <span>
+                    <ArrowUpRight />
+                  </span>
                 </div>
 
-                <img
-                  src={images[currentIndex]}
-                  alt={product.title}
-                  className="main-image"
-                />
+                {/* ===== ZOOM CONTAINER ADDED ===== */}
+                <div
+                  className="zoom-container"
+                  onMouseMove={handleMouseMove}
+                  onMouseEnter={() => setShowZoom(true)}
+                  onMouseLeave={() => setShowZoom(false)}
+                >
+                  <img
+                    ref={imgRef}
+                    src={images[currentIndex]}
+                    alt={product.title}
+                    className="main-image"
+                  />
+
+                  {showZoom && (
+                    <div
+                      className="zoom-view"
+                      style={{
+                        backgroundImage: `url(${images[currentIndex]})`,
+                        backgroundPosition: zoomPos,
+                      }}
+                    />
+                  )}
+                </div>
+                {/* =============================== */}
 
                 <div className="thumb-wrapper">
                   {/* Left Arrow */}
@@ -65,7 +113,7 @@ const ProductDetailPage = () => {
                       setCurrentIndex(
                         currentIndex === 0
                           ? images.length - 1
-                          : currentIndex - 1,
+                          : currentIndex - 1
                       )
                     }
                   >
@@ -77,9 +125,8 @@ const ProductDetailPage = () => {
                     {images.map((img, index) => (
                       <div
                         key={index}
-                        className={`thumb-box ${
-                          index === currentIndex ? "active" : ""
-                        }`}
+                        className={`thumb-box ${index === currentIndex ? "active" : ""
+                          }`}
                         onClick={() => setCurrentIndex(index)}
                       >
                         <img src={img} alt="" />
@@ -94,7 +141,7 @@ const ProductDetailPage = () => {
                       setCurrentIndex(
                         currentIndex === images.length - 1
                           ? 0
-                          : currentIndex + 1,
+                          : currentIndex + 1
                       )
                     }
                   >
@@ -102,6 +149,7 @@ const ProductDetailPage = () => {
                   </button>
                 </div>
               </div>
+
               <div className="sticky-btn-container">
                 <ButtonComponent
                   label="Buy on"
