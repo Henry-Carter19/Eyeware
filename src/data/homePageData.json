@@ -456,6 +456,121 @@
       ]
     }
   },
+  "blogSection": {
+    "title": "From",
+    "highlight": "the Blog",
+    "filters": [
+      {
+        "label": "Sunglasses",
+        "key": "sunglasses"
+      },
+      {
+        "label": "Eyeglasses",
+        "key": "eyeglasses"
+      },
+      {
+        "label": "Titan Vision Care",
+        "key": "titan"
+      },
+      {
+        "label": "Contact Lenses",
+        "key": "contact"
+      },
+      {
+        "label": "Lenses",
+        "key": "lenses"
+      }
+    ],
+    "cards": {
+      "sunglasses": [
+        {
+          "id": 1,
+          "title": "Battle of the Styles: Mirrored Sunglasses vs Polaroid Sunglasses",
+          "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+          "category": "SUNGLASSES",
+          "route": "/blog/mirrored-vs-polaroid"
+        },
+        {
+          "id": 2,
+          "title": "Choosing and Caring for Sunglasses: Protect Your Eyes with Style",
+          "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+          "category": "SUNGLASSES",
+          "route": "/blog/caring-for-sunglasses"
+        },
+        {
+          "id": 3,
+          "title": "Four Reasons Why Opting for Polarized Glasses is a Wise Choice",
+          "image": "https://images.unsplash.com/photo-1516826957135-700dedea698c",
+          "category": "SUNGLASSES",
+          "route": "/blog/polarized-benefits"
+        },
+        {
+          "id": 4,
+          "title": "Unleash Your Fashion Statement With Chic Sunglasses For Women",
+          "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+          "category": "SUNGLASSES",
+          "route": "/blog/chic-sunglasses"
+        },
+        {
+          "id": 5,
+          "title": "Frame/Sunglass Size Guide",
+          "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0",
+          "category": "SUNGLASSES",
+          "route": "/blog/frame-size-guide"
+        },
+        {
+          "id": 6,
+          "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
+          "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
+          "category": "EYEGLASSES",
+          "route": "/blog/face-shape-glasses"
+        },
+        {
+          "id": 7,
+          "title": "Why Titan Vision Care Is Leading The Eyewear Market",
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+          "category": "TITAN VISION",
+          "route": "/blog/titan-vision"
+        }
+      ],
+      "eyeglasses": [
+        {
+          "id": 6,
+          "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
+          "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
+          "category": "EYEGLASSES",
+          "route": "/blog/face-shape-glasses"
+        }
+      ],
+      "titan": [
+        {
+          "id": 7,
+          "title": "Why Titan Vision Care Is Leading The Eyewear Market",
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+          "category": "TITAN VISION",
+          "route": "/blog/titan-vision"
+        }
+      ],
+      "contact": [
+        {
+          "id": 8,
+          "title": "A Beginner Guide To Contact Lenses",
+          "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+          "category": "CONTACT LENSES",
+          "route": "/blog/contact-lens-guide"
+        }
+      ],
+      "lenses": [
+        {
+          "id": 9,
+          "title": "Different Types Of Lenses And Their Uses",
+          "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a6c0",
+          "category": "LENSES",
+          "route": "/blog/lens-types"
+        }
+      ]
+    }
+  },
   "testimonialsSection": {
     "title": "Words we",
     "highlight": "live by",
