@@ -74,6 +74,8 @@
 .hover-dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 7px;
+  /* max-width: 100%; */
+  
 }
 
 /* DROPDOWN LINK STYLE */
@@ -115,7 +117,7 @@
 /* MEGA MENU */
 
 .mega-menu {
-  width: 900px;
+  width: 100vmin;
 }
 
 .mega-menu h6 {
@@ -128,3 +130,10 @@
   margin-bottom: 6px;
 }
 
+
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
