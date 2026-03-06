@@ -17,6 +17,7 @@
     {
       "id": 1,
       "name": "Fastrack",
+      "route": "/products",
       "tagline": "Trendy frames for the young and edgy",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
@@ -25,6 +26,7 @@
     {
       "id": 2,
       "name": "Ray-Ban",
+      "route": "/products",
       "tagline": "Timeless icons, always in style",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
@@ -33,6 +35,7 @@
     {
       "id": 3,
       "name": "NeoFrame",
+      "route": "/products",
       "tagline": "Fresh designs for modern lifestyles",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
@@ -41,6 +44,7 @@
     {
       "id": 4,
       "name": "EliteLens",
+      "route": "/products",
       "tagline": "Sophisticated vision solutions",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
@@ -49,6 +53,7 @@
     {
       "id": 5,
       "name": "StreetSight",
+      "route": "/products",
       "tagline": "Urban fashion meets clarity",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
@@ -57,6 +62,7 @@
     {
       "id": 6,
       "name": "PrimeOptic",
+      "route": "/products",
       "tagline": "Refined style for premium taste",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
@@ -65,6 +71,7 @@
     {
       "id": 7,
       "name": "ClearEdge",
+      "route": "/products",
       "tagline": "Sharp looks for sharp minds",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
@@ -82,37 +89,37 @@
         "id": 1,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/collection/ft_shapes"
+        "route": "/products"
       },
       {
         "id": 2,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/sunglasses/biking"
+        "route": "/products"
       },
       {
         "id": 3,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/new"
+        "route": "/products"
       },
       {
         "id": 4,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/collection/ft_shapes"
+        "route": "/products"
       },
       {
         "id": 5,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/sunglasses/biking"
+        "route": "/products"
       },
       {
         "id": 6,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/new"
+        "route": "/products"
       }
     ]
   },
@@ -123,44 +130,44 @@
     "showArrowButton": true,
     "viewAll": {
       "label": "View All",
-      "route": "/exclusive-deals"
+      "route": "/products"
     },
     "cards": [
       {
         "id": 1,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_SG_1158X750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/collection/ft_shapes"
+        "route": "/products"
       },
       {
         "id": 2,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/sunglasses/biking"
+        "route": "/products"
       },
       {
         "id": 3,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/new"
+        "route": "/products"
       },
       {
         "id": 4,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_Vibes_1158X750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/collection/ft_shapes"
+        "route": "/products"
       },
       {
         "id": 5,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/sunglasses/biking"
+        "route": "/products"
       },
       {
         "id": 6,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/new"
+        "route": "/products"
       }
     ]
   },
@@ -628,6 +635,38 @@
       "id": 6,
       "title": "Frequently Asked Questions",
       "content": "Find answers to common questions about Titan Eye+ products and services."
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "title": "Kids",
+      "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/kids.png",
+      "url": "/eyeglasses/gender/kids"
+    },
+    {
+      "id": 2,
+      "title": "Youth",
+      "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/adult.png",
+      "url": "/eyeglasses/brand/fastrack"
+    },
+    {
+      "id": 3,
+      "title": "Workwear",
+      "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/professional.png",
+      "url": "/eyeglasses/workwear"
+    },
+    {
+      "id": 4,
+      "title": "Silvers",
+      "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/silver.png",
+      "url": "/eyeglasses/silver"
+    },
+    {
+      "id": 5,
+      "title": "xyzz",
+      "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/silver.png",
+      "url": "/eyeglasses/silver"
     }
   ]
 }
