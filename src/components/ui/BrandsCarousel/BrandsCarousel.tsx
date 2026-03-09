@@ -27,7 +27,7 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
       : brands.filter((b) => b.category === activeTab);
 
   return (
-    <section className="brands-section">
+    <section className="brands-section common-section-padding">
       <h2 className="brands-title">
         Shop by <span className="italic">Brands</span>
       </h2>
