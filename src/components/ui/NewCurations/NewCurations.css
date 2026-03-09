@@ -256,7 +256,7 @@
 /* ============================= */
 
 @media (max-width: 768px) {
-  .curation-section .curation-header {
+  .curation-section.gold-bg .curation-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -317,7 +317,7 @@
   }
 
   .curation-section .curation-card {
-    max-width: 360px;
+    max-width: 300px;
     height: 320px;
   }
 
@@ -336,7 +336,7 @@
     padding: 30px 18px;
   }
 
-  .curation-section .curation-header {
+  .curation-section.gold-bg .curation-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -344,6 +344,12 @@
   }
 
   .curation-section .curation-title {
+    font-size: 22px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .curation-section.gold-bg .curation-title {
     font-size: 22px;
     margin-bottom: 0;
     text-align: left;
@@ -356,7 +362,7 @@
   }
 
   .curation-section .curation-card {
-    height: 260px;
+    height: 300px;
     border-radius: 20px;
   }
 
@@ -405,6 +411,7 @@
 
   .curation-section .curation-card {
     height: 220px;
+    width: 300px;
   }
 
   .curation-section .curation-btn {
