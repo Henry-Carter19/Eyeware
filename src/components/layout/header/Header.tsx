@@ -11,12 +11,192 @@ import {
   Headphones
 } from "lucide-react";
 import logo from "../../../../public/images/logo.png";
+import menuData from "../../../data/header.json";
 import "./Header.css";
 
 
 const Header: React.FC = () => {
   return (
     <>
+      {/* MOBILE HEADER */}
+      <div className="mobile-header d-lg-none">
+
+        <div className="mobile-header-inner">
+
+          {/* MENU ICON */}
+          <button
+            className="menu-btn"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            ☰
+          </button>
+
+          {/* LOGO */}
+          <div className="mobile-logo">
+            TITAN <span>EYE+</span>
+          </div>
+
+          {/* RIGHT ICONS */}
+          <div className="mobile-icons">
+            <Search size={20} />
+            <ShoppingCart size={20} />
+          </div>
+
+        </div>
+
+      </div>
+
+      <div className="offcanvas offcanvas-start" id="mobileMenu">
+
+        <div className="offcanvas-header">
+          <h5>Menu</h5>
+          <button type="button" className="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div className="offcanvas-body">
+
+          <div className="accordion" id="mobileMenuAccordion">
+
+            {/* Eyeglasses */}
+            <div className="accordion-item">
+
+              <h2 className="accordion-header">
+                <button
+                  type="button"
+                  className="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#eyeglassesMenu"
+                >
+                  Eyeglasses
+                </button>
+              </h2>
+
+              <div
+                id="eyeglassesMenu"
+                className="accordion-collapse collapse"
+              >
+                <div className="accordion-body mobile-scroll">
+
+                  {menuData.menuEyeGlassesData.map((section, index) => (
+                    <div className="mobile-submenu" key={index}>
+                      <h6>{section.title}</h6>
+
+                      {section.items.map((item, i) => (
+                        <a key={i} href={item.path}>{item.label}</a>
+                      ))}
+
+                    </div>
+                  ))}
+
+                </div>
+              </div>
+
+            </div>
+
+
+            {/* Sunglasses */}
+            <div className="accordion-item">
+
+              <h2 className="accordion-header">
+                <button
+                  type="button"
+                  className="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#sunglassesMenu"
+                >
+                  Sunglasses
+                </button>
+              </h2>
+
+              <div
+                id="sunglassesMenu"
+                className="accordion-collapse collapse"
+
+              >
+                <div className="accordion-body mobile-scroll">
+
+                  {menuData.menuSunGlassesData.map((section, index) => (
+                    <div className="mobile-submenu" key={index}>
+                      <h6>{section.title}</h6>
+                      {section.items.map((item, i) => (
+                        <a key={i} href={item.path}>{item.label}</a>
+                      ))}
+
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Lenses */}
+            <div className="accordion-item">
+              <h2 className="accordion-header">
+                <button
+                  type="button"
+                  className="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#contactLensesMenu"
+                >
+                  Contact Lenses
+                </button>
+              </h2>
+
+              <div
+                id="contactLensesMenu"
+                className="accordion-collapse collapse"
+
+              >
+                <div className="accordion-body mobile-scroll">
+
+                  {menuData.menuContactLensesData.map((section, index) => (
+                    <div className="mobile-submenu" key={index}>
+                      <a key={index} href={section.path}>{section.title}</a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Accessories */}
+
+            <div className="accordion-item">
+              <h2 className="accordion-header">
+                <button
+                  type="button"
+                  className="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accessoriesMenu"
+                >
+                  Accessories
+                </button>
+              </h2>
+
+              <div
+                id="accessoriesMenu"
+                className="accordion-collapse collapse"
+
+              >
+                <div className="accordion-body mobile-scroll">
+
+                  {menuData.menuAccessoriesData.map((section, index) => (
+                    <div className="mobile-submenu" key={index}>
+                      <a key={index} href={section.path}>{section.title}</a>
+
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
       {/* TOP NAVBAR */}
       <div className="top-bar bg-dark text-white py-1">
         <div className="container-fluid">
@@ -105,7 +285,8 @@ const Header: React.FC = () => {
       </div>
 
       {/* MAIN NAVBAR */}
-      <nav className="navbar navbar-expand-lg bg-white border-bottom">
+      <nav className="navbar navbar-expand-lg bg-white border-bottom d-none d-lg-flex">
+        {/* <nav className="navbar navbar-expand-lg bg-white border-bottom"> */}
         <div className="container-fluid">
 
         <a href="/"> <img className="navbar-logo" src="/images/logo.png" alt="logo" /></a>
