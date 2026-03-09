@@ -50,7 +50,7 @@ section.choosebycatagory.sc-home-section {
 
 .choosebycatagory .sc-image-wrap {
     position: relative;
-    height: 340px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -71,27 +71,26 @@ section.choosebycatagory.sc-home-section {
 .choosebycatagory .sc-spotlight {
     position: absolute;
     bottom: 20px;
-    width: 503px;
+    width: 495px;
     left: 60%;
     transform: translateX(-50%);
     opacity: 0;
     transition: .4s;
-
-    height: 530px;
+    height: 327px;
     top: -82px;
 }
 
 /* PLATFORM */
 
 .choosebycatagory .sc-footer {
-    margin-top: -45px;
+    margin-top: -123px;
     opacity: 0;
     transform: translateY(30px);
     transition: all .5s ease;
 }
 
 .choosebycatagory .sc-platform {
-    width: 250px;
+    width: 240px;
 }
 
 /* EXPLORE */
@@ -172,6 +171,7 @@ section.choosebycatagory.sc-home-section {
 
 /* POSITION */
 
+/* Default (Desktop) */
 .choosebycatagory .swiper-button-prev {
     left: 20px;
 }
@@ -180,6 +180,19 @@ section.choosebycatagory.sc-home-section {
     right: 20px;
 }
 
+
+/* Mobile & Tablet */
+@media (max-width: 1024px) {
+    .choosebycatagory .swiper-button-prev {
+        left: 20px;
+        margin-top: -135px;
+    }
+
+    .choosebycatagory .swiper-button-next {
+        right: 20px;
+        margin-top: -135px;
+    }
+}
 
 /* REMOVE DEFAULT SWIPER ICON */
 
@@ -212,7 +225,6 @@ svg.swiper-navigation-icon {
 
 .choosebycatagory .sc-explore-btn {
 
-    margin-top: 10px;
     padding: 12px 42px;
 
     text-align: center;
@@ -235,7 +247,7 @@ svg.swiper-navigation-icon {
 
     transition: 0.5s;
 
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
     margin-bottom: 40px;
 }
 
