@@ -10,12 +10,192 @@ import {
   ShoppingCart,
   Headphones
 } from "lucide-react";
+import menuData from "../../../data/header.json";
 import "./Header.css";
 
 const Header: React.FC = () => {
   return (
     <>
-     {/* TOP NAVBAR */}
+      {/* MOBILE HEADER */}
+      <div className="mobile-header d-lg-none">
+
+        <div className="mobile-header-inner">
+
+          {/* MENU ICON */}
+          <button
+            className="menu-btn"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            ☰
+          </button>
+
+          {/* LOGO */}
+          <div className="mobile-logo">
+            TITAN <span>EYE+</span>
+          </div>
+
+          {/* RIGHT ICONS */}
+          <div className="mobile-icons">
+            <Search size={20} />
+            <ShoppingCart size={20} />
+          </div>
+
+        </div>
+
+      </div>
+
+      <div className="offcanvas offcanvas-start" id="mobileMenu">
+
+        <div className="offcanvas-header">
+          <h5>Menu</h5>
+          <button type="button" className="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div className="offcanvas-body">
+
+          <div className="accordion" id="mobileMenuAccordion">
+
+            {/* Eyeglasses */}
+            <div className="accordion-item">
+
+              <h2 className="accordion-header">
+                <button
+                  type="button"
+                  className="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#eyeglassesMenu"
+                >
+                  Eyeglasses
+                </button>
+              </h2>
+
+              <div
+                id="eyeglassesMenu"
+                className="accordion-collapse collapse"
+              >
+                <div className="accordion-body mobile-scroll">
+
+                  {menuData.menuEyeGlassesData.map((section, index) => (
+                    <div className="mobile-submenu" key={index}>
+                      <h6>{section.title}</h6>
+
+                      {section.items.map((item, i) => (
+                        <a key={i} href={item.path}>{item.label}</a>
+                      ))}
+
+                    </div>
+                  ))}
+
+                </div>
+              </div>
+
+            </div>
+
+
+            {/* Sunglasses */}
+            <div className="accordion-item">
+
+              <h2 className="accordion-header">
+                <button
+                  type="button"
+                  className="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#sunglassesMenu"
+                >
+                  Sunglasses
+                </button>
+              </h2>
+
+              <div
+                id="sunglassesMenu"
+                className="accordion-collapse collapse"
+
+              >
+                <div className="accordion-body mobile-scroll">
+
+                  {menuData.menuSunGlassesData.map((section, index) => (
+                    <div className="mobile-submenu" key={index}>
+                      <h6>{section.title}</h6>
+                      {section.items.map((item, i) => (
+                        <a key={i} href={item.path}>{item.label}</a>
+                      ))}
+
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Lenses */}
+            <div className="accordion-item">
+              <h2 className="accordion-header">
+                <button
+                  type="button"
+                  className="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#contactLensesMenu"
+                >
+                  Contact Lenses
+                </button>
+              </h2>
+
+              <div
+                id="contactLensesMenu"
+                className="accordion-collapse collapse"
+
+              >
+                <div className="accordion-body mobile-scroll">
+
+                  {menuData.menuContactLensesData.map((section, index) => (
+                    <div className="mobile-submenu" key={index}>
+                      <a key={index} href={section.path}>{section.title}</a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Accessories */}
+
+            <div className="accordion-item">
+              <h2 className="accordion-header">
+                <button
+                  type="button"
+                  className="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accessoriesMenu"
+                >
+                  Accessories
+                </button>
+              </h2>
+
+              <div
+                id="accessoriesMenu"
+                className="accordion-collapse collapse"
+
+              >
+                <div className="accordion-body mobile-scroll">
+
+                  {menuData.menuAccessoriesData.map((section, index) => (
+                    <div className="mobile-submenu" key={index}>
+                      <a key={index} href={section.path}>{section.title}</a>
+
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      {/* TOP NAVBAR */}
       <div className="top-bar bg-dark text-white py-1">
         <div className="container-fluid">
 
@@ -47,7 +227,7 @@ const Header: React.FC = () => {
 
                 <div className="dropdown hover-dropdown">
                   <span className="d-flex align-items-center gap-1">
-                    <Eye size={14}/> Eye Testing ▾
+                    <Eye size={14} /> Eye Testing ▾
                   </span>
 
                   <ul className="dropdown-menu">
@@ -69,7 +249,7 @@ const Header: React.FC = () => {
                 </span> */}
 
                 <span className="d-flex align-items-center gap-1">
-                  <MapPin size={14}/> Find Store
+                  <MapPin size={14} /> Find Store
                 </span>
 
               </div>
@@ -103,7 +283,8 @@ const Header: React.FC = () => {
       </div>
 
       {/* MAIN NAVBAR */}
-      <nav className="navbar navbar-expand-lg bg-white border-bottom">
+      <nav className="navbar navbar-expand-lg bg-white border-bottom d-none d-lg-flex">
+        {/* <nav className="navbar navbar-expand-lg bg-white border-bottom"> */}
         <div className="container-fluid">
 
           <a className="navbar-brand fw-bold">
@@ -127,110 +308,110 @@ const Header: React.FC = () => {
 
                 <span className="nav-link">Eyeglasses ▾</span>
 
-               <div className="dropdown-menu mega-menu p-4">
+                <div className="dropdown-menu mega-menu p-4">
 
-                <div className="row">
+                  <div className="row">
 
-                  <div className="col-12 col-md-3 col-sm-6">
-                    <h6>GENDER</h6>
-                    <a href="#">All</a>
-                    <a href="#">Men</a>
-                    <a href="#">Women</a>
-                    <a href="#">Kids</a>
-                  </div>
+                    <div className="col-12 col-md-3 col-sm-6">
+                      <h6>GENDER</h6>
+                      <a href="#">All</a>
+                      <a href="#">Men</a>
+                      <a href="#">Women</a>
+                      <a href="#">Kids</a>
+                    </div>
 
-                  <div className="col-12 col-md-3 col-sm-6">
-                    <h6>SHAPE</h6>
-                    <a href="#">Rectangle</a>
-                    <a href="#">Round</a>
-                    <a href="#">Cat Eye</a>
-                    <a href="#">Wayfarer</a>
-                  </div>
+                    <div className="col-12 col-md-3 col-sm-6">
+                      <h6>SHAPE</h6>
+                      <a href="#">Rectangle</a>
+                      <a href="#">Round</a>
+                      <a href="#">Cat Eye</a>
+                      <a href="#">Wayfarer</a>
+                    </div>
 
-                  <div className="col-12 col-md-3 col-sm-6">
-                    <h6>TOP BRANDS</h6>
-                    <a href="#">Titan</a>
-                    <a href="#">Rayban</a>
-                    <a href="#">Fastrack</a>
-                    <a href="#">Vogue</a>
-                  </div>
+                    <div className="col-12 col-md-3 col-sm-6">
+                      <h6>TOP BRANDS</h6>
+                      <a href="#">Titan</a>
+                      <a href="#">Rayban</a>
+                      <a href="#">Fastrack</a>
+                      <a href="#">Vogue</a>
+                    </div>
 
-                  <div className="col-12 col-md-3 col-sm-6">
-                    <img
-                      src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371"
-                      className="img-fluid rounded"
-                      alt="Eyeglasses"
-                    />
+                    <div className="col-12 col-md-3 col-sm-6">
+                      <img
+                        src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371"
+                        className="img-fluid rounded"
+                        alt="Eyeglasses"
+                      />
+                    </div>
+
                   </div>
 
                 </div>
-
-              </div>
               </li>
 
-            <li className="nav-item dropdown hover-dropdown">
-  <span className="nav-link">Sunglasses ▾</span>
+              <li className="nav-item dropdown hover-dropdown">
+                <span className="nav-link">Sunglasses ▾</span>
 
-  <div className="dropdown-menu mega-menu mega-menu-full p-4">
+                <div className="dropdown-menu mega-menu mega-menu-full p-4">
 
-      <div className="row">
+                  <div className="row">
 
-        <div className="col-12 col-md-3 col-sm-6">
-          <h6>GENDER</h6>
-          <a href="#">All</a>
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">Kids</a>
+                    <div className="col-12 col-md-3 col-sm-6">
+                      <h6>GENDER</h6>
+                      <a href="#">All</a>
+                      <a href="#">Men</a>
+                      <a href="#">Women</a>
+                      <a href="#">Kids</a>
 
-          <h6 className="mt-3">STYLE</h6>
-          <a href="#">Mirrored</a>
-          <a href="#">Tinted</a>
-          <a href="#">UV Protection</a>
-          <a href="#">Polarized</a>
+                      <h6 className="mt-3">STYLE</h6>
+                      <a href="#">Mirrored</a>
+                      <a href="#">Tinted</a>
+                      <a href="#">UV Protection</a>
+                      <a href="#">Polarized</a>
 
-          <h6 className="mt-3">USAGE</h6>
-          <a href="#">Regular</a>
-          <a href="#">Power</a>
-        </div>
+                      <h6 className="mt-3">USAGE</h6>
+                      <a href="#">Regular</a>
+                      <a href="#">Power</a>
+                    </div>
 
-        <div className="col-12 col-md-3 col-sm-6">
-          <h6>COLLECTION</h6>
-          <a href="#">Smart Sunglasses</a>
-          <a href="#">Donald</a>
-          <a href="#">Glow Up</a>
-          <a href="#">Whiplash</a>
-          <a href="#">Vivid Geometry</a>
+                    <div className="col-12 col-md-3 col-sm-6">
+                      <h6>COLLECTION</h6>
+                      <a href="#">Smart Sunglasses</a>
+                      <a href="#">Donald</a>
+                      <a href="#">Glow Up</a>
+                      <a href="#">Whiplash</a>
+                      <a href="#">Vivid Geometry</a>
 
-          <h6 className="mt-3">SHAPE</h6>
-          <a href="#">Aviator</a>
-          <a href="#">Wayfarer</a>
-          <a href="#">Wraparound</a>
-          <a href="#">Rectangle</a>
-          <a href="#">Round</a>
-        </div>
+                      <h6 className="mt-3">SHAPE</h6>
+                      <a href="#">Aviator</a>
+                      <a href="#">Wayfarer</a>
+                      <a href="#">Wraparound</a>
+                      <a href="#">Rectangle</a>
+                      <a href="#">Round</a>
+                    </div>
 
-        <div className="col-12 col-md-3 col-sm-6">
-          <h6>BRANDS</h6>
-          <a href="#">Titan</a>
-          <a href="#">Fastrack</a>
-          <a href="#">Rayban</a>
-          <a href="#">Oakley</a>
-          <a href="#">Burberry</a>
-        </div>
+                    <div className="col-12 col-md-3 col-sm-6">
+                      <h6>BRANDS</h6>
+                      <a href="#">Titan</a>
+                      <a href="#">Fastrack</a>
+                      <a href="#">Rayban</a>
+                      <a href="#">Oakley</a>
+                      <a href="#">Burberry</a>
+                    </div>
 
-        <div className="col-12 col-md-3">
-          <img
-            src="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
-            className="img-fluid rounded"
-            alt="Sunglasses"
-          />
-        </div>
+                    <div className="col-12 col-md-3">
+                      <img
+                        src="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
+                        className="img-fluid rounded"
+                        alt="Sunglasses"
+                      />
+                    </div>
 
-      </div>
-   
+                  </div>
 
-  </div>
-</li>
+
+                </div>
+              </li>
 
               {/* <li className="nav-item">
                 <span className="nav-link">Power Sunglasses</span>
