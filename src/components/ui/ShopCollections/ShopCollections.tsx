@@ -79,6 +79,7 @@ export default function ShopCollections({ shopCollection }: Props) {
                                     src={item.image}
                                     alt={item.title}
                                     className="sc-character"
+                                    style={{ width: 250, height: 160, top: 30, position: 'absolute' }}
                                 />
 
                             </div>

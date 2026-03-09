@@ -608,64 +608,94 @@
   "faq": [
     {
       "id": 1,
-      "title": "About Titan Eye+",
-      "content": "Whether you are a fashion-forward trendsetter or a refined professional, all your requirements will be fulfilled here! At Titan Eye+, we understand eyewear’s profound impact on one’s appearance, confidence, and overall well-being. Hence, we have carefully handpicked each item in our expansive range."
+      "title": "About Kubade OptiCare",
+      "content": "Kubade OptiCare is a trusted optical store located in Nagpur, Maharashtra, offering a wide range of eyewear solutions including eyeglasses, sunglasses, contact lenses, and eye care services. With a strong reputation and excellent customer reviews, Kubade OptiCare focuses on providing high-quality products, expert guidance, and personalized eye care to ensure the best vision and comfort for every customer."
     },
     {
       "id": 2,
       "title": "Range of Sunglasses",
-      "content": "Explore our wide range of sunglasses designed for style and protection."
+      "content": "Kubade OptiCare offers a stylish collection of sunglasses designed to protect your eyes from harmful UV rays while enhancing your look. Choose from modern, classic, and premium frames suitable for every lifestyle."
     },
     {
       "id": 3,
       "title": "Range of Frames & Lenses",
-      "content": "Discover premium frames and high-quality lenses for every need."
+      "content": "Explore a wide selection of high-quality frames and advanced lenses at Kubade OptiCare. We provide durable, comfortable, and fashionable eyewear options tailored to your vision needs."
     },
     {
       "id": 4,
       "title": "Range of Contact Lenses",
-      "content": "Choose from daily, monthly and colored contact lenses."
+      "content": "Kubade OptiCare provides reliable contact lens options including daily, monthly, and colored lenses. Our experts help you choose the right lenses for comfort, clarity, and convenience."
     },
     {
       "id": 5,
-      "title": "Range of Computer Glasses",
-      "content": "Protect your eyes from harmful blue light with computer glasses."
+      "title": "Store Location & Contact",
+      "content": "Kubade OptiCare is located above Bhande Plot Square, Sudampuri, Nagpur, Maharashtra 440024. For inquiries or assistance, call us at +91 70666 02959."
     },
     {
       "id": 6,
-      "title": "Frequently Asked Questions",
-      "content": "Find answers to common questions about Titan Eye+ products and services."
+      "title": "Store Hours",
+      "content": "Kubade OptiCare is open Monday to Saturday from 9:30 AM to 9:30 PM. The store remains closed on Sundays. Drive-through, pick-up, and delivery services are available between 10:00 AM and 9:30 PM."
     }
   ],
   "collections": [
     {
       "id": 1,
       "title": "Kids",
-      "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/kids.png",
+      "image": "/images/Collection/c1.png",
       "url": "/eyeglasses/gender/kids"
     },
     {
       "id": 2,
       "title": "Youth",
-      "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/adult.png",
+      "image": "/images/Collection/c2.png",
       "url": "/eyeglasses/brand/fastrack"
     },
     {
       "id": 3,
       "title": "Workwear",
-      "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/professional.png",
+      "image": "/images/Collection/c3.png",
       "url": "/eyeglasses/workwear"
     },
     {
       "id": 4,
       "title": "Silvers",
-      "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/silver.png",
+      "image": "/images/Collection/c4.png",
       "url": "/eyeglasses/silver"
     },
     {
       "id": 5,
       "title": "xyzz",
-      "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/silver.png",
+      "image": "/images/Collection/c5.png",
+      "url": "/eyeglasses/silver"
+    },
+    {
+      "id": 6,
+      "title": "Kids",
+      "image": "/images/Collection/c6.png",
+      "url": "/eyeglasses/gender/kids"
+    },
+    {
+      "id": 7,
+      "title": "Youth",
+      "image": "/images/Collection/c7.png",
+      "url": "/eyeglasses/brand/fastrack"
+    },
+    {
+      "id": 8,
+      "title": "Workwear",
+      "image": "/images/Collection/c8.png",
+      "url": "/eyeglasses/workwear"
+    },
+    {
+      "id": 9,
+      "title": "Silvers",
+      "image": "/images/Collection/c9.png",
+      "url": "/eyeglasses/silver"
+    },
+    {
+      "id": 10,
+      "title": "xyzz",
+      "image": "/images/Collection/c10.png",
       "url": "/eyeglasses/silver"
     }
   ]

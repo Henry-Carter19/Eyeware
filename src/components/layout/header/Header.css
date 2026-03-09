@@ -161,7 +161,10 @@
   margin-bottom: 10px;
 }
 
-
+.navbar {
+  display: flex;
+  align-items: center;
+}
 
 
 .navbar{
@@ -169,4 +172,56 @@
   top: 0;
   z-index: 100;
   background: white;
+}
+
+
+/* =========================
+   NAVBAR LOGO
+========================= */
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* Align properly inside navbar */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .navbar-logo {
+    height: 40px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 40px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    height: 40px;
+  }
 }
