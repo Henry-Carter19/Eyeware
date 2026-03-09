@@ -3,22 +3,22 @@
 /* =============================== */
 
 .curation-section {
-    padding: 50px 60px;
-    background: linear-gradient(to right, #000000, #0a0a0a);
-    color: white;
-    text-align: center;
+  padding: 50px 60px;
+  background: linear-gradient(to right, #000000, #0a0a0a);
+  color: white;
+  text-align: center;
 }
 
 .curation-title {
-    font-size: 34px;
-    font-weight: 500;
-    margin-bottom: 60px;
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 60px;
 }
 
 .curation-title span {
-    font-style: italic;
-    font-weight: 600;
-    margin-left: 6px;
+  font-style: italic;
+  font-weight: 600;
+  margin-left: 6px;
 }
 
 /* =============================== */
@@ -26,20 +26,22 @@
 /* =============================== */
 
 .curation-card {
-    position: relative;
-    border-radius: 28px;
-    overflow: hidden;
-    height: 400px;
-    width: 530px;
-    cursor: pointer;
-    transition: transform 0.4s ease;
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  max-width: 520px;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.4s ease;
 }
 
 .curation-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 28px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 28px;
 }
 
 /* =============================== */
@@ -47,128 +49,115 @@
 /* =============================== */
 
 .curation-btn {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 26px;
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 12px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease,
-        box-shadow 0.3s ease;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 26px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-/* Smooth Scale on Hover */
 .curation-card:hover .curation-btn {
-    transform: translateX(-50%) scale(1.1);
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateX(-50%) scale(1.1);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
-
-/* Swiper Arrows */
-.swiper-button-prev,
-.swiper-button-next {
-    color: white;
-}
-
 
 /* =============================== */
 /* Swiper Wrapper */
 /* =============================== */
 
 .curation-swiper-wrapper {
-    position: relative;
+  position: relative;
 }
 
 /* =============================== */
-/* Cinematic Edge Fade Effect */
+/* Edge Fade Effect */
 /* =============================== */
 
 .edge-left,
 .edge-right {
-    position: absolute;
-    top: 0;
-    width: 160px;
-    height: 100%;
-    z-index: 5;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 160px;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
 }
 
 .edge-left {
-    left: 0;
-    background: linear-gradient(to right,
-            rgba(0, 0, 0, 0.95),
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.2),
-            transparent);
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
 }
 
 .edge-right {
-    right: 0;
-    background: linear-gradient(to left,
-            rgba(0, 0, 0, 0.95),
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.2),
-            transparent);
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
 }
 
-
 /* =============================== */
-/* Premium Transparent Arrows */
+/* Arrows */
 /* =============================== */
 
 .custom-prev,
 .custom-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-
-    /* Transparent glass look */
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    border: 1px solid rgba(255, 255, 255, 0.15);
-
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    cursor: pointer;
-    z-index: 20;
-
-    transition: all 0.35s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.35s ease;
 }
 
 .custom-prev {
-    left: 10px;
+  left: 10px;
 }
 
 .custom-next {
-    right: 10px;
+  right: 10px;
 }
 
-/* Hover Effect */
 .custom-prev:hover,
 .custom-next:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-50%) scale(1.08);
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-50%) scale(1.08);
 }
 
-
 /* =============================== */
-/* Header Layout */
+/* Header */
 /* =============================== */
 
 .curation-header {
@@ -187,23 +176,24 @@
   border-radius: 30px;
   font-size: 14px;
   cursor: pointer;
-  transition: 
+  transition:
     background 0.3s ease,
     box-shadow 0.3s ease,
     letter-spacing 0.3s ease;
 }
 
-/* Smooth premium hover */
 .view-all-btn:hover {
   background: #ffffff;
-  box-shadow: 
+  box-shadow:
     0 8px 25px rgba(0, 0, 0, 0.12),
     0 0 0 1px rgba(0, 166, 199, 0.15);
   letter-spacing: 0.5px;
 }
 
+/* =============================== */
+/* Gold background */
+/* =============================== */
 
-/* Gold background variation */
 .gold-bg {
   background: linear-gradient(
     to right,
@@ -216,7 +206,8 @@
   );
 }
 
-/* Arrow button (for Exclusive Deals) */
+/* Arrow button */
+
 .arrow-btn {
   position: absolute;
   bottom: 30px;
@@ -234,5 +225,223 @@
 
 .curation-card:hover .arrow-btn {
   transform: scale(1.08);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ================================= */
+/* RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 1200px) {
+  .curation-card {
+    width: 420px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 992px) {
+  .curation-section {
+    padding: 40px 30px;
+  }
+
+  .curation-title {
+    font-size: 28px;
+  }
+
+  .curation-card {
+    width: 360px;
+    height: 320px;
+  }
+}
+
+/* ============================= */
+/* MOBILE OPTIMIZATION */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .curation-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .curation-title {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .view-all-btn {
+    position: static;
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  .curation-swiper-wrapper {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-prev,
+  .custom-next {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .custom-prev {
+    left: 5px;
+  }
+
+  .custom-next {
+    right: 5px;
+  }
+}
+
+
+/* ================================= */
+/* RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 1200px) {
+  .curation-card {
+    max-width: 420px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 992px) {
+  .curation-section {
+    padding: 40px 30px;
+  }
+
+  .curation-title {
+    font-size: 28px;
+  }
+
+  .curation-card {
+    max-width: 360px;
+    height: 320px;
+  }
+
+  .edge-left,
+  .edge-right {
+    width: 120px;
+  }
+}
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .curation-section {
+    padding: 30px 18px;
+  }
+
+  .curation-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .curation-title {
+    font-size: 22px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .view-all-btn {
+    position: static;
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  .curation-card {
+    height: 260px;
+    border-radius: 20px;
+  }
+
+  .curation-image {
+    border-radius: 20px;
+  }
+
+  .curation-btn {
+    padding: 8px 18px;
+    font-size: 11px;
+  }
+
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+  }
+
+  .edge-left,
+  .edge-right {
+    width: 80px;
+  }
+
+  .custom-prev,
+  .custom-next {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 480px) {
+  .curation-section {
+    padding: 24px 14px;
+  }
+
+  .curation-title {
+    font-size: 18px;
+  }
+
+  .curation-card {
+    height: 220px;
+  }
+
+  .curation-btn {
+    padding: 6px 16px;
+    font-size: 10px;
+  }
+
+  .arrow-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .edge-left,
+  .edge-right {
+    display: none;
+  }
+
+  .custom-prev,
+  .custom-next {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+    top: 45%;
+  }
+
+  .custom-prev {
+    left: 4px;
+  }
+
+  .custom-next {
+    right: 4px;
+  }
 }

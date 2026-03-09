@@ -10,8 +10,10 @@ import {
   ShoppingCart,
   Headphones
 } from "lucide-react";
+import logo from "../../../../public/images/logo.png";
 import menuData from "../../../data/header.json";
 import "./Header.css";
+
 
 const Header: React.FC = () => {
   return (
@@ -205,7 +207,7 @@ const Header: React.FC = () => {
             <div className="d-flex align-items-center gap-2">
               <Headphones size={14} />
               <span className="help-text">
-                Need Help? <span className="text-info fw-bold">1800-266-0123</span>
+                Need Help? <span className="text-info fw-bold">070666 02959</span>
               </span>
             </div>
 
@@ -287,9 +289,7 @@ const Header: React.FC = () => {
         {/* <nav className="navbar navbar-expand-lg bg-white border-bottom"> */}
         <div className="container-fluid">
 
-          <a className="navbar-brand fw-bold">
-            TITAN <span className="text-info">EYE+</span>
-          </a>
+        <a href="/"> <img className="navbar-logo" src="/images/logo.png" alt="logo" /></a>
 
           <button
             className="navbar-toggler"
@@ -453,9 +453,9 @@ const Header: React.FC = () => {
 
             </ul>
 
-            <div>
+            {/* <div>
               <ShoppingCart size={22} />
-            </div>
+            </div> */}
 
           </div>
         </div>

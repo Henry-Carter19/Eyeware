@@ -14,9 +14,9 @@
 
 .TestimonialsCarousel-section .TestimonialsCarousel-title {
     text-align: center;
-    font-size: 42px;
+    font-size: 33px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     color: #1c2a39;
 }
 
@@ -119,6 +119,7 @@
 .TestimonialsCarousel-section .review {
     font-size: 16px;
     line-height: 1.6;
+    text-align: justify;
     color: #4b647c;
     margin-bottom: 22px;
     flex-grow: 1;
@@ -162,11 +163,11 @@
 }
 
 .TestimonialsCarousel-section .test-prev {
-    left: 30px;
+    left: 10px;
 }
 
 .TestimonialsCarousel-section .test-next {
-    right: 30px;
+    right: 10px;
 }
 
 .TestimonialsCarousel-section .test-prev svg,
@@ -198,4 +199,74 @@
     width: 24px;
     border-radius: 10px;
     background: #4b4f55;
+}
+
+
+
+/* =============================== */
+/* Responsive */
+/* =============================== */
+
+@media (max-width: 1200px) {
+
+  .TestimonialsCarousel-section {
+    padding: 45px 40px;
+  }
+
+  .TestimonialsCarousel-section .test-prev {
+    left: 15px;
+  }
+
+  .TestimonialsCarousel-section .test-next {
+    right: 15px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .TestimonialsCarousel-section {
+    padding: 40px 30px;
+  }
+
+  .TestimonialsCarousel-section .test-prev {
+    left: 10px;
+  }
+
+  .TestimonialsCarousel-section .test-next {
+    right: 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .TestimonialsCarousel-section {
+    padding: 35px 20px;
+  }
+
+  .TestimonialsCarousel-section .test-prev {
+    left: 5px;
+  }
+
+  .TestimonialsCarousel-section .test-next {
+    right: 5px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .TestimonialsCarousel-section {
+    padding: 30px 20px;
+  }
+
+  .TestimonialsCarousel-section .test-prev {
+    left: 0;
+  }
+
+  .TestimonialsCarousel-section .test-next {
+    right: 0;
+  }
+
 }

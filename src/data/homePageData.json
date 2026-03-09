@@ -17,6 +17,7 @@
     {
       "id": 1,
       "name": "Fastrack",
+      "route": "/products",
       "tagline": "Trendy frames for the young and edgy",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
@@ -25,6 +26,7 @@
     {
       "id": 2,
       "name": "Ray-Ban",
+      "route": "/products",
       "tagline": "Timeless icons, always in style",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
@@ -33,6 +35,7 @@
     {
       "id": 3,
       "name": "NeoFrame",
+      "route": "/products",
       "tagline": "Fresh designs for modern lifestyles",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
@@ -41,6 +44,7 @@
     {
       "id": 4,
       "name": "EliteLens",
+      "route": "/products",
       "tagline": "Sophisticated vision solutions",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
@@ -49,6 +53,7 @@
     {
       "id": 5,
       "name": "StreetSight",
+      "route": "/products",
       "tagline": "Urban fashion meets clarity",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
@@ -57,6 +62,7 @@
     {
       "id": 6,
       "name": "PrimeOptic",
+      "route": "/products",
       "tagline": "Refined style for premium taste",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
@@ -65,6 +71,7 @@
     {
       "id": 7,
       "name": "ClearEdge",
+      "route": "/products",
       "tagline": "Sharp looks for sharp minds",
       "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
@@ -82,37 +89,37 @@
         "id": 1,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/collection/ft_shapes"
+        "route": "/products"
       },
       {
         "id": 2,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/sunglasses/biking"
+        "route": "/products"
       },
       {
         "id": 3,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/new"
+        "route": "/products"
       },
       {
         "id": 4,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/collection/ft_shapes"
+        "route": "/products"
       },
       {
         "id": 5,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/sunglasses/biking"
+        "route": "/products"
       },
       {
         "id": 6,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/new"
+        "route": "/products"
       }
     ]
   },
@@ -123,44 +130,44 @@
     "showArrowButton": true,
     "viewAll": {
       "label": "View All",
-      "route": "/exclusive-deals"
+      "route": "/products"
     },
     "cards": [
       {
         "id": 1,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_SG_1158X750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/collection/ft_shapes"
+        "route": "/products"
       },
       {
         "id": 2,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/sunglasses/biking"
+        "route": "/products"
       },
       {
         "id": 3,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/new"
+        "route": "/products"
       },
       {
         "id": 4,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_Vibes_1158X750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/collection/ft_shapes"
+        "route": "/products"
       },
       {
         "id": 5,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/sunglasses/biking"
+        "route": "/products"
       },
       {
         "id": 6,
         "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
-        "route": "/eyeglasses/new"
+        "route": "/products"
       }
     ]
   },
@@ -449,6 +456,121 @@
       ]
     }
   },
+  "blogSection": {
+    "title": "From",
+    "highlight": "the Blog",
+    "filters": [
+      {
+        "label": "Sunglasses",
+        "key": "sunglasses"
+      },
+      {
+        "label": "Eyeglasses",
+        "key": "eyeglasses"
+      },
+      {
+        "label": "Titan Vision Care",
+        "key": "titan"
+      },
+      {
+        "label": "Contact Lenses",
+        "key": "contact"
+      },
+      {
+        "label": "Lenses",
+        "key": "lenses"
+      }
+    ],
+    "cards": {
+      "sunglasses": [
+        {
+          "id": 1,
+          "title": "Battle of the Styles: Mirrored Sunglasses vs Polaroid Sunglasses",
+          "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+          "category": "SUNGLASSES",
+          "route": "/blog/mirrored-vs-polaroid"
+        },
+        {
+          "id": 2,
+          "title": "Choosing and Caring for Sunglasses: Protect Your Eyes with Style",
+          "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+          "category": "SUNGLASSES",
+          "route": "/blog/caring-for-sunglasses"
+        },
+        {
+          "id": 3,
+          "title": "Four Reasons Why Opting for Polarized Glasses is a Wise Choice",
+          "image": "https://images.unsplash.com/photo-1516826957135-700dedea698c",
+          "category": "SUNGLASSES",
+          "route": "/blog/polarized-benefits"
+        },
+        {
+          "id": 4,
+          "title": "Unleash Your Fashion Statement With Chic Sunglasses For Women",
+          "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+          "category": "SUNGLASSES",
+          "route": "/blog/chic-sunglasses"
+        },
+        {
+          "id": 5,
+          "title": "Frame/Sunglass Size Guide",
+          "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0",
+          "category": "SUNGLASSES",
+          "route": "/blog/frame-size-guide"
+        },
+        {
+          "id": 6,
+          "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
+          "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
+          "category": "EYEGLASSES",
+          "route": "/blog/face-shape-glasses"
+        },
+        {
+          "id": 7,
+          "title": "Why Titan Vision Care Is Leading The Eyewear Market",
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+          "category": "TITAN VISION",
+          "route": "/blog/titan-vision"
+        }
+      ],
+      "eyeglasses": [
+        {
+          "id": 6,
+          "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
+          "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
+          "category": "EYEGLASSES",
+          "route": "/blog/face-shape-glasses"
+        }
+      ],
+      "titan": [
+        {
+          "id": 7,
+          "title": "Why Titan Vision Care Is Leading The Eyewear Market",
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+          "category": "TITAN VISION",
+          "route": "/blog/titan-vision"
+        }
+      ],
+      "contact": [
+        {
+          "id": 8,
+          "title": "A Beginner Guide To Contact Lenses",
+          "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+          "category": "CONTACT LENSES",
+          "route": "/blog/contact-lens-guide"
+        }
+      ],
+      "lenses": [
+        {
+          "id": 9,
+          "title": "Different Types Of Lenses And Their Uses",
+          "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a6c0",
+          "category": "LENSES",
+          "route": "/blog/lens-types"
+        }
+      ]
+    }
+  },
   "testimonialsSection": {
     "title": "Words we",
     "highlight": "live by",
@@ -486,33 +608,95 @@
   "faq": [
     {
       "id": 1,
-      "title": "About Titan Eye+",
-      "content": "Whether you are a fashion-forward trendsetter or a refined professional, all your requirements will be fulfilled here! At Titan Eye+, we understand eyewear’s profound impact on one’s appearance, confidence, and overall well-being. Hence, we have carefully handpicked each item in our expansive range."
+      "title": "About Kubade OptiCare",
+      "content": "Kubade OptiCare is a trusted optical store located in Nagpur, Maharashtra, offering a wide range of eyewear solutions including eyeglasses, sunglasses, contact lenses, and eye care services. With a strong reputation and excellent customer reviews, Kubade OptiCare focuses on providing high-quality products, expert guidance, and personalized eye care to ensure the best vision and comfort for every customer."
     },
     {
       "id": 2,
       "title": "Range of Sunglasses",
-      "content": "Explore our wide range of sunglasses designed for style and protection."
+      "content": "Kubade OptiCare offers a stylish collection of sunglasses designed to protect your eyes from harmful UV rays while enhancing your look. Choose from modern, classic, and premium frames suitable for every lifestyle."
     },
     {
       "id": 3,
       "title": "Range of Frames & Lenses",
-      "content": "Discover premium frames and high-quality lenses for every need."
+      "content": "Explore a wide selection of high-quality frames and advanced lenses at Kubade OptiCare. We provide durable, comfortable, and fashionable eyewear options tailored to your vision needs."
     },
     {
       "id": 4,
       "title": "Range of Contact Lenses",
-      "content": "Choose from daily, monthly and colored contact lenses."
+      "content": "Kubade OptiCare provides reliable contact lens options including daily, monthly, and colored lenses. Our experts help you choose the right lenses for comfort, clarity, and convenience."
     },
     {
       "id": 5,
-      "title": "Range of Computer Glasses",
-      "content": "Protect your eyes from harmful blue light with computer glasses."
+      "title": "Store Location & Contact",
+      "content": "Kubade OptiCare is located above Bhande Plot Square, Sudampuri, Nagpur, Maharashtra 440024. For inquiries or assistance, call us at +91 70666 02959."
     },
     {
       "id": 6,
-      "title": "Frequently Asked Questions",
-      "content": "Find answers to common questions about Titan Eye+ products and services."
+      "title": "Store Hours",
+      "content": "Kubade OptiCare is open Monday to Saturday from 9:30 AM to 9:30 PM. The store remains closed on Sundays. Drive-through, pick-up, and delivery services are available between 10:00 AM and 9:30 PM."
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "title": "Kids",
+      "image": "/images/Collection/c1.png",
+      "url": "/eyeglasses/gender/kids"
+    },
+    {
+      "id": 2,
+      "title": "Youth",
+      "image": "/images/Collection/c2.png",
+      "url": "/eyeglasses/brand/fastrack"
+    },
+    {
+      "id": 3,
+      "title": "Workwear",
+      "image": "/images/Collection/c3.png",
+      "url": "/eyeglasses/workwear"
+    },
+    {
+      "id": 4,
+      "title": "Silvers",
+      "image": "/images/Collection/c4.png",
+      "url": "/eyeglasses/silver"
+    },
+    {
+      "id": 5,
+      "title": "xyzz",
+      "image": "/images/Collection/c5.png",
+      "url": "/eyeglasses/silver"
+    },
+    {
+      "id": 6,
+      "title": "Kids",
+      "image": "/images/Collection/c6.png",
+      "url": "/eyeglasses/gender/kids"
+    },
+    {
+      "id": 7,
+      "title": "Youth",
+      "image": "/images/Collection/c7.png",
+      "url": "/eyeglasses/brand/fastrack"
+    },
+    {
+      "id": 8,
+      "title": "Workwear",
+      "image": "/images/Collection/c8.png",
+      "url": "/eyeglasses/workwear"
+    },
+    {
+      "id": 9,
+      "title": "Silvers",
+      "image": "/images/Collection/c9.png",
+      "url": "/eyeglasses/silver"
+    },
+    {
+      "id": 10,
+      "title": "xyzz",
+      "image": "/images/Collection/c10.png",
+      "url": "/eyeglasses/silver"
     }
   ]
 }

@@ -10,6 +10,7 @@ export interface Brand {
   modelImage: string;
   brandLogo: string;
   category: "Premium" | "Essentials";
+  route: string;
 }
 
 export interface FaqItem {
@@ -46,11 +47,6 @@ export interface CurationSection {
   cards: CurationCard[];
 }
 
-
-
-
-
-
 export interface TestimonialCard {
   id: number;
   name: string;
@@ -64,13 +60,6 @@ export interface TestimonialsSection {
   highlight: string;
   cards: TestimonialCard[];
 }
-
-
-
-
-
-
-
 
 export interface BestsellerCard {
   id: number;
@@ -91,7 +80,6 @@ export interface BestsellerSection {
   highlight: string;
   cards: BestsellerCard[];
 }
-
 
 export interface TrendingCard {
   id: number;
@@ -117,6 +105,13 @@ export interface TrendingSection {
   cards: Record<string, TrendingCard[]>;
 }
 
+export interface CollectionItem {
+  id: number
+  title: string
+  image: string
+  url: string
+}
+
 export interface HomePageData {
   heroBanners: HeroBanner[];
   brands: Brand[];
@@ -125,6 +120,28 @@ export interface HomePageData {
   hypeCards: HypeCard[];
   bestsellersSection: BestsellerSection;
   trendingSection: TrendingSection;
+  blogSection: BlogSection;
   testimonialsSection: TestimonialsSection;
+  collections: CollectionItem[];
   faq: FaqItem[];
+}
+
+export interface BlogCard {
+  id: number;
+  title: string;
+  image: string;
+  category: string;
+  route: string;
+}
+
+export interface BlogFilter {
+  label: string;
+  key: string;
+}
+
+export interface BlogSection {
+  title: string;
+  highlight: string;
+  filters: BlogFilter[];
+  cards: Record<string, BlogCard[]>;
 }

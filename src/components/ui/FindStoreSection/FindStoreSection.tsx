@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./FindStoreSection.css";
+import { Store, Eye, UserRound, Glasses } from "lucide-react";
 
 const FindStoreSection: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleExploreStore = () => {
+    navigate("/products");
+  };
+
   return (
     <section className="store-section">
 
@@ -10,7 +18,7 @@ const FindStoreSection: React.FC = () => {
       <div className="store-content">
 
         <div className="store-count">
-          <span className="store-icon">🏬</span>
+          <Store className="store-icon" size={18} />
           850+ <span>Stores across India,</span>
         </div>
 
@@ -21,34 +29,54 @@ const FindStoreSection: React.FC = () => {
 
         <div className="store-features">
           <div className="feature">
-            <span className="feature-icon">👁</span>
+            <Eye className="feature-icon" size={18} />
             Free Eye Test
           </div>
 
           <div className="feature">
-            <span className="feature-icon">👨‍⚕️</span>
+            <UserRound className="feature-icon" size={18} />
             Expert Consultations
           </div>
 
           <div className="feature">
-            <span className="feature-icon">👓</span>
+            <Glasses className="feature-icon" size={18} />
             Over 5000+ Styles
           </div>
         </div>
 
         <div className="store-rating">
-          <div className="laurel left">❮</div>
+
+          <img
+            src="https://api.titaneyeplus.com/media/wysiwyg/home-page/store/left-leaf.png"
+            alt="laurel left"
+            className="laurel left"
+          />
+
           <div className="rating-content">
-            <div className="rating-score">4.9 <span>/5</span></div>
+            <div className="rating-score">
+              4.9 <span>/5</span>
+            </div>
+
             <div className="stars">★★★★★</div>
-            <div className="rating-text">8Lakh + Ratings</div>
+
+            <div className="rating-text">
+              8Lakh + Ratings
+            </div>
           </div>
-          <div className="laurel right">❯</div>
+
+          <img
+            src="https://api.titaneyeplus.com/media/wysiwyg/home-page/store/right-leaf.png"
+            alt="laurel right"
+            className="laurel right"
+          />
+
         </div>
 
       </div>
 
-      <button className="find-store-btn">Explore Store</button>
+      <button className="find-store-btn" onClick={handleExploreStore}>
+        Explore Store
+      </button>
 
     </section>
   );

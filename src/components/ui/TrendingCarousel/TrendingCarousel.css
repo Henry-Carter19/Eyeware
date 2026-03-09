@@ -126,14 +126,128 @@
 }
 
 .TrendingCarousel-section .trend-prev {
-    left: 20px;
+    left: 5px;
 }
 
 .TrendingCarousel-section .trend-next {
-    right: 20px;
+    right: 5px;
 }
 
 .TrendingCarousel-section .trend-pagination {
     margin-top: 20px;
     text-align: center;
+}
+
+/* ================================= */
+/* Tablet */
+/* ================================= */
+
+@media (max-width: 1024px) {
+
+  .TrendingCarousel-section {
+    padding: 40px 30px;
+  }
+
+  .TrendingCarousel-section .TrendingCarousel-header .title {
+    font-size: 26px;
+  }
+
+  .TrendingCarousel-section .trend-card {
+    height: 320px;
+    padding: 14px;
+  }
+
+  .TrendingCarousel-section .trend-img {
+    height: 130px;
+  }
+
+  .TrendingCarousel-section .trend-prev,
+  .TrendingCarousel-section .trend-next {
+    width: 42px;
+    height: 42px;
+  }
+
+}
+
+
+/* ================================= */
+/* Mobile */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+  .TrendingCarousel-section {
+    padding: 35px 20px;
+  }
+
+  .TrendingCarousel-section .TrendingCarousel-header {
+    margin-bottom: 25px;
+  }
+
+  .TrendingCarousel-section .TrendingCarousel-header .subtitle {
+    font-size: 14px;
+  }
+
+  .TrendingCarousel-section .TrendingCarousel-header .title {
+    font-size: 22px;
+  }
+
+  .TrendingCarousel-section .filters {
+    gap: 8px;
+  }
+
+  .TrendingCarousel-section .filter-btn {
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+
+  .TrendingCarousel-section .trend-card {
+    height: auto;
+  }
+
+  .TrendingCarousel-section .trend-img {
+    height: 120px;
+  }
+
+  .TrendingCarousel-section .brand {
+    font-size: 13px;
+  }
+
+  .TrendingCarousel-section .name {
+    font-size: 12px;
+  }
+
+  .TrendingCarousel-section .price {
+    font-size: 14px;
+  }
+
+  .TrendingCarousel-section .trend-prev,
+  .TrendingCarousel-section .trend-next {
+    width: 36px;
+    height: 36px;
+    top: 55%;
+  }
+
+}
+
+
+/* ================================= */
+/* Small Mobile */
+/* ================================= */
+
+@media (max-width: 480px) {
+
+  .TrendingCarousel-section {
+    padding: 30px 16px;
+  }
+
+  .TrendingCarousel-section .TrendingCarousel-header .title {
+    font-size: 20px;
+  }
+
+  .TrendingCarousel-section .trend-prev,
+  .TrendingCarousel-section .trend-next {
+    display: none;
+  }
+
 }

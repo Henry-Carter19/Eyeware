@@ -1,6 +1,5 @@
 /* SEARCH BOX */
 
-
 .search-box {
   width: 350px;
   height: 30px;
@@ -32,7 +31,6 @@
 /* MOBILE TOP BAR */
 
 @media (max-width: 768px) {
-
   .search-box {
     display: none;
   }
@@ -44,12 +42,10 @@
   .top-bar {
     font-size: 12px;
   }
-
 }
 /* MEGA MENU IMAGE RESPONSIVE */
 
 @media (max-width: 768px) {
-
   .mega-menu img {
     max-width: 150px;
     height: auto;
@@ -59,7 +55,6 @@
     overflow-y: auto;      /* enable vertical scroll */
     overflow-x: hidden;
   }
-
 }
 
 /* ICON SIZE ADJUST */
@@ -128,8 +123,7 @@
 }
 
 .dropdown-item:hover {
-    background-color: white!important;
-    
+  background-color: white !important;
 }
 /* HOVER EFFECT */
 
@@ -170,7 +164,10 @@
   margin-bottom: 10px;
 }
 
-
+.navbar {
+  display: flex;
+  align-items: center;
+}
 
 
 .navbar{
@@ -181,6 +178,52 @@
 }
 
 
+/* =========================
+   NAVBAR LOGO
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* Align properly inside navbar */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* =========================
+   TABLET
+
+@media (max-width: 1024px) {
+  .navbar-logo {
+    height: 40px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 40px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    height: 40px;
+  }
+}
 /* MOBILE HEADER */
 
 .mobile-header {

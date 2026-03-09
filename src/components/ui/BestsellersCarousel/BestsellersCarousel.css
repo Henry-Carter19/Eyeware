@@ -14,10 +14,10 @@
 
 .BestsellersCarousel-section .BestsellersCarousel-title {
     text-align: center;
-    font-size: 36px;
+    font-size: 33px;
     font-weight: 500;
     margin-bottom: 35px;
-    color: white;
+    color: #141414;
 }
 
 .BestsellersCarousel-section .BestsellersCarousel-title span {
@@ -206,11 +206,11 @@
 }
 
 .BestsellersCarousel-section .best-prev {
-    left: 30px;
+    left: 5px;
 }
 
 .BestsellersCarousel-section .best-next {
-    right: 30px;
+    right: 5px;
 }
 
 .BestsellersCarousel-section .best-prev:hover,
@@ -245,4 +245,64 @@
     width: 20px;
     border-radius: 10px;
     background: #555;
+}
+
+/* =============================== */
+/* Responsive Padding Only */
+/* =============================== */
+
+@media (max-width: 1200px) {
+  .BestsellersCarousel-section {
+    padding: 45px 40px;
+  }
+
+  .BestsellersCarousel-section .best-prev {
+    left: 15px;
+  }
+
+  .BestsellersCarousel-section .best-next {
+    right: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .BestsellersCarousel-section {
+    padding: 40px 30px;
+  }
+
+  .BestsellersCarousel-section .best-prev {
+    left: 10px;
+  }
+
+  .BestsellersCarousel-section .best-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .BestsellersCarousel-section {
+    padding: 35px 20px;
+  }
+
+  .BestsellersCarousel-section .best-prev {
+    left: 5px;
+  }
+
+  .BestsellersCarousel-section .best-next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .BestsellersCarousel-section {
+    padding: 30px 20px;
+  }
+
+  .BestsellersCarousel-section .best-prev {
+    left: 0;
+  }
+
+  .BestsellersCarousel-section .best-next {
+    right: 0;
+  }
 }
