@@ -177,16 +177,16 @@
   background: white;
 }
 
-
-/* =========================
-   NAVBAR LOGO
-
 .navbar-logo {
   height: 40px;
   width: auto;
   object-fit: contain;
   cursor: pointer;
 }
+/* =========================
+   NAVBAR LOGO
+
+
 
 /* Align properly inside navbar */
 .navbar-brand {

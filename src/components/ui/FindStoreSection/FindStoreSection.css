@@ -5,7 +5,11 @@
   height: 620px;
   color: #fff;
   overflow: hidden;
-  background: url("https://api.titaneyeplus.com/media/wysiwyg/home-page/store/store-image.png?height=1706&width=1172&fit=cover") center/cover no-repeat;
+
+  /* background-image: url("%PUBLIC_URL%/images/StoreSection/storesectionbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
 
 .store-section .store-top-overlay {

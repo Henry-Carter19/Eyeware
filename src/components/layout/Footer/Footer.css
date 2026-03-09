@@ -23,6 +23,14 @@
   margin: 0;
 }
 
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
 /* =============================== */
 /* Correct Left Alignment Animation */
 /* =============================== */

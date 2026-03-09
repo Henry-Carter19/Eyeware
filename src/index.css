@@ -37,6 +37,7 @@
 }
 
 
+
 /* =================================
    GLOBAL RESET
 ================================= */
@@ -99,4 +100,20 @@ body {
 
 .common-section-padding {
   padding: 30px 50px;
+}
+
+
+.eapps-widget-toolbar {
+  display: none !important;
+
+}
+
+.WidgetBackground__ContentContainer a[href*="https://elfsight.com/google-reviews-widget"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+a[href*="elfsight.com"] {
+  display: none !important;
 }
