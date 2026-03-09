@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./FindStoreSection.css";
 import { Store, Eye, UserRound, Glasses } from "lucide-react";
+import { url } from "inspector";
 
 const FindStoreSection: React.FC = () => {
   const navigate = useNavigate();
@@ -11,7 +12,15 @@ const FindStoreSection: React.FC = () => {
   };
 
   return (
-    <section className="store-section">
+    <section
+      className="store-section"
+      style={{
+        backgroundImage: "url('/images/StoreSection/storesectionbackground.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+    >
 
       <div className="store-top-overlay" />
 
@@ -19,11 +28,11 @@ const FindStoreSection: React.FC = () => {
 
         <div className="store-count">
           <Store className="store-icon" size={18} />
-          850+ <span>Stores across India,</span>
+          <span><b>3 Stores In India,</b></span>
         </div>
 
         <h2 className="store-title">
-          Find a <span className="highlight">Titan Eye+</span>
+          Find a <span className="highlight">KUBADE optiCare</span>
           <em> Near You</em>
         </h2>
 

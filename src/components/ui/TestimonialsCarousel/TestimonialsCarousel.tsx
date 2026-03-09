@@ -1,7 +1,7 @@
 import React from "react";
 import "./TestimonialsCarousel.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 import "swiper/css";
@@ -11,88 +11,25 @@ import "swiper/css/pagination";
 import { TestimonialsSection } from "../../../types/home.types";
 
 interface Props {
-    testimonialsSection: TestimonialsSection;
+  testimonialsSection: TestimonialsSection;
 }
 
 const TestimonialsCarousel: React.FC<Props> = ({ testimonialsSection }) => {
-    return (
-        <section className="TestimonialsCarousel-section">
+  return (
+    <section className="TestimonialsCarousel-section">
 
-            <h2 className="TestimonialsCarousel-title">
-                {testimonialsSection.title} <span>{testimonialsSection.highlight}</span>
-            </h2>
+      <h2 className="TestimonialsCarousel-title">
+        {testimonialsSection.title} <span>{testimonialsSection.highlight}</span>
+      </h2>
 
-            <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
-                slidesPerView={3}
-                spaceBetween={30}
-                loop
-                autoplay={{
-                    delay: 1500,
-                    disableOnInteraction: false
-                }}
-                navigation={{
-                    nextEl: ".test-next",
-                    prevEl: ".test-prev"
-                }}
-                pagination={{
-                    el: ".test-pagination",
-                    clickable: true
-                }}
-                breakpoints={{
-                    0: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
-                    1200: { slidesPerView: 3 }
-                }}
-            >
+      {/* Elfsight Google Reviews */}
+      <div
+        className="elfsight-app-09598fd0-7e75-47a6-ba94-b986d9913cf6"
+        data-elfsight-app-lazy
+      ></div>
 
-                {testimonialsSection.cards.map((item) => (
-                    <SwiperSlide key={item.id} className="testimonial-slide">
-
-                        <div className="testimonial-card">
-                            <div className="testimonial-inner">
-
-                                <div className="testimonial-header">
-
-                                    <div className="avatar">
-                                        <img src="/images/men.svg" alt="user" />
-                                    </div>
-
-                                    <div className="stars">
-                                        {[...Array(item.rating)].map((_, i) => (
-                                            <Star key={i} className="star" />
-                                        ))}
-                                    </div>
-
-                                </div>
-
-                                <p className="review">{item.review}</p>
-
-                                <div className="user-info">
-                                    <div className="name">{item.name}</div>
-                                    <div className="date">{item.date}</div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </SwiperSlide>
-                ))}
-
-            </Swiper>
-
-            <div className="test-prev">
-                <ChevronLeft />
-            </div>
-
-            <div className="test-next">
-                <ChevronRight />
-            </div>
-
-            <div className="test-pagination"></div>
-
-        </section>
-    );
+    </section>
+  );
 };
 
 export default TestimonialsCarousel;

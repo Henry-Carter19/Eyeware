@@ -51,8 +51,8 @@
     height: auto;
     display: block;
     margin: 10px auto;
-    max-height: 20vh;      /* limit height */
-    overflow-y: auto;      /* enable vertical scroll */
+    max-height: 20vh; /* limit height */
+    overflow-y: auto; /* enable vertical scroll */
     overflow-x: hidden;
   }
 }
@@ -81,7 +81,6 @@
 /* HOVER ONLY FOR DESKTOP */
 
 @media (min-width: 992px) {
-
   .dropdown-menu {
     display: block;
     opacity: 0;
@@ -95,7 +94,6 @@
     visibility: visible;
     transform: translateY(0);
   }
-
 }
 
 /* DROPDOWN LINK STYLE */
@@ -138,7 +136,7 @@
 /* MEGA MENU FIX */
 
 .nav-item.dropdown {
-  position: static;   /* allows full-width dropdown */
+  position: static; /* allows full-width dropdown */
 }
 
 .mega-menu {
@@ -169,19 +167,13 @@
   align-items: center;
 }
 
-
-.navbar{
+.navbar {
   position: sticky;
   top: 0;
   z-index: 100;
   background: white;
 }
 
-
-/* =========================
-   NAVBAR LOGO 
-Align properly inside navbar 
-  NAVBAR LOGO Align properly inside navbar */
 
 .navbar-logo {
   height: 40px;
@@ -190,15 +182,16 @@ Align properly inside navbar
   cursor: pointer;
 }
 
+
+
+
 .navbar-brand {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-
-/* =========================
-   TABLET
+/* ========================= TABLET ================ */
 
 @media (max-width: 1024px) {
   .navbar-logo {
@@ -207,8 +200,7 @@ Align properly inside navbar
 }
 
 
-/* =========================
-   MOBILE
+/* ========================= MOBILE ================ */
 
 @media (max-width: 768px) {
   .navbar-logo {
@@ -217,14 +209,14 @@ Align properly inside navbar
 }
 
 
-/* =========================
-   SMALL MOBILE
+/* =========================  SMALL MOBILE ================ */
 
 @media (max-width: 480px) {
   .navbar-logo {
     height: 40px;
   }
 }
+
 /* MOBILE HEADER */
 
 .mobile-header {
@@ -285,8 +277,8 @@ Align properly inside navbar
 
 /* scroller in navbar */
 
-.mobile-scroll{
-  max-height: 250px;   /* adjust as needed */
+.mobile-scroll {
+  max-height: 250px; /* adjust as needed */
   overflow-y: auto;
 }
 
@@ -301,8 +293,8 @@ Align properly inside navbar
 }
 
 .accordion-button {
-  --bs-accordion-btn-padding-x: 5px;   /* your value */
-  --bs-accordion-btn-padding-y: 10px;   /* your value */
+  --bs-accordion-btn-padding-x: 5px; /* your value */
+  --bs-accordion-btn-padding-y: 10px; /* your value */
 }
 
 /* 3d look */
@@ -315,21 +307,21 @@ Align properly inside navbar
   font-weight: 500;
 
   /* 3D shadow */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 
   transition: all 0.2s ease;
 }
 
 /* Hover effect */
 #mobileMenu .accordion-button:hover {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-1px);
 }
 
 /* When accordion is open */
 #mobileMenu .accordion-button:not(.collapsed) {
   background: #f8f9fa;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Remove default bootstrap arrow background */
@@ -349,4 +341,3 @@ Align properly inside navbar
 .mobile-submenu a:hover {
   color: #007bff;
 }
-
