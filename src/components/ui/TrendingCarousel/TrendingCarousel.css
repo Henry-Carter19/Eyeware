@@ -1,141 +1,141 @@
 .TrendingCarousel-section {
-    padding: 50px;
-    background: #203447;
-    color: white;
-    position: relative;
+  /* padding: 50px; */
+  background: #203447;
+  color: white;
+  position: relative;
 }
 
 .TrendingCarousel-section .TrendingCarousel-header {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .TrendingCarousel-section .TrendingCarousel-header .subtitle {
-    font-size: 16px;
-    opacity: .8;
-    margin-bottom: 6px;
+  font-size: var(--font-md);
+  opacity: 0.8;
+  margin-bottom: 6px;
 }
 
 .TrendingCarousel-section .TrendingCarousel-header .title {
-    font-size: 30px;
-    font-weight: 500;
+  font-size: var(--font-xl);
+  font-weight: 500;
 }
 
 .TrendingCarousel-section .TrendingCarousel-header .title span {
-    font-style: italic;
-    color: #ff4b4b;
-    margin-left: 6px;
+  font-style: italic;
+  color: #ff4b4b;
+  margin-left: 6px;
 }
 
 .TrendingCarousel-section .filters {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
 }
 
 .TrendingCarousel-section .filter-btn {
-    background: #2e4154;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 20px;
-    color: white;
-    font-size: 13px;
-    cursor: pointer;
+  background: #2e4154;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .TrendingCarousel-section .filter-btn.active {
-    background: white;
-    color: #111;
+  background: white;
+  color: #111;
 }
 
 .TrendingCarousel-section .trend-card {
-    background: white;
-    border-radius: 16px;
-    padding: 16px;
-    color: #111;
-    height: 340px;
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  color: #111;
+  height: 340px;
 }
 
 .TrendingCarousel-section .trend-img {
-    width: 100%;
-    height: 140px;
-    object-fit: contain;
-    margin-bottom: 12px;
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 12px;
 }
 
 .TrendingCarousel-section .trend-rating {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    background: #f3f4f6;
-    border-radius: 20px;
-    padding: 3px 10px;
-    font-size: 12px;
-    margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #f3f4f6;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 .TrendingCarousel-section .trend-rating .star {
-    width: 14px;
-    height: 14px;
-    color: #f2b600;
-    fill: #f2b600;
+  width: 14px;
+  height: 14px;
+  color: #f2b600;
+  fill: #f2b600;
 }
 
 .TrendingCarousel-section .divider {
-    width: 1px;
-    height: 12px;
-    background: #ccc;
-    margin: 0 4px;
+  width: 1px;
+  height: 12px;
+  background: #ccc;
+  margin: 0 4px;
 }
 
 .TrendingCarousel-section .brand {
-    font-weight: 600;
-    font-size: 14px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .TrendingCarousel-section .name {
-    font-size: 13px;
-    color: #6a7a96;
-    margin: 4px 0;
+  font-size: 13px;
+  color: #6a7a96;
+  margin: 4px 0;
 }
 
 .TrendingCarousel-section .price {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .TrendingCarousel-section .tax {
-    font-size: 11px;
-    color: #8a94a6;
+  font-size: 11px;
+  color: #8a94a6;
 }
 
 .TrendingCarousel-section .trend-prev,
 .TrendingCarousel-section .trend-next {
-    position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, .25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .TrendingCarousel-section .trend-prev {
-    left: 5px;
+  left: 5px;
 }
 
 .TrendingCarousel-section .trend-next {
-    right: 5px;
+  right: 5px;
 }
 
 .TrendingCarousel-section .trend-pagination {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 /* ================================= */
@@ -143,7 +143,6 @@
 /* ================================= */
 
 @media (max-width: 1024px) {
-
   .TrendingCarousel-section {
     padding: 40px 30px;
   }
@@ -166,16 +165,13 @@
     width: 42px;
     height: 42px;
   }
-
 }
-
 
 /* ================================= */
 /* Mobile */
 /* ================================= */
 
 @media (max-width: 768px) {
-
   .TrendingCarousel-section {
     padding: 35px 20px;
   }
@@ -227,18 +223,15 @@
     height: 36px;
     top: 55%;
   }
-
 }
-
 
 /* ================================= */
 /* Small Mobile */
 /* ================================= */
 
 @media (max-width: 480px) {
-
   .TrendingCarousel-section {
-    padding: 30px 16px;
+    padding: 30px 20px;
   }
 
   .TrendingCarousel-section .TrendingCarousel-header .title {
@@ -249,5 +242,4 @@
   .TrendingCarousel-section .trend-next {
     display: none;
   }
-
 }

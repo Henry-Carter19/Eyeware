@@ -13,7 +13,7 @@ interface Props {
 
 const HypeSection: React.FC<Props> = ({ hypeData }) => {
   return (
-    <section className="hype-section">
+    <section className="hype-section common-section-padding ">
       <h2 className="hype-title">
         Join the <span>Hype</span>
       </h2>

@@ -101,15 +101,27 @@ const Footer: React.FC = () => {
 
           {/* Contact */}
           <div className="footer-contact">
+
             <span className="footer-contact-item">
               <MapPin className="footer-icon" size={18} />
-              Above Bhande Plot Square, Sudampuri, Nagpur
+              Sudampuri Opp-Career Campus, Nandanwan Road, Bhande Plot Square, Nagpur - 440009
+            </span>
+
+            <span className="footer-contact-item">
+              <MapPin className="footer-icon" size={18} />
+              Swami Vivekananda Netralay, Beside Parth Medical Store, Shrikrishna Nagar, Nagpur - 440024
+            </span>
+
+            <span className="footer-contact-item">
+              <MapPin className="footer-icon" size={18} />
+              Matruseva Sangh Hospital, Kothi Road, Mahal, Nagpur - 440032
             </span>
 
             <span className="footer-contact-item">
               <Phone className="footer-icon" size={18} />
               +91 70666 02959
             </span>
+
           </div>
 
           <p className="footer-copy">
