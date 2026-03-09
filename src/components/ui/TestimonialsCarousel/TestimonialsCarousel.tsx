@@ -1,5 +1,12 @@
 import React from "react";
 import "./TestimonialsCarousel.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import { TestimonialsSection } from "../../../types/home.types";
 

@@ -4,7 +4,7 @@
 } */
 
 .blog-section {
-  padding: 60px 50px;
+  padding: 30px 50px 40px;
   background: #f5f5f5;
   margin-top: 5px;
   z-index: 9999;
@@ -15,8 +15,8 @@
 
 .blog-title {
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 25px;
+  font-size: 32px;
+  margin: 0 0 18px 0;
 }
 
 .blog-title span {
@@ -29,7 +29,7 @@
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   flex-wrap: wrap;
 }
 
