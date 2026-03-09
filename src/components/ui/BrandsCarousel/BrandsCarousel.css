@@ -17,6 +17,7 @@
   font-size: var(--font-xl);
   font-weight: 600;
   color: #1f2a37;
+  margin-bottom: 0px;
 }
 
 .brands-section .italic {
@@ -25,7 +26,6 @@
 }
 
 .brands-section .sub-text {
-  margin-top: 8px;
   margin-bottom: 20px;
   color: var(--teal);
   font-size: var(--font-lg);
