@@ -46,7 +46,7 @@ const BlogCarousel: React.FC<Props> = ({ blogSection }) => {
           modules={[Navigation]}
           slidesPerView={6}
           spaceBetween={18}
-          centeredSlides={true}
+          centeredSlides={false}
           navigation={{
             nextEl: ".blog-next",
             prevEl: ".blog-prev",
@@ -54,7 +54,7 @@ const BlogCarousel: React.FC<Props> = ({ blogSection }) => {
           breakpoints={{
             0: {
               slidesPerView: 1.2,
-              centeredSlides: true,
+              centeredSlides: false,
             },
             480: {
               slidesPerView: 2,
