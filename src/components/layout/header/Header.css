@@ -187,6 +187,9 @@ Align properly inside navbar
   cursor: pointer;
 }
 
+
+
+
 .navbar-brand {
   display: flex;
   align-items: center;
