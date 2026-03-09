@@ -16,7 +16,7 @@ interface Props {
 const BrandsCarousel: React.FC<Props> = ({ brands }) => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<"All" | "Premium" | "Essentials">(
-    "All",
+    "All"
   );
 
   const tabs = ["All", "Premium", "Essentials"] as const;
@@ -36,7 +36,6 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
         Explore 25+ <span className="italic">Brands</span>
       </p>
 
-      {/* Tabs */}
       <div className="tabs-wrapper">
         <div className="tabs">
           <div
@@ -57,7 +56,6 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
         </div>
       </div>
 
-      {/* Swiper */}
       <div className="swiper-wrapper-custom">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -77,6 +75,15 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
           pagination={{
             el: ".brand-pagination",
             type: "fraction",
+           renderFraction: (currentClass: string, totalClass: string) => {
+              return `
+                <span class="pagination-pill">
+                  <span class="${currentClass}"></span>
+                  <span class="slash">/</span>
+                  <span class="${totalClass}"></span>
+                </span>
+              `;
+            },
           }}
           breakpoints={{
             0: {
@@ -123,13 +130,11 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
           ))}
         </Swiper>
 
-        {/* Navigation */}
         <button className="brand-arrow brand-prev">&#10094;</button>
         <button className="brand-arrow brand-next">&#10095;</button>
-
-        {/* Pagination */}
-        <div className="brand-pagination" />
       </div>
+
+      <div className="brand-pagination"></div>
     </section>
   );
 };

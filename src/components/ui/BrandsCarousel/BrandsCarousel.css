@@ -166,23 +166,18 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
   width: 64px;
   height: 64px;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: var(--font-md);
   color: white;
-
   cursor: pointer;
   z-index: 20;
 
   background: rgba(30, 41, 59, 0.35);
-
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
@@ -207,34 +202,47 @@
 .brands-section .brand-next {
   right: -30px;
 }
-
 /* ============================= */
-/* Fraction Counter */
+/* Pagination Pill */
 /* ============================= */
 
 .brands-section .brand-pagination {
-  margin-top: 24px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
 
-.brands-section .brand-pagination .swiper-pagination-fraction {
+/* pill container */
+.brands-section .pagination-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  padding: 8px 18px;
+  padding: 5px 15px;
   border-radius: 999px;
 
-  background: #e6e8ea;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
 
-  font-size: var(--font-md);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  font-size: var(--font-xs);
   font-weight: 600;
   color: #1f2a37;
+}
 
-  letter-spacing: 0.4px;
+/* spacing for numbers */
+.brands-section .swiper-pagination-current {
+  margin-right: 4px;
+}
 
-  min-width: 70px;
+.brands-section .swiper-pagination-total {
+  margin-left: 4px;
+}
+
+/* slash styling */
+.brands-section .pagination-pill .slash {
+  opacity: 0.6;
 }
 
 /* ============================= */

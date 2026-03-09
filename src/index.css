@@ -26,6 +26,9 @@
   --font-lg: 20px;
   --font-xl: 36px;
 
+  /* Colors */
+  --teal: #3fb2c4;
+
 }
 
 * {
