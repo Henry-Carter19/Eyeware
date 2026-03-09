@@ -4,13 +4,13 @@ import React from "react";
 import {
   Search,
   Eye,
-  User,
-  Truck,
   MapPin,
   ShoppingCart,
-  Headphones
+  Headphones,
+  Menu,
+  ChevronDown
 } from "lucide-react";
-import logo from "../../../../public/images/logo.png";
+// import logo from "../../../../public/images/logo.png";
 import menuData from "../../../data/header.json";
 import "./Header.css";
 
@@ -29,12 +29,12 @@ const Header: React.FC = () => {
             data-bs-toggle="offcanvas"
             data-bs-target="#mobileMenu"
           >
-            ☰
+            <Menu />
           </button>
 
           {/* LOGO */}
           <div className="mobile-logo">
-            TITAN <span>EYE+</span>
+            <a href="/"> <img className="navbar-logo" src="/images/logo.png" alt="logo" /></a>
           </div>
 
           {/* RIGHT ICONS */}
@@ -230,7 +230,7 @@ data-bs-parent="#mobileMenuAccordion"
 
                 <div className="dropdown hover-dropdown">
                   <span className="d-flex align-items-center gap-1">
-                    <Eye size={14} /> Eye Testing ▾
+                    <Eye size={14} /> Eye Testing <ChevronDown />
                   </span>
 
                   <ul className="dropdown-menu">
@@ -290,7 +290,7 @@ data-bs-parent="#mobileMenuAccordion"
         {/* <nav className="navbar navbar-expand-lg bg-white border-bottom"> */}
         <div className="container-fluid">
 
-        <a href="/"> <img className="navbar-logo" src="/images/logo.png" alt="logo" /></a>
+          <a href="/"> <img className="navbar-logo" src="/images/logo.png" alt="logo" /></a>
 
           <button
             className="navbar-toggler"
@@ -307,7 +307,7 @@ data-bs-parent="#mobileMenuAccordion"
               {/* Eyeglasses Mega Menu */}
               <li className="nav-item dropdown hover-dropdown">
 
-                <span className="nav-link">Eyeglasses ▾</span>
+                <span className="nav-link">Eyeglasses <ChevronDown size={18} /></span>
 
                 <div className="dropdown-menu mega-menu p-4">
 
@@ -351,7 +351,7 @@ data-bs-parent="#mobileMenuAccordion"
               </li>
 
               <li className="nav-item dropdown hover-dropdown">
-                <span className="nav-link">Sunglasses ▾</span>
+                <span className="nav-link">Sunglasses <ChevronDown size={18} /></span>
 
                 <div className="dropdown-menu mega-menu mega-menu-full p-4">
 
@@ -429,7 +429,7 @@ data-bs-parent="#mobileMenuAccordion"
               {/* Contact Lenses */}
               <li className="nav-item dropdown hover-dropdown">
 
-                <span className="nav-link">Contact Lenses ▾</span>
+                <span className="nav-link">Contact Lenses <ChevronDown size={18} /></span>
 
                 <ul className="dropdown-menu">
                   <li><a className="dropdown-item" href="#">Bausch & Lomb</a></li>
@@ -442,7 +442,7 @@ data-bs-parent="#mobileMenuAccordion"
               {/* Accessories */}
               <li className="nav-item dropdown hover-dropdown">
 
-                <span className="nav-link">Accessories ▾</span>
+                <span className="nav-link">Accessories <ChevronDown size={18} /></span>
 
                 <ul className="dropdown-menu">
                   <li><a className="dropdown-item" href="#">Cleaning Cloth</a></li>
