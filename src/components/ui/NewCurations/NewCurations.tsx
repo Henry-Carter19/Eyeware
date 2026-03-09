@@ -57,7 +57,7 @@ const NewCurations: React.FC<Props> = ({ sectionConfig }) => {
           }}
           breakpoints={{
             0: {
-              slidesPerView: 1.1,
+              slidesPerView: 1,
             },
             480: {
               slidesPerView: 1.3,
@@ -66,7 +66,7 @@ const NewCurations: React.FC<Props> = ({ sectionConfig }) => {
               slidesPerView: 1.6,
             },
             1024: {
-              slidesPerView: 2.1,
+              slidesPerView: 1.8,
             },
           }}
         >
