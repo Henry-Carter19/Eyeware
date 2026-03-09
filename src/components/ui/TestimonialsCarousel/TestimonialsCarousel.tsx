@@ -46,38 +46,38 @@ const TestimonialsCarousel: React.FC<Props> = ({ testimonialsSection }) => {
                 }}
             >
 
-              {testimonialsSection.cards.map((item) => (
-    <SwiperSlide key={item.id} className="testimonial-slide">
+                {testimonialsSection.cards.map((item) => (
+                    <SwiperSlide key={item.id} className="testimonial-slide">
 
-        <div className="testimonial-card">
-            <div className="testimonial-inner">
+                        <div className="testimonial-card">
+                            <div className="testimonial-inner">
 
-                <div className="testimonial-header">
+                                <div className="testimonial-header">
 
-                    <div className="avatar">
-                        <img src="/images/men.svg" alt="user" />
-                    </div>
+                                    <div className="avatar">
+                                        <img src="/images/men.svg" alt="user" />
+                                    </div>
 
-                    <div className="stars">
-                        {[...Array(item.rating)].map((_, i) => (
-                            <Star key={i} className="star" />
-                        ))}
-                    </div>
+                                    <div className="stars">
+                                        {[...Array(item.rating)].map((_, i) => (
+                                            <Star key={i} className="star" />
+                                        ))}
+                                    </div>
 
-                </div>
+                                </div>
 
-                <p className="review">{item.review}</p>
+                                <p className="review">{item.review}</p>
 
-                <div className="user-info">
-                    <div className="name">{item.name}</div>
-                    <div className="date">{item.date}</div>
-                </div>
+                                <div className="user-info">
+                                    <div className="name">{item.name}</div>
+                                    <div className="date">{item.date}</div>
+                                </div>
 
-            </div>
-        </div>
+                            </div>
+                        </div>
 
-    </SwiperSlide>
-))}
+                    </SwiperSlide>
+                ))}
 
             </Swiper>
 
