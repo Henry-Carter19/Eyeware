@@ -175,11 +175,6 @@
 }
 
 
-/* =========================
-   NAVBAR LOGO 
-Align properly inside navbar 
-  NAVBAR LOGO Align properly inside navbar */
-
 .navbar-logo {
   height: 40px;
   width: auto;
@@ -187,14 +182,16 @@ Align properly inside navbar
   cursor: pointer;
 }
 
+
+
+
 .navbar-brand {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-/* =========================
-   TABLET
+/* ========================= TABLET ================ */
 
 @media (max-width: 1024px) {
   .navbar-logo {
@@ -203,8 +200,7 @@ Align properly inside navbar
 }
 
 
-/* =========================
-   MOBILE
+/* ========================= MOBILE ================ */
 
 @media (max-width: 768px) {
   .navbar-logo {
@@ -213,14 +209,14 @@ Align properly inside navbar
 }
 
 
-/* =========================
-   SMALL MOBILE
+/* =========================  SMALL MOBILE ================ */
 
 @media (max-width: 480px) {
   .navbar-logo {
     height: 40px;
   }
 }
+
 /* MOBILE HEADER */
 
 .mobile-header {

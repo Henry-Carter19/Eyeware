@@ -2,15 +2,19 @@
   "heroBanners": [
     {
       "id": 1,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/home-banner/02-RB-Clubmaster----3000-x-1500_New_1.jpg?height=800&width=1300&fit=cover"
-    },
-    {
-      "id": 2,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/01_Barbra_Skyler_-_3000_x_1500_px.jpg?height=800&width=1300&fit=cover"
+      "image": "/images/Banner/Banner1.png"
     },
     {
       "id": 3,
-      "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/home-banner/Silhouette-3000x1500_New-min_01.jpg?height=800&width=1300&fit=cover"
+      "image": "/images/Banner/Banner2.png"
+    },
+    {
+      "id": 4,
+      "image": "/images/Banner/Banner3.png"
+    },
+    {
+      "id": 5,
+      "image": "/images/Banner/Banner4.png"
     }
   ],
   "brands": [
