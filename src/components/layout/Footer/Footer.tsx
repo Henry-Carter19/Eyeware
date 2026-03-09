@@ -1,5 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import {
+  Instagram,
+  Facebook,
+  Phone,
+  MapPin,
+  MessageCircle
+} from "lucide-react";
+
 import "./Footer.css";
 
 interface FooterLink {
@@ -14,46 +22,44 @@ interface FooterSection {
 
 const footerData: FooterSection[] = [
   {
-    title: "ACCOUNT",
+    title: "CUSTOMER SERVICE",
     links: [
       { label: "Our Policies", path: "/policies" },
-      { label: "My Account", path: "/account" },
-      { label: "Create an Account", path: "/register" },
-      { label: "Tata Neu Pass", path: "/tata-neu" },
-      { label: "Titan Encircle", path: "/encircle" },
-    ],
+      { label: "Return & Exchange", path: "/returns" },
+      { label: "Order Tracking", path: "/track-order" },
+      { label: "FAQ", path: "/faq" },
+      { label: "Contact Us", path: "/contact" }
+    ]
   },
   {
-    title: "ABOUT TITAN EYE+",
+    title: "ABOUT KUBADE OPTICARE",
     links: [
       { label: "About Us", path: "/about" },
-      { label: "Blog", path: "/blog" },
-      { label: "Contact Us", path: "/contact" },
-      { label: "Privacy Notice", path: "/privacy" },
-      { label: "Terms & Conditions", path: "/terms" },
-      { label: "Cyber Security Policy", path: "/cyber-security" },
-    ],
+      { label: "Our Store", path: "/store" },
+      { label: "Eye Care Tips", path: "/blog" },
+      { label: "Privacy Policy", path: "/privacy" },
+      { label: "Terms & Conditions", path: "/terms" }
+    ]
   },
   {
-    title: "USEFUL LINKS",
+    title: "OUR PRODUCTS",
     links: [
-      { label: "Store Locations", path: "/stores" },
-      { label: "Bulk Enquiry", path: "/bulk-enquiry" },
-      { label: "Hearing Aids", path: "/hearing-aids" },
-      { label: "Glossary", path: "/glossary" },
-      { label: "AI Glasses Manual", path: "/ai-manual" },
-    ],
+      { label: "Eyeglasses", path: "/eyeglasses" },
+      { label: "Sunglasses", path: "/sunglasses" },
+      { label: "Contact Lenses", path: "/contact-lenses" },
+      { label: "Computer Glasses", path: "/computer-glasses" },
+      { label: "Accessories", path: "/accessories" }
+    ]
   },
   {
-    title: "EYEGLASSES",
+    title: "STORE INFORMATION",
     links: [
-      { label: "Men", path: "/eyeglasses/men" },
-      { label: "Women", path: "/eyeglasses/women" },
-      { label: "Kids", path: "/eyeglasses/kids" },
-      { label: "Fastrack", path: "/eyeglasses/fastrack" },
-      { label: "Titan", path: "/eyeglasses/titan" },
-    ],
-  },
+      { label: "Store Location", path: "/location" },
+      { label: "Book Eye Checkup", path: "/eye-checkup" },
+      { label: "Customer Reviews", path: "/reviews" },
+      { label: "Store Hours", path: "/hours" }
+    ]
+  }
 ];
 
 const Footer: React.FC = () => {
@@ -81,39 +87,62 @@ const Footer: React.FC = () => {
         ))}
       </div>
 
-      {/* ===== Added Bottom Section ===== */}
-
       <div className="footer-divider" />
 
       <div className="footer-bottom">
         <div className="footer-bottom-left">
-          <h2 className="footer-logo">
-            EYEWARE <span>EYE+</span>
-          </h2>
+
+          {/* Logo */}
+          <img
+            src="/images/logo.png"
+            alt="Kubade OptiCare"
+            className="footer-logo-img"
+          />
+
+          {/* Contact */}
           <div className="footer-contact">
-            <span>help@eyewareplus.com</span>
-            <span>1800-180-0123</span>
+            <span className="footer-contact-item">
+              <MapPin className="footer-icon" size={18} />
+              Above Bhande Plot Square, Sudampuri, Nagpur
+            </span>
+
+            <span className="footer-contact-item">
+              <Phone className="footer-icon" size={18} />
+              +91 70666 02959
+            </span>
           </div>
+
           <p className="footer-copy">
-            © 2026 Eyeware Company Limited. All Rights Reserved.
+            © 2026 Kubade OptiCare. All Rights Reserved.
           </p>
         </div>
 
         <div className="footer-bottom-right">
-          <div className="app-section">
-            <p>Download the Eyeware Eye+ App</p>
-            <div className="app-buttons">
-              <button className="store-btn">Google Play</button>
-              <button className="store-btn">App Store</button>
-            </div>
+          <div className="store-hours">
+            <p><strong>Store Hours</strong></p>
+            <p>Monday - Saturday: 9:30 AM – 9:30 PM</p>
+            <p>Sunday: Closed</p>
           </div>
 
           <div className="social-section">
             <p>Follow us on:</p>
+
             <div className="social-icons">
-              <div className="social-icon">IG</div>
-              <div className="social-icon">FB</div>
-              <div className="social-icon">X</div>
+              <a target="_blank" href="https://www.instagram.com/kubadeopticare1/" className="social-icon">
+                <Instagram size={20} />
+              </a>
+
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=61556689014525" className="social-icon">
+                <Facebook size={20} />
+              </a>
+
+              <a target="_blank"
+                href="https://wa.me/917066602959"
+                className="social-icon"
+                rel="noopener noreferrer"
+              >
+                <MessageCircle size={20} />
+              </a>
             </div>
           </div>
         </div>
