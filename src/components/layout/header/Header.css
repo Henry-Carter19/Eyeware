@@ -179,6 +179,8 @@
 
 
 /* =========================
+   NAVBAR LOGO 
+Align properly inside navbar 
   NAVBAR LOGO Align properly inside navbar */
 
 .navbar-logo {
@@ -226,6 +228,9 @@
 /* MOBILE HEADER */
 
 .mobile-header {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
   height: 60px;
   border-bottom: 1px solid #eee;
   background: white;
