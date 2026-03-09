@@ -18,9 +18,8 @@ const NewCurations: React.FC<Props> = ({ sectionConfig }) => {
 
   return (
     <section
-      className={`curation-section ${
-        sectionConfig.background === "gold" ? "gold-bg" : ""
-      }`}
+      className={`curation-section ${sectionConfig.background === "gold" ? "gold-bg" : ""
+        }`}
     >
       <div className="curation-header">
         <h2 className="curation-title">
@@ -58,13 +57,13 @@ const NewCurations: React.FC<Props> = ({ sectionConfig }) => {
           }}
           breakpoints={{
             0: {
-              slidesPerView: 1.2,
+              slidesPerView: 1.1,
             },
             480: {
-              slidesPerView: 1.4,
+              slidesPerView: 1.3,
             },
             768: {
-              slidesPerView: 1.8,
+              slidesPerView: 1.6,
             },
             1024: {
               slidesPerView: 2.1,

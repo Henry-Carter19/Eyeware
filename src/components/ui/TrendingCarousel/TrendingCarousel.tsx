@@ -42,9 +42,8 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
           {trendingSection.filters.map((filter) => (
             <button
               key={filter.key}
-              className={`filter-btn ${
-                activeFilter === filter.key ? "active" : ""
-              }`}
+              className={`filter-btn ${activeFilter === filter.key ? "active" : ""
+                }`}
               onClick={() => setActiveFilter(filter.key)}
             >
               {filter.label} ↗
@@ -57,8 +56,7 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        slidesPerView={4}
-        spaceBetween={28}
+        spaceBetween={20}
         loop
         autoplay={{ delay: 1500, disableOnInteraction: false }}
         navigation={{
@@ -68,6 +66,12 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
         pagination={{
           el: ".trend-pagination",
           clickable: true
+        }}
+        breakpoints={{
+          0: { slidesPerView: 1.2 },
+          480: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 }
         }}
       >
 
@@ -81,7 +85,7 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
               {item.rating && (
                 <div className="trend-rating">
                   {item.rating}
-                  <Star className="star"/>
+                  <Star className="star" />
                   <span className="divider"></span>
                   {item.ratingCount}
                 </div>
