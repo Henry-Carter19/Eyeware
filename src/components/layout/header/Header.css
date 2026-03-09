@@ -179,7 +179,8 @@
 
 
 /* =========================
-   NAVBAR LOGO
+   NAVBAR LOGO 
+/* Align properly inside navbar */
 
 .navbar-logo {
   height: 40px;
@@ -188,7 +189,6 @@
   cursor: pointer;
 }
 
-/* Align properly inside navbar */
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -227,6 +227,9 @@
 /* MOBILE HEADER */
 
 .mobile-header {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
   height: 60px;
   border-bottom: 1px solid #eee;
   background: white;

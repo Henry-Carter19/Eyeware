@@ -75,6 +75,7 @@ const Header: React.FC = () => {
               <div
                 id="eyeglassesMenu"
                 className="accordion-collapse collapse"
+                data-bs-parent="#mobileMenuAccordion"
               >
                 <div className="accordion-body mobile-scroll">
 
@@ -112,7 +113,7 @@ const Header: React.FC = () => {
               <div
                 id="sunglassesMenu"
                 className="accordion-collapse collapse"
-
+                data-bs-parent="#mobileMenuAccordion"
               >
                 <div className="accordion-body mobile-scroll">
 
@@ -145,7 +146,7 @@ const Header: React.FC = () => {
               <div
                 id="contactLensesMenu"
                 className="accordion-collapse collapse"
-
+data-bs-parent="#mobileMenuAccordion"
               >
                 <div className="accordion-body mobile-scroll">
 
@@ -175,7 +176,7 @@ const Header: React.FC = () => {
               <div
                 id="accessoriesMenu"
                 className="accordion-collapse collapse"
-
+ data-bs-parent="#mobileMenuAccordion"
               >
                 <div className="accordion-body mobile-scroll">
 
