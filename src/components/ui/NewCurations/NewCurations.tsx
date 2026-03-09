@@ -18,7 +18,7 @@ const NewCurations: React.FC<Props> = ({ sectionConfig }) => {
 
   return (
     <section
-      className={`curation-section ${sectionConfig.background === "gold" ? "gold-bg" : ""
+      className={`curation-section common-section-padding ${sectionConfig.background === "gold" ? "gold-bg" : ""
         }`}
     >
       <div className="curation-header">
@@ -39,7 +39,7 @@ const NewCurations: React.FC<Props> = ({ sectionConfig }) => {
       <div className="curation-swiper-wrapper">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
-          spaceBetween={24}
+          spaceBetween={29}
           centeredSlides
           loop
           speed={1000}
@@ -57,16 +57,16 @@ const NewCurations: React.FC<Props> = ({ sectionConfig }) => {
           }}
           breakpoints={{
             0: {
-              slidesPerView: 1.1,
+              slidesPerView: 1.2,
             },
             480: {
-              slidesPerView: 1.3,
+              slidesPerView: 1.1,
             },
             768: {
               slidesPerView: 1.6,
             },
             1024: {
-              slidesPerView: 2.1,
+              slidesPerView: 1.8,
             },
           }}
         >
