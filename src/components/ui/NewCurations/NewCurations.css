@@ -3,7 +3,6 @@
 /* =============================== */
 
 .curation-section {
-  padding: 50px 60px;
   background: linear-gradient(to right, #000000, #0a0a0a);
   color: white;
   text-align: center;
@@ -12,7 +11,6 @@
 .curation-title {
   font-size: 34px;
   font-weight: 500;
-  margin-bottom: 60px;
 }
 
 .curation-title span {
@@ -162,7 +160,7 @@
 
 .curation-header {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .view-all-btn {

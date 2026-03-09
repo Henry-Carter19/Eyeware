@@ -18,7 +18,7 @@ const NewCurations: React.FC<Props> = ({ sectionConfig }) => {
 
   return (
     <section
-      className={`curation-section ${sectionConfig.background === "gold" ? "gold-bg" : ""
+      className={`curation-section common-section-padding ${sectionConfig.background === "gold" ? "gold-bg" : ""
         }`}
     >
       <div className="curation-header">
