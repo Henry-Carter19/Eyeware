@@ -15,7 +15,6 @@ import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import { Shop } from "./types.shop";
-import { shops } from "./data.shops";
 import { getDirectionHref } from "./mapLinks";
 import "leaflet/dist/leaflet.css";
 
@@ -68,25 +67,39 @@ function fitBoundsForAll(map: L.Map, items: Shop[]) {
   map.fitBounds(bounds, { padding: [40, 40] });
 }
 
-function MapInit() {
+function MapInit({ shops }: { shops: Shop[] }) {
   const map = useMap();
 
   useEffect(() => {
-    fitBoundsForAll(map, shops);
-  }, [map]);
+    if (shops.length) {
+      fitBoundsForAll(map, shops);
+    }
+  }, [map, shops]);
 
   return null;
 }
 
 export default function ShopLocator() {
-  const [selectedShopId, setSelectedShopId] = useState<number>(
-    shops[0]?.id ?? 0,
-  );
+  const [shops, setShops] = useState<Shop[]>([]);
+  const [selectedShopId, setSelectedShopId] = useState<number>(0);
+
   const markerRefs = useRef<Record<number, LeafletMarker | null>>({});
+
+  useEffect(() => {
+    fetch("/data/shops.json")
+      .then((res) => res.json())
+      .then((data: Shop[]) => {
+        setShops(data);
+        if (data.length) {
+          setSelectedShopId(data[0].id);
+        }
+      })
+      .catch((err) => console.error("Failed to load shops:", err));
+  }, []);
 
   const selectedShop = useMemo(
     () => shops.find((x) => x.id === selectedShopId) ?? null,
-    [selectedShopId],
+    [selectedShopId, shops],
   );
 
   useEffect(() => {
@@ -125,7 +138,9 @@ export default function ShopLocator() {
               return (
                 <article
                   key={shop.id}
-                  className={`${styles.card} ${isActive ? styles.cardActive : ""}`}
+                  className={`${styles.card} ${
+                    isActive ? styles.cardActive : ""
+                  }`}
                   onClick={() => setSelectedShopId(shop.id)}
                 >
                   <div className={styles.imageWrap}>
@@ -217,7 +232,7 @@ export default function ShopLocator() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
 
-              <MapInit />
+              <MapInit shops={shops} />
               <FocusMap shop={selectedShop} />
 
               {shops.map((shop) => (
