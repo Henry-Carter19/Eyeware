@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Search,
   Eye,
@@ -224,7 +224,7 @@ const Header: React.FC = () => {
                   </span>
 
                   <ul className="dropdown-menu">
-                    <li>
+                    {/* <li>
                       <a className="dropdown-item" href="#">
                         Digital Eye Strain Test
                       </a>
@@ -238,7 +238,7 @@ const Header: React.FC = () => {
                       <a className="dropdown-item" href="#">
                         Instore Free Eye Test
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a className="dropdown-item" href="#">
                         Book Appointment
@@ -257,13 +257,20 @@ const Header: React.FC = () => {
                   <Truck size={14}/> Track Order
                 </span> */}
 
-                <span
+                {/* <span
                   className="d-flex align-items-center gap-1"
                   onClick={() => navigate("/stores")}
                   style={{ cursor: "pointer" }}
                 >
                   <MapPin size={14} /> Find Store
-                </span>
+                </span> */}
+
+                <Link
+                  to="/stores"
+                  className="d-flex align-items-center gap-1 text-decoration-none text-white"
+                >
+                  <MapPin size={14} /> Find Store
+                </Link>
               </div>
 
               {/* MOBILE MENU */}
@@ -279,7 +286,7 @@ const Header: React.FC = () => {
                   <li>
                     <a className="dropdown-item">Eye Testing</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a className="dropdown-item">Hearing Test</a>
                   </li>
                   <li>
@@ -287,9 +294,11 @@ const Header: React.FC = () => {
                   </li>
                   <li>
                     <a className="dropdown-item">Track Order</a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a className="dropdown-item">Find Store</a>
+                    <Link className="dropdown-item" to="/stores">
+                      Find Store
+                    </Link>
                   </li>
                 </ul>
               </div>
