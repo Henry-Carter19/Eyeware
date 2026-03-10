@@ -113,18 +113,18 @@ export default function ShopLocator() {
 
     const message = `Hello Kubade OptiCare,
 
-I would like to book an appointment.
+    I would like to book an appointment.
 
-Store: ${shop.name}
-Address: ${shop.address}
+    Store: ${shop.name}
+    Address: ${shop.address}
 
-Preferred Date:
-Preferred Time:
+    Preferred Date:
+    Preferred Time:
 
-Location:
-${shop.directionUrl}
+    Location:
+    ${shop.directionUrl}
 
-Please confirm availability.`;
+    Please confirm availability.`;
 
     sendMessage(phoneNumber, message);
   };
