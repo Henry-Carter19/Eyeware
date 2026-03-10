@@ -134,7 +134,7 @@ Please confirm availability.`;
       <div className={styles.headerRow}>
         <h2 className={styles.title}>
           <span className={styles.titleStrong}>{shops.length} Stores</span>
-          <span className={styles.titleLight}> in Chandigarh</span>
+          <span className={styles.titleLight}> in Nagpur</span>
         </h2>
       </div>
 

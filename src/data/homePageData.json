@@ -20,65 +20,128 @@
   "brands": [
     {
       "id": 1,
-      "name": "Fastrack",
+      "name": "SunWave",
       "route": "/products",
-      "tagline": "Trendy frames for the young and edgy",
-      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
-      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
-      "category": "Essentials"
+      "tagline": "Stylish sunglasses for effortless summer vibes",
+      "modelImage": "/images/Models/M1.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
     },
     {
       "id": 2,
-      "name": "Ray-Ban",
+      "name": "UrbanShade",
       "route": "/products",
-      "tagline": "Timeless icons, always in style",
-      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
-      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
+      "tagline": "Sharp frames crafted for modern confidence",
+      "modelImage": "/images/Models/M2.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
       "category": "Premium"
     },
     {
       "id": 3,
-      "name": "NeoFrame",
+      "name": "LuxeFrame",
       "route": "/products",
-      "tagline": "Fresh designs for modern lifestyles",
-      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
-      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
-      "category": "Essentials"
-    },
-    {
-      "id": 4,
-      "name": "EliteLens",
-      "route": "/products",
-      "tagline": "Sophisticated vision solutions",
-      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
-      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
+      "tagline": "Luxury eyewear that defines bold personalities",
+      "modelImage": "/images/Models/M3.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
       "category": "Premium"
     },
     {
-      "id": 5,
-      "name": "StreetSight",
+      "id": 4,
+      "name": "VisionPro",
       "route": "/products",
-      "tagline": "Urban fashion meets clarity",
-      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
-      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
+      "tagline": "Professional frames designed for everyday excellence",
+      "modelImage": "/images/Models/M4.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    },
+    {
+      "id": 5,
+      "name": "HeritageLens",
+      "route": "/products",
+      "tagline": "Classic designs with timeless clarity",
+      "modelImage": "/images/Models/M5.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
       "category": "Essentials"
     },
     {
       "id": 6,
-      "name": "PrimeOptic",
+      "name": "StreetFlex",
       "route": "/products",
-      "tagline": "Refined style for premium taste",
-      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/GUCCI_442x862.png?height=472&width=242&fit=cover",
-      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/gucci.png?height=90&width=190&fit=cover",
-      "category": "Premium"
+      "tagline": "Comfortable frames built for active lifestyles",
+      "modelImage": "/images/Models/M6.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
     },
     {
       "id": 7,
-      "name": "ClearEdge",
+      "name": "ClearLook",
       "route": "/products",
-      "tagline": "Sharp looks for sharp minds",
-      "modelImage": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/TOM-FORD_442x862.png?height=472&width=242&fit=cover",
-      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-by-brands/logo/carrera.png?height=90&width=190&fit=cover",
+      "tagline": "Simple frames with crystal-clear vision",
+      "modelImage": "/images/Models/M7.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    },
+    {
+      "id": 8,
+      "name": "TrendSight",
+      "route": "/products",
+      "tagline": "Modern eyewear designed for everyday style",
+      "modelImage": "/images/Models/M8.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 9,
+      "name": "RetroVision",
+      "route": "/products",
+      "tagline": "Vintage inspired frames for confident looks",
+      "modelImage": "/images/Models/M9.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    },
+    {
+      "id": 10,
+      "name": "MetroOptics",
+      "route": "/products",
+      "tagline": "Clean modern frames for urban lifestyles",
+      "modelImage": "/images/Models/M10.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    },
+    {
+      "id": 11,
+      "name": "PrimeVision",
+      "route": "/products",
+      "tagline": "Premium craftsmanship with elegant design",
+      "modelImage": "/images/Models/M11.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 12,
+      "name": "BoldFrame",
+      "route": "/products",
+      "tagline": "Statement frames for bold personalities",
+      "modelImage": "/images/Models/M12.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 13,
+      "name": "ElegantEyes",
+      "route": "/products",
+      "tagline": "Refined eyewear for graceful style",
+      "modelImage": "/images/Models/M13.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 14,
+      "name": "DailyView",
+      "route": "/products",
+      "tagline": "Reliable frames for comfortable everyday wear",
+      "modelImage": "/images/Models/M14.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
       "category": "Essentials"
     }
   ],
