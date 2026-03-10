@@ -154,37 +154,37 @@
     "cards": [
       {
         "id": 1,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Blue-Cut-Lenses.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 2,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/ContactLenses.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 3,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Frames.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 4,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Photochromic.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 5,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/PolarizedLenses.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 6,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Sunglasses.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       }
@@ -192,7 +192,7 @@
   },
   "exclusiveDealsSection": {
     "title": "Exclusive",
-    "highlight": "Deals",
+    "highlight": "Items",
     "background": "gold",
     "showArrowButton": true,
     "viewAll": {
@@ -241,25 +241,25 @@
   "hypeCards": [
     {
       "id": 1,
-      "username": "titaneyeplus",
+      "username": "KubadeOpticare",
       "backgroundImage": "https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=900&q=80",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     },
     {
       "id": 2,
-      "username": "titaneyeplus",
+      "username": "KubadeOpticare",
       "backgroundImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     },
     {
       "id": 3,
-      "username": "titaneyeplus",
+      "username": "KubadeOpticare",
       "backgroundImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     },
     {
       "id": 4,
-      "username": "titaneyeplus",
+      "username": "KubadeOpticare",
       "backgroundImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     }
@@ -284,7 +284,7 @@
         "id": 2,
         "badge": "New",
         "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
-        "brand": "Ace by Titan",
+        "brand": "Ace by Crizal",
         "name": "Black CatEye Eyeglasses For Women",
         "size": "Medium",
         "price": 1100,
@@ -313,7 +313,7 @@
         "id": 5,
         "badge": "New",
         "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
-        "brand": "Ace by Titan",
+        "brand": "Ace by Crizal",
         "name": "Black CatEye Eyeglasses For Women",
         "size": "Medium",
         "price": 1100,
@@ -471,7 +471,7 @@
         {
           "id": 7,
           "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
-          "brand": "Titan",
+          "brand": "Rimless",
           "name": "Rimless Lightweight Eyeglasses",
           "size": "Medium",
           "price": 2590
@@ -479,7 +479,7 @@
         {
           "id": 8,
           "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
-          "brand": "Titan",
+          "brand": "Rimless",
           "name": "Minimal Rimless Office Eyeglasses",
           "size": "Medium",
           "price": 2890
@@ -489,7 +489,7 @@
         {
           "id": 9,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Rayban",
+          "brand": "Polarised",
           "name": "Polarised Driving Sunglasses",
           "price": 9590,
           "rating": 4.6,
@@ -498,7 +498,7 @@
         {
           "id": 10,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Rayban",
+          "brand": "Polarised",
           "name": "Polarised Outdoor Sunglasses",
           "size": "Large",
           "price": 9990
@@ -508,7 +508,7 @@
         {
           "id": 11,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Fastrack",
+          "brand": "Wayfarer",
           "name": "Black Wayfarer Sunglasses",
           "size": "Medium",
           "price": 1890
@@ -516,7 +516,7 @@
         {
           "id": 12,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Fastrack",
+          "brand": "Wayfarer",
           "name": "Classic Wayfarer Sunglasses",
           "price": 2190
         }
@@ -534,10 +534,6 @@
       {
         "label": "Eyeglasses",
         "key": "eyeglasses"
-      },
-      {
-        "label": "Titan Vision Care",
-        "key": "titan"
       },
       {
         "label": "Contact Lenses",
@@ -591,13 +587,6 @@
           "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
           "category": "EYEGLASSES",
           "route": "/blog/face-shape-glasses"
-        },
-        {
-          "id": 7,
-          "title": "Why Titan Vision Care Is Leading The Eyewear Market",
-          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-          "category": "TITAN VISION",
-          "route": "/blog/titan-vision"
         }
       ],
       "eyeglasses": [
@@ -612,10 +601,10 @@
       "titan": [
         {
           "id": 7,
-          "title": "Why Titan Vision Care Is Leading The Eyewear Market",
+          "title": "Why Crizal Vision Care Is Leading The Eyewear Market",
           "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-          "category": "TITAN VISION",
-          "route": "/blog/titan-vision"
+          "category": "Crizal VISION",
+          "route": "/blog/Crizal-vision"
         }
       ],
       "contact": [
