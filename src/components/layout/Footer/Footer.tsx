@@ -64,7 +64,23 @@ const footerData: FooterSection[] = [
 
 const Footer: React.FC = () => {
   const navigate = useNavigate();
+const message = encodeURIComponent(
+`Hello Sir/Madam, Welcome to Kubade OptiCare 👓
 
+Thank you for contacting us.
+
+We provide:
+• Eyeglasses
+• Sunglasses
+• Contact Lenses
+• Computer Glasses
+• Eye Check-up Services
+
+Please let us know which product or service you are looking for. 
+Our team will assist you shortly.
+
+Thank you 😊`
+);
   return (
     <footer className="footer">
       <div className="footer-grid">
@@ -148,10 +164,10 @@ const Footer: React.FC = () => {
                 <Facebook size={20} />
               </a>
 
-              <a target="_blank"
-                href="https://wa.me/917066602959"
-                className="social-icon"
-                rel="noopener noreferrer"
+              <a  target="_blank"
+                  href={`https://wa.me/918381001406?text=${message}`}
+                  className="social-icon"
+                  rel="noopener noreferrer"
               >
                 <MessageCircle size={20} />
               </a>
