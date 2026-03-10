@@ -4,31 +4,31 @@
       "id": 1,
       "title": "Kids",
       "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/kids.png",
-      "url": "/products"
+      "url": "/eyeglasses/gender/kids"
     },
     {
       "id": 2,
       "title": "Youth",
       "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/adult.png",
-      "url": "/products"
+      "url": "/eyeglasses/brand/fastrack"
     },
     {
       "id": 3,
       "title": "Workwear",
       "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/professional.png",
-      "url": "/products"
+      "url": "/eyeglasses/workwear"
     },
     {
       "id": 4,
       "title": "Silvers",
       "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/silver.png",
-      "url": "/products"
+      "url": "/eyeglasses/silver"
     },
-    {
+     {
       "id": 5,
       "title": "xyzz",
       "image": "https://d3995ea24pmi7m.cloudfront.net/media/wysiwyg/home-page/shop-collection/silver.png",
-      "url": "/products"
+      "url": "/eyeglasses/silver"
     }
   ]
 }
