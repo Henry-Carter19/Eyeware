@@ -21,7 +21,6 @@
     {
       "title": "TOP BRANDS",
       "items": [
-        { "label": "Titan", "path": "/eyeglasses/brand/titan" },
         { "label": "Rayban", "path": "/eyeglasses/brand/rayban" },
         { "label": "Fastrack", "path": "/eyeglasses/brand/fastrack" },
         { "label": "Vogue", "path": "/eyeglasses/brand/vogue" }
@@ -78,7 +77,6 @@
     {
       "title": "BRANDS",
       "items": [
-        { "label": "Titan", "path": "/sunglasses/brand/titan" },
         { "label": "Fastrack", "path": "/sunglasses/brand/fastrack" },
         { "label": "Rayban", "path": "/sunglasses/brand/rayban" },
         { "label": "Oakley", "path": "/sunglasses/brand/oakley" },
