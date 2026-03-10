@@ -16,6 +16,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import { Shop } from "./types.shop";
 import { shops } from "./data.shops";
 import { getDirectionHref } from "./mapLinks";
+import "leaflet/dist/leaflet.css";
 
 delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: unknown })._getIconUrl;
 
@@ -107,7 +108,7 @@ export default function ShopLocator() {
       <div className={styles.headerRow}>
         <h2 className={styles.title}>
           <span className={styles.titleStrong}>{shops.length} Stores</span>
-          <span className={styles.titleLight}> in Chandigarh</span>
+          <span className={styles.titleLight}> in Nagpur</span>
         </h2>
       </div>
 
