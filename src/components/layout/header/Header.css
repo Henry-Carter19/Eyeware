@@ -353,7 +353,7 @@
 
 .store-btn{
   display: inline-block;
-  padding: 10px 24px;
+  padding: 10px 24px !important;
   color: red !important;
   font-weight: 700;
   font-size: 16px;
@@ -419,7 +419,7 @@
 
 /* Phone number */
 .phone-number{
-  font-size:22px;
+  font-size:26px;
   font-weight:bold;
   letter-spacing:1px;
 }
