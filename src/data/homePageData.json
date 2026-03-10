@@ -1,6 +1,6 @@
 {
   "heroBanners": [
-        {
+    {
       "id": 1,
       "image": "/images/Banner/Banner1.png"
     },
@@ -489,7 +489,7 @@
         {
           "id": 9,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Rayban",
+          "brand": "Polarised",
           "name": "Polarised Driving Sunglasses",
           "price": 9590,
           "rating": 4.6,
@@ -498,7 +498,7 @@
         {
           "id": 10,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Rayban",
+          "brand": "Polarised",
           "name": "Polarised Outdoor Sunglasses",
           "size": "Large",
           "price": 9990
@@ -508,7 +508,7 @@
         {
           "id": 11,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Fastrack",
+          "brand": "Wayfarer",
           "name": "Black Wayfarer Sunglasses",
           "size": "Medium",
           "price": 1890
@@ -516,7 +516,7 @@
         {
           "id": 12,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Fastrack",
+          "brand": "Wayfarer",
           "name": "Classic Wayfarer Sunglasses",
           "price": 2190
         }
