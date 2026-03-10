@@ -77,19 +77,19 @@ const ProductDetailPage = () => {
           <Col lg={5} md={12}>
             <div className="detail-left">
               <div className="image-card">
-                <button className="try-btn">
-                  <Camera size={18} />{" "}
-                  <span className="try-btn-text">TRY ON</span>
-                </button>
 
-                <div className="icon-group">
+                {/* <button className="try-btn">
+                  <Camera size={18} /> <span className="try-btn-text">TRY ON</span>
+                </button> */}
+
+                {/* <div className="icon-group">
                   <span>
                     <Heart />
                   </span>
                   <span>
                     <ArrowUpRight />
                   </span>
-                </div>
+                </div> */}
 
                 {/* ===== ZOOM CONTAINER ADDED ===== */}
                 <div
@@ -188,13 +188,13 @@ const ProductDetailPage = () => {
                 />
               </SectionWrapper>
 
-              <SectionWrapper title="Offers & Coupons">
+              {/* <SectionWrapper title="Offers & Coupons">
                 <OfferSection offers={product.offers} />
-              </SectionWrapper>
+              </SectionWrapper> */}
 
-              <SectionWrapper title="Check Delivery Date">
+              {/* <SectionWrapper title="Check Delivery Date">
                 <DeliverySection />
-              </SectionWrapper>
+              </SectionWrapper> */}
 
               <SectionWrapper title="Frame Dimensions">
                 <FrameDimensions dimensions={product.frameDimensions} />

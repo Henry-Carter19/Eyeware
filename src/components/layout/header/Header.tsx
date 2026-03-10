@@ -351,7 +351,7 @@ const Header: React.FC = () => {
 
                     <div className="col-12 col-md-3 col-sm-6">
                       <h6>TOP BRANDS</h6>
-                      <a href="#">Titan</a>
+                      {/* <a href="#">Titan</a> */}
                       <a href="#">Rayban</a>
                       <a href="#">Fastrack</a>
                       <a href="#">Vogue</a>
@@ -411,7 +411,7 @@ const Header: React.FC = () => {
 
                     <div className="col-12 col-md-3 col-sm-6">
                       <h6>BRANDS</h6>
-                      <a href="#">Titan</a>
+                      {/* <a href="#">Titan</a> */}
                       <a href="#">Fastrack</a>
                       <a href="#">Rayban</a>
                       <a href="#">Oakley</a>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Product } from "../ProductCarousel/ProductCarousel";
 import "./ProductCard.css";
+import { Heart } from "lucide-react";
 
 interface ProductCardProps {
   product: Product;
@@ -62,9 +63,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
             <img
               key={index}
               src={img}
-              className={`thumbnail ${
-                index === currentIndex ? "active-thumb" : ""
-              }`}
+              className={`thumbnail ${index === currentIndex ? "active-thumb" : ""
+                }`}
               onClick={() => setCurrentIndex(index)}
             />
           ))}
@@ -80,7 +80,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
   return (
     <div className="product-card" onClick={onClick}>
       <div className="image-wrapper">
-        <span className="wishlist">♡</span>
+        <span className="wishlist"><Heart size={20}/></span>
 
         <img src={images[currentIndex]} alt={product.title} />
       </div>
