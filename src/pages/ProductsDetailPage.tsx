@@ -15,6 +15,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaWhatsapp } from "react-icons/fa";
 import ButtonComponent from "../components/ui/ButtonComponent/ButtonComponent";
 import { MessageCircle, Heart, ArrowUpRight, Camera } from "lucide-react";
+import { useWhatsApp } from "../utils/whatsapp";
 
 const ProductDetailPage = () => {
   const { id } = useParams();
@@ -26,6 +27,7 @@ const ProductDetailPage = () => {
   const imgRef = useRef<HTMLImageElement | null>(null);
   const [showZoom, setShowZoom] = useState(false);
   const [zoomPos, setZoomPos] = useState("50% 50%");
+  const { sendMessage } = useWhatsApp();
   /* ============================= */
 
   if (!product) return <div>Product Not Found</div>;
@@ -46,6 +48,15 @@ const ProductDetailPage = () => {
 
     setZoomPos(`${x}% ${y}%`);
   };
+
+  const handleByProduct = () => {
+    const message = `Hello, I want to buy this product:
+      ${product.title}
+      Price: ₹${product.price}
+      Product Link: ${window.location.href}`;
+    sendMessage("918381001406", message);
+  };
+
   /* ========================= */
 
   return (
@@ -67,7 +78,8 @@ const ProductDetailPage = () => {
             <div className="detail-left">
               <div className="image-card">
                 <button className="try-btn">
-                  <Camera size={18} /> <span className="try-btn-text">TRY ON</span>
+                  <Camera size={18} />{" "}
+                  <span className="try-btn-text">TRY ON</span>
                 </button>
 
                 <div className="icon-group">
@@ -113,7 +125,7 @@ const ProductDetailPage = () => {
                       setCurrentIndex(
                         currentIndex === 0
                           ? images.length - 1
-                          : currentIndex - 1
+                          : currentIndex - 1,
                       )
                     }
                   >
@@ -125,8 +137,9 @@ const ProductDetailPage = () => {
                     {images.map((img, index) => (
                       <div
                         key={index}
-                        className={`thumb-box ${index === currentIndex ? "active" : ""
-                          }`}
+                        className={`thumb-box ${
+                          index === currentIndex ? "active" : ""
+                        }`}
                         onClick={() => setCurrentIndex(index)}
                       >
                         <img src={img} alt="" />
@@ -141,7 +154,7 @@ const ProductDetailPage = () => {
                       setCurrentIndex(
                         currentIndex === images.length - 1
                           ? 0
-                          : currentIndex + 1
+                          : currentIndex + 1,
                       )
                     }
                   >
@@ -155,6 +168,7 @@ const ProductDetailPage = () => {
                   label="Buy on"
                   variant="whatsapp"
                   icon={<MessageCircle size={16} />}
+                  onClick={handleByProduct}
                 />
 
                 <ButtonComponent label="Buy now" variant="buy" fullWidth />
