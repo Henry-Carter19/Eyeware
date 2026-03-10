@@ -4,7 +4,8 @@ import {
   Marker,
   Popup,
   TileLayer,
-  useMap
+  useMap,
+  ZoomControl,
 } from "react-leaflet";
 import L from "leaflet";
 import type { Marker as LeafletMarker } from "leaflet";
@@ -16,13 +17,15 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import { Shop } from "./types.shop";
 import { shops } from "./data.shops";
 import { getDirectionHref } from "./mapLinks";
+import "leaflet/dist/leaflet.css";
 
-delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: unknown })._getIconUrl;
+delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: unknown })
+  ._getIconUrl;
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
   iconUrl: markerIcon,
-  shadowUrl: markerShadow
+  shadowUrl: markerShadow,
 });
 
 const storeIcon = new L.DivIcon({
@@ -34,7 +37,7 @@ const storeIcon = new L.DivIcon({
   `,
   iconSize: [28, 28],
   iconAnchor: [14, 28],
-  popupAnchor: [0, -24]
+  popupAnchor: [0, -24],
 });
 
 type FocusMapProps = {
@@ -48,7 +51,7 @@ function FocusMap({ shop }: FocusMapProps) {
     if (!shop) return;
 
     map.flyTo([shop.lat, shop.lng], 12, {
-      duration: 1.1
+      duration: 1.1,
     });
   }, [shop, map]);
 
@@ -59,7 +62,7 @@ function fitBoundsForAll(map: L.Map, items: Shop[]) {
   if (!items.length) return;
 
   const bounds = L.latLngBounds(
-    items.map((x) => [x.lat, x.lng] as [number, number])
+    items.map((x) => [x.lat, x.lng] as [number, number]),
   );
 
   map.fitBounds(bounds, { padding: [40, 40] });
@@ -76,12 +79,14 @@ function MapInit() {
 }
 
 export default function ShopLocator() {
-  const [selectedShopId, setSelectedShopId] = useState<number>(shops[0]?.id ?? 0);
+  const [selectedShopId, setSelectedShopId] = useState<number>(
+    shops[0]?.id ?? 0,
+  );
   const markerRefs = useRef<Record<number, LeafletMarker | null>>({});
 
   const selectedShop = useMemo(
     () => shops.find((x) => x.id === selectedShopId) ?? null,
-    [selectedShopId]
+    [selectedShopId],
   );
 
   useEffect(() => {
@@ -107,7 +112,7 @@ export default function ShopLocator() {
       <div className={styles.headerRow}>
         <h2 className={styles.title}>
           <span className={styles.titleStrong}>{shops.length} Stores</span>
-          <span className={styles.titleLight}> in Chandigarh</span>
+          <span className={styles.titleLight}> in Nagpur</span>
         </h2>
       </div>
 
@@ -149,8 +154,12 @@ export default function ShopLocator() {
 
                       <div className={styles.rating}>
                         <span className={styles.star}>★</span>
-                        <span className={styles.ratingValue}>{shop.rating}</span>
-                        <span className={styles.reviewCount}>({shop.reviews})</span>
+                        <span className={styles.ratingValue}>
+                          {shop.rating}
+                        </span>
+                        <span className={styles.reviewCount}>
+                          ({shop.reviews})
+                        </span>
                       </div>
                     </div>
 
@@ -163,7 +172,7 @@ export default function ShopLocator() {
                           shop.directionUrl,
                           shop.lat,
                           shop.lng,
-                          shop.name
+                          shop.name,
                         )}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -198,10 +207,13 @@ export default function ShopLocator() {
               center={[30.7046, 76.7179]}
               zoom={11}
               scrollWheelZoom
+              zoomControl={false}
               className={styles.map}
             >
+              <ZoomControl position="topright" />
+
               <TileLayer
-                attribution='&copy; OpenStreetMap contributors'
+                attribution="&copy; OpenStreetMap contributors"
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
 
@@ -217,7 +229,7 @@ export default function ShopLocator() {
                     markerRefs.current[shop.id] = ref;
                   }}
                   eventHandlers={{
-                    click: () => setSelectedShopId(shop.id)
+                    click: () => setSelectedShopId(shop.id),
                   }}
                 >
                   <Popup closeButton>
@@ -232,8 +244,12 @@ export default function ShopLocator() {
                         <div className={styles.popupHeaderInfo}>
                           <div className={styles.popupStatusLine}>
                             <span className={styles.popupStatusDot} />
-                            <span className={styles.popupStatusLabel}>{shop.status}</span>
-                            <span className={styles.popupTiming}>{shop.timing}</span>
+                            <span className={styles.popupStatusLabel}>
+                              {shop.status}
+                            </span>
+                            <span className={styles.popupTiming}>
+                              {shop.timing}
+                            </span>
                           </div>
 
                           <h4 className={styles.popupTitle}>{shop.name}</h4>
@@ -247,7 +263,7 @@ export default function ShopLocator() {
                             shop.directionUrl,
                             shop.lat,
                             shop.lng,
-                            shop.name
+                            shop.name,
                           )}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -260,7 +276,9 @@ export default function ShopLocator() {
                         <button
                           type="button"
                           className={styles.popupPrimaryButton}
-                          onClick={() => alert(`Book appointment for ${shop.name}`)}
+                          onClick={() =>
+                            alert(`Book appointment for ${shop.name}`)
+                          }
                         >
                           Book an Appointment
                         </button>
