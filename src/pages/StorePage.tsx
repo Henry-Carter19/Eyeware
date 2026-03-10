@@ -15,7 +15,7 @@ interface StorePageProps {
 }
 
 const StorePage: React.FC<StorePageProps> = ({ data }) => {
- 
+
 
   return (
     <>

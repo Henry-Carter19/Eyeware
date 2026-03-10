@@ -26,13 +26,13 @@ const FindStoreSection: React.FC = () => {
 
       <div className="store-content">
 
-        <div className="store-count">
+        {/* <div className="store-count">
           <Store className="store-icon" size={18} />
           <span><b>3 Stores In India,</b></span>
-        </div>
+        </div> */}
 
         <h2 className="store-title">
-          Find a <span className="highlight">KUBADE optiCare</span>
+          Find a <span className="highlight">Kubade Opticare</span>
           <em> Near You</em>
         </h2>
 
