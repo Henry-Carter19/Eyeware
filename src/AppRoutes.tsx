@@ -5,10 +5,12 @@ import ProductsPage from "./pages/ProductsPage";
 import ProductsDetailPage from "./pages/ProductsDetailPage";
 import StorePage from "./pages/StorePage";
 import StoreData from "./data/storesData.json";
+import ScrollToTop from "./components/ui/ScrollToTop/ScrollToTop";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
@@ -16,8 +18,14 @@ const AppRoutes = () => {
           <Route path="cart" element={<Cart />} />
           <Route path="track-order" element={<TrackOrder />} /> */}
           <Route path="/products" element={<ProductsPage />} />
-          <Route  path="/products/details/:id" element={<ProductsDetailPage />} />
-          <Route path="/stores" element={<StorePage data={StoreData.stores} />} />
+          <Route
+            path="/products/details/:id"
+            element={<ProductsDetailPage />}
+          />
+          <Route
+            path="/stores"
+            element={<StorePage data={StoreData.stores} />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
