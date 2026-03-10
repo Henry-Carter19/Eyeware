@@ -44,7 +44,7 @@ const BestsellersCarousel: React.FC<Props> = ({ bestsellersSection }) => {
       >
         {bestsellersSection?.cards?.map((item) => (
           <SwiperSlide key={item.id}>
-            <Link to={`/products/details/${item.id}`} className="product-link">
+            <Link to={`/products/details/1`} className="product-link">
               <div className="product-card">
                 {item.badge && (
                   <div
