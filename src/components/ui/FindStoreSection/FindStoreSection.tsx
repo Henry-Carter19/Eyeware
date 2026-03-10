@@ -69,7 +69,7 @@ const FindStoreSection: React.FC = () => {
             <div className="stars">★★★★★</div>
 
             <div className="rating-text">
-              8Lakh + Ratings
+              10k + Ratings
             </div>
           </div>
 
