@@ -1,19 +1,16 @@
 /* =============================== */
 /* Section */
 /* =============================== */
-
 .hype-section {
   background: #f4f4f4;
   text-align: center;
 }
-
 .hype-section .hype-title {
   font-size: var(--font-xl);
   font-weight: 500;
   margin-bottom: 20px;
   color: #1f2a37;
 }
-
 .hype-section .hype-title span {
   font-style: italic;
   font-weight: 600;
@@ -21,26 +18,48 @@
 }
 
 /* =============================== */
+/* Fix Swiper overflow so hover lift is visible */
+/* =============================== */
+.hype-section .swiper {
+  overflow: visible !important;
+}
+.hype-section .swiper-wrapper {
+  overflow: visible !important;
+}
+
+/* Clip slides that go outside the section horizontally,
+   but allow vertical overflow for the lift effect */
+.hype-section {
+  overflow: hidden; /* clips left/right bleed from Swiper loop */
+}
+
+/* =============================== */
 /* Card */
 /* =============================== */
-
 .hype-section .hype-card {
   position: relative;
   border-radius: 22px;
-  overflow: hidden;
   cursor: pointer;
   transition:
-    transform 0.4s cubic-bezier(0.4,0,0.2,1),
-    box-shadow 0.4s cubic-bezier(0.4,0,0.2,1);
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .hype-section .hype-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-/* Background */
+/* Move border-radius + clipping to a dedicated inner wrapper */
+.hype-section .hype-card-inner {
+  border-radius: 22px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
 
+/* =============================== */
+/* Background */
+/* =============================== */
 .hype-section .hype-bg {
   width: 100%;
   height: 420px;
@@ -51,7 +70,6 @@
 /* =============================== */
 /* Overlay */
 /* =============================== */
-
 .hype-section .hype-overlay {
   position: absolute;
   top: 18px;
@@ -60,7 +78,6 @@
   align-items: center;
   gap: 10px;
 }
-
 .hype-section .hype-logo-wrapper {
   width: 42px;
   height: 42px;
@@ -71,58 +88,46 @@
   align-items: center;
   justify-content: center;
 }
-
 .hype-section .hype-logo {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 50%;
 }
-
 .hype-section .hype-username {
   color: white;
   font-size: var(--font-sm);
   font-weight: 500;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* =============================== */
 /* Tablet */
 /* =============================== */
-
 @media (max-width: 1024px) {
-
   .hype-section {
     padding: 40px 40px;
   }
-
   .hype-section .hype-title {
     font-size: 32px;
   }
-
   .hype-section .hype-bg {
     height: 360px;
   }
-
 }
 
 /* =============================== */
 /* Mobile */
 /* =============================== */
-
 @media (max-width: 600px) {
-
   .hype-section {
     padding: 30px 20px;
   }
-
   .hype-section .hype-title {
     font-size: 26px;
     margin-bottom: 35px;
   }
-
   .hype-section .hype-bg {
     height: 320px;
   }
-
 }
