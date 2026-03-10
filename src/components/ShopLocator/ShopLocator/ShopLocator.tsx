@@ -131,12 +131,12 @@ Please confirm availability.`;
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.headerRow}>
+      {/* <div className={styles.headerRow}>
         <h2 className={styles.title}>
           <span className={styles.titleStrong}>{shops.length} Stores</span>
           <span className={styles.titleLight}> in Nagpur</span>
         </h2>
-      </div>
+      </div> */}
 
       <div className={styles.layout}>
         <section className={styles.cardsPanel}>

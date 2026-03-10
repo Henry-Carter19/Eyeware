@@ -43,6 +43,7 @@ const Header: React.FC = () => {
           <div className="mobile-icons">
             <Search size={20} />
             <ShoppingCart size={20} />
+            {/* <p>Contact Us</p> */}
           </div>
         </div>
       </div>
