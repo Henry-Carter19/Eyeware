@@ -200,12 +200,7 @@
       "route": "/products"
     },
     "cards": [
-      {
-        "id": 1,
-        "image": "/images/ExclusiveItems/Spectro.png/?height=415&width=740&fit=cover",
-        "buttonText": "SHOP COLLECTION",
-        "route": "/products"
-      },
+     
       {
         "id": 2,
         "image": "/images/ExclusiveItems/Alcon.png?height=415&width=740&fit=cover",
