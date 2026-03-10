@@ -178,8 +178,8 @@
 }
 
 
-/* =========================
-   NAVBAR LOGO
+
+   /* NAVBAR LOGO */
 
 .navbar-logo {
   height: 40px;
@@ -188,7 +188,6 @@
   cursor: pointer;
 }
 
-/* Align properly inside navbar */
 .navbar-brand {
   display: flex;
   align-items: center;

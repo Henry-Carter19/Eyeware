@@ -7,7 +7,7 @@ const FindStoreSection: React.FC = () => {
   const navigate = useNavigate();
 
   const handleExploreStore = () => {
-    navigate("/products");
+    navigate("/stores");
   };
 
   return (
