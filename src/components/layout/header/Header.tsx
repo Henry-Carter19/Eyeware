@@ -58,135 +58,36 @@ const Header: React.FC = () => {
         </div>
 
         <div className="offcanvas-body">
-          <div className="accordion" id="mobileMenuAccordion">
-            {/* Eyeglasses */}
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button
-                  type="button"
-                  className="accordion-button collapsed"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#eyeglassesMenu"
-                >
-                  Eyeglasses
-                </button>
-              </h2>
 
-              <div
-                id="eyeglassesMenu"
-                className="accordion-collapse collapse"
-                data-bs-parent="#mobileMenuAccordion"
-              >
-                <div className="accordion-body mobile-scroll">
-                  {menuData.menuEyeGlassesData.map((section, index) => (
-                    <div className="mobile-submenu" key={index}>
-                      <h6>{section.title}</h6>
+          {/* Your existing accordion menu here */}
 
-                      {section.items.map((item, i) => (
-                        <a key={i} href={item.path}>
-                          {item.label}
-                        </a>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Sunglasses */}
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button
-                  type="button"
-                  className="accordion-button collapsed"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#sunglassesMenu"
-                >
-                  Sunglasses
-                </button>
-              </h2>
-
-              <div
-                id="sunglassesMenu"
-                className="accordion-collapse collapse"
-                data-bs-parent="#mobileMenuAccordion"
-              >
-                <div className="accordion-body mobile-scroll">
-                  {menuData.menuSunGlassesData.map((section, index) => (
-                    <div className="mobile-submenu" key={index}>
-                      <h6>{section.title}</h6>
-                      {section.items.map((item, i) => (
-                        <a key={i} href={item.path}>
-                          {item.label}
-                        </a>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Lenses */}
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button
-                  type="button"
-                  className="accordion-button collapsed"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#contactLensesMenu"
-                >
-                  Contact Lenses
-                </button>
-              </h2>
-
-              <div
-                id="contactLensesMenu"
-                className="accordion-collapse collapse"
-                data-bs-parent="#mobileMenuAccordion"
-              >
-                <div className="accordion-body mobile-scroll">
-                  {menuData.menuContactLensesData.map((section, index) => (
-                    <div className="mobile-submenu" key={index}>
-                      <a key={index} href={section.path}>
-                        {section.title}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Accessories */}
-
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button
-                  type="button"
-                  className="accordion-button collapsed"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#accessoriesMenu"
-                >
-                  Accessories
-                </button>
-              </h2>
-
-              <div
-                id="accessoriesMenu"
-                className="accordion-collapse collapse"
-                data-bs-parent="#mobileMenuAccordion"
-              >
-                <div className="accordion-body mobile-scroll">
-                  {menuData.menuAccessoriesData.map((section, index) => (
-                    <div className="mobile-submenu" key={index}>
-                      <a key={index} href={section.path}>
-                        {section.title}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+          {/* STORE BUTTON */}
+          <div className="mobile-store-section">
+            <a href="/stores" className="store-btn">
+              Stores
+            </a>
           </div>
+
+          {/* SOCIAL ICONS */}
+          <div className="mobile-social-icons">
+            <a href="https://instagram.com" target="_blank">
+              <i className="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+              <i className="bi bi-facebook"></i>
+            </a>
+
+            <a href="https://wa.me/918381001406" target="_blank">
+              <i className="bi bi-whatsapp"></i>
+            </a>
+          </div>
+
+          {/* PHONE NUMBER */}
+          <div className="mobile-phone">
+            +91 83810 01406
+          </div>
+
         </div>
       </div>
 
@@ -299,194 +200,40 @@ const Header: React.FC = () => {
 
       {/* MAIN NAVBAR */}
       <nav className="navbar navbar-expand-lg bg-white border-bottom d-none d-lg-flex">
-        {/* <nav className="navbar navbar-expand-lg bg-white border-bottom"> */}
         <div className="container-fluid">
+
+          {/* LOGO */}
           <a href="/">
-            {" "}
             <img className="navbar-logo" src="/images/logo.png" alt="logo" />
           </a>
 
-          <button
-            className="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarMenu"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+          {/* RIGHT SIDE SOCIAL + PHONE */}
+          <div className="ms-auto d-flex align-items-center gap-4">
 
-          <div className="collapse navbar-collapse" id="navbarMenu">
-            <ul className="navbar-nav mx-auto gap-4">
-              {/* Eyeglasses Mega Menu */}
-              <li className="nav-item dropdown hover-dropdown">
-                <span className="nav-link">
-                  Eyeglasses <ChevronDown size={18} />
-                </span>
+            {/* STORES BUTTON */}
+            <a href="/stores" className="store-btn">
+              Stores
+            </a>
+            {/* Social Icons */}
+            <a href="https://instagram.com" target="_blank">
+              <i className="bi bi-instagram fs-3"></i>
+            </a>
 
-                <div className="dropdown-menu mega-menu p-4">
-                  <div className="row">
-                    <div className="col-12 col-md-3 col-sm-6">
-                      <h6>GENDER</h6>
-                      <a href="#">All</a>
-                      <a href="#">Men</a>
-                      <a href="#">Women</a>
-                      <a href="#">Kids</a>
-                    </div>
+            <a href="https://facebook.com" target="_blank">
+              <i className="bi bi-facebook fs-3"></i>
+            </a>
 
-                    <div className="col-12 col-md-3 col-sm-6">
-                      <h6>SHAPE</h6>
-                      <a href="#">Rectangle</a>
-                      <a href="#">Round</a>
-                      <a href="#">Cat Eye</a>
-                      <a href="#">Wayfarer</a>
-                    </div>
+            <a href="https://wa.me/918381001406" target="_blank">
+              <i className="bi bi-whatsapp fs-3 text-success"></i>
+            </a>
 
-                    <div className="col-12 col-md-3 col-sm-6">
-                      <h6>TOP BRANDS</h6>
-                      <a href="#">Titan</a>
-                      <a href="#">Rayban</a>
-                      <a href="#">Fastrack</a>
-                      <a href="#">Vogue</a>
-                    </div>
+            {/* Phone Number */}
+            <span className="fw-bold fs-4">
+              +91 83810 01406
+            </span>
 
-                    <div className="col-12 col-md-3 col-sm-6">
-                      <img
-                        src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371"
-                        className="img-fluid rounded"
-                        alt="Eyeglasses"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li className="nav-item dropdown hover-dropdown">
-                <span className="nav-link">
-                  Sunglasses <ChevronDown size={18} />
-                </span>
-
-                <div className="dropdown-menu mega-menu mega-menu-full p-4">
-                  <div className="row">
-                    <div className="col-12 col-md-3 col-sm-6">
-                      <h6>GENDER</h6>
-                      <a href="#">All</a>
-                      <a href="#">Men</a>
-                      <a href="#">Women</a>
-                      <a href="#">Kids</a>
-
-                      <h6 className="mt-3">STYLE</h6>
-                      <a href="#">Mirrored</a>
-                      <a href="#">Tinted</a>
-                      <a href="#">UV Protection</a>
-                      <a href="#">Polarized</a>
-
-                      <h6 className="mt-3">USAGE</h6>
-                      <a href="#">Regular</a>
-                      <a href="#">Power</a>
-                    </div>
-
-                    <div className="col-12 col-md-3 col-sm-6">
-                      <h6>COLLECTION</h6>
-                      <a href="#">Smart Sunglasses</a>
-                      <a href="#">Donald</a>
-                      <a href="#">Glow Up</a>
-                      <a href="#">Whiplash</a>
-                      <a href="#">Vivid Geometry</a>
-
-                      <h6 className="mt-3">SHAPE</h6>
-                      <a href="#">Aviator</a>
-                      <a href="#">Wayfarer</a>
-                      <a href="#">Wraparound</a>
-                      <a href="#">Rectangle</a>
-                      <a href="#">Round</a>
-                    </div>
-
-                    <div className="col-12 col-md-3 col-sm-6">
-                      <h6>BRANDS</h6>
-                      <a href="#">Titan</a>
-                      <a href="#">Fastrack</a>
-                      <a href="#">Rayban</a>
-                      <a href="#">Oakley</a>
-                      <a href="#">Burberry</a>
-                    </div>
-
-                    <div className="col-12 col-md-3">
-                      <img
-                        src="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
-                        className="img-fluid rounded"
-                        alt="Sunglasses"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              {/* <li className="nav-item">
-                <span className="nav-link">Power Sunglasses</span>
-              </li>
-
-              <li className="nav-item">
-                <span className="nav-link">Computer Glasses</span>
-              </li>
-
-              <li className="nav-item">
-                <span className="nav-link">Hearing Aids</span>
-              </li> */}
-
-              {/* Contact Lenses */}
-              <li className="nav-item dropdown hover-dropdown">
-                <span className="nav-link">
-                  Contact Lenses <ChevronDown size={18} />
-                </span>
-
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Bausch & Lomb
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Johnson & Johnson
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Cooper Vision
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              {/* Accessories */}
-              <li className="nav-item dropdown hover-dropdown">
-                <span className="nav-link">
-                  Accessories <ChevronDown size={18} />
-                </span>
-
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Cleaning Cloth
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Lens Spray
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Cases
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-            {/* <div>
-              <ShoppingCart size={22} />
-            </div> */}
           </div>
+
         </div>
       </nav>
     </>
