@@ -138,12 +138,6 @@
 /* Product Info */
 /* =============================== */
 
-.BestsellersCarousel-section .product-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
 .BestsellersCarousel-section .brand {
   font-size: 14px;
   font-weight: 600;

@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import homeData from "../data/homePageData.json";
 import { HomePageData } from "../types/home.types";
 import HeroCarousel from "../components/ui/HeroCarousel/HeroCarousel";
 import BrandsCarousel from "../components/ui/BrandsCarousel/BrandsCarousel";
@@ -11,24 +12,13 @@ import FeaturedCollectionsOnlyFocus from "../components/ui/FeautredCollection/Fe
 import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel";
 import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
 import BlogCarousel from "../components/ui/BlogCarousel/BlogCarousel";
-// import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
+import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
 import GoToTop from "../components/ui/GoToTop/GoToTop";
 
 import ShopCollections from "../components/ui/ShopCollections/ShopCollections";
 
 const HomePage = () => {
-  const [data, setData] = useState<HomePageData | null>(null);
-
-  useEffect(() => {
-    const base = process.env.PUBLIC_URL || "";
-
-    fetch(`${base}/data/homePageData.json`)
-      .then((res) => res.json())
-      .then((json) => setData(json as HomePageData))
-      .catch((err) => console.error("Failed to load home page data:", err));
-  }, []);
-
-  if (!data) return null;
+  const data = homeData as HomePageData;
 
   return (
     <div>
@@ -62,4 +52,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePage; 

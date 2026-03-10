@@ -3,7 +3,6 @@ import "./TrendingCarousel.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { ChevronLeft, ChevronRight, MoveUpRight, Star } from "lucide-react";
-import { Link } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,7 +16,7 @@ interface Props {
 
 const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
   const [activeFilter, setActiveFilter] = useState(
-    trendingSection.filters[0].key
+    trendingSection.filters[0].key,
   );
 
   const cards = trendingSection.cards[activeFilter] || [];
@@ -37,9 +36,8 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
           {trendingSection?.filters?.map((filter) => (
             <button
               key={filter.key}
-              className={`filter-btn ${
-                activeFilter === filter.key ? "active" : ""
-              }`}
+              className={`filter-btn ${activeFilter === filter.key ? "active" : ""
+                }`}
               onClick={() => setActiveFilter(filter.key)}
             >
               {filter.label} <MoveUpRight size={16} />
@@ -72,37 +70,30 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
       >
         {cards.map((item) => (
           <SwiperSlide key={item.id}>
-            <Link
-              to={`/products/details/1`}
-              className="trend-card-link"
-            >
-              <div className="trend-card">
-                <img src={item.image} className="trend-img" alt="img" />
+            <div className="trend-card">
+              <img src={item.image} className="trend-img" />
 
-                {item.rating && (
-                  <div className="trend-rating">
-                    {item.rating}
-                    <Star className="star" />
-                    <span className="divider"></span>
-                    {item.ratingCount}
-                  </div>
-                )}
-
-                <div className="trend-info">
-                  <div className="brand">{item.brand}</div>
-
-                  <div className="name">{item.name}</div>
-
-                  {item.size && (
-                    <div className="size">Size: {item.size}</div>
-                  )}
-
-                  <div className="price">₹{item.price}</div>
-
-                  <div className="tax">Inclusive of all taxes</div>
+              {item.rating && (
+                <div className="trend-rating">
+                  {item.rating}
+                  <Star className="star" />
+                  <span className="divider"></span>
+                  {item.ratingCount}
                 </div>
+              )}
+
+              <div className="trend-info">
+                <div className="brand">{item.brand}</div>
+
+                <div className="name">{item.name}</div>
+
+                {item.size && <div className="size">Size: {item.size}</div>}
+
+                <div className="price">₹{item.price}</div>
+
+                <div className="tax">Inclusive of all taxes</div>
               </div>
-            </Link>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

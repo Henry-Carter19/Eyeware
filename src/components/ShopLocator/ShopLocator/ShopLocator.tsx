@@ -15,8 +15,9 @@ import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import { Shop } from "./types.shop";
+import { shops } from "./data.shops";
 import { getDirectionHref } from "./mapLinks";
-import "leaflet/dist/leaflet.css";
+import { useWhatsApp } from "../../../utils/whatsapp";
 
 delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: unknown })
   ._getIconUrl;
@@ -67,42 +68,27 @@ function fitBoundsForAll(map: L.Map, items: Shop[]) {
   map.fitBounds(bounds, { padding: [40, 40] });
 }
 
-function MapInit({ shops }: { shops: Shop[] }) {
+function MapInit() {
   const map = useMap();
 
   useEffect(() => {
-    if (shops.length) {
-      fitBoundsForAll(map, shops);
-    }
-  }, [map, shops]);
+    fitBoundsForAll(map, shops);
+  }, [map]);
 
   return null;
 }
 
 export default function ShopLocator() {
-  const [shops, setShops] = useState<Shop[]>([]);
-  const [selectedShopId, setSelectedShopId] = useState<number>(0);
-
+  const [selectedShopId, setSelectedShopId] = useState<number>(
+    shops[0]?.id ?? 0,
+  );
   const markerRefs = useRef<Record<number, LeafletMarker | null>>({});
-
-  useEffect(() => {
-    const base = process.env.PUBLIC_URL || "";
-
-    fetch(`${base}/data/shops.json`)
-      .then((res) => res.json())
-      .then((data: Shop[]) => {
-        setShops(data);
-        if (data.length) {
-          setSelectedShopId(data[0].id);
-        }
-      })
-      .catch((err) => console.error("Failed to load shops:", err));
-  }, []);
 
   const selectedShop = useMemo(
     () => shops.find((x) => x.id === selectedShopId) ?? null,
-    [selectedShopId, shops],
+    [selectedShopId],
   );
+  const { sendMessage } = useWhatsApp();
 
   useEffect(() => {
     if (!selectedShopId) return;
@@ -122,6 +108,27 @@ export default function ShopLocator() {
     return () => window.clearTimeout(timer);
   }, [selectedShopId]);
 
+  const handleAppointment = (shop: Shop) => {
+    const phoneNumber = "918381001406"; // Kubade OptiCare's WhatsApp number
+
+    const message = `Hello Kubade OptiCare,
+
+    I would like to book an appointment.
+
+    Store: ${shop.name}
+    Address: ${shop.address}
+
+    Preferred Date:
+    Preferred Time:
+
+    Location:
+    ${shop.directionUrl}
+
+    Please confirm availability.`;
+
+    sendMessage(phoneNumber, message);
+  };
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.headerRow}>
@@ -140,9 +147,7 @@ export default function ShopLocator() {
               return (
                 <article
                   key={shop.id}
-                  className={`${styles.card} ${
-                    isActive ? styles.cardActive : ""
-                  }`}
+                  className={`${styles.card} ${isActive ? styles.cardActive : ""}`}
                   onClick={() => setSelectedShopId(shop.id)}
                 >
                   <div className={styles.imageWrap}>
@@ -203,10 +208,7 @@ export default function ShopLocator() {
                       <button
                         type="button"
                         className={styles.primaryButton}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          alert(`Book appointment for ${shop.name}`);
-                        }}
+                        onClick={() => handleAppointment(shop)}
                       >
                         Book an Appointment
                       </button>
@@ -234,7 +236,7 @@ export default function ShopLocator() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
 
-              <MapInit shops={shops} />
+              <MapInit />
               <FocusMap shop={selectedShop} />
 
               {shops.map((shop) => (
@@ -293,9 +295,10 @@ export default function ShopLocator() {
                         <button
                           type="button"
                           className={styles.popupPrimaryButton}
-                          onClick={() =>
-                            alert(`Book appointment for ${shop.name}`)
-                          }
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleAppointment(shop);
+                          }}
                         >
                           Book an Appointment
                         </button>

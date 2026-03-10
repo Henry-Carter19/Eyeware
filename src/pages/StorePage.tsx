@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/StorePage.css";
 import ShopLocator from "../components/ShopLocator/ShopLocator/ShopLocator";
 
-const StorePage: React.FC = () => {
+interface Store {
+  id: number;
+  name: string;
+  img: string;
+  address: string;
+  rating?: string | null;
+}
+
+interface StorePageProps {
+  data: Store[];
+}
+
+const StorePage: React.FC<StorePageProps> = ({ data }) => {
+ 
+
   return (
     <>
       <ShopLocator />
