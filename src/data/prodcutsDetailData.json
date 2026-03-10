@@ -1,7 +1,7 @@
 {
     "productsDetail": [
         {
-            "id": 1,
+            "id": "p1",
             "layoutType": "detail",
             "brand": "Fastrack",
             "title": "Grey Wayfarer Sunglasses for Men",
@@ -94,6 +94,304 @@
                 {
                     "id": 2,
                     "label": "Try on all fastrack sunglasses",
+                    "type": "brand"
+                },
+                {
+                    "id": 3,
+                    "label": "Explore all sunglasses",
+                    "type": "all"
+                }
+            ]
+        },
+        {
+            "id": "p2",
+            "layoutType": "detail",
+            "brand": "RayBan",
+            "title": "Black Aviator Sunglasses for Men",
+            "price": 4500,
+            "currency": "INR",
+            "taxIncluded": true,
+            "peopleBought": 2345,
+            "size": "Medium",
+            "rating": 4.7,
+            "ratingCount": 58,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_2_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_5_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_6_lar.jpg"
+            ],
+            "isNew": true,
+            "offers": [
+                {
+                    "id": 1,
+                    "title": "Flat 40% Off on RayBan Sunglasses",
+                    "description": "Limited time offer on RayBan collection",
+                    "code": "RB40",
+                    "discountType": "percentage",
+                    "discountValue": 40
+                }
+            ],
+            "delivery": {
+                "isAvailable": true,
+                "estimatedDays": 4,
+                "codAvailable": true
+            },
+            "frameDimensions": {
+                "lensWidth": 58,
+                "bridgeWidth": 18,
+                "templeLength": 145,
+                "lensHeight": 48,
+                "unit": "mm",
+                "images": [
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/bridge.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/temple.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg"
+                ]
+            },
+            "trustBadges": [
+                {
+                    "id": 1,
+                    "title": "7 days\nreturns",
+                    "icon": "/7_icon.svg",
+                    "bgColor": "#dff4e6"
+                },
+                {
+                    "id": 2,
+                    "title": "TATA\nTrust",
+                    "icon": "/tata-icon.svg",
+                    "bgColor": "#dff3fb"
+                },
+                {
+                    "id": 3,
+                    "title": "6 months\nwarranty",
+                    "icon": "https://api.titaneyeplus.com/media/theme/product-details/trust-badge/warranty.svg",
+                    "bgColor": "#fff4dc"
+                }
+            ],
+            "description": {
+                "text": "Premium Aviator Sunglasses with UV protection and lightweight metal frame.",
+                "sku": "RB4587"
+            },
+            "productInformation": {
+                "sku": "RB4587",
+                "brand": "RayBan",
+                "gender": "Men",
+                "lensColor": "Black",
+                "frameShape": "Aviator",
+                "frameMaterial": "Metal",
+                "lensType": "UV Protected",
+                "rimDetails": "Full Rim",
+                "warranty": "6 months",
+                "countryOfOrigin": "Italy"
+            },
+            "relatedLinks": [
+                {
+                    "id": 1,
+                    "label": "Try on all aviator frames",
+                    "type": "aviator"
+                },
+                {
+                    "id": 2,
+                    "label": "Try on all rayban sunglasses",
+                    "type": "brand"
+                },
+                {
+                    "id": 3,
+                    "label": "Explore all sunglasses",
+                    "type": "all"
+                }
+            ]
+        },
+        {
+            "id": "p3",
+            "layoutType": "detail",
+            "brand": "Oakley",
+            "title": "Sport Polarized Sunglasses",
+            "price": 5200,
+            "currency": "INR",
+            "taxIncluded": true,
+            "peopleBought": 1200,
+            "size": "Large",
+            "rating": 4.6,
+            "ratingCount": 44,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_2_lar.jpg"
+            ],
+            "isNew": false,
+            "offers": [
+                {
+                    "id": 1,
+                    "title": "Flat 30% Off",
+                    "description": "Offer on selected Oakley models",
+                    "code": "OK30",
+                    "discountType": "percentage",
+                    "discountValue": 30
+                }
+            ],
+            "delivery": {
+                "isAvailable": true,
+                "estimatedDays": 5,
+                "codAvailable": true
+            },
+            "frameDimensions": {
+                "lensWidth": 60,
+                "bridgeWidth": 17,
+                "templeLength": 150,
+                "lensHeight": 46,
+                "unit": "mm",
+                "images": [
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/bridge.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/temple.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg"
+                ]
+            },
+            "trustBadges": [
+                {
+                    "id": 1,
+                    "title": "7 days\nreturns",
+                    "icon": "/7_icon.svg",
+                    "bgColor": "#dff4e6"
+                },
+                {
+                    "id": 2,
+                    "title": "TATA\nTrust",
+                    "icon": "/tata-icon.svg",
+                    "bgColor": "#dff3fb"
+                },
+                {
+                    "id": 3,
+                    "title": "6 months\nwarranty",
+                    "icon": "https://api.titaneyeplus.com/media/theme/product-details/trust-badge/warranty.svg",
+                    "bgColor": "#fff4dc"
+                }
+            ],
+            "description": {
+                "text": "High performance sport sunglasses ideal for outdoor activities.",
+                "sku": "OK8891"
+            },
+            "productInformation": {
+                "sku": "OK8891",
+                "brand": "Oakley",
+                "gender": "Unisex",
+                "lensColor": "Black",
+                "frameShape": "Sport",
+                "frameMaterial": "Plastic",
+                "lensType": "Polarized",
+                "rimDetails": "Half Rim",
+                "warranty": "6 months",
+                "countryOfOrigin": "USA"
+            },
+            "relatedLinks": [
+                {
+                    "id": 1,
+                    "label": "Try sport frames",
+                    "type": "sport"
+                },
+                {
+                    "id": 2,
+                    "label": "Try oakley sunglasses",
+                    "type": "brand"
+                },
+                {
+                    "id": 3,
+                    "label": "Explore all sunglasses",
+                    "type": "all"
+                }
+            ]
+        },
+        {
+            "id": "p4",
+            "layoutType": "detail",
+            "brand": "Fastrack",
+            "title": "Blue Gradient Sunglasses",
+            "price": 1800,
+            "currency": "INR",
+            "taxIncluded": true,
+            "peopleBought": 890,
+            "size": "Medium",
+            "rating": 4.3,
+            "ratingCount": 22,
+            "images": [
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg"
+            ],
+            "isNew": true,
+            "offers": [
+                {
+                    "id": 1,
+                    "title": "Flat 50% Off",
+                    "description": "Exclusive Fastrack offer",
+                    "code": "FT50",
+                    "discountType": "percentage",
+                    "discountValue": 50
+                }
+            ],
+            "delivery": {
+                "isAvailable": true,
+                "estimatedDays": 6,
+                "codAvailable": true
+            },
+            "frameDimensions": {
+                "lensWidth": 55,
+                "bridgeWidth": 18,
+                "templeLength": 148,
+                "lensHeight": 44,
+                "unit": "mm",
+                "images": [
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/bridge.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/temple.svg",
+                    "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg"
+                ]
+            },
+            "trustBadges": [
+                {
+                    "id": 1,
+                    "title": "7 days\nreturns",
+                    "icon": "/7_icon.svg",
+                    "bgColor": "#dff4e6"
+                },
+                {
+                    "id": 2,
+                    "title": "TATA\nTrust",
+                    "icon": "/tata-icon.svg",
+                    "bgColor": "#dff3fb"
+                },
+                {
+                    "id": 3,
+                    "title": "6 months\nwarranty",
+                    "icon": "https://api.titaneyeplus.com/media/theme/product-details/trust-badge/warranty.svg",
+                    "bgColor": "#fff4dc"
+                }
+            ],
+            "description": {
+                "text": "Stylish gradient sunglasses perfect for casual wear.",
+                "sku": "FT6621"
+            },
+            "productInformation": {
+                "sku": "FT6621",
+                "brand": "Fastrack",
+                "gender": "Men",
+                "lensColor": "Blue",
+                "frameShape": "Square",
+                "frameMaterial": "Plastic",
+                "lensType": "UV Protected",
+                "rimDetails": "Full Rim",
+                "warranty": "6 months",
+                "countryOfOrigin": "India"
+            },
+            "relatedLinks": [
+                {
+                    "id": 1,
+                    "label": "Try square frames",
+                    "type": "square"
+                },
+                {
+                    "id": 2,
+                    "label": "Try fastrack sunglasses",
                     "type": "brand"
                 },
                 {
