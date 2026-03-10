@@ -1,143 +1,86 @@
 {
     "filters": [
         {
-            "title": "Frame Style",
+            "title": "Gender",
+            "key": "gender",
             "type": "checkbox",
+            "productField": "gender",
             "options": [
-                "Rimmed",
-                "Semi-Rimmed",
-                "Rimless"
-            ]
-        },
-        {
-            "title": "Frame Shape",
-            "type": "image",
-            "options": [
-                {
-                    "label": "Aviator",
-                    "icon": "🕶"
-                },
-                {
-                    "label": "Butterfly",
-                    "icon": "👓"
-                },
-                {
-                    "label": "Phantos",
-                    "icon": "🥽"
-                },
-                {
-                    "label": "Pillow",
-                    "icon": "😎"
-                },
-                {
-                    "label": "Sporty",
-                    "icon": "🧿"
-                },
-                {
-                    "label": "Bugeye",
-                    "icon": "🕶️"
-                }
+                "Men",
+                "Women",
+                "Unisex"
             ]
         },
         {
             "title": "Frame Color",
+            "key": "color",
             "type": "color",
+            "productField": "color",
             "options": [
                 {
-                    "label": "Bronze",
-                    "color": "#cd7f32"
+                    "label": "Black",
+                    "color": "#000000"
                 },
                 {
-                    "label": "Burgundy",
-                    "color": "#800020"
-                },
-                {
-                    "label": "Copper",
-                    "color": "#b87333"
-                },
-                {
-                    "label": "Crystal",
-                    "color": "#e0e0e0"
+                    "label": "Brown",
+                    "color": "#8B5E3C"
                 },
                 {
                     "label": "Gold",
-                    "color": "#d4af37"
+                    "color": "#C9A227"
                 },
                 {
-                    "label": "Gun Metal",
-                    "color": "#5f5f5f"
-                },
-                {
-                    "label": "Maroon",
-                    "color": "#800000"
+                    "label": "Silver",
+                    "color": "#C0C0C0"
                 }
             ]
         },
         {
-            "title": "Frame Size",
-            "type": "checkbox",
+            "title": "Frame Shape",
+            "key": "shape",
+            "type": "image",
+            "productField": "shape",
             "options": [
-                "Extra Small",
-                "Small",
-                "Medium",
-                "Large"
+                {
+                    "label": "Round",
+                    "icon": "◯"
+                },
+                {
+                    "label": "Square",
+                    "icon": "▢"
+                },
+                {
+                    "label": "Rectangle",
+                    "icon": "▭"
+                },
+                {
+                    "label": "Cat Eye",
+                    "icon": "⬒"
+                }
             ]
         },
         {
-            "title": "Frame Material",
+            "title": "Style",
+            "key": "style",
             "type": "checkbox",
+            "productField": "style",
             "options": [
-                "Aluminium",
-                "Carbon",
-                "Nickel Silver",
-                "Acetate",
-                "Metal",
-                "Nylon"
-            ]
-        },
-        {
-            "title": "Brands",
-            "type": "checkbox",
-            "options": [
-                "Titan",
-                "Ray-Ban",
-                "Fastrack",
-                "Vogue",
-                "Oakley",
-                "Carrera"
-            ]
-        },
-        {
-            "title": "Gender",
-            "type": "checkbox",
-            "options": [
-                "Men",
-                "Women",
-                "Unisex",
-                "Kids"
-            ]
-        },
-        {
-            "title": "Collections",
-            "type": "checkbox",
-            "options": [
-                "Trending",
-                "New Arrivals",
-                "Best Sellers",
+                "Classic",
+                "Modern",
                 "Premium",
-                "Budget"
+                "Sports"
             ]
         },
         {
             "title": "Price",
+            "key": "price",
             "type": "checkbox",
+            "productField": "priceRange",
             "options": [
-                "Below 500",
-                "501 - 1000",
-                "1001 - 1500",
-                "1501 - 2000",
-                "2001 - 2500",
-                "2501 - 4000"
+                "Under 999",
+                "1000-1999",
+                "2000-4999",
+                "5000+"
             ]
         }
     ]
