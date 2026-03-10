@@ -82,14 +82,18 @@ ${window.location.href}`;
                   <span className="try-btn-text">TRY ON</span>
                 </button>
 
-                <div className="icon-group">
+                {/* <button className="try-btn">
+                  <Camera size={18} /> <span className="try-btn-text">TRY ON</span>
+                </button> */}
+
+                {/* <div className="icon-group">
                   <span>
                     <Heart />
                   </span>
                   <span>
                     <ArrowUpRight />
                   </span>
-                </div>
+                </div> */}
 
                 <div
                   className="zoom-container"
@@ -185,9 +189,9 @@ ${window.location.href}`;
                 <OfferSection offers={product.offers ?? []} />
               </SectionWrapper>
 
-              <SectionWrapper title="Check Delivery Date">
+              {/* <SectionWrapper title="Check Delivery Date">
                 <DeliverySection />
-              </SectionWrapper>
+              </SectionWrapper> */}
 
               <SectionWrapper title="Frame Dimensions">
                 <FrameDimensions dimensions={product.frameDimensions ?? {}} />

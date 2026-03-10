@@ -57,7 +57,7 @@
   display: flex;
   justify-content: flex-end;
   border-top: 1px solid var(--border-dark);
-  padding-top: var(--space-lg);
+  /* padding-top: var(--space-lg); */
 }
 
 .apply-btn {
