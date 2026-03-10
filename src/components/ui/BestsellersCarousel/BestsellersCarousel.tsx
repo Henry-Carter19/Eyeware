@@ -23,13 +23,9 @@ const BestsellersCarousel: React.FC<Props> = ({ bestsellersSection }) => {
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={4}
         spaceBetween={29}
-        loop={true}
-        // centeredSlides={true}
+        loop
         speed={900}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
+        autoplay={{ delay: 1500 }}
         navigation={{
           nextEl: ".best-next",
           prevEl: ".best-prev",
@@ -39,7 +35,7 @@ const BestsellersCarousel: React.FC<Props> = ({ bestsellersSection }) => {
           clickable: true,
         }}
         breakpoints={{
-          0: { slidesPerView: 1.2 },
+          0: { slidesPerView: 1 },
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
           1280: { slidesPerView: 4 },
@@ -56,7 +52,9 @@ const BestsellersCarousel: React.FC<Props> = ({ bestsellersSection }) => {
                 </div>
               )}
 
-              <div className="wishlist"><Heart size={20} /></div>
+              <div className="wishlist">
+                <Heart size={20} />
+              </div>
 
               <img src={item.image} alt="" className="product-img" />
 
