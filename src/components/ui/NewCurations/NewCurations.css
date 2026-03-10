@@ -74,6 +74,10 @@
 /* Swiper Wrapper */
 /* =============================== */
 
+.swiper-wrapper {
+    margin-bottom: 20px;
+}
+
 .curation-section .curation-swiper-wrapper {
   position: relative;
 }
