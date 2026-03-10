@@ -5,6 +5,9 @@
 .hype-section {
   background: #f4f4f4;
   text-align: center;
+
+/*  ~~~ TO ENABLED HYPE SECTION REMEBER TO REMOVE THIS  */
+  display: none;
 }
 
 .hype-section .hype-title {

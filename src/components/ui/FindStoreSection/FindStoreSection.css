@@ -49,7 +49,7 @@
 }
 
 .store-section .store-title {
-  font-size: var(--font-xl);
+  font-size: var(--font-2xl);
   font-weight: 500;
   margin-bottom: 20px;
 }
