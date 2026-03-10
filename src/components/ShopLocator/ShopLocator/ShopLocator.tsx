@@ -86,7 +86,9 @@ export default function ShopLocator() {
   const markerRefs = useRef<Record<number, LeafletMarker | null>>({});
 
   useEffect(() => {
-    fetch("/data/shops.json")
+    const base = process.env.PUBLIC_URL || "";
+
+    fetch(`${base}/data/shops.json`)
       .then((res) => res.json())
       .then((data: Shop[]) => {
         setShops(data);

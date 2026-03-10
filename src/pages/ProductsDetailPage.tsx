@@ -1,6 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
-import productData from "../data/prodcutsDetailData.json";
 import "../styles/ProductDetailPage.css";
 import DeliverySection from "../components/product/ProductDetails/DeliverySection/DeliverySection";
 import FrameDimensions from "../components/product/ProductDetails/FrameDimensions/FrameDimensions";
@@ -12,27 +11,59 @@ import RelatedLinks from "../components/product/ProductDetails/RelatedLinks/Rela
 import SectionWrapper from "../components/product/ProductDetails/SectionWrapper/SectionWrapper";
 import TrustBadges from "../components/product/ProductDetails/TrustBadges/TrustBadges";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaWhatsapp } from "react-icons/fa";
 import ButtonComponent from "../components/ui/ButtonComponent/ButtonComponent";
 import { MessageCircle, Heart, ArrowUpRight, Camera } from "lucide-react";
 
+type Product = {
+  id: number;
+  brand: string;
+  title: string;
+  price: number;
+  peopleBought: number;
+  images: string[];
+  offers: any[];
+  frameDimensions: any;
+  trustBadges: any[];
+  description: { text: string };
+  productInformation: any;
+  relatedLinks: any[];
+};
+
+type ProductResponse = {
+  productsDetail: Product[];
+};
+
 const ProductDetailPage = () => {
   const { id } = useParams();
-  const product = productData.productsDetail.find((p) => p.id === Number(id));
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [productData, setProductData] = useState<ProductResponse | null>(null);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-  /* ===== ZOOM STATES ADDED ===== */
   const imgRef = useRef<HTMLImageElement | null>(null);
-  const [showZoom, setShowZoom] = useState(false);
-  const [zoomPos, setZoomPos] = useState("50% 50%");
-  /* ============================= */
+  const [showZoom, setShowZoom] = useState<boolean>(false);
+  const [zoomPos, setZoomPos] = useState<string>("50% 50%");
+
+  useEffect(() => {
+    const base = process.env.PUBLIC_URL || "";
+
+    fetch(`${base}/data/productsDetailData.json`)
+      .then((res) => res.json())
+      .then((json: ProductResponse) => setProductData(json))
+      .catch((err) =>
+        console.error("Failed to load product detail data:", err)
+      );
+  }, []);
+
+  if (!productData) return null;
+
+  const product = productData.productsDetail.find(
+    (p) => p.id === Number(id)
+  );
 
   if (!product) return <div>Product Not Found</div>;
 
-  const images = product.images ?? [];
+  const images: string[] = product.images ?? [];
 
-  /* ===== ZOOM FUNCTION ===== */
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!imgRef.current) return;
 
@@ -46,28 +77,23 @@ const ProductDetailPage = () => {
 
     setZoomPos(`${x}% ${y}%`);
   };
-  /* ========================= */
 
   return (
     <div className="detail-page">
       <Container>
-        {/* ================= BREADCRUMB ================= */}
         <Row className="mb-4">
           <Col xs={12}>
-            <div className="breadcrumb">
-              {/* Home &gt; Sunglasses &gt; Men &gt; {product.brand} */}
-            </div>
+            <div className="breadcrumb"></div>
           </Col>
         </Row>
 
-        {/* ================= MAIN CONTENT ================= */}
         <Row className="gx-3">
-          {/* ================= LEFT SECTION ================= */}
           <Col lg={5} md={12}>
             <div className="detail-left">
               <div className="image-card">
                 <button className="try-btn">
-                  <Camera size={18} /> <span className="try-btn-text">TRY ON</span>
+                  <Camera size={18} />
+                  <span className="try-btn-text">TRY ON</span>
                 </button>
 
                 <div className="icon-group">
@@ -79,7 +105,6 @@ const ProductDetailPage = () => {
                   </span>
                 </div>
 
-                {/* ===== ZOOM CONTAINER ADDED ===== */}
                 <div
                   className="zoom-container"
                   onMouseMove={handleMouseMove}
@@ -103,10 +128,8 @@ const ProductDetailPage = () => {
                     />
                   )}
                 </div>
-                {/* =============================== */}
 
                 <div className="thumb-wrapper">
-                  {/* Left Arrow */}
                   <button
                     className="thumb-arrow"
                     onClick={() =>
@@ -120,13 +143,13 @@ const ProductDetailPage = () => {
                     ‹
                   </button>
 
-                  {/* Thumbnails */}
                   <div className="thumbnail-row">
-                    {images.map((img, index) => (
+                    {images.map((img: string, index: number) => (
                       <div
                         key={index}
-                        className={`thumb-box ${index === currentIndex ? "active" : ""
-                          }`}
+                        className={`thumb-box ${
+                          index === currentIndex ? "active" : ""
+                        }`}
                         onClick={() => setCurrentIndex(index)}
                       >
                         <img src={img} alt="" />
@@ -134,7 +157,6 @@ const ProductDetailPage = () => {
                     ))}
                   </div>
 
-                  {/* Right Arrow */}
                   <button
                     className="thumb-arrow"
                     onClick={() =>
@@ -162,7 +184,6 @@ const ProductDetailPage = () => {
             </div>
           </Col>
 
-          {/* ================= RIGHT SECTION ================= */}
           <Col lg={7} md={12}>
             <div className="detail-right">
               <SectionWrapper>

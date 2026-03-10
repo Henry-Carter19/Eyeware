@@ -1,5 +1,4 @@
-import React from "react";
-import homeData from "../data/homePageData.json";
+import React, { useEffect, useState } from "react";
 import { HomePageData } from "../types/home.types";
 import HeroCarousel from "../components/ui/HeroCarousel/HeroCarousel";
 import BrandsCarousel from "../components/ui/BrandsCarousel/BrandsCarousel";
@@ -18,7 +17,18 @@ import GoToTop from "../components/ui/GoToTop/GoToTop";
 import ShopCollections from "../components/ui/ShopCollections/ShopCollections";
 
 const HomePage = () => {
-  const data = homeData as HomePageData;
+  const [data, setData] = useState<HomePageData | null>(null);
+
+  useEffect(() => {
+    const base = process.env.PUBLIC_URL || "";
+
+    fetch(`${base}/data/homePageData.json`)
+      .then((res) => res.json())
+      .then((json) => setData(json as HomePageData))
+      .catch((err) => console.error("Failed to load home page data:", err));
+  }, []);
+
+  if (!data) return null;
 
   return (
     <div>
@@ -52,4 +62,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage; 
+export default HomePage;

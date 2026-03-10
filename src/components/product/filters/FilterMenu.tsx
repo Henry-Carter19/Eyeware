@@ -1,10 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./FilterMenu.css";
-import filtersData from "../../../data/filters.json";
+
+type ColorOption = { label: string; color: string };
+type ImageOption = { label: string; icon: string };
+
+type FilterItem =
+  | { title: string; type: "checkbox"; options: string[] }
+  | { title: string; type: "color"; options: ColorOption[] }
+  | { title: string; type: "image"; options: ImageOption[] };
+
+type FiltersData = { filters: FilterItem[] };
+
+type SelectedFilters = Record<string, string[]>;
 
 const FilterMenu = () => {
+  const [filtersData, setFiltersData] = useState<FiltersData>({ filters: [] });
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const [selectedFilters, setSelectedFilters] = useState<any>({});
+  const [selectedFilters, setSelectedFilters] = useState<SelectedFilters>({});
+
+  useEffect(() => {
+    const base = process.env.PUBLIC_URL || "";
+
+    fetch(`${base}/data/filters.json`)
+      .then((res) => res.json())
+      .then((json) => setFiltersData(json))
+      .catch((err) => console.error("Failed to load filters:", err));
+  }, []);
 
   const toggleSection = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -12,13 +33,13 @@ const FilterMenu = () => {
 
   // Handle checkbox / color selection
   const handleCheckboxChange = (title: string, value: string) => {
-    setSelectedFilters((prev: any) => {
+    setSelectedFilters((prev) => {
       const existing = prev[title] || [];
 
       if (existing.includes(value)) {
         return {
           ...prev,
-          [title]: existing.filter((item: string) => item !== value),
+          [title]: existing.filter((item) => item !== value),
         };
       } else {
         return {
@@ -48,8 +69,8 @@ const FilterMenu = () => {
         <div className="applied-filters">
           <p>Applied Filters :</p>
           <div className="applied-tags">
-            {Object.entries(selectedFilters).map(([title, values]: any) =>
-              values.map((value: string, index: number) => (
+            {Object.entries(selectedFilters).map(([title, values]) =>
+              values.map((value, index) => (
                 <div key={index} className="filter-tag">
                   {value}
                   <span
@@ -83,7 +104,7 @@ const FilterMenu = () => {
             <div className="filter-options">
               {/* Checkbox */}
               {filter.type === "checkbox" &&
-                filter.options.map((option: any, i: number) => (
+                filter.options.map((option, i) => (
                   <label key={i} className="checkbox-option">
                     <span>{option}</span>
                     <input
@@ -100,7 +121,7 @@ const FilterMenu = () => {
 
               {/* Color */}
               {filter.type === "color" &&
-                filter.options.map((option: any, i: number) => (
+                filter.options.map((option, i) => (
                   <label key={i} className="color-option">
                     <div className="color-option-left">
                       <div
@@ -125,7 +146,7 @@ const FilterMenu = () => {
               {/* Image / Shape */}
               {filter.type === "image" && (
                 <div className="shape-grid">
-                  {filter.options.map((option: any, i: number) => (
+                  {filter.options.map((option, i) => (
                     <div
                       key={i}
                       className={`shape-card ${
