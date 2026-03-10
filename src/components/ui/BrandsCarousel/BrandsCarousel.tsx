@@ -28,6 +28,7 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
 
   return (
     <section className="brands-section common-section-padding">
+      
       <h2 className="brands-title">
         Shop by <span className="italic">Brands</span>
       </h2>
@@ -75,7 +76,7 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
           pagination={{
             el: ".brand-pagination",
             type: "fraction",
-           renderFraction: (currentClass: string, totalClass: string) => {
+            renderFraction: (currentClass: string, totalClass: string) => {
               return `
                 <span class="pagination-pill">
                   <span class="${currentClass}"></span>
@@ -117,11 +118,11 @@ const BrandsCarousel: React.FC<Props> = ({ brands }) => {
                   <div className="gradient-overlay" />
 
                   <div className="brand-content">
-                    <img
+                    {/* <img
                       src={brand.brandLogo}
                       alt={brand.name}
                       className="brand-logo"
-                    />
+                    /> */}
                     <p>{brand.tagline}</p>
                   </div>
                 </div>
