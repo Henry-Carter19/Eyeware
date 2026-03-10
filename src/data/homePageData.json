@@ -202,37 +202,49 @@
     "cards": [
       {
         "id": 1,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_SG_1158X750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Spectro.png/?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 2,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Alcon.png?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 3,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/BauschLomb.png?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 4,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_Vibes_1158X750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Crizal.png?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 5,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Idor.png?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 6,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Kodak.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 7,
+        "image": "/images/ExclusiveItems/Rio.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 8,
+        "image": "/images/ExclusiveItems/Ziess.png?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       }
