@@ -17,7 +17,7 @@ export const shops: Shop[] = [
     lat: 21.1256055,
     lng: 79.1182495,
     phone: "+91 70666 02959",
-    directionUrl: "https://maps.google.com/?q=21.1256055,79.1182495"
+    directionUrl: "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
   },
 
   {
@@ -36,7 +36,7 @@ export const shops: Shop[] = [
     lat: 21.1256055,
     lng: 79.1182495,
     phone: "+91 70666 02959",
-    directionUrl: "https://maps.google.com/?q=21.1256055,79.1182495"
+    directionUrl: "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
   },
 
   {
@@ -55,6 +55,6 @@ export const shops: Shop[] = [
     lat: 21.1256055,
     lng: 79.1182495,
     phone: "+91 70666 02959",
-    directionUrl: "https://maps.google.com/?q=21.1256055,79.1182495"
+    directionUrl: "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
   }
 ];
