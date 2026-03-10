@@ -154,37 +154,37 @@
     "cards": [
       {
         "id": 1,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Blue-Cut-Lenses.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 2,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/ContactLenses.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 3,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Frames.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 4,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-ft-shapes.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Photochromic.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 5,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/new-curation/desktop-hearing-AIDS.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/PolarizedLenses.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 6,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/special-offers/SPIDER-MAN_1.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Sunglasses.png?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       }
@@ -192,7 +192,7 @@
   },
   "exclusiveDealsSection": {
     "title": "Exclusive",
-    "highlight": "Deals",
+    "highlight": "Items",
     "background": "gold",
     "showArrowButton": true,
     "viewAll": {
@@ -200,39 +200,46 @@
       "route": "/products"
     },
     "cards": [
-      {
-        "id": 1,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_SG_1158X750.jpg?height=415&width=740&fit=cover",
-        "buttonText": "SHOP COLLECTION",
-        "route": "/products"
-      },
+     
       {
         "id": 2,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Alcon.png?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 3,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/BauschLomb.png?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 4,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/FT_Vibes_1158X750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Crizal.png?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 5,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/BOGOoffer_1158x750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Idor.png?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 6,
-        "image": "https://api.titaneyeplus.com/media/wysiwyg/home-page/exclusive-deals/Aristo_1158X750.jpg?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Kodak.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 7,
+        "image": "/images/ExclusiveItems/Rio.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 8,
+        "image": "/images/ExclusiveItems/Ziess.png?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       }
@@ -241,25 +248,25 @@
   "hypeCards": [
     {
       "id": 1,
-      "username": "titaneyeplus",
+      "username": "KubadeOpticare",
       "backgroundImage": "https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=900&q=80",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     },
     {
       "id": 2,
-      "username": "titaneyeplus",
+      "username": "KubadeOpticare",
       "backgroundImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     },
     {
       "id": 3,
-      "username": "titaneyeplus",
+      "username": "KubadeOpticare",
       "backgroundImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     },
     {
       "id": 4,
-      "username": "titaneyeplus",
+      "username": "KubadeOpticare",
       "backgroundImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
       "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
     }
@@ -284,7 +291,7 @@
         "id": 2,
         "badge": "New",
         "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
-        "brand": "Ace by Titan",
+        "brand": "Ace by Crizal",
         "name": "Black CatEye Eyeglasses For Women",
         "size": "Medium",
         "price": 1100,
@@ -313,7 +320,7 @@
         "id": 5,
         "badge": "New",
         "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
-        "brand": "Ace by Titan",
+        "brand": "Ace by Crizal",
         "name": "Black CatEye Eyeglasses For Women",
         "size": "Medium",
         "price": 1100,
@@ -471,7 +478,7 @@
         {
           "id": 7,
           "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
-          "brand": "Titan",
+          "brand": "Rimless",
           "name": "Rimless Lightweight Eyeglasses",
           "size": "Medium",
           "price": 2590
@@ -479,7 +486,7 @@
         {
           "id": 8,
           "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
-          "brand": "Titan",
+          "brand": "Rimless",
           "name": "Minimal Rimless Office Eyeglasses",
           "size": "Medium",
           "price": 2890
@@ -489,7 +496,7 @@
         {
           "id": 9,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Rayban",
+          "brand": "Polarised",
           "name": "Polarised Driving Sunglasses",
           "price": 9590,
           "rating": 4.6,
@@ -498,7 +505,7 @@
         {
           "id": 10,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Rayban",
+          "brand": "Polarised",
           "name": "Polarised Outdoor Sunglasses",
           "size": "Large",
           "price": 9990
@@ -508,7 +515,7 @@
         {
           "id": 11,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Fastrack",
+          "brand": "Wayfarer",
           "name": "Black Wayfarer Sunglasses",
           "size": "Medium",
           "price": 1890
@@ -516,7 +523,7 @@
         {
           "id": 12,
           "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Fastrack",
+          "brand": "Wayfarer",
           "name": "Classic Wayfarer Sunglasses",
           "price": 2190
         }
@@ -534,10 +541,6 @@
       {
         "label": "Eyeglasses",
         "key": "eyeglasses"
-      },
-      {
-        "label": "Titan Vision Care",
-        "key": "titan"
       },
       {
         "label": "Contact Lenses",
@@ -591,13 +594,6 @@
           "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
           "category": "EYEGLASSES",
           "route": "/blog/face-shape-glasses"
-        },
-        {
-          "id": 7,
-          "title": "Why Titan Vision Care Is Leading The Eyewear Market",
-          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-          "category": "TITAN VISION",
-          "route": "/blog/titan-vision"
         }
       ],
       "eyeglasses": [
@@ -612,10 +608,10 @@
       "titan": [
         {
           "id": 7,
-          "title": "Why Titan Vision Care Is Leading The Eyewear Market",
+          "title": "Why Crizal Vision Care Is Leading The Eyewear Market",
           "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-          "category": "TITAN VISION",
-          "route": "/blog/titan-vision"
+          "category": "Crizal VISION",
+          "route": "/blog/Crizal-vision"
         }
       ],
       "contact": [
@@ -675,33 +671,33 @@
   "faq": [
     {
       "id": 1,
-      "title": "About Kubade OptiCare",
-      "content": "Kubade OptiCare is a trusted optical store located in Nagpur, Maharashtra, offering a wide range of eyewear solutions including eyeglasses, sunglasses, contact lenses, and eye care services. With a strong reputation and excellent customer reviews, Kubade OptiCare focuses on providing high-quality products, expert guidance, and personalized eye care to ensure the best vision and comfort for every customer."
+      "title": "About Kubade Opticare",
+      "content": "Kubade Opticare is a trusted optical store located in Nagpur, Maharashtra, offering a wide range of eyewear solutions including eyeglasses, sunglasses, contact lenses, and eye care services. With a strong reputation and excellent customer reviews, Kubade Opticare focuses on providing high-quality products, expert guidance, and personalized eye care to ensure the best vision and comfort for every customer."
     },
     {
       "id": 2,
       "title": "Range of Sunglasses",
-      "content": "Kubade OptiCare offers a stylish collection of sunglasses designed to protect your eyes from harmful UV rays while enhancing your look. Choose from modern, classic, and premium frames suitable for every lifestyle."
+      "content": "Kubade Opticare offers a stylish collection of sunglasses designed to protect your eyes from harmful UV rays while enhancing your look. Choose from modern, classic, and premium frames suitable for every lifestyle."
     },
     {
       "id": 3,
       "title": "Range of Frames & Lenses",
-      "content": "Explore a wide selection of high-quality frames and advanced lenses at Kubade OptiCare. We provide durable, comfortable, and fashionable eyewear options tailored to your vision needs."
+      "content": "Explore a wide selection of high-quality frames and advanced lenses at Kubade Opticare. We provide durable, comfortable, and fashionable eyewear options tailored to your vision needs."
     },
     {
       "id": 4,
       "title": "Range of Contact Lenses",
-      "content": "Kubade OptiCare provides reliable contact lens options including daily, monthly, and colored lenses. Our experts help you choose the right lenses for comfort, clarity, and convenience."
+      "content": "Kubade Opticare provides reliable contact lens options including daily, monthly, and colored lenses. Our experts help you choose the right lenses for comfort, clarity, and convenience."
     },
     {
       "id": 5,
       "title": "Store Location & Contact",
-      "content": "Kubade OptiCare is located above Bhande Plot Square, Sudampuri, Nagpur, Maharashtra 440024. For inquiries or assistance, call us at +91 70666 02959."
+      "content": "Kubade Opticare is located above Bhande Plot Square, Sudampuri, Nagpur, Maharashtra 440024. For inquiries or assistance, call us at +91 70666 02959."
     },
     {
       "id": 6,
       "title": "Store Hours",
-      "content": "Kubade OptiCare is open Monday to Saturday from 9:30 AM to 9:30 PM. The store remains closed on Sundays. Drive-through, pick-up, and delivery services are available between 10:00 AM and 9:30 PM."
+      "content": "Kubade Opticare is open Monday to Saturday from 9:30 AM to 9:30 PM. The store remains closed on Sundays. Drive-through, pick-up, and delivery services are available between 10:00 AM and 9:30 PM."
     }
   ],
   "collections": [
