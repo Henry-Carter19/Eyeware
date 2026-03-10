@@ -43,37 +43,34 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
               {filter.label} <MoveUpRight size={16} />
             </button>
           ))}
-
         </div>
-
       </div>
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
+        slidesPerView={4}
+        spaceBetween={29}
         loop
-        autoplay={{ delay: 1500, disableOnInteraction: false }}
+        speed={900}
+        autoplay={{ delay: 1500 }}
         navigation={{
           nextEl: ".trend-next",
-          prevEl: ".trend-prev"
+          prevEl: ".trend-prev",
         }}
         pagination={{
           el: ".trend-pagination",
-          clickable: true
+          clickable: true,
         }}
         breakpoints={{
-          0: { slidesPerView: 1.2 },
-          480: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 }
+          0: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+          1280: { slidesPerView: 4 },
         }}
       >
-
         {cards.map((item) => (
           <SwiperSlide key={item.id}>
-
             <div className="trend-card">
-
               <img src={item.image} className="trend-img" />
 
               {item.rating && (
@@ -86,26 +83,19 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
               )}
 
               <div className="trend-info">
-
                 <div className="brand">{item.brand}</div>
 
                 <div className="name">{item.name}</div>
 
-                {item.size && (
-                  <div className="size">Size: {item.size}</div>
-                )}
+                {item.size && <div className="size">Size: {item.size}</div>}
 
                 <div className="price">₹{item.price}</div>
 
                 <div className="tax">Inclusive of all taxes</div>
-
               </div>
-
             </div>
-
           </SwiperSlide>
         ))}
-
       </Swiper>
 
       <div className="trend-prev">
@@ -117,7 +107,6 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
       </div>
 
       <div className="trend-pagination"></div>
-
     </section>
   );
 };
