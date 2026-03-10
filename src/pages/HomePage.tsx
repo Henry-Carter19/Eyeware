@@ -11,7 +11,7 @@ import FeaturedCollectionsOnlyFocus from "../components/ui/FeautredCollection/Fe
 import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel";
 import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
 import BlogCarousel from "../components/ui/BlogCarousel/BlogCarousel";
-import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
+// import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
 import GoToTop from "../components/ui/GoToTop/GoToTop";
 
 import ShopCollections from "../components/ui/ShopCollections/ShopCollections";

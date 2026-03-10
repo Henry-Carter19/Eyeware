@@ -77,7 +77,7 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
               className="trend-card-link"
             >
               <div className="trend-card">
-                <img src={item.image} className="trend-img" />
+                <img src={item.image} className="trend-img" alt="img" />
 
                 {item.rating && (
                   <div className="trend-rating">
