@@ -41,8 +41,8 @@ const Header: React.FC = () => {
 
           {/* RIGHT ICONS */}
           <div className="mobile-icons">
-            <Search size={20} />
-            <ShoppingCart size={20} />
+            {/* <Search size={20} />
+            <ShoppingCart size={20} /> */}
           </div>
         </div>
       </div>

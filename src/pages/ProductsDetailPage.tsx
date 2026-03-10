@@ -174,13 +174,13 @@ const ProductDetailPage = () => {
                 />
               </SectionWrapper>
 
-              <SectionWrapper title="Offers & Coupons">
+              {/* <SectionWrapper title="Offers & Coupons">
                 <OfferSection offers={product.offers} />
-              </SectionWrapper>
+              </SectionWrapper> */}
 
-              <SectionWrapper title="Check Delivery Date">
+              {/* <SectionWrapper title="Check Delivery Date">
                 <DeliverySection />
-              </SectionWrapper>
+              </SectionWrapper> */}
 
               <SectionWrapper title="Frame Dimensions">
                 <FrameDimensions dimensions={product.frameDimensions} />
