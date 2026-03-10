@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { BestsellerSection } from "../../../types/home.types";
 import { ChevronLeft, ChevronRight, Heart, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface Props {
   bestsellersSection: BestsellerSection;
@@ -43,51 +44,57 @@ const BestsellersCarousel: React.FC<Props> = ({ bestsellersSection }) => {
       >
         {bestsellersSection?.cards?.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="product-card">
-              {item.badge && (
-                <div
-                  className={`badge ${item.badge === "New" ? "new" : "best"}`}
-                >
-                  {item.badge}
-                </div>
-              )}
-
-              <div className="wishlist">
-                <Heart size={20} />
-              </div>
-
-              <img src={item.image} alt="" className="product-img" />
-
-              {item.rating && (
-                <span className="rating">
-                  <span className="rating-value">{item.rating}</span>
-                  <Star className="star" />
-                  <span className="divider"></span>
-                  <span className="bestseller-rating-count">
-                    {item.ratingCount}
-                  </span>
-                </span>
-              )}
-
-              <div className="product-info">
-                <div className="brand">{item.brand}</div>
-
-                <div className="name">{item.name}</div>
-
-                {item.size && <div className="size">Size: {item.size}</div>}
-
-                <div className="price">₹{item.price}</div>
-
-                <div className="tax">Inclusive of all taxes</div>
-
-                {item.oldPrice && (
-                  <div className="discount">
-                    <span className="old">₹{item.oldPrice}</span>
-                    <span className="off">{item.discount}</span>
+            <Link to={`/products/details/${item.id}`} className="product-link">
+              <div className="product-card">
+                {item.badge && (
+                  <div
+                    className={`badge ${
+                      item.badge === "New" ? "new" : "best"
+                    }`}
+                  >
+                    {item.badge}
                   </div>
                 )}
+
+                <div className="wishlist">
+                  <Heart size={20} />
+                </div>
+
+                <img src={item.image} alt="" className="product-img" />
+
+                {item.rating && (
+                  <span className="rating">
+                    <span className="rating-value">{item.rating}</span>
+                    <Star className="star" />
+                    <span className="divider"></span>
+                    <span className="bestseller-rating-count">
+                      {item.ratingCount}
+                    </span>
+                  </span>
+                )}
+
+                <div className="product-info">
+                  <div className="brand">{item.brand}</div>
+
+                  <div className="name">{item.name}</div>
+
+                  {item.size && (
+                    <div className="size">Size: {item.size}</div>
+                  )}
+
+                  <div className="price">₹{item.price}</div>
+
+                  <div className="tax">Inclusive of all taxes</div>
+
+                  {item.oldPrice && (
+                    <div className="discount">
+                      <span className="old">₹{item.oldPrice}</span>
+                      <span className="off">{item.discount}</span>
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
