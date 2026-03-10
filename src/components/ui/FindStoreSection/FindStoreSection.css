@@ -5,13 +5,23 @@
   height: 620px;
   color: #fff;
   overflow: hidden;
-  background: url("https://api.titaneyeplus.com/media/wysiwyg/home-page/store/store-image.png?height=1706&width=1172&fit=cover") center/cover no-repeat;
+
+  /* background-image: url("%PUBLIC_URL%/images/StoreSection/storesectionbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
 
 .store-section .store-top-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .85)0%, rgba(0, 0, 0, .55)30%, rgba(0, 0, 0, .2)60%, rgba(0, 0, 0, 0)100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.55) 30%,
+    rgba(0, 0, 0, 0.2) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 /* ================= Content ================= */
@@ -20,13 +30,13 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 80px 20px 0;
+  padding: 30px 50px;
 }
 
 .store-section .store-count {
-  font-size: 15px;
-  margin-bottom: 18px;
-  opacity: .95
+  font-size: var(--font-sm);
+  opacity: 0.95;
+  font-weight: 600;
 }
 
 .store-section .store-count .store-icon {
@@ -34,24 +44,25 @@
 }
 
 .store-section .store-count span {
-  opacity: .85
+  opacity: 0.85;
+  font-weight: 400;
 }
 
 .store-section .store-title {
-  font-size: 48px;
+  font-size: var(--font-xl);
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .store-section .store-title .highlight {
-  color: #7dd4e3;
-  font-weight: 600
+  color: var(--teal);
+  font-weight: 600;
 }
 
 .store-section .store-title em {
   font-style: italic;
   font-weight: 600;
-  margin-left: 6px
+  margin-left: 6px;
 }
 
 /* ================= Features ================= */
@@ -60,7 +71,7 @@
   display: flex;
   justify-content: center;
   gap: 50px;
-  font-size: 15px;
+  font-size: var(--font-sm);
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
@@ -69,18 +80,18 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  opacity: .95;
+  opacity: 0.95;
 }
 
 .store-section .feature-icon {
-  font-size: 16px
+  font-size: var(--font-md);
 }
 
 /* ================= Rating ================= */
 
 .store-section .store-rating {
   position: absolute;
-  top: 90px;
+  top: 45px;
   right: 100px;
   display: flex;
   align-items: center;
@@ -89,70 +100,69 @@
 }
 
 .store-section .rating-score {
-  font-size: 22px;
-  font-weight: 600
+  font-size: var(--font-lg);
+  font-weight: 600;
 }
 
 .store-section .rating-score span {
-  font-size: 16px;
-  opacity: .8
+  font-size: var(--font-md);
+  opacity: 0.8;
 }
 
 .store-section .stars {
   color: #ffcc33;
   letter-spacing: 3px;
-  font-size: 14px;
+  font-size: var(--font-sm);
   margin: 4px 0;
 }
 
 .store-section .rating-text {
-  font-size: 13px;
-  opacity: .9
+  font-size: var(--font-xs);
+  opacity: 0.9;
 }
 
 .store-section .laurel {
   font-size: 30px;
-  opacity: .9
+  opacity: 0.9;
 }
 
 /* ================= Button ================= */
 
 .store-section .find-store-btn {
   position: absolute;
-  bottom: 60px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 18px 70px;
+  padding: 10px 50px;
   border-radius: 40px;
   border: none;
-  font-size: 18px;
+  font-size: var(--font-sm);
   font-weight: 500;
   cursor: pointer;
   color: #fff;
   background: linear-gradient(to bottom, #2fb4c6, #1b97aa);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, .35);
-  transition: .35s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: 0.35s;
 }
 
 .store-section .find-store-btn:hover {
   transform: translateX(-50%) translateY(-4px);
-  box-shadow: 0 14px 35px rgba(0, 0, 0, .45);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.45);
 }
 
 /* ================= Tablet ================= */
 
-@media(max-width:1024px) {
-
+@media (max-width: 1024px) {
   .store-section {
-    height: 560px
+    height: 560px;
   }
 
   .store-section .store-title {
-    font-size: 38px
+    font-size: var(--font-xl);
   }
 
   .store-section .store-features {
-    gap: 30px
+    gap: 30px;
   }
 
   .store-section .store-rating {
@@ -162,29 +172,28 @@
 
   .store-section .find-store-btn {
     padding: 16px 60px;
-    font-size: 16px;
+    font-size: var(--font-md);
   }
 }
 
 /* ================= Mobile ================= */
 
-@media(max-width:768px) {
-
+@media (max-width: 768px) {
   .store-section {
     height: auto;
     padding-bottom: 120px;
   }
 
   .store-section .store-content {
-    padding-top: 60px
+    padding-top: 60px;
   }
 
   .store-section .store-title {
-    font-size: 30px
+    font-size: 30px;
   }
 
   .store-section .store-count {
-    font-size: 14px
+    font-size: var(--font-sm);
   }
 
   .store-section .store-features {
@@ -193,7 +202,7 @@
   }
 
   .store-section .feature {
-    justify-content: center
+    justify-content: center;
   }
 
   .store-section .store-rating {
@@ -207,31 +216,32 @@
   .store-section .find-store-btn {
     bottom: 30px;
     padding: 14px 50px;
-    font-size: 16px;
+    font-size: var(--font-md);
   }
 }
 
 /* ================= Small Mobile ================= */
 
-@media(max-width:480px) {
-
+@media (max-width: 480px) {
   .store-section .store-title {
-    font-size: 26px
+    font-size: 26px;
   }
 
   .store-section .rating-score {
-    font-size: 18px
+    font-size: var(--font-md);
   }
 
   .store-section .stars {
-    font-size: 12px
+    font-size: var(--font-xs);
   }
 
   .store-section .find-store-btn {
-    width: 85%;
+    width: 60%;
     padding: 14px;
   }
 }
+
+/* ================= Rating Block ================= */
 
 .store-rating {
   display: flex;
@@ -251,18 +261,18 @@
 }
 
 .rating-score span {
-  font-size: 16px;
+  font-size: var(--font-md);
   opacity: 0.8;
 }
 
 .stars {
   color: #ffc107;
-  font-size: 16px;
+  font-size: var(--font-md);
   letter-spacing: 2px;
 }
 
 .rating-text {
-  font-size: 13px;
+  font-size: var(--font-xs);
   opacity: 0.9;
 }
 
