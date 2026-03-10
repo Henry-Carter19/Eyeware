@@ -8,6 +8,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 50px;
+  /*  ~~~ TO ENABLED MENUS IN FOOTER REMEMBER TO REMOVE THIS  */
+  display: none;
 }
 
 .footer-column h4 {
@@ -78,6 +80,8 @@
   height: 1px;
   background: rgba(255, 255, 255, 0.15);
   margin: 70px 0 50px;
+  /*  ~~~ TO ENABLED DIVIDER REMEBER TO REMOVE THIS  */
+  display: none;
 }
 
 .footer-bottom {
