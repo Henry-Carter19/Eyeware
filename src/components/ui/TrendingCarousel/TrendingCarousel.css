@@ -20,6 +20,7 @@
   font-size: var(--font-xl);
   color: var(--color-text-light);
   font-weight: 500;
+  color: white;
 }
 
 .TrendingCarousel-section .TrendingCarousel-header .title span {

@@ -145,6 +145,32 @@
       "category": "Essentials"
     }
   ],
+  "storeData": [
+    {
+      "id": 1,
+      "name": "Kubade OptiCare Versova",
+      "address": "Versova, Andheri West, Mumbai",
+      "rating": null,
+      "lat": 19.1375,
+      "lng": 72.8263
+    },
+    {
+      "id": 2,
+      "name": "Kubade OptiCare Santacruz(W)",
+      "address": "Linking Road, Santacruz-W, Mumbai",
+      "rating": "4.9 (1639)",
+      "lat": 19.0806,
+      "lng": 72.8416
+    },
+    {
+      "id": 3,
+      "name": "Kubade OptiCare Andheri West",
+      "address": "Andheri West, Mumbai",
+      "rating": "5.1 (1639)",
+      "lat": 19.1197,
+      "lng": 72.8468
+    }
+  ],
   "newCurationsSection": {
     "title": "New",
     "highlight": "Curations",
@@ -200,7 +226,6 @@
       "route": "/products"
     },
     "cards": [
-     
       {
         "id": 2,
         "image": "/images/ExclusiveItems/Alcon.png?height=415&width=740&fit=cover",

@@ -1,0 +1,152 @@
+/* SECTION */
+
+.storesCarousel-section {
+    background: linear-gradient(to right, #cfd7df, #d8c7b6);
+    position: relative;
+}
+
+/* TITLE */
+
+.storesCarousel-title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+.storesCarousel-title span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* CARD */
+
+.storesCarousel-card {
+    background: #fff;
+    border-radius: 26px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: transform .2s ease;
+}
+
+.storesCarousel-card:hover {
+    transform: translateY(-4px);
+}
+
+/* TEXT */
+
+.storesCarousel-storeTitle {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #111827;
+}
+
+.storesCarousel-storeSubtitle {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 12px;
+}
+
+.storesCarousel-storeAddress {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+
+.storesCarousel-buttonRow {
+    display: flex;
+    gap: 16px;
+}
+
+.storesCarousel-secondaryButton,
+.storesCarousel-primaryButton {
+    flex: 1;
+    height: 48px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.storesCarousel-secondaryButton {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    color: #111827;
+}
+
+.storesCarousel-primaryButton {
+    border: none;
+    color: #fff;
+    background: linear-gradient(135deg, #0f172a, #0ea5b7);
+}
+
+/* NAVIGATION */
+
+.storesCarousel-prev,
+.storesCarousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(120, 120, 120, .35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.storesCarousel-prev {
+    left: 10px;
+}
+
+.storesCarousel-next {
+    right: 10px;
+}
+
+/* PAGINATION */
+
+.storesCarousel-pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.storesCarousel-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, .35);
+}
+
+.storesCarousel-pagination .swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 10px;
+    background: #444;
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .storesCarousel-section {
+        padding: 40px 20px;
+    }
+
+    .storesCarousel-buttonRow {
+        flex-direction: column;
+    }
+
+    .storesCarousel-storeTitle {
+        font-size: 24px;
+    }
+
+}
