@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "../styles/ProductsPage.css";
 
 import FilterMenu from "../components/product/filters/FilterMenu";
@@ -5,13 +6,6 @@ import ProductCarousel, {
   Product,
 } from "../components/product/ProductCarousel/ProductCarousel";
 import SelectionCard from "../components/product/SelectionCard/SelectionCard";
-
-import productData from "../data/productsData.json";
-// import productData from "../data/prodcutsDetailData.json";
-import frameStyleData from "../data/frameStyle.json";
-import frameColor from "../data/frameColor.json";
-import priceRange from "../data/priceData.json";
-import filtersData from "../data/filters.json";
 
 import { mapToSelectionData } from "../utils/selectionMapper";
 import { useProductFilters } from "../hooks/useProductFilters";
@@ -25,26 +19,64 @@ type ProductWithFilters = Product & {
   priceRange?: string;
 };
 
-const typedFiltersData = filtersData as FiltersJson;
-
 const ProductsPage = () => {
-  const frameStyle = mapToSelectionData(frameStyleData);
-  const frameColorMapped = mapToSelectionData(frameColor);
-  const priceMapped = mapToSelectionData(priceRange);
+  const [products, setProducts] = useState<ProductWithFilters[]>([]);
+  const [filtersData, setFiltersData] = useState<FiltersJson | null>(null);
 
-// const typedProducts: ProductWithFilters[] = productData.productsDetail.map(
-const typedProducts: ProductWithFilters[] = productData.products.map(
-  (p: any) => ({
-    ...p,
-    layoutType: p.layoutType === "detail" ? "detail" : "grid",
-  }),
-  );
-  
+  const [frameStyleData, setFrameStyleData] = useState<any[]>([]);
+  const [frameColorData, setFrameColorData] = useState<any[]>([]);
+  const [priceRangeData, setPriceRangeData] = useState<any[]>([]);
+
+  useEffect(() => {
+    const loadData = async () => {
+      const [
+        productsRes,
+        filtersRes,
+        frameStyleRes,
+        frameColorRes,
+        priceRangeRes,
+      ] = await Promise.all([
+        fetch("/data/productsData.json"),
+        fetch("/data/filters.json"),
+        fetch("/data/frameStyle.json"),
+        fetch("/data/frameColor.json"),
+        fetch("/data/priceData.json"),
+      ]);
+
+      const productsJson = await productsRes.json();
+      const filtersJson = await filtersRes.json();
+      const frameStyleJson = await frameStyleRes.json();
+      const frameColorJson = await frameColorRes.json();
+      const priceRangeJson = await priceRangeRes.json();
+
+      const typedProducts: ProductWithFilters[] = productsJson.products.map(
+        (p: any) => ({
+          ...p,
+          layoutType: p.layoutType === "detail" ? "detail" : "grid",
+        }),
+      );
+
+      setProducts(typedProducts);
+      setFiltersData(filtersJson);
+      setFrameStyleData(frameStyleJson);
+      setFrameColorData(frameColorJson);
+      setPriceRangeData(priceRangeJson);
+    };
+
+    loadData();
+  }, []);
+
+  const frameStyle = mapToSelectionData(frameStyleData);
+  const frameColorMapped = mapToSelectionData(frameColorData);
+  const priceMapped = mapToSelectionData(priceRangeData);
+
   const { selectedFilters, filteredProducts, toggleValue, resetFilters } =
     useProductFilters<ProductWithFilters>({
-      products: typedProducts,
-      filterDefinitions: typedFiltersData.filters,
+      products: products,
+      filterDefinitions: filtersData?.filters || [],
     });
+
+  if (!filtersData) return null;
 
   return (
     <div className="products-page">

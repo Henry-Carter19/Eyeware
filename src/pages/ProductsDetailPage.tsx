@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import productData from "../data/prodcutsDetailData.json";
 import "../styles/ProductDetailPage.css";
 
 import FrameDimensions from "../components/product/ProductDetails/FrameDimensions/FrameDimensions";
@@ -20,11 +19,23 @@ import { useWhatsApp } from "../utils/whatsapp";
 const ProductDetailPage = () => {
   const { id } = useParams<{ id: string }>();
 
-  const product = productData.productsDetail.find((p) => String(p.id) === id);
-
+  const [productData, setProductData] = useState<any>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const { sendMessage } = useWhatsApp();
+
+  useEffect(() => {
+    fetch("/data/prodcutsDetailData.json")
+      .then((res) => res.json())
+      .then((data) => setProductData(data))
+      .catch((err) => console.error("Error loading product detail:", err));
+  }, []);
+
+  if (!productData) return null;
+
+  const product = productData.productsDetail.find(
+    (p: any) => String(p.id) === id
+  );
 
   if (!product) return <div>Product Not Found</div>;
 
