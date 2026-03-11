@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./FilterMenu.css";
 
-import filtersData from "../../../data/filters.json";
 import {
   SelectedFilters,
   FiltersJson,
@@ -16,14 +15,22 @@ type FilterMenuProps = {
   onReset: () => void;
 };
 
-const typedFiltersData = filtersData as FiltersJson;
-
 const FilterMenu = ({
   selectedFilters,
   onToggleFilter,
   onReset,
 }: FilterMenuProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [filtersData, setFiltersData] = useState<FiltersJson | null>(null);
+
+  useEffect(() => {
+    fetch("/data/filters.json")
+      .then((res) => res.json())
+      .then((data: FiltersJson) => {
+        setFiltersData(data);
+      })
+      .catch((err) => console.error("Error loading filters:", err));
+  }, []);
 
   const toggleSection = (index: number) => {
     setOpenIndex((prev) => (prev === index ? null : index));
@@ -89,6 +96,8 @@ const FilterMenu = ({
     );
   };
 
+  if (!filtersData) return null;
+
   return (
     <div className="filter-menu">
       <div className="filter-header">
@@ -103,7 +112,7 @@ const FilterMenu = ({
           <p>Applied Filters :</p>
 
           <div className="applied-tags">
-            {typedFiltersData.filters.map((filter) =>
+            {filtersData.filters.map((filter) =>
               (selectedFilters[filter.key] || []).map((value, index) => (
                 <div
                   key={`${filter.key}-${value}-${index}`}
@@ -123,7 +132,7 @@ const FilterMenu = ({
         </div>
       )}
 
-      {typedFiltersData.filters.map((filter, index) => (
+      {filtersData.filters.map((filter, index) => (
         <div key={filter.key} className="filter-section">
           <div className="filter-title" onClick={() => toggleSection(index)}>
             <span>

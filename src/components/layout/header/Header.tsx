@@ -12,7 +12,6 @@ import {
   ChevronDown,
 } from "lucide-react";
 // import logo from "../../../../public/images/logo.png";
-import menuData from "../../../data/header.json";
 import "./Header.css";
 
 const Header: React.FC = () => {
