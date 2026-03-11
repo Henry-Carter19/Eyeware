@@ -1,0 +1,137 @@
+{
+    "id": "frameColor",
+    "title": "Which color are you looking for?",
+    "type": "multi",
+    "options": [
+        {
+            "label": "Bronze",
+            "value": "bronze"
+        },
+        {
+            "label": "Burgundy",
+            "value": "burgundy"
+        },
+        {
+            "label": "Copper",
+            "value": "copper"
+        },
+        {
+            "label": "Crystal",
+            "value": "crystal"
+        },
+        {
+            "label": "Gold",
+            "value": "gold"
+        },
+        {
+            "label": "Golden",
+            "value": "golden"
+        },
+        {
+            "label": "Gun Metal",
+            "value": "gun_metal"
+        },
+        {
+            "label": "Maroon",
+            "value": "maroon"
+        },
+        {
+            "label": "Multi",
+            "value": "multi"
+        },
+        {
+            "label": "Nude",
+            "value": "nude"
+        },
+        {
+            "label": "Olive",
+            "value": "olive"
+        },
+        {
+            "label": "Orange",
+            "value": "orange"
+        },
+        {
+            "label": "Purple",
+            "value": "purple"
+        },
+        {
+            "label": "Rose Gold",
+            "value": "rose_gold"
+        },
+        {
+            "label": "Silver",
+            "value": "silver"
+        },
+        {
+            "label": "Transparent",
+            "value": "transparent"
+        },
+        {
+            "label": "Violet",
+            "value": "violet"
+        },
+        {
+            "label": "Yellow",
+            "value": "yellow"
+        },
+        {
+            "label": "White",
+            "value": "white"
+        },
+        {
+            "label": "Black",
+            "value": "black"
+        },
+        {
+            "label": "Red",
+            "value": "red"
+        },
+        {
+            "label": "Blue",
+            "value": "blue"
+        },
+        {
+            "label": "Green",
+            "value": "green"
+        },
+        {
+            "label": "Grey",
+            "value": "grey"
+        },
+        {
+            "label": "Brown",
+            "value": "brown"
+        },
+        {
+            "label": "Pink",
+            "value": "pink"
+        },
+        {
+            "label": "Lavender",
+            "value": "lavender"
+        },
+        {
+            "label": "Peach",
+            "value": "peach"
+        },
+        {
+            "label": "Havana",
+            "value": "havana"
+        },
+        {
+            "label": "Wine",
+            "value": "wine"
+        },
+        {
+            "label": "Cream",
+            "value": "cream"
+        },
+        {
+            "label": "Teal",
+            "value": "teal"
+        }
+    ],
+    "applyButton": true,
+    "clearAll": true
+}

@@ -1,0 +1,87 @@
+{
+  "filters": [
+    {
+      "title": "Gender",
+      "key": "gender",
+      "type": "checkbox",
+      "productField": "gender",
+      "options": [
+        "Men",
+        "Women",
+        "Unisex"
+      ]
+    },
+    {
+      "title": "Frame Color",
+      "key": "color",
+      "type": "color",
+      "productField": "color",
+      "options": [
+        {
+          "label": "Black",
+          "color": "#000000"
+        },
+        {
+          "label": "Brown",
+          "color": "#8B5E3C"
+        },
+        {
+          "label": "Gold",
+          "color": "#C9A227"
+        },
+        {
+          "label": "Silver",
+          "color": "#C0C0C0"
+        }
+      ]
+    },
+    {
+      "title": "Frame Shape",
+      "key": "shape",
+      "type": "image",
+      "productField": "shape",
+      "options": [
+        {
+          "label": "Round",
+          "icon": "◯"
+        },
+        {
+          "label": "Square",
+          "icon": "▢"
+        },
+        {
+          "label": "Rectangle",
+          "icon": "▭"
+        },
+        {
+          "label": "Cat Eye",
+          "icon": "⬒"
+        }
+      ]
+    },
+    {
+      "title": "Style",
+      "key": "style",
+      "type": "checkbox",
+      "productField": "style",
+      "options": [
+        "Classic",
+        "Modern",
+        "Premium",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Price",
+      "key": "price",
+      "type": "checkbox",
+      "productField": "priceRange",
+      "options": [
+        "Under 999",
+        "1000-1999",
+        "2000-4999",
+        "5000+"
+      ]
+    }
+  ]
+}

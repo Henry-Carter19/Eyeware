@@ -112,9 +112,19 @@ export interface CollectionItem {
   url: string
 }
 
+export interface StoreItem {
+  id: number;
+  name: string;
+  address: string;
+  rating?: string | null;
+  lat: number;
+  lng: number;
+}
+
 export interface HomePageData {
   heroBanners: HeroBanner[];
   brands: Brand[];
+    storeData: StoreItem[];
   newCurationsSection: CurationSection;
   exclusiveDealsSection: CurationSection;
   hypeCards: HypeCard[];
