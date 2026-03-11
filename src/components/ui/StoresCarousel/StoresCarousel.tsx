@@ -67,12 +67,12 @@ Please confirm availability.`;
                     nextEl: ".storesCarousel-next",
                     prevEl: ".storesCarousel-prev",
                 }}
-                onSwiper={(swiper: any) => {
-                    setTimeout(() => {
-                        swiper.navigation.init();
-                        swiper.navigation.update();
-                    });
-                }}
+                // onSwiper={(swiper: any) => {
+                //     setTimeout(() => {
+                //         swiper.navigation.init();
+                //         swiper.navigation.update();
+                //     });
+                // }}
                 pagination={{
                     el: ".storesCarousel-pagination",
                     clickable: true,
