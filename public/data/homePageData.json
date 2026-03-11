@@ -2,19 +2,19 @@
   "heroBanners": [
     {
       "id": 1,
-      "image": "/images/Banner/Banner1.png"
+      "image": "/images/Banner/Banner1.webp"
     },
     {
       "id": 3,
-      "image": "/images/Banner/Banner2.png"
+      "image": "/images/Banner/Banner2.webp"
     },
     {
       "id": 4,
-      "image": "/images/Banner/Banner3.png"
+      "image": "/images/Banner/Banner3.webp"
     },
     {
       "id": 5,
-      "image": "/images/Banner/Banner4.png"
+      "image": "/images/Banner/Banner4.webp"
     }
   ],
   "brands": [
@@ -23,7 +23,7 @@
       "name": "SunWave",
       "route": "/products",
       "tagline": "Stylish sunglasses for effortless summer vibes",
-      "modelImage": "/images/Models/M1.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M1.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Premium"
     },
@@ -32,7 +32,7 @@
       "name": "UrbanShade",
       "route": "/products",
       "tagline": "Sharp frames crafted for modern confidence",
-      "modelImage": "/images/Models/M2.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M2.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Premium"
     },
@@ -41,7 +41,7 @@
       "name": "LuxeFrame",
       "route": "/products",
       "tagline": "Luxury eyewear that defines bold personalities",
-      "modelImage": "/images/Models/M3.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M3.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Premium"
     },
@@ -50,7 +50,7 @@
       "name": "VisionPro",
       "route": "/products",
       "tagline": "Professional frames designed for everyday excellence",
-      "modelImage": "/images/Models/M4.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M4.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Essentials"
     },
@@ -59,7 +59,7 @@
       "name": "HeritageLens",
       "route": "/products",
       "tagline": "Classic designs with timeless clarity",
-      "modelImage": "/images/Models/M5.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M5.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Essentials"
     },
@@ -68,7 +68,7 @@
       "name": "StreetFlex",
       "route": "/products",
       "tagline": "Comfortable frames built for active lifestyles",
-      "modelImage": "/images/Models/M6.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M6.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Essentials"
     },
@@ -77,7 +77,7 @@
       "name": "ClearLook",
       "route": "/products",
       "tagline": "Simple frames with crystal-clear vision",
-      "modelImage": "/images/Models/M7.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M7.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Essentials"
     },
@@ -86,7 +86,7 @@
       "name": "TrendSight",
       "route": "/products",
       "tagline": "Modern eyewear designed for everyday style",
-      "modelImage": "/images/Models/M8.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M8.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Premium"
     },
@@ -95,7 +95,7 @@
       "name": "RetroVision",
       "route": "/products",
       "tagline": "Vintage inspired frames for confident looks",
-      "modelImage": "/images/Models/M9.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M9.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Essentials"
     },
@@ -104,7 +104,7 @@
       "name": "MetroOptics",
       "route": "/products",
       "tagline": "Clean modern frames for urban lifestyles",
-      "modelImage": "/images/Models/M10.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M10.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Essentials"
     },
@@ -113,7 +113,7 @@
       "name": "PrimeVision",
       "route": "/products",
       "tagline": "Premium craftsmanship with elegant design",
-      "modelImage": "/images/Models/M11.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M11.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Premium"
     },
@@ -122,7 +122,7 @@
       "name": "BoldFrame",
       "route": "/products",
       "tagline": "Statement frames for bold personalities",
-      "modelImage": "/images/Models/M12.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M12.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Premium"
     },
@@ -131,7 +131,7 @@
       "name": "ElegantEyes",
       "route": "/products",
       "tagline": "Refined eyewear for graceful style",
-      "modelImage": "/images/Models/M13.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M13.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Premium"
     },
@@ -140,7 +140,7 @@
       "name": "DailyView",
       "route": "/products",
       "tagline": "Reliable frames for comfortable everyday wear",
-      "modelImage": "/images/Models/M14.png?height=472&width=242&fit=cover",
+      "modelImage": "/images/Models/M14.webp?height=472&width=242&fit=cover",
       "brandLogo": "",
       "category": "Essentials"
     }
@@ -180,37 +180,37 @@
     "cards": [
       {
         "id": 1,
-        "image": "/images/Curations/Blue-Cut-Lenses.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Blue-Cut-Lenses.webp?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 2,
-        "image": "/images/Curations/ContactLenses.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/ContactLenses.webp?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 3,
-        "image": "/images/Curations/Frames.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Frames.webp?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 4,
-        "image": "/images/Curations/Photochromic.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Photochromic.webp?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 5,
-        "image": "/images/Curations/PolarizedLenses.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/PolarizedLenses.webp?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 6,
-        "image": "/images/Curations/Sunglasses.png?height=465&width=668&fit=cover",
+        "image": "/images/Curations/Sunglasses.webp?height=465&width=668&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       }
@@ -228,43 +228,43 @@
     "cards": [
       {
         "id": 2,
-        "image": "/images/ExclusiveItems/Alcon.png?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Alcon.webp?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 3,
-        "image": "/images/ExclusiveItems/BauschLomb.png?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/BauschLomb.webp?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 4,
-        "image": "/images/ExclusiveItems/Crizal.png?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Crizal.webp?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 5,
-        "image": "/images/ExclusiveItems/Idor.png?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Idor.webp?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 6,
-        "image": "/images/ExclusiveItems/Kodak.png?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Kodak.webp?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 7,
-        "image": "/images/ExclusiveItems/Rio.png?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Rio.webp?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       },
       {
         "id": 8,
-        "image": "/images/ExclusiveItems/Ziess.png?height=415&width=740&fit=cover",
+        "image": "/images/ExclusiveItems/Ziess.webp?height=415&width=740&fit=cover",
         "buttonText": "SHOP COLLECTION",
         "route": "/products"
       }
@@ -752,7 +752,7 @@
     },
     {
       "id": 5,
-      "title": "xyzz",
+      "title": "Platinum",
       "image": "/images/Collection/c5.png",
       "url": "/eyeglasses/silver"
     },
@@ -782,7 +782,7 @@
     },
     {
       "id": 10,
-      "title": "xyzz",
+      "title": "Platinum",
       "image": "/images/Collection/c10.png",
       "url": "/eyeglasses/silver"
     }
