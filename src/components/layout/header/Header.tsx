@@ -1,14 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import {
-  Eye,
-  MapPin,
-  Headphones,
-  Menu,
-  ChevronDown,
-} from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import { Eye, MapPin, Headphones, Menu, ChevronDown } from "lucide-react";
 import "./Header.css";
 
 const Header: React.FC = () => {
@@ -54,7 +48,6 @@ const Header: React.FC = () => {
         </div>
 
         <div className="offcanvas-body">
-
           {/* Your existing accordion menu here */}
 
           {/* STORE BUTTON */}
@@ -80,14 +73,12 @@ const Header: React.FC = () => {
           </div>
 
           {/* PHONE NUMBER */}
-            <div className="mobile-phone"> <a href="tel:+918381001406" className="mobile-phone">
+          <div className="mobile-phone">
+            {" "}
+            <a href="tel:+918381001406" className="mobile-phone">
               +91 83810 01406
             </a>
-            </div>
-       
-          
-
-
+          </div>
         </div>
       </div>
 
@@ -201,54 +192,47 @@ const Header: React.FC = () => {
       {/* MAIN NAVBAR */}
       <nav className="navbar navbar-expand-lg bg-white border-bottom d-none d-lg-flex">
         <div className="container-fluid">
-
           {/* LOGO */}
           <a href="/">
             <img className="navbar-logo" src="/images/logo.png" alt="logo" />
           </a>
-             <ul className="navbar-nav mx-auto gap-4">
-                <li className="nav-item dropdown hover-dropdown">
-                <span className="nav-link">COLLECTION ▾</span>
+          <ul className="navbar-nav mx-auto gap-4">
+            <li className="nav-item dropdown hover-dropdown">
+              <span className="nav-link">COLLECTION ▾</span>
 
-                <div className="dropdown-menu mega-menu mega-menu-full p-4">
-
-                  <div className="row">
-
-                    <div className="col-12 col-md-3 col-sm-6">
-                      <h6>GENDER</h6>
-                      <a href="#">All</a>
-                      <a href="#">Men</a>
-                      <a href="#">Women</a>
-                      <a href="#">Kids</a>
-                    </div>
-
-                    <div className="col-12 col-md-3 col-sm-6">
-                      <h6>COLLECTION</h6>
-                      <a href="#">Smart Sunglasses</a>
-                      <a href="#">Donald</a>
-                      <a href="#">Glow Up</a>
-                      <a href="#">Whiplash</a>
-                      <a href="#">Vivid Geometry</a>
-                    </div>
-                     <div className="col-12 col-md-3"></div>
-                    <div className="col-12 col-md-3">
-                      <img
-                        src="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
-                        className="img-fluid rounded"
-                        alt="Sunglasses"
-                      />
-                    </div>
-
+              <div className="dropdown-menu mega-menu mega-menu-full p-4">
+                <div className="row">
+                  <div className="col-12 col-md-3 col-sm-6">
+                    <h6>GENDER</h6>
+                    <Link to="/products">All</Link>
+                    <Link to="/products?gender=Men">Men</Link>
+                    <Link to="/products?gender=Women">Women</Link>
+                    <Link to="/products?gender=Kids">Kids</Link>
                   </div>
 
-
+                  <div className="col-12 col-md-3 col-sm-6">
+                    <h6>COLLECTION</h6>
+                    <Link to="/products?color=Gold">Smart Sunglasses</Link>
+                    <Link to="/products?style=Classic">Donald</Link>
+                    <Link to="/products?shape=Cat%2520Eye">Glow Up</Link>
+                    {/* <Link to="#">Whiplash</Link>
+                    <Link to="#">Vivid Geometry</Link> */}
+                  </div>
+                  <div className="col-12 col-md-3"></div>
+                  <div className="col-12 col-md-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
+                      className="img-fluid rounded"
+                      alt="Sunglasses"
+                    />
+                  </div>
                 </div>
-              </li>
-             </ul>
+              </div>
+            </li>
+          </ul>
 
           {/* RIGHT SIDE SOCIAL + PHONE */}
           <div className="ms-auto d-flex align-items-center gap-4">
-
             {/* STORES BUTTON */}
             <a href="/stores" className="store-btn">
               Stores
@@ -270,9 +254,7 @@ const Header: React.FC = () => {
             <a href="tel:+918381001406" className="phone-call">
               +91 83810 01406
             </a>
-
           </div>
-
         </div>
       </nav>
     </>
