@@ -15,7 +15,7 @@ const FindStoreSection: React.FC = () => {
     <section
       className="store-section"
       style={{
-        backgroundImage: "url('/images/StoreSection/storesectionbackground.png')",
+        backgroundImage: "url('/images/StoreSection/storesectionbackground.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
