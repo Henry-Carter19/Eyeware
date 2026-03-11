@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import React from "react";
+import menuData from "../../../data/header.json";
 import { Link, useNavigate } from "react-router-dom";
 import { Eye, MapPin, Headphones, Menu, ChevronDown } from "lucide-react";
 import "./Header.css";
@@ -49,7 +50,44 @@ const Header: React.FC = () => {
 
         <div className="offcanvas-body">
           {/* Your existing accordion menu here */}
+          <div className="accordion" id="mobileMenuAccordion">
+            {/* Sunglasses */}
+            <div className="accordion-item">
 
+              <h2 className="accordion-header">
+                <button
+                  type="button"
+                  className="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collectionsMenu"
+                >
+                  Collections
+                </button>
+              </h2>
+
+              <div
+                id="collectionsMenu"
+                className="accordion-collapse collapse"
+                data-bs-parent="#mobileMenuAccordion"
+              >
+                <div className="accordion-body mobile-scroll">
+
+                  {menuData.menuSunGlassesData.map((section, index) => (
+                    <div className="mobile-submenu" key={index}>
+                      <h6>{section.title}</h6>
+                      {section.items.map((item, i) => (
+                        <a key={i} href={item.path}>{item.label}</a>
+                      ))}
+
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
           {/* STORE BUTTON */}
           <div className="mobile-store-section">
             <a href="/stores" className="store-btn">
