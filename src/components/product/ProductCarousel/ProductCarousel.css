@@ -3,7 +3,7 @@
 /* ============================= */
 
 .carousel-container {
-  padding: var(--space-xxl) var(--space-lg);
+  padding: 24px 24px;   /* equal top/bottom and left/right */
   width: 100%;
   box-sizing: border-box;
 }
@@ -11,7 +11,7 @@
 .carousel {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 24px;            /* match padding rhythm */
 }
 
 /* Scrollbar */
