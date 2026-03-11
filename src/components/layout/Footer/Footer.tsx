@@ -65,21 +65,12 @@ const footerData: FooterSection[] = [
 const Footer: React.FC = () => {
   const navigate = useNavigate();
 const message = encodeURIComponent(
-`Hello Sir/Madam, Welcome to Kubade OptiCare 👓
+`Hello Sir/Madam,
 
-Thank you for contacting us.
+I would like to know more about your products and services at Kubade OptiCare. 
+Please assist me with the details.
 
-We provide:
-• Eyeglasses
-• Sunglasses
-• Contact Lenses
-• Computer Glasses
-• Eye Check-up Services
-
-Please let us know which product or service you are looking for. 
-Our team will assist you shortly.
-
-Thank you 😊`
+Thank you.`
 );
   return (
     <footer className="footer">
