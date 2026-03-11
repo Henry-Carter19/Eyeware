@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./StoresCarousel.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -9,20 +9,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-interface Store {
-    id: number;
-    name: string;
-    address: string;
-    lat?: number;
-    lng?: number;
-}
+import { StoreItem } from "../../../types/home.types";
 
 interface Props {
-    stroreData: Store[];
+    stroreData: StoreItem[];
 }
 
 const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
     const { sendMessage } = useWhatsApp();
+
+    const prevRef = useRef<HTMLDivElement | null>(null);
+    const nextRef = useRef<HTMLDivElement | null>(null);
 
     const getDirectionHref = (lat?: number, lng?: number) => {
         if (lat && lng) {
@@ -31,7 +28,7 @@ const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
         return "#";
     };
 
-    const handleAppointment = (shop: Store) => {
+    const handleAppointment = (shop: StoreItem) => {
         const phoneNumber = "918381001406";
 
         const message = `Hello Kubade OptiCare,
@@ -39,7 +36,7 @@ const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
 I would like to book an appointment.
 
 Store: ${shop.name}
-Address: ${shop.address}
+Address: ${shop.area}, ${shop.street}, ${shop.address}
 
 Preferred Date:
 Preferred Time:
@@ -58,36 +55,42 @@ Please confirm availability.`;
 
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
-                slidesPerView={2}
+                slidesPerView={3}
                 spaceBetween={30}
                 loop
-                speed={900}
-                autoplay={{ delay: 2000 }}
+                speed={1000}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 navigation={{
                     nextEl: ".storesCarousel-next",
                     prevEl: ".storesCarousel-prev",
+                }}
+                onSwiper={(swiper: any) => {
+                    setTimeout(() => {
+                        swiper.navigation.init();
+                        swiper.navigation.update();
+                    });
                 }}
                 pagination={{
                     el: ".storesCarousel-pagination",
                     clickable: true,
                 }}
                 breakpoints={{
-                    0: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
+                    0: { slidesPerView: 1, spaceBetween: 16 },
+                    640: { slidesPerView: 2, spaceBetween: 20 },
+                    1024: { slidesPerView: 3, spaceBetween: 30 },
                 }}
             >
                 {stroreData?.map((shop) => (
                     <SwiperSlide key={shop.id}>
                         <div className="storesCarousel-card">
-                            <h3 className="storesCarousel-storeTitle">{shop.name}</h3>
+                            <h3 className="storesCarousel-area">{shop.area}</h3>
 
-                            <div className="storesCarousel-storeSubtitle">
-                                {shop.name}
-                            </div>
+                            <div className="storesCarousel-street">{shop.street}</div>
 
-                            <p className="storesCarousel-storeAddress">
-                                {shop.address}
-                            </p>
+                            <p className="storesCarousel-address">{shop.address}</p>
 
                             <div className="storesCarousel-buttonRow">
                                 <a
@@ -104,7 +107,7 @@ Please confirm availability.`;
                                     className="storesCarousel-primaryButton"
                                     onClick={() => handleAppointment(shop)}
                                 >
-                                    Book an Appointment
+                                    Book Appointment
                                 </button>
                             </div>
                         </div>
@@ -112,11 +115,11 @@ Please confirm availability.`;
                 ))}
             </Swiper>
 
-            <div className="storesCarousel-prev">
+            <div ref={prevRef} className="storesCarousel-prev">
                 <ChevronLeft />
             </div>
 
-            <div className="storesCarousel-next">
+            <div ref={nextRef} className="storesCarousel-next">
                 <ChevronRight />
             </div>
 
