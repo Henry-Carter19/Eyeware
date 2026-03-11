@@ -18,6 +18,7 @@
 
 .TrendingCarousel-section .TrendingCarousel-header .title {
   font-size: var(--font-xl);
+  color: var(--color-text-light);
   font-weight: 500;
   color: white;
 }

@@ -1,68 +1,74 @@
 {
     "products": [
         {
-            "id": 1,
-            "layoutType": "grid",
-            "brand": "Fastrack",
-            "title": "Grey Rectangle Eyeglasses",
-            "price": 1100,
-            "size": "Medium",
-            "rating": 5.0,
-            "ratingCount": 1,
+            "id": "p1",
+            "title": "Urban Black Frame",
             "images": [
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_1_lar.jpg",
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg",
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg"
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_2_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_5_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_6_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_4_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_lar_10.jpg"
             ],
-            "isNew": false
+            "layoutType": "grid",
+            "gender": "Men",
+            "shape": "Round",
+            "color": "Black",
+            "style": "Classic",
+            "price": 1299,
+            "priceRange": "1000-1999"
         },
         {
-            "id": 2,
-            "layoutType": "grid",
-            "brand": "Fastrack",
-            "title": "Olive Wayfarer Eyeglasses For Men",
-            "price": 800,
-            "size": "Medium",
-            "ratingCount": 1,
+            "id": "p2",
+            "title": "Gold Premium Frame",
             "images": [
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_1_lar.jpg",
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg",
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg"
+                "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg",
+                "https://api.titaneyeplus.com/media/theme/product-details/compatibility/bridge.svg",
+                "https://api.titaneyeplus.com/media/theme/product-details/compatibility/temple.svg",
+                "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg"
             ],
-            "isNew": true,
-            "rating": 4
+            "layoutType": "detail",
+            "gender": "Women",
+            "shape": "Cat Eye",
+            "color": "Gold",
+            "style": "Premium",
+            "price": 11299,
+            "priceRange": "5000+"
         },
         {
-            "id": 3,
-            "layoutType": "grid",
-            "brand": "Fastrack",
-            "title": "Grey Rounded Eyeglasses For Men And Women",
-            "price": 800,
-            "size": "Small",
-            "ratingCount": 2,
+            "id": "p3",
+            "title": "Brown Classic Rectangle",
             "images": [
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_1_lar.jpg",
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg",
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg"
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_2_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_5_lar.jpg",
+                "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_6_lar.jpg"
             ],
-            "isNew": true,
-            "rating": 4
+            "layoutType": "grid",
+            "gender": "Men",
+            "shape": "Rectangle",
+            "color": "Brown",
+            "style": "Classic",
+            "price": 2999,
+            "priceRange": "2000-4999"
         },
         {
-            "id": 4,
-            "layoutType": "grid",
-            "brand": "Ray-Ban",
-            "title": "Black Classic Frame",
-            "price": 1500,
-            "size": "Large",
-            "ratingCount": 3,
+            "id": "p4",
+            "title": "Silver Modern Square",
             "images": [
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_1_lar.jpg",
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg",
-                "https://api.titaneyeplus.com/media/catalog/product/F/T/FT1515UFA6LGRV_3_lar.jpg"
+                "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg",
+                "https://api.titaneyeplus.com/media/theme/product-details/compatibility/bridge.svg",
+                "https://api.titaneyeplus.com/media/theme/product-details/compatibility/temple.svg",
+                "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg"
             ],
-            "isNew": false,
-            "rating": 5
+            "layoutType": "grid",
+            "gender": "Women",
+            "shape": "Square",
+            "color": "Silver",
+            "style": "Modern",
+            "price": 599,
+            "priceRange": "Under 999"
         }
     ]
 }

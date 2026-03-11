@@ -17,7 +17,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import { Shop } from "./types.shop";
 import { shops } from "./data.shops";
 import { getDirectionHref } from "./mapLinks";
-import "leaflet/dist/leaflet.css";
+import { useWhatsApp } from "../../../utils/whatsapp";
 
 delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: unknown })
   ._getIconUrl;
@@ -88,6 +88,7 @@ export default function ShopLocator() {
     () => shops.find((x) => x.id === selectedShopId) ?? null,
     [selectedShopId],
   );
+  const { sendMessage } = useWhatsApp();
 
   useEffect(() => {
     if (!selectedShopId) return;
@@ -107,14 +108,35 @@ export default function ShopLocator() {
     return () => window.clearTimeout(timer);
   }, [selectedShopId]);
 
+  const handleAppointment = (shop: Shop) => {
+    const phoneNumber = "918381001406"; // Kubade OptiCare's WhatsApp number
+
+    const message = `Hello Kubade OptiCare,
+
+    I would like to book an appointment.
+
+    Store: ${shop.name}
+    Address: ${shop.address}
+
+    Preferred Date:
+    Preferred Time:
+
+    Location:
+    ${shop.directionUrl}
+
+    Please confirm availability.`;
+
+    sendMessage(phoneNumber, message);
+  };
+
   return (
     <div className={styles.wrapper}>
-      <div className={styles.headerRow}>
+      {/* <div className={styles.headerRow}>
         <h2 className={styles.title}>
           <span className={styles.titleStrong}>{shops.length} Stores</span>
           <span className={styles.titleLight}> in Nagpur</span>
         </h2>
-      </div>
+      </div> */}
 
       <div className={styles.layout}>
         <section className={styles.cardsPanel}>
@@ -186,10 +208,7 @@ export default function ShopLocator() {
                       <button
                         type="button"
                         className={styles.primaryButton}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          alert(`Book appointment for ${shop.name}`);
-                        }}
+                        onClick={() => handleAppointment(shop)}
                       >
                         Book an Appointment
                       </button>
@@ -276,9 +295,10 @@ export default function ShopLocator() {
                         <button
                           type="button"
                           className={styles.popupPrimaryButton}
-                          onClick={() =>
-                            alert(`Book appointment for ${shop.name}`)
-                          }
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleAppointment(shop);
+                          }}
                         >
                           Book an Appointment
                         </button>

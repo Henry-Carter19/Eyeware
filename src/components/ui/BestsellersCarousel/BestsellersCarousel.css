@@ -3,7 +3,6 @@
 /* =============================== */
 
 .BestsellersCarousel-section {
-  /* padding: 50px 60px; */
   background: linear-gradient(to right, #cfd7df, #d8c7b6);
   position: relative;
 }
@@ -34,7 +33,7 @@
   border-radius: 18px;
   padding: 16px 18px;
   position: relative;
-  height: 330px;
+  height: 350px;
   transition: transform 0.2s ease;
 }
 

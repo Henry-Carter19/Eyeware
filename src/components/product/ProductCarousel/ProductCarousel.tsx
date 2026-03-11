@@ -4,7 +4,7 @@ import ProductCard from "../ProductCard/ProductCard";
 import { useNavigate } from "react-router-dom";
 
 export interface Product {
-  id: number;
+  id: string;
   layoutType?: "grid" | "detail";
   brand: string;
   title: string;
@@ -24,7 +24,7 @@ interface ProductCarouselProps {
 const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
   const navigate = useNavigate();
 
-  const handleClick = (productId: number) => {
+  const handleClick = (productId: string) => {
     navigate(`/products/details/${productId}`);
   };
 

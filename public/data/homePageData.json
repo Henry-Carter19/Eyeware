@@ -1,0 +1,790 @@
+{
+  "heroBanners": [
+    {
+      "id": 1,
+      "image": "/images/Banner/Banner1.png"
+    },
+    {
+      "id": 3,
+      "image": "/images/Banner/Banner2.png"
+    },
+    {
+      "id": 4,
+      "image": "/images/Banner/Banner3.png"
+    },
+    {
+      "id": 5,
+      "image": "/images/Banner/Banner4.png"
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "SunWave",
+      "route": "/products",
+      "tagline": "Stylish sunglasses for effortless summer vibes",
+      "modelImage": "/images/Models/M1.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 2,
+      "name": "UrbanShade",
+      "route": "/products",
+      "tagline": "Sharp frames crafted for modern confidence",
+      "modelImage": "/images/Models/M2.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 3,
+      "name": "LuxeFrame",
+      "route": "/products",
+      "tagline": "Luxury eyewear that defines bold personalities",
+      "modelImage": "/images/Models/M3.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 4,
+      "name": "VisionPro",
+      "route": "/products",
+      "tagline": "Professional frames designed for everyday excellence",
+      "modelImage": "/images/Models/M4.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    },
+    {
+      "id": 5,
+      "name": "HeritageLens",
+      "route": "/products",
+      "tagline": "Classic designs with timeless clarity",
+      "modelImage": "/images/Models/M5.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    },
+    {
+      "id": 6,
+      "name": "StreetFlex",
+      "route": "/products",
+      "tagline": "Comfortable frames built for active lifestyles",
+      "modelImage": "/images/Models/M6.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    },
+    {
+      "id": 7,
+      "name": "ClearLook",
+      "route": "/products",
+      "tagline": "Simple frames with crystal-clear vision",
+      "modelImage": "/images/Models/M7.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    },
+    {
+      "id": 8,
+      "name": "TrendSight",
+      "route": "/products",
+      "tagline": "Modern eyewear designed for everyday style",
+      "modelImage": "/images/Models/M8.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 9,
+      "name": "RetroVision",
+      "route": "/products",
+      "tagline": "Vintage inspired frames for confident looks",
+      "modelImage": "/images/Models/M9.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    },
+    {
+      "id": 10,
+      "name": "MetroOptics",
+      "route": "/products",
+      "tagline": "Clean modern frames for urban lifestyles",
+      "modelImage": "/images/Models/M10.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    },
+    {
+      "id": 11,
+      "name": "PrimeVision",
+      "route": "/products",
+      "tagline": "Premium craftsmanship with elegant design",
+      "modelImage": "/images/Models/M11.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 12,
+      "name": "BoldFrame",
+      "route": "/products",
+      "tagline": "Statement frames for bold personalities",
+      "modelImage": "/images/Models/M12.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 13,
+      "name": "ElegantEyes",
+      "route": "/products",
+      "tagline": "Refined eyewear for graceful style",
+      "modelImage": "/images/Models/M13.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Premium"
+    },
+    {
+      "id": 14,
+      "name": "DailyView",
+      "route": "/products",
+      "tagline": "Reliable frames for comfortable everyday wear",
+      "modelImage": "/images/Models/M14.png?height=472&width=242&fit=cover",
+      "brandLogo": "",
+      "category": "Essentials"
+    }
+  ],
+  "storeData": [
+    {
+      "id": 1,
+      "name": "Kubade OptiCare Versova",
+      "address": "Versova, Andheri West, Mumbai",
+      "rating": null,
+      "lat": 19.1375,
+      "lng": 72.8263
+    },
+    {
+      "id": 2,
+      "name": "Kubade OptiCare Santacruz(W)",
+      "address": "Linking Road, Santacruz-W, Mumbai",
+      "rating": "4.9 (1639)",
+      "lat": 19.0806,
+      "lng": 72.8416
+    },
+    {
+      "id": 3,
+      "name": "Kubade OptiCare Andheri West",
+      "address": "Andheri West, Mumbai",
+      "rating": "5.1 (1639)",
+      "lat": 19.1197,
+      "lng": 72.8468
+    }
+  ],
+  "newCurationsSection": {
+    "title": "New",
+    "highlight": "Curations",
+    "background": "dark",
+    "showArrowButton": false,
+    "viewAll": null,
+    "cards": [
+      {
+        "id": 1,
+        "image": "/images/Curations/Blue-Cut-Lenses.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 2,
+        "image": "/images/Curations/ContactLenses.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 3,
+        "image": "/images/Curations/Frames.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 4,
+        "image": "/images/Curations/Photochromic.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 5,
+        "image": "/images/Curations/PolarizedLenses.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 6,
+        "image": "/images/Curations/Sunglasses.png?height=465&width=668&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      }
+    ]
+  },
+  "exclusiveDealsSection": {
+    "title": "Exclusive",
+    "highlight": "Items",
+    "background": "gold",
+    "showArrowButton": true,
+    "viewAll": {
+      "label": "View All",
+      "route": "/products"
+    },
+    "cards": [
+      {
+        "id": 2,
+        "image": "/images/ExclusiveItems/Alcon.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 3,
+        "image": "/images/ExclusiveItems/BauschLomb.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 4,
+        "image": "/images/ExclusiveItems/Crizal.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 5,
+        "image": "/images/ExclusiveItems/Idor.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 6,
+        "image": "/images/ExclusiveItems/Kodak.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 7,
+        "image": "/images/ExclusiveItems/Rio.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      },
+      {
+        "id": 8,
+        "image": "/images/ExclusiveItems/Ziess.png?height=415&width=740&fit=cover",
+        "buttonText": "SHOP COLLECTION",
+        "route": "/products"
+      }
+    ]
+  },
+  "hypeCards": [
+    {
+      "id": 1,
+      "username": "KubadeOpticare",
+      "backgroundImage": "https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=900&q=80",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
+    },
+    {
+      "id": 2,
+      "username": "KubadeOpticare",
+      "backgroundImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
+    },
+    {
+      "id": 3,
+      "username": "KubadeOpticare",
+      "backgroundImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
+    },
+    {
+      "id": 4,
+      "username": "KubadeOpticare",
+      "backgroundImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+      "brandLogo": "https://api.titaneyeplus.com/media/wysiwyg/home-page/shop-the-look/white-logo.jpg?height=48&width=48&fit=cover"
+    }
+  ],
+  "bestsellersSection": {
+    "title": "Our",
+    "highlight": "Bestsellers",
+    "cards": [
+      {
+        "id": 1,
+        "badge": "Bestseller",
+        "image": "https://api.titaneyeplus.com/media/catalog/product/t/s/tsr0028wfc4mbkv_1_lar.jpg",
+        "brand": "Tees By Fastrack",
+        "name": "Crystal Wayfarer Eyeglasses For Men And Women",
+        "size": "Medium",
+        "price": 420,
+        "oldPrice": 1050,
+        "discount": "60% Off",
+        "rating": null
+      },
+      {
+        "id": 2,
+        "badge": "New",
+        "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+        "brand": "Ace by Crizal",
+        "name": "Black CatEye Eyeglasses For Women",
+        "size": "Medium",
+        "price": 1100,
+        "rating": null
+      },
+      {
+        "id": 3,
+        "badge": "New",
+        "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025il020558_1_lar.jpg",
+        "brand": "Fastrack",
+        "name": "Black Wayfarer Eyeglasses For Men",
+        "price": 800,
+        "rating": null
+      },
+      {
+        "id": 4,
+        "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+        "brand": "Fastrack",
+        "name": "Green Wayfarer Sunglasses For Men",
+        "size": "Medium",
+        "price": 950,
+        "rating": 4.8,
+        "ratingCount": 16
+      },
+      {
+        "id": 5,
+        "badge": "New",
+        "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+        "brand": "Ace by Crizal",
+        "name": "Black CatEye Eyeglasses For Women",
+        "size": "Medium",
+        "price": 1100,
+        "rating": null
+      },
+      {
+        "id": 6,
+        "badge": "New",
+        "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025il020558_1_lar.jpg",
+        "brand": "Fastrack",
+        "name": "Black Wayfarer Eyeglasses For Men",
+        "price": 800,
+        "rating": null
+      }
+    ]
+  },
+  "trendingSection": {
+    "subtitle": "Trending Searches",
+    "title": "Most",
+    "highlight": "Loved",
+    "filters": [
+      {
+        "label": "Ray-Ban Sunglasses",
+        "key": "rayban"
+      },
+      {
+        "label": "Gucci Sunglasses",
+        "key": "gucci"
+      },
+      {
+        "label": "Oakley Sunglasses",
+        "key": "oakley"
+      },
+      {
+        "label": "Rimless Eyeglasses",
+        "key": "rimless"
+      },
+      {
+        "label": "Polarised Sunglasses",
+        "key": "polarised"
+      },
+      {
+        "label": "Wayfarer Sunglasses",
+        "key": "wayfarer"
+      }
+    ],
+    "cards": {
+      "rayban": [
+        {
+          "id": 1,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Rayban",
+          "name": "Green Wayfarer Sunglasses For Men",
+          "size": "Large",
+          "price": 8890,
+          "rating": 4.8,
+          "ratingCount": 16
+        },
+        {
+          "id": 2,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Rayban",
+          "name": "Classic Aviator Sunglasses For Men",
+          "size": "Medium",
+          "price": 7990,
+          "rating": 4.7,
+          "ratingCount": 12
+        },
+        {
+          "id": 3,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Rayban",
+          "name": "Black Aviator Sunglasses For Men",
+          "size": "Large",
+          "price": 9190,
+          "rating": 4.6,
+          "ratingCount": 10
+        },
+        {
+          "id": 4,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Rayban",
+          "name": "Polarised Classic Aviator Sunglasses",
+          "size": "Medium",
+          "price": 9490,
+          "rating": 4.8,
+          "ratingCount": 22
+        },
+        {
+          "id": 5,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Rayban",
+          "name": "Matte Black Wayfarer Sunglasses",
+          "size": "Medium",
+          "price": 8590,
+          "rating": 4.5,
+          "ratingCount": 9
+        },
+        {
+          "id": 6,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Rayban",
+          "name": "Classic Square Frame Sunglasses",
+          "size": "Large",
+          "price": 8990,
+          "rating": 4.7,
+          "ratingCount": 14
+        },
+        {
+          "id": 7,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Rayban",
+          "name": "Premium Metal Frame Aviator Sunglasses",
+          "size": "Large",
+          "price": 9790,
+          "rating": 4.9,
+          "ratingCount": 31
+        }
+      ],
+      "gucci": [
+        {
+          "id": 3,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025il020558_1_lar.jpg",
+          "brand": "Gucci",
+          "name": "Grey Pillow Sunglasses For Men",
+          "price": 10690
+        },
+        {
+          "id": 4,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025il020558_1_lar.jpg",
+          "brand": "Gucci",
+          "name": "Luxury Square Frame Sunglasses",
+          "size": "Medium",
+          "price": 12490
+        }
+      ],
+      "oakley": [
+        {
+          "id": 5,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+          "brand": "Oakley",
+          "name": "Sport Sunglasses With UV Protection",
+          "price": 12790
+        },
+        {
+          "id": 6,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+          "brand": "Oakley",
+          "name": "Performance Outdoor Sunglasses",
+          "size": "Large",
+          "price": 13990
+        }
+      ],
+      "rimless": [
+        {
+          "id": 7,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+          "brand": "Rimless",
+          "name": "Rimless Lightweight Eyeglasses",
+          "size": "Medium",
+          "price": 2590
+        },
+        {
+          "id": 8,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+          "brand": "Rimless",
+          "name": "Minimal Rimless Office Eyeglasses",
+          "size": "Medium",
+          "price": 2890
+        }
+      ],
+      "polarised": [
+        {
+          "id": 9,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Polarised",
+          "name": "Polarised Driving Sunglasses",
+          "price": 9590,
+          "rating": 4.6,
+          "ratingCount": 8
+        },
+        {
+          "id": 10,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Polarised",
+          "name": "Polarised Outdoor Sunglasses",
+          "size": "Large",
+          "price": 9990
+        }
+      ],
+      "wayfarer": [
+        {
+          "id": 11,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Wayfarer",
+          "name": "Black Wayfarer Sunglasses",
+          "size": "Medium",
+          "price": 1890
+        },
+        {
+          "id": 12,
+          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "brand": "Wayfarer",
+          "name": "Classic Wayfarer Sunglasses",
+          "price": 2190
+        }
+      ]
+    }
+  },
+  "blogSection": {
+    "title": "From",
+    "highlight": "the Blog",
+    "filters": [
+      {
+        "label": "Sunglasses",
+        "key": "sunglasses"
+      },
+      {
+        "label": "Eyeglasses",
+        "key": "eyeglasses"
+      },
+      {
+        "label": "Contact Lenses",
+        "key": "contact"
+      },
+      {
+        "label": "Lenses",
+        "key": "lenses"
+      }
+    ],
+    "cards": {
+      "sunglasses": [
+        {
+          "id": 1,
+          "title": "Battle of the Styles: Mirrored Sunglasses vs Polaroid Sunglasses",
+          "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+          "category": "SUNGLASSES",
+          "route": "/blog/mirrored-vs-polaroid"
+        },
+        {
+          "id": 2,
+          "title": "Choosing and Caring for Sunglasses: Protect Your Eyes with Style",
+          "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+          "category": "SUNGLASSES",
+          "route": "/blog/caring-for-sunglasses"
+        },
+        {
+          "id": 3,
+          "title": "Four Reasons Why Opting for Polarized Glasses is a Wise Choice",
+          "image": "https://images.unsplash.com/photo-1516826957135-700dedea698c",
+          "category": "SUNGLASSES",
+          "route": "/blog/polarized-benefits"
+        },
+        {
+          "id": 4,
+          "title": "Unleash Your Fashion Statement With Chic Sunglasses For Women",
+          "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+          "category": "SUNGLASSES",
+          "route": "/blog/chic-sunglasses"
+        },
+        {
+          "id": 5,
+          "title": "Frame/Sunglass Size Guide",
+          "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0",
+          "category": "SUNGLASSES",
+          "route": "/blog/frame-size-guide"
+        },
+        {
+          "id": 6,
+          "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
+          "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
+          "category": "EYEGLASSES",
+          "route": "/blog/face-shape-glasses"
+        }
+      ],
+      "eyeglasses": [
+        {
+          "id": 6,
+          "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
+          "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
+          "category": "EYEGLASSES",
+          "route": "/blog/face-shape-glasses"
+        }
+      ],
+      "titan": [
+        {
+          "id": 7,
+          "title": "Why Crizal Vision Care Is Leading The Eyewear Market",
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+          "category": "Crizal VISION",
+          "route": "/blog/Crizal-vision"
+        }
+      ],
+      "contact": [
+        {
+          "id": 8,
+          "title": "A Beginner Guide To Contact Lenses",
+          "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+          "category": "CONTACT LENSES",
+          "route": "/blog/contact-lens-guide"
+        }
+      ],
+      "lenses": [
+        {
+          "id": 9,
+          "title": "Different Types Of Lenses And Their Uses",
+          "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+          "category": "LENSES",
+          "route": "/blog/lens-types"
+        }
+      ]
+    }
+  },
+  "testimonialsSection": {
+    "title": "Words we",
+    "highlight": "live by",
+    "cards": [
+      {
+        "id": 1,
+        "name": "Mamta",
+        "date": "02 July, 2025",
+        "rating": 5,
+        "review": "The representative are very professional and helpful. They patiently showed me the frames and glasses until I found the one I liked!"
+      },
+      {
+        "id": 2,
+        "name": "Jai Shree Kushwaha",
+        "date": "02 July, 2025",
+        "rating": 5,
+        "review": "The collection of frames was good. It became easy for me to choose. The person who guided me for the lense had good knowledge and was very helpful."
+      },
+      {
+        "id": 3,
+        "name": "Krishnaja",
+        "date": "01 July, 2025",
+        "rating": 5,
+        "review": "Entire process is very user friendly, clearly explained and patiently helped to select right frames. Overall it was a pleasant and smooth experience"
+      },
+      {
+        "id": 4,
+        "name": "Rohit Sharma",
+        "date": "29 June, 2025",
+        "rating": 5,
+        "review": "Very professional staff and quick service. They helped me choose the perfect glasses."
+      }
+    ]
+  },
+  "faq": [
+    {
+      "id": 1,
+      "title": "About Kubade Opticare",
+      "content": "Kubade Opticare is a trusted optical store located in Nagpur, Maharashtra, offering a wide range of eyewear solutions including eyeglasses, sunglasses, contact lenses, and eye care services. With a strong reputation and excellent customer reviews, Kubade Opticare focuses on providing high-quality products, expert guidance, and personalized eye care to ensure the best vision and comfort for every customer."
+    },
+    {
+      "id": 2,
+      "title": "Range of Sunglasses",
+      "content": "Kubade Opticare offers a stylish collection of sunglasses designed to protect your eyes from harmful UV rays while enhancing your look. Choose from modern, classic, and premium frames suitable for every lifestyle."
+    },
+    {
+      "id": 3,
+      "title": "Range of Frames & Lenses",
+      "content": "Explore a wide selection of high-quality frames and advanced lenses at Kubade Opticare. We provide durable, comfortable, and fashionable eyewear options tailored to your vision needs."
+    },
+    {
+      "id": 4,
+      "title": "Range of Contact Lenses",
+      "content": "Kubade Opticare provides reliable contact lens options including daily, monthly, and colored lenses. Our experts help you choose the right lenses for comfort, clarity, and convenience."
+    },
+    {
+      "id": 5,
+      "title": "Store Location & Contact",
+      "content": "Kubade Opticare is located above Bhande Plot Square, Sudampuri, Nagpur, Maharashtra 440024. For inquiries or assistance, call us at +91 70666 02959."
+    },
+    {
+      "id": 6,
+      "title": "Store Hours",
+      "content": "Kubade Opticare is open Monday to Saturday from 9:30 AM to 9:30 PM. The store remains closed on Sundays. Drive-through, pick-up, and delivery services are available between 10:00 AM and 9:30 PM."
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "title": "Kids",
+      "image": "/images/Collection/c1.png",
+      "url": "/eyeglasses/gender/kids"
+    },
+    {
+      "id": 2,
+      "title": "Youth",
+      "image": "/images/Collection/c2.png",
+      "url": "/eyeglasses/brand/fastrack"
+    },
+    {
+      "id": 3,
+      "title": "Workwear",
+      "image": "/images/Collection/c3.png",
+      "url": "/eyeglasses/workwear"
+    },
+    {
+      "id": 4,
+      "title": "Silvers",
+      "image": "/images/Collection/c4.png",
+      "url": "/eyeglasses/silver"
+    },
+    {
+      "id": 5,
+      "title": "xyzz",
+      "image": "/images/Collection/c5.png",
+      "url": "/eyeglasses/silver"
+    },
+    {
+      "id": 6,
+      "title": "Kids",
+      "image": "/images/Collection/c6.png",
+      "url": "/eyeglasses/gender/kids"
+    },
+    {
+      "id": 7,
+      "title": "Youth",
+      "image": "/images/Collection/c7.png",
+      "url": "/eyeglasses/brand/fastrack"
+    },
+    {
+      "id": 8,
+      "title": "Workwear",
+      "image": "/images/Collection/c8.png",
+      "url": "/eyeglasses/workwear"
+    },
+    {
+      "id": 9,
+      "title": "Silvers",
+      "image": "/images/Collection/c9.png",
+      "url": "/eyeglasses/silver"
+    },
+    {
+      "id": 10,
+      "title": "xyzz",
+      "image": "/images/Collection/c10.png",
+      "url": "/eyeglasses/silver"
+    }
+  ]
+}

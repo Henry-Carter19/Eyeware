@@ -1,0 +1,123 @@
+{
+  "menuEyeGlassesData": [
+    {
+      "title": "GENDER",
+      "items": [
+        { "label": "All", "path": "/eyeglasses/all" },
+        { "label": "Men", "path": "/eyeglasses/men" },
+        { "label": "Women", "path": "/eyeglasses/women" },
+        { "label": "Kids", "path": "/eyeglasses/kids" }
+      ]
+    },
+    {
+      "title": "SHAPE",
+      "items": [
+        { "label": "Rectangle", "path": "/eyeglasses/shape/rectangle" },
+        { "label": "Round", "path": "/eyeglasses/shape/round" },
+        { "label": "Cat Eye", "path": "/eyeglasses/shape/cat-eye" },
+        { "label": "Wayfarer", "path": "/eyeglasses/shape/wayfarer" }
+      ]
+    },
+    {
+      "title": "TOP BRANDS",
+      "items": [
+        { "label": "Rayban", "path": "/eyeglasses/brand/rayban" },
+        { "label": "Fastrack", "path": "/eyeglasses/brand/fastrack" },
+        { "label": "Vogue", "path": "/eyeglasses/brand/vogue" }
+      ]
+    }
+  ],
+
+  "menuSunGlassesData": [
+    {
+      "title": "GENDER",
+      "items": [
+        { "label": "All", "path": "/sunglasses/all" },
+        { "label": "Men", "path": "/sunglasses/men" },
+        { "label": "Women", "path": "/sunglasses/women" },
+        { "label": "Kids", "path": "/sunglasses/kids" }
+      ]
+    },
+    {
+      "title": "STYLE",
+      "items": [
+        { "label": "Mirrored", "path": "/sunglasses/style/mirrored" },
+        { "label": "Tinted", "path": "/sunglasses/style/tinted" },
+        { "label": "UV Protection", "path": "/sunglasses/style/uv-protection" },
+        { "label": "Polarized", "path": "/sunglasses/style/polarized" }
+      ]
+    },
+    {
+      "title": "USAGE",
+      "items": [
+        { "label": "Regular", "path": "/sunglasses/usage/regular" },
+        { "label": "Power", "path": "/sunglasses/usage/power" }
+      ]
+    },
+    {
+      "title": "COLLECTION",
+      "items": [
+        { "label": "Smart Sunglasses", "path": "/sunglasses/collection/smart-sunglasses" },
+        { "label": "Donald", "path": "/sunglasses/collection/donald" },
+        { "label": "Glow Up", "path": "/sunglasses/collection/glow-up" },
+        { "label": "Whiplash", "path": "/sunglasses/collection/whiplash" },
+        { "label": "Vivid Geometry", "path": "/sunglasses/collection/vivid-geometry" }
+      ]
+    },
+    {
+      "title": "SHAPE",
+      "items": [
+        { "label": "Aviator", "path": "/sunglasses/shape/aviator" },
+        { "label": "Wayfarer", "path": "/sunglasses/shape/wayfarer" },
+        { "label": "Wraparound", "path": "/sunglasses/shape/wraparound" },
+        { "label": "Rectangle", "path": "/sunglasses/shape/rectangle" },
+        { "label": "Round", "path": "/sunglasses/shape/round" }
+      ]
+    },
+    {
+      "title": "BRANDS",
+      "items": [
+        { "label": "Fastrack", "path": "/sunglasses/brand/fastrack" },
+        { "label": "Rayban", "path": "/sunglasses/brand/rayban" },
+        { "label": "Oakley", "path": "/sunglasses/brand/oakley" },
+        { "label": "Burberry", "path": "/sunglasses/brand/burberry" }
+      ]
+    }
+  ],
+
+  "menuContactLensesData": [
+    {
+      "title": "Bausch & Lomb",
+      "id": "BauschAndLomb",
+      "path": "/contact-lenses/bausch-and-lomb"
+    },
+    {
+      "title": "Johnson & Johnson",
+      "id": "JohnsonAndJohnson",
+      "path": "/contact-lenses/johnson-and-johnson"
+    },
+    {
+      "title": "Cooper Vision",
+      "id": "CooperVision",
+      "path": "/contact-lenses/cooper-vision"
+    }
+  ],
+
+  "menuAccessoriesData": [
+    {
+      "title": "Cleaning Cloth",
+      "id": "CleaningCloth",
+      "path": "/accessories/cleaning-cloth"
+    },
+    {
+      "title": "Lens Spray",
+      "id": "LensSpray",
+      "path": "/accessories/lens-spray"
+    },
+    {
+      "title": "Cases",
+      "id": "Cases",
+      "path": "/accessories/cases"
+    }
+  ]
+}
