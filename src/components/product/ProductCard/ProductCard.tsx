@@ -1,95 +1,53 @@
-import React, { useState } from "react";
-import { Product } from "../ProductCarousel/ProductCarousel";
+import React, { useState, useEffect } from "react";
 import "./ProductCard.css";
-import { Heart } from "lucide-react";
+import { Product } from "../ProductCarousel/ProductCarousel";
 
-interface ProductCardProps {
+interface Props {
   product: Product;
   onClick?: () => void;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
-  const images =
-    product.images && product.images.length > 0
-      ? product.images
-      : product.image
-        ? [product.image]
-        : [];
+const ProductCard: React.FC<Props> = ({ product, onClick }) => {
+  const images = product.images || [];
+  const [index, setIndex] = useState(0);
+  const [hover, setHover] = useState(false);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    if (!hover || images.length <= 1) return;
 
-  const nextImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 1200);
 
-  const prevImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
-
-  /* ============================= */
-  /* DETAIL LAYOUT */
-  /* ============================= */
-
-  if (product.layoutType === "detail") {
-    return (
-      <div className="detail-card">
-        <div className="detail-image-container">
-          <button className="try-btn">📷 TRY ON</button>
-
-          <div className="icon-group">
-            <span className="icon">♡</span>
-            <span className="icon">↗</span>
-          </div>
-
-          <img
-            src={images[currentIndex]}
-            alt={product.title}
-            className="detail-main-image"
-          />
-
-          <button className="arrow left" onClick={prevImage}>
-            ‹
-          </button>
-
-          <button className="arrow right" onClick={nextImage}>
-            ›
-          </button>
-        </div>
-
-        <div className="thumbnail-row">
-          {images.map((img, index) => (
-            <img
-              key={index}
-              src={img}
-              className={`thumbnail ${index === currentIndex ? "active-thumb" : ""
-                }`}
-              onClick={() => setCurrentIndex(index)}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  /* ============================= */
-  /* GRID LAYOUT */
-  /* ============================= */
+    return () => clearInterval(interval);
+  }, [hover, images.length]);
 
   return (
-    <div className="product-card" onClick={onClick}>
-      <div className="image-wrapper">
-        <span className="wishlist"><Heart size={20}/></span>
+    <div
+      className="product-card"
+      onClick={onClick}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
+      {product.isNew && <div className="badge">New</div>}
 
-        <img src={images[currentIndex]} alt={product.title} />
+      <div className="wishlist">♡</div>
+
+      <div className="product-image">
+        <img src={images[index]} alt={product.title} />
+      </div>
+
+      <div className="slider-dots">
+        {images.map((_, i) => (
+          <span key={i} className={i === index ? "active" : ""} />
+        ))}
       </div>
 
       <div className="product-info">
-        <p className="brand">{product.brand}</p>
-        <p className="title">{product.title}</p>
-        <p className="price">₹{product.price}</p>
-        <p className="tax">Inclusive of all taxes</p>
+        <div className="brand">{product.brand}</div>
+        <div className="title">{product.title}</div>
+        <div className="price">₹{product.price}</div>
+        <div className="tax">Inclusive of all taxes</div>
       </div>
     </div>
   );

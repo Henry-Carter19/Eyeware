@@ -7,6 +7,7 @@ import ProductCarousel, {
 import SelectionCard from "../components/product/SelectionCard/SelectionCard";
 
 import productData from "../data/productsData.json";
+// import productData from "../data/prodcutsDetailData.json";
 import frameStyleData from "../data/frameStyle.json";
 import frameColor from "../data/frameColor.json";
 import priceRange from "../data/priceData.json";
@@ -31,13 +32,14 @@ const ProductsPage = () => {
   const frameColorMapped = mapToSelectionData(frameColor);
   const priceMapped = mapToSelectionData(priceRange);
 
-  const typedProducts: ProductWithFilters[] = productData.products.map(
-    (p: any) => ({
-      ...p,
-      layoutType: p.layoutType === "detail" ? "detail" : "grid",
-    }),
+// const typedProducts: ProductWithFilters[] = productData.productsDetail.map(
+const typedProducts: ProductWithFilters[] = productData.products.map(
+  (p: any) => ({
+    ...p,
+    layoutType: p.layoutType === "detail" ? "detail" : "grid",
+  }),
   );
-
+  
   const { selectedFilters, filteredProducts, toggleValue, resetFilters } =
     useProductFilters<ProductWithFilters>({
       products: typedProducts,
