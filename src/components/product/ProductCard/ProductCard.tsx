@@ -43,9 +43,20 @@ const ProductCard: React.FC<Props> = ({ product, onClick }) => {
         ))}
       </div>
 
+      {/* ⭐ Rating */}
+      {product.rating && (
+        <div className="rating">
+          {product.rating} ⭐ {product.ratingCount}
+        </div>
+      )}
+
       <div className="product-info">
         <div className="brand">{product.brand}</div>
         <div className="title">{product.title}</div>
+
+        {/* 📏 Size */}
+        {product.size && <div className="size">Size: {product.size}</div>}
+
         <div className="price">₹{product.price}</div>
         <div className="tax">Inclusive of all taxes</div>
       </div>

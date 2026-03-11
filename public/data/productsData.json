@@ -2,6 +2,7 @@
     "products": [
         {
             "id": "p1",
+            "brand": "Fastrack",
             "title": "Urban Black Frame",
             "images": [
                 "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg",
@@ -17,10 +18,16 @@
             "color": "Black",
             "style": "Classic",
             "price": 1299,
-            "priceRange": "1000-1999"
+            "priceRange": "1000-1999",
+            "rating": 5.0,
+            "ratingCount": 1,
+            "size": "Medium",
+            "taxIncluded": true,
+            "peopleBought": 1661
         },
         {
             "id": "p2",
+            "brand": "Fastrack",
             "title": "Gold Premium Frame",
             "images": [
                 "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg",
@@ -34,10 +41,16 @@
             "color": "Gold",
             "style": "Premium",
             "price": 11299,
-            "priceRange": "5000+"
+            "priceRange": "5000+",
+            "rating": 5.0,
+            "ratingCount": 1,
+            "size": "Medium",
+            "taxIncluded": true,
+            "peopleBought": 1661
         },
         {
             "id": "p3",
+            "brand": "Fastrack",
             "title": "Brown Classic Rectangle",
             "images": [
                 "https://api.titaneyeplus.com/media/catalog/product/P/4/P449BK3TIEV_1_lar.jpg",
@@ -51,10 +64,16 @@
             "color": "Brown",
             "style": "Classic",
             "price": 2999,
-            "priceRange": "2000-4999"
+            "priceRange": "2000-4999",
+            "rating": 5.0,
+            "ratingCount": 1,
+            "size": "Medium",
+            "taxIncluded": true,
+            "peopleBought": 1661
         },
         {
             "id": "p4",
+            "brand": "Fastrack",
             "title": "Silver Modern Square",
             "images": [
                 "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg",
@@ -68,7 +87,12 @@
             "color": "Silver",
             "style": "Modern",
             "price": 599,
-            "priceRange": "Under 999"
+            "priceRange": "Under 999",
+            "rating": 5.0,
+            "ratingCount": 1,
+            "size": "Medium",
+            "taxIncluded": true,
+            "peopleBought": 1661
         }
     ]
 }
