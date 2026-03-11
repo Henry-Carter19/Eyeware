@@ -16,6 +16,7 @@ import ProductCarousel from "../components/ui/ProductsCarousel/ProductCarousel";
 import GoToTop from "../components/ui/GoToTop/GoToTop";
 
 import ShopCollections from "../components/ui/ShopCollections/ShopCollections";
+import StoresCarousel from "../components/ui/StoresCarousel/StoresCarousel";
 
 const HomePage = () => {
 
@@ -35,6 +36,8 @@ const HomePage = () => {
   return (
     <div>
       <HeroCarousel banners={data.heroBanners} />
+      <StoresCarousel stroreData={data.storeData} />
+  
       <BrandsCarousel brands={data.brands} />
       <NewCurations sectionConfig={data.newCurationsSection} />
       <FindStoreSection />
