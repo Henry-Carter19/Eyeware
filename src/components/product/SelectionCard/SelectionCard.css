@@ -1,10 +1,12 @@
 .selection-card {
-  background: var(--very-light-teal);
-  padding: var(--space-lg);
-  border-radius: 14px;
-  margin-bottom: var(--space-lg);
-  margin-left: 35px;
+  background: #daeded;
+  padding: 18px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-left: 25px;
 }
+
+/* HEADER */
 
 .selection-header {
   display: flex;
@@ -13,38 +15,43 @@
 }
 
 .selection-header h3 {
-  font-size: var(--font-xl);
+  font-size: 22px; /* smaller title */
   margin: 0;
+  font-weight: 600;
 }
 
 .clear-btn {
   background: none;
   border: none;
   color: var(--teal);
-  font-size: var(--font-md);
+  font-size: 14px;
   cursor: pointer;
 }
+
+/* OPTIONS */
 
 .selection-options {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-md);
-  margin-top: var(--space-lg);
+  gap: 10px; /* smaller gap */
+  margin-top: 14px;
 }
+
+/* CHIPS */
 
 .selection-chip {
   background: var(--white);
   border: none;
-  padding: 8px 14px;
+  padding: 6px 14px; /* smaller chip */
   border-radius: 20px;
-  font-size: var(--font-md);
+  font-size: 14px;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: var(--transition-fast);
 }
 
 .selection-chip:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .selection-chip.active {
@@ -52,23 +59,27 @@
   color: var(--white);
 }
 
+/* FOOTER */
+
 .selection-footer {
-  margin-top: var(--space-lg);
+  margin-top: 16px;
   display: flex;
   justify-content: flex-end;
   border-top: 1px solid var(--border-dark);
-  /* padding-top: var(--space-lg); */
+  padding-top: 12px;
 }
+
+/* APPLY BUTTON */
 
 .apply-btn {
   background: linear-gradient(135deg, #1e1f29, #2e3245);
   color: var(--white);
   border: none;
-  padding: 10px 30px;
-  border-radius: 12px;
-  font-size: var(--font-md);
+  padding: 8px 22px; /* smaller button */
+  border-radius: 10px;
+  font-size: 14px;
   cursor: pointer;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ============================= */
@@ -87,33 +98,24 @@
 
 @media (max-width: 600px) {
   .selection-card {
-    padding: var(--space-md);
+    padding: 14px 16px;
   }
 
   .selection-header h3 {
-    font-size: var(--font-lg);
+    font-size: 18px;
   }
 
   .selection-chip {
-    font-size: var(--font-sm);
-    padding: 6px 12px;
+    font-size: 13px;
+    padding: 5px 12px;
   }
 
   .apply-btn {
     width: 100%;
+    padding: 10px;
   }
 
   .selection-footer {
     justify-content: stretch;
-  }
-}
-
-/* ============================= */
-/* Small Mobile */
-/* ============================= */
-
-@media (max-width: 480px) {
-  .selection-options {
-    gap: var(--space-sm);
   }
 }

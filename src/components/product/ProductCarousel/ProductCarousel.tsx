@@ -3,19 +3,27 @@ import "./ProductCarousel.css";
 import ProductCard from "../ProductCard/ProductCard";
 import { useNavigate } from "react-router-dom";
 
-export interface Product {
+export type Product = {
   id: string;
-  layoutType?: "grid" | "detail";
-  brand: string;
+  brand?: string;
   title: string;
+  images: string[];
+  layoutType: "grid" | "detail";
+
   price: number;
-  size: string;
+  priceRange?: string;
+
   rating?: number;
   ratingCount?: number;
-  images?: string[];
-  image?: string;
+  size?: string;
+  taxIncluded?: boolean;
+  peopleBought?: number;
   isNew?: boolean;
-}
+  gender?: string;
+  shape?: string;
+  color?: string;
+  style?: string;
+};
 
 interface ProductCarouselProps {
   products: Product[];
