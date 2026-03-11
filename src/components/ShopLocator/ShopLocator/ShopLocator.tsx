@@ -14,12 +14,11 @@ import styles from "./ShopLocator.module.css";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
-
 import { Shop } from "./types.shop";
+import { shops } from "./data.shops";
 import { getDirectionHref } from "./mapLinks";
 import { useWhatsApp } from "../../../utils/whatsapp";
 
-/* Fix Leaflet default marker icons */
 delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: unknown })
   ._getIconUrl;
 
@@ -29,7 +28,6 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
-/* Custom store marker */
 const storeIcon = new L.DivIcon({
   className: "",
   html: `
@@ -64,53 +62,34 @@ function fitBoundsForAll(map: L.Map, items: Shop[]) {
   if (!items.length) return;
 
   const bounds = L.latLngBounds(
-    items.map((x) => [x.lat, x.lng] as [number, number])
+    items.map((x) => [x.lat, x.lng] as [number, number]),
   );
 
   map.fitBounds(bounds, { padding: [40, 40] });
 }
 
-function MapInit({ shops }: { shops: Shop[] }) {
+function MapInit() {
   const map = useMap();
 
   useEffect(() => {
-    if (shops.length) {
-      fitBoundsForAll(map, shops);
-    }
-  }, [map, shops]);
+    fitBoundsForAll(map, shops);
+  }, [map]);
 
   return null;
 }
 
 export default function ShopLocator() {
-  const [shops, setShops] = useState<Shop[]>([]);
-  const [selectedShopId, setSelectedShopId] = useState<number>(0);
-
+  const [selectedShopId, setSelectedShopId] = useState<number>(
+    shops[0]?.id ?? 0,
+  );
   const markerRefs = useRef<Record<number, LeafletMarker | null>>({});
 
   const selectedShop = useMemo(
     () => shops.find((x) => x.id === selectedShopId) ?? null,
-    [selectedShopId, shops]
+    [selectedShopId],
   );
-
   const { sendMessage } = useWhatsApp();
 
-  /* Fetch shops from public JSON */
-  useEffect(() => {
-    fetch("/shops.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const list: Shop[] = data.shops ?? [];
-        setShops(list);
-
-        if (list.length) {
-          setSelectedShopId(list[0].id);
-        }
-      })
-      .catch((err) => console.error("Failed to load shops:", err));
-  }, []);
-
-  /* Sync popup open/close */
   useEffect(() => {
     if (!selectedShopId) return;
 
@@ -130,28 +109,35 @@ export default function ShopLocator() {
   }, [selectedShopId]);
 
   const handleAppointment = (shop: Shop) => {
-    const phoneNumber = "918381001406";
+    const phoneNumber = "918381001406"; // Kubade OptiCare's WhatsApp number
 
     const message = `Hello Kubade OptiCare,
 
-I would like to book an appointment.
+    I would like to book an appointment.
 
-Store: ${shop.name}
-Address: ${shop.address}
+    Store: ${shop.name}
+    Address: ${shop.address}
 
-Preferred Date:
-Preferred Time:
+    Preferred Date:
+    Preferred Time:
 
-Location:
-${shop.directionUrl}
+    Location:
+    ${shop.directionUrl}
 
-Please confirm availability.`;
+    Please confirm availability.`;
 
     sendMessage(phoneNumber, message);
   };
 
   return (
     <div className={styles.wrapper}>
+      {/* <div className={styles.headerRow}>
+        <h2 className={styles.title}>
+          <span className={styles.titleStrong}>{shops.length} Stores</span>
+          <span className={styles.titleLight}> in Nagpur</span>
+        </h2>
+      </div> */}
+
       <div className={styles.layout}>
         <section className={styles.cardsPanel}>
           <div className={styles.cardsGrid}>
@@ -161,9 +147,7 @@ Please confirm availability.`;
               return (
                 <article
                   key={shop.id}
-                  className={`${styles.card} ${
-                    isActive ? styles.cardActive : ""
-                  }`}
+                  className={`${styles.card} ${isActive ? styles.cardActive : ""}`}
                   onClick={() => setSelectedShopId(shop.id)}
                 >
                   <div className={styles.imageWrap}>
@@ -210,7 +194,7 @@ Please confirm availability.`;
                           shop.directionUrl,
                           shop.lat,
                           shop.lng,
-                          shop.name
+                          shop.name,
                         )}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -239,7 +223,7 @@ Please confirm availability.`;
         <aside className={styles.mapPanel}>
           <div className={styles.mapCard}>
             <MapContainer
-              center={[21.1458, 79.0882]}
+              center={[30.7046, 76.7179]}
               zoom={11}
               scrollWheelZoom
               zoomControl={false}
@@ -252,7 +236,7 @@ Please confirm availability.`;
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
 
-              <MapInit shops={shops} />
+              <MapInit />
               <FocusMap shop={selectedShop} />
 
               {shops.map((shop) => (
@@ -298,7 +282,7 @@ Please confirm availability.`;
                             shop.directionUrl,
                             shop.lat,
                             shop.lng,
-                            shop.name
+                            shop.name,
                           )}
                           target="_blank"
                           rel="noopener noreferrer"
