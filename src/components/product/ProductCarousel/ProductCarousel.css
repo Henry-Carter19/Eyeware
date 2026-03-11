@@ -4,13 +4,14 @@
 
 .carousel-container {
   padding: var(--space-xxl) var(--space-lg);
-  margin-left: var(--space-lg);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .carousel {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-xl);
+  gap: 28px;
 }
 
 /* Scrollbar */
@@ -71,5 +72,21 @@
 @media (max-width: 480px) {
   .carousel {
     gap: var(--space-md);
+  }
+}
+
+/* tablet */
+
+@media (max-width: 1024px) {
+  .carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* mobile */
+
+@media (max-width: 600px) {
+  .carousel {
+    grid-template-columns: 1fr;
   }
 }
