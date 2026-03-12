@@ -123,7 +123,7 @@ ${window.location.href}`;
                 </div>
               </div>
 
-              <div className="sticky-btn-container">
+              {/* <div className="sticky-btn-container">
                 <ButtonComponent
                   label="Buy on"
                   variant="whatsapp"
@@ -132,7 +132,7 @@ ${window.location.href}`;
                 />
 
                 <ButtonComponent label="Buy now" variant="buy" fullWidth />
-              </div>
+              </div> */}
             </div>
           </Col>
 
@@ -148,9 +148,9 @@ ${window.location.href}`;
                 />
               </SectionWrapper>
 
-              <SectionWrapper title="Offers & Coupons">
+              {/* <SectionWrapper title="Offers & Coupons">
                 <OfferSection offers={product.offers ?? []} />
-              </SectionWrapper>
+              </SectionWrapper> */}
 
               <SectionWrapper title="Frame Dimensions">
                 <FrameDimensions dimensions={product.frameDimensions ?? {}} />

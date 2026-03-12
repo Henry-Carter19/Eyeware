@@ -126,7 +126,7 @@ Thank you.`
 
           {/* STORE BUTTON */}
           <div className="mobile-store-section">
-            <a href="/stores" className="store-btn">
+            <a href="/stores" className="store-btn-navbar" rel="noopener noreferrer">
               Stores
             </a>
           </div>
@@ -323,7 +323,7 @@ Thank you.`
           {/* RIGHT SIDE SOCIAL + PHONE */}
           <div className="ms-auto d-flex align-items-center gap-4">
             {/* STORES BUTTON */}
-            <a href="/stores" className="store-btn">
+            <a href="/stores" className="store-btn-navbar" rel="noopener noreferrer">
               Stores
             </a>
 

@@ -4,7 +4,7 @@ export const shops: Shop[] = [
   {
     id: 1,
     name: "Kubade Opticare Nandanwan",
-    shortAddress: "Sudampuri, Bhande Plot Square",
+    shortAddress: "Sudampuri, Bhande Plot Square", 
     address:
       "Sudampuri Opp-Career Campus, Nandanwan Road, Bhande Plot Square, Nagpur - 440009, Maharashtra",
     timing: "10:30 am - 8:30 pm",

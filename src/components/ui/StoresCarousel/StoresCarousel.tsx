@@ -10,9 +10,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { StoreItem } from "../../../types/home.types";
+import { getDirectionHref } from "../../ShopLocator/ShopLocator/mapLinks";
 
 interface Props {
-  stroreData: StoreItem[];
+  stroreData: StoreItem[]; 
 }
 
 const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
@@ -28,33 +29,26 @@ const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const getDirectionHref = (lat?: number, lng?: number) => {
-    if (lat && lng) {
-      return `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
-    }
-    return "#";
-  };
-
   const handleAppointment = (shop: StoreItem) => {
-    const phoneNumber = "918381001406";
-
-    const message = `Hello Kubade OptiCare,
-
-I would like to book an appointment.
-
-Store: ${shop.name}
-Address: ${shop.area}, ${shop.street}, ${shop.address}
-
-Preferred Date:
-Preferred Time:
-
-Location:
-${getDirectionHref(shop.lat, shop.lng)}
-
-Please confirm availability.`;
-
-    sendMessage(phoneNumber, message);
-  };
+      const phoneNumber = "918381001406"; // Kubade OptiCare's WhatsApp number
+  
+      const message = `Hello Kubade OptiCare,
+  
+      I would like to book an appointment.
+  
+      Store: ${shop.name}
+      Address: ${shop.address}
+  
+      Preferred Date:
+      Preferred Time:
+  
+      Location:
+      ${shop.directionUrl}
+  
+      Please confirm availability.`;
+  
+      sendMessage(phoneNumber, message);
+    };
 
   const showNavigation = !(isDesktop && stroreData.length <= 3);
 
@@ -101,7 +95,10 @@ Please confirm availability.`;
 
               <div className="storesCarousel-buttonRow">
                 <a
-                  href={getDirectionHref(shop.lat, shop.lng)}
+                  href={getDirectionHref(shop.directionUrl,
+                          shop.lat,
+                          shop.lng,
+                          shop.name,)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="storesCarousel-secondaryButton"

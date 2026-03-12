@@ -74,7 +74,7 @@ function MapInit() {
   useEffect(() => {
     fitBoundsForAll(map, shops);
   }, [map]);
-
+ 
   return null;
 }
 
@@ -288,8 +288,8 @@ export default function ShopLocator() {
                           rel="noopener noreferrer"
                           className={styles.popupSecondaryButton}
                         >
-                          <span className={styles.directionIcon} />
-                          Get Direction
+                          <span  className={styles.directionIcon} />
+                        <div style={{textAlign: "center", paddingTop: "8px" }}> Get Direction </div>  
                         </a>
 
                         <button

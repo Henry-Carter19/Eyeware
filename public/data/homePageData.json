@@ -152,8 +152,10 @@
       "area": "Nandanwan",
       "street": "Sudampuri Opp-Career Campus",
       "address": "Bhande Plot Square, Nagpur 440009, Maharashtra",
-      "lat": 19.1375,
-      "lng": 72.8263
+      "lat": 21.1256055,
+      "lng": 79.1182495,
+      "phone": "+91 70666 02959",
+      "directionUrl": "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
     },
     {
       "id": 2,
@@ -161,8 +163,10 @@
       "area": "Shrikrishna Nagar",
       "street": "Swami Vivekananda Netralay, Beside Parth Medical Store",
       "address": "Shrikrishna Nagar, Nagpur - 440024, Maharashtra",
-      "lat": 19.0806,
-      "lng": 72.8416
+      "lat": 21.1256055,
+    "lng": 79.1182495,
+    "phone": "+91 70666 02959",
+    "directionUrl": "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
     },
     {
       "id": 3,
@@ -170,8 +174,10 @@
       "area": "Mahal",
       "street": "Matruseva Sangh Hospital, Kothi Road",
       "address": "Mahal, Nagpur - 440032, Maharashtra",
-      "lat": 19.1197,
-      "lng": 72.8468
+      "lat": 21.1256055,
+      "lng": 79.1182495,
+      "phone": "+91 70666 02959",
+      "directionUrl": "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
     }
   ],
   "newCurationsSection": {

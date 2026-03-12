@@ -184,12 +184,14 @@
   background: #ffffff;
   border: 1px solid #d1d5db;
   color: #111827;
+  padding: 6px 0px;
 }
 
 .primaryButton {
   border: none;
   color: #ffffff;
   background: linear-gradient(135deg,#0f172a,#0ea5b7);
+  padding: 6px 0px;
 }
 
 /* MAP PANEL */
