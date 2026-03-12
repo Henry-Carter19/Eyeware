@@ -8,6 +8,14 @@ import "./Header.css";
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
+  const message = encodeURIComponent(
+    `Hello Sir/Madam,
+
+I would like to know more about your products and services at Kubade OptiCare. 
+Please assist me with the details.
+
+Thank you.`
+  );
   return (
     <>
       {/* MOBILE HEADER */}
@@ -105,7 +113,7 @@ const Header: React.FC = () => {
               <i className="bi bi-facebook"></i>
             </a>
 
-            <a href="https://wa.me/918381001406" target="_blank">
+            <a href={`https://wa.me/918381001406?text=${message}`} target="_blank">
               <i className="bi bi-whatsapp"></i>
             </a>
           </div>
@@ -276,15 +284,15 @@ const Header: React.FC = () => {
               Stores
             </a>
             {/* Social Icons */}
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://www.instagram.com/kubadeopticare1/" target="_blank">
               <i className="bi bi-instagram fs-3"></i>
             </a>
 
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://www.facebook.com/profile.php?id=61556689014525" target="_blank">
               <i className="bi bi-facebook fs-3"></i>
             </a>
 
-            <a href="https://wa.me/918381001406" target="_blank">
+            <a href={`https://wa.me/918381001406?text=${message}`} target="_blank">
               <i className="bi bi-whatsapp fs-3 text-success"></i>
             </a>
 
