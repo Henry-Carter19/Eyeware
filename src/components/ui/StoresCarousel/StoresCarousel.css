@@ -158,11 +158,12 @@
 @media (max-width: 768px) {
 
   .storesCarousel-section {
-    padding: 40px 20px;
+    padding: 30px 20px;
   }
 
   .storesCarousel-section .storesCarousel-buttonRow {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 12px;
   }
 
   .storesCarousel-section .storesCarousel-area {
