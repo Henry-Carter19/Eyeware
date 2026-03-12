@@ -115,16 +115,17 @@ export interface CollectionItem {
 export interface StoreItem {
   id: number;
   name: string;
+  area: string;
+  street: string;
   address: string;
-  rating?: string | null;
-  lat: number;
-  lng: number;
+  lat?: number;
+  lng?: number;
 }
 
 export interface HomePageData {
   heroBanners: HeroBanner[];
   brands: Brand[];
-    storeData: StoreItem[];
+  storeData: StoreItem[];
   newCurationsSection: CurationSection;
   exclusiveDealsSection: CurationSection;
   hypeCards: HypeCard[];

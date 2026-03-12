@@ -5,11 +5,8 @@
   /* spacing between filter and products */
   gap: 40px;
 
-  /* OUTER PADDING (matches your reference image red lines) */
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* balanced outer spacing */
+  padding: 20px 30px;
 
   background: #f5f5f5;
 }
@@ -32,10 +29,7 @@
 .right-section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-
-  /* prevents cards touching the edge */
-  padding-right: 10px;
+  gap: 24px;
 }
 
 /* ============================= */
@@ -45,8 +39,7 @@
 @media (max-width: 992px) {
   .products-page {
     grid-template-columns: 1fr;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 28px 30px;
   }
 
   .left-section {
@@ -61,13 +54,12 @@
 
 @media (max-width: 600px) {
   .products-page {
-    padding-left: 20px;
-    padding-right: 20px;
-    gap: 25px;
+    padding: 24px 20px;
+    gap: 24px;
   }
 
   .right-section {
-    gap: 25px;
+    gap: 24px;
   }
 }
 
@@ -77,7 +69,6 @@
 
 @media (max-width: 480px) {
   .products-page {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 20px 15px;
   }
 }
