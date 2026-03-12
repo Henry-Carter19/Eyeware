@@ -3,7 +3,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import React from "react";
 import menuData from "../../../data/header.json";
 import { Link, useNavigate } from "react-router-dom";
-import { Eye, MapPin, Headphones, Menu, ChevronDown } from "lucide-react";
+import { Eye, MapPin, Headphones, Menu, ChevronDown, Instagram } from "lucide-react";
 import "./Header.css";
 
 const Header: React.FC = () => {
@@ -97,11 +97,11 @@ const Header: React.FC = () => {
 
           {/* SOCIAL ICONS */}
           <div className="mobile-social-icons">
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://www.instagram.com/kubadeopticare1/" target="_blank">
               <i className="bi bi-instagram"></i>
             </a>
 
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://www.facebook.com/profile.php?id=61556689014525" target="_blank">
               <i className="bi bi-facebook"></i>
             </a>
 
