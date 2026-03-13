@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Eye, MapPin, Headphones, Menu, ChevronDown, Instagram } from "lucide-react";
 import "./Header.css";
+import { Shop } from "../../ShopLocator/ShopLocator/types.shop";
+import { useWhatsApp } from "../../../utils/whatsapp";
 
 interface MenuItem {
   label: string;
@@ -17,11 +19,14 @@ interface MenuSection {
 
 interface MenuData {
   menuSunGlassesData: MenuSection[];
+  shops: any;
 }
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
   const [menuData, setMenuData] = useState<MenuData | null>(null);
+
+   const { sendMessage } = useWhatsApp();
 
   const message = encodeURIComponent(
     `Hello Sir/Madam,
@@ -45,6 +50,27 @@ Thank you.`
 
     loadMenu();
   }, []);
+
+    const handleAppointment = (shop: Shop) => {
+      const phoneNumber = "918381001406";
+  
+      const message = `Hello Kubade OptiCare,
+  
+  I would like to book an appointment.
+  
+  Store: ${shop.name}
+  Address: ${shop.address}
+  
+  Preferred Date:
+  Preferred Time:
+  
+  Location:
+  ${shop.directionUrl}
+  
+  Please confirm availability.`;
+  
+      sendMessage(phoneNumber, message);
+    };
 
   return (
     <>
@@ -201,7 +227,7 @@ Thank you.`
                   </span>
 
                   <ul className="dropdown-menu">
-                    <li>
+                    {/* <li>
                       <a className="dropdown-item" rel="noopener noreferrer" href="#">
                         Digital Eye Strain Test
                       </a>
@@ -215,9 +241,10 @@ Thank you.`
                       <a className="dropdown-item" rel="noopener noreferrer" href="#">
                         Instore Free Eye Test
                       </a>
-                    </li>
+                    </li> */}
                     <li>
-                      <a className="dropdown-item" rel="noopener noreferrer" href="#">
+                      <a className="dropdown-item" 
+                      onClick={()=>handleAppointment(menuData?.shops)}>
                         Book Appointment
                       </a>
                     </li>

@@ -26,6 +26,7 @@
 
 .top-bar .dropdown-item {
   font-size: 13px;
+  cursor: pointer;
 }
 
 /* MOBILE TOP BAR */

@@ -178,7 +178,18 @@
       "lng": 79.1182495,
       "phone": "+91 70666 02959",
       "directionUrl": "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
-    }
+    },
+    {
+      "id": 4,
+      "name": "Kubade Opticare Vayusena Nagar",
+      "area": "Vayusena Nagar Dabha",
+      "street": "Shop No. 02 Arya Avani Complex",
+      "address": "Airforce Civilian Society ,Vayusena Nagar Dabha, Nagpur - 440023",
+      "lat": 21.1256055,
+      "lng": 79.1182495,
+      "phone": "+91 70666 02959",
+      "directionUrl": "https://maps.app.goo.gl/KkYbvatvrDfEk28d8"
+    }    
   ],
   "newCurationsSection": {
     "title": "New",
@@ -371,7 +382,7 @@
       }
     ]
   },
-  "trendingSection": {
+ "trendingSection": {
     "subtitle": "Trending Searches",
     "title": "Most",
     "highlight": "Loved",
@@ -415,7 +426,7 @@
         },
         {
           "id": 2,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025i0025862_1_lar.jpg",
           "brand": "Rayban",
           "name": "Classic Aviator Sunglasses For Men",
           "size": "Medium",
@@ -425,7 +436,7 @@
         },
         {
           "id": 3,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/S/R/SRB4251I6018G56_3_lar.jpg",
           "brand": "Rayban",
           "name": "Black Aviator Sunglasses For Men",
           "size": "Large",
@@ -435,7 +446,7 @@
         },
         {
           "id": 4,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/S/R/SRB356592753353_1_lar.jpg",
           "brand": "Rayban",
           "name": "Polarised Classic Aviator Sunglasses",
           "size": "Medium",
@@ -445,7 +456,7 @@
         },
         {
           "id": 5,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/r/b/rb3432i00159_1_lar.jpg",
           "brand": "Rayban",
           "name": "Matte Black Wayfarer Sunglasses",
           "size": "Medium",
@@ -455,7 +466,7 @@
         },
         {
           "id": 6,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/r/b/rb3432i00159_1_lar.jpg",
           "brand": "Rayban",
           "name": "Classic Square Frame Sunglasses",
           "size": "Large",
@@ -465,7 +476,7 @@
         },
         {
           "id": 7,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/r/b/rb3025i0025862_1_lar.jpg",
           "brand": "Rayban",
           "name": "Premium Metal Frame Aviator Sunglasses",
           "size": "Large",
@@ -477,14 +488,14 @@
       "gucci": [
         {
           "id": 3,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025il020558_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/S/G/SGG1946S00148_1_lar.jpg",
           "brand": "Gucci",
           "name": "Grey Pillow Sunglasses For Men",
           "price": 10690
         },
         {
           "id": 4,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025il020558_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/S/G/SGG1985S00154_1_lar.jpg",
           "brand": "Gucci",
           "name": "Luxury Square Frame Sunglasses",
           "size": "Medium",
@@ -494,14 +505,14 @@
       "oakley": [
         {
           "id": 5,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/o/k/ok9417941716_1_lar.jpg",
           "brand": "Oakley",
           "name": "Sport Sunglasses With UV Protection",
           "price": 12790
         },
         {
           "id": 6,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/s/o/sok407540751460_1_lar.jpg",
           "brand": "Oakley",
           "name": "Performance Outdoor Sunglasses",
           "size": "Large",
@@ -511,7 +522,7 @@
       "rimless": [
         {
           "id": 7,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/t/w/tw1086mrm1_1_lar.jpg",
           "brand": "Rimless",
           "name": "Rimless Lightweight Eyeglasses",
           "size": "Medium",
@@ -519,7 +530,7 @@
         },
         {
           "id": 8,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/t/w/tw1084mrm1_1_lar.jpg",
           "brand": "Rimless",
           "name": "Minimal Rimless Office Eyeglasses",
           "size": "Medium",
@@ -529,7 +540,7 @@
       "polarised": [
         {
           "id": 9,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/M/8/M8038BL3PV_1_lar.jpg",
           "brand": "Polarised",
           "name": "Polarised Driving Sunglasses",
           "price": 9590,
@@ -538,7 +549,7 @@
         },
         {
           "id": 10,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/P/5/P519GR2PV_1_lar.jpg",
           "brand": "Polarised",
           "name": "Polarised Outdoor Sunglasses",
           "size": "Large",
@@ -548,7 +559,7 @@
       "wayfarer": [
         {
           "id": 11,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/P/5/P548GY1V_1_lar.jpg",
           "brand": "Wayfarer",
           "name": "Black Wayfarer Sunglasses",
           "size": "Medium",
@@ -556,7 +567,7 @@
         },
         {
           "id": 12,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
+          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/P/5/P542BL1PV_1_lar.jpg",
           "brand": "Wayfarer",
           "name": "Classic Wayfarer Sunglasses",
           "price": 2190
@@ -592,42 +603,42 @@
           "title": "Battle of the Styles: Mirrored Sunglasses vs Polaroid Sunglasses",
           "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
           "category": "SUNGLASSES",
-          "route": "/blog/mirrored-vs-polaroid"
+          "route": "/products"
         },
         {
           "id": 2,
           "title": "Choosing and Caring for Sunglasses: Protect Your Eyes with Style",
           "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
           "category": "SUNGLASSES",
-          "route": "/blog/caring-for-sunglasses"
+          "route": "/products"
         },
         {
           "id": 3,
           "title": "Four Reasons Why Opting for Polarized Glasses is a Wise Choice",
           "image": "https://images.unsplash.com/photo-1516826957135-700dedea698c",
           "category": "SUNGLASSES",
-          "route": "/blog/polarized-benefits"
+           "route": "/products"
         },
         {
           "id": 4,
           "title": "Unleash Your Fashion Statement With Chic Sunglasses For Women",
           "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
           "category": "SUNGLASSES",
-          "route": "/blog/chic-sunglasses"
+           "route": "/products"
         },
         {
           "id": 5,
           "title": "Frame/Sunglass Size Guide",
           "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0",
           "category": "SUNGLASSES",
-          "route": "/blog/frame-size-guide"
+           "route": "/products"
         },
         {
           "id": 6,
           "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
           "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
           "category": "EYEGLASSES",
-          "route": "/blog/face-shape-glasses"
+           "route": "/products"
         }
       ],
       "eyeglasses": [
@@ -636,7 +647,7 @@
           "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
           "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
           "category": "EYEGLASSES",
-          "route": "/blog/face-shape-glasses"
+           "route": "/products"
         }
       ],
       "titan": [
@@ -645,7 +656,7 @@
           "title": "Why Crizal Vision Care Is Leading The Eyewear Market",
           "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
           "category": "Crizal VISION",
-          "route": "/blog/Crizal-vision"
+           "route": "/products"
         }
       ],
       "contact": [
@@ -654,7 +665,7 @@
           "title": "A Beginner Guide To Contact Lenses",
           "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
           "category": "CONTACT LENSES",
-          "route": "/blog/contact-lens-guide"
+           "route": "/products"
         }
       ],
       "lenses": [
@@ -663,7 +674,7 @@
           "title": "Different Types Of Lenses And Their Uses",
           "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
           "category": "LENSES",
-          "route": "/blog/lens-types"
+           "route": "/products"
         }
       ]
     }
@@ -739,61 +750,61 @@
       "id": 1,
       "title": "Kids",
       "image": "/images/Collection/c1.png",
-      "url": "/eyeglasses/gender/kids"
+      "url": "/products"
     },
     {
       "id": 2,
       "title": "Youth",
       "image": "/images/Collection/c2.png",
-      "url": "/eyeglasses/brand/fastrack"
+      "url": "/products"
     },
     {
       "id": 3,
       "title": "Workwear",
       "image": "/images/Collection/c3.png",
-      "url": "/eyeglasses/workwear"
+      "url": "/products"
     },
     {
       "id": 4,
       "title": "Silvers",
       "image": "/images/Collection/c4.png",
-      "url": "/eyeglasses/silver"
+      "url": "/products"
     },
     {
       "id": 5,
       "title": "Platinum",
       "image": "/images/Collection/c5.png",
-      "url": "/eyeglasses/silver"
+      "url": "/products"
     },
     {
       "id": 6,
       "title": "Kids",
       "image": "/images/Collection/c6.png",
-      "url": "/eyeglasses/gender/kids"
+      "url": "/products"
     },
     {
       "id": 7,
       "title": "Youth",
       "image": "/images/Collection/c7.png",
-      "url": "/eyeglasses/brand/fastrack"
+      "url": "/products"
     },
     {
       "id": 8,
       "title": "Workwear",
       "image": "/images/Collection/c8.png",
-      "url": "/eyeglasses/workwear"
+      "url": "/products"
     },
     {
       "id": 9,
       "title": "Silvers",
       "image": "/images/Collection/c9.png",
-      "url": "/eyeglasses/silver"
+      "url": "/products"
     },
     {
       "id": 10,
       "title": "Platinum",
       "image": "/images/Collection/c10.png",
-      "url": "/eyeglasses/silver"
+      "url": "/products"
     }
   ]
 }
