@@ -397,3 +397,19 @@ height:140px;
 }
 
 }
+
+.statusDotClosed {
+  background: #ef4444;
+}
+
+.statusTextClosed {
+  color: #ef4444;
+}
+
+.popupStatusDotClosed {
+  background: #ef4444;
+}
+
+.popupStatusClosed {
+  color: #ef4444;
+}

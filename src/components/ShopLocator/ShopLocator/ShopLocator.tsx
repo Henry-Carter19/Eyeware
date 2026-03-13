@@ -87,7 +87,7 @@ export default function ShopLocator() {
 
   const { sendMessage } = useWhatsApp();
 
-// ...existing code...
+  // ...existing code...
   useEffect(() => {
     fetch("/data/shops.json")   // <- fix: match actual filename
       .then((res) => res.json())
@@ -100,7 +100,7 @@ export default function ShopLocator() {
       })
       .catch((err) => console.error("Failed to load shops:", err));
   }, []);
-// ...existing code...
+  // ...existing code...
 
   const selectedShop = useMemo(
     () => shops.find((x) => x.id === selectedShopId) ?? null,
@@ -146,6 +146,29 @@ Please confirm availability.`;
     sendMessage(phoneNumber, message);
   };
 
+  function getShopStatus(timing: string) {
+    const now = new Date();
+
+    const [start, end] = timing.split(" - ");
+
+    const parseTime = (timeStr: string) => {
+      const [time, modifier] = timeStr.split(" ");
+      let [hours, minutes] = time.split(":").map(Number);
+
+      if (modifier.toLowerCase() === "pm" && hours !== 12) hours += 12;
+      if (modifier.toLowerCase() === "am" && hours === 12) hours = 0;
+
+      const date = new Date();
+      date.setHours(hours, minutes, 0, 0);
+      return date;
+    };
+
+    const startTime = parseTime(start);
+    const endTime = parseTime(end);
+
+    return now >= startTime && now <= endTime ? "Open" : "Closed";
+  }
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.layout}>
@@ -153,13 +176,12 @@ Please confirm availability.`;
           <div className={styles.cardsGrid}>
             {shops.map((shop) => {
               const isActive = shop.id === selectedShopId;
-
+              const status = getShopStatus(shop.timing);
               return (
                 <article
                   key={shop.id}
-                  className={`${styles.card} ${
-                    isActive ? styles.cardActive : ""
-                  }`}
+                  className={`${styles.card} ${isActive ? styles.cardActive : ""
+                    }`}
                   onClick={() => setSelectedShopId(shop.id)}
                 >
                   <div className={styles.imageWrap}>
@@ -170,8 +192,14 @@ Please confirm availability.`;
                     />
 
                     <div className={styles.statusBadge}>
-                      <span className={styles.statusDot} />
-                      <span className={styles.statusText}>{shop.status}</span>
+                      <span
+                        className={`${styles.statusDot} ${status === "Closed" ? styles.statusDotClosed : ""
+                          }`} />
+                      <span
+                        className={`${styles.statusText} ${status === "Closed" ? styles.statusTextClosed : ""
+                          }`}>
+                        {status}
+                      </span>
                       <span className={styles.statusTime}>{shop.timing}</span>
                     </div>
                   </div>
@@ -251,76 +279,88 @@ Please confirm availability.`;
               <MapInit shops={shops} />
               <FocusMap shop={selectedShop} />
 
-              {shops.map((shop) => (
-                <Marker
-                  key={shop.id}
-                  position={[shop.lat, shop.lng]}
-                  icon={storeIcon}
-                  ref={(ref) => {
-                    markerRefs.current[shop.id] = ref;
-                  }}
-                  eventHandlers={{
-                    click: () => setSelectedShopId(shop.id),
-                  }}
-                >
-                  <Popup closeButton>
-                    <div className={styles.popupCard}>
-                      <div className={styles.popupHeader}>
-                        <img
-                          src={shop.imageUrl}
-                          alt={shop.name}
-                          className={styles.popupThumb}
-                        />
+              {shops.map((shop) => {
+                const status = getShopStatus(shop.timing);
 
-                        <div className={styles.popupHeaderInfo}>
-                          <div className={styles.popupStatusLine}>
-                            <span className={styles.popupStatusDot} />
-                            <span className={styles.popupStatusLabel}>
-                              {shop.status}
-                            </span>
-                            <span className={styles.popupTiming}>
-                              {shop.timing}
-                            </span>
+                return (
+                  <Marker
+                    key={shop.id}
+                    position={[shop.lat, shop.lng]}
+                    icon={storeIcon}
+                    ref={(ref) => {
+                      markerRefs.current[shop.id] = ref;
+                    }}
+                    eventHandlers={{
+                      click: () => setSelectedShopId(shop.id),
+                    }}
+                  >
+                    <Popup closeButton>
+                      <div className={styles.popupCard}>
+                        <div className={styles.popupHeader}>
+                          <img
+                            src={shop.imageUrl}
+                            alt={shop.name}
+                            className={styles.popupThumb}
+                          />
+
+                          <div className={styles.popupHeaderInfo}>
+                            <div className={styles.popupStatusLine}>
+                              <span
+                                className={`${styles.popupStatusDot} ${status === "Closed" ? styles.popupStatusDotClosed : ""
+                                  }`}
+                              />
+
+                              <span
+                                className={`${styles.popupStatusLabel} ${status === "Closed" ? styles.popupStatusClosed : ""
+                                  }`}
+                              >
+                                {status}
+                              </span>
+
+                              <span className={styles.popupTiming}>
+                                {shop.timing}
+                              </span>
+                            </div>
+
+                            <h4 className={styles.popupTitle}>{shop.name}</h4>
+                            <p className={styles.popupAddress}>{shop.address}</p>
                           </div>
+                        </div>
 
-                          <h4 className={styles.popupTitle}>{shop.name}</h4>
-                          <p className={styles.popupAddress}>{shop.address}</p>
+                        <div className={styles.popupButtons}>
+                          <a
+                            href={getDirectionHref(
+                              shop.directionUrl,
+                              shop.lat,
+                              shop.lng,
+                              shop.name
+                            )}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.popupSecondaryButton}
+                          >
+                            <span className={styles.directionIcon} />
+                            <div style={{ textAlign: "center", paddingTop: "8px" }}>
+                              Get Direction
+                            </div>
+                          </a>
+
+                          <button
+                            type="button"
+                            className={styles.popupPrimaryButton}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleAppointment(shop);
+                            }}
+                          >
+                            Book an Appointment
+                          </button>
                         </div>
                       </div>
-
-                      <div className={styles.popupButtons}>
-                        <a
-                          href={getDirectionHref(
-                            shop.directionUrl,
-                            shop.lat,
-                            shop.lng,
-                            shop.name,
-                          )}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={styles.popupSecondaryButton}
-                        >
-                          <span className={styles.directionIcon} />
-                          <div style={{ textAlign: "center", paddingTop: "8px" }}>
-                            Get Direction
-                          </div>
-                        </a>
-
-                        <button
-                          type="button"
-                          className={styles.popupPrimaryButton}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleAppointment(shop);
-                          }}
-                        >
-                          Book an Appointment
-                        </button>
-                      </div>
-                    </div>
-                  </Popup>
-                </Marker>
-              ))}
+                    </Popup>
+                  </Marker>
+                );
+              })}
             </MapContainer>
           </div>
         </aside>
