@@ -164,9 +164,9 @@
       "street": "Swami Vivekananda Netralay, Beside Parth Medical Store",
       "address": "Shrikrishna Nagar, Nagpur - 440024, Maharashtra",
       "lat": 21.1256055,
-    "lng": 79.1182495,
-    "phone": "+91 70666 02959",
-    "directionUrl": "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
+      "lng": 79.1182495,
+      "phone": "+91 70666 02959",
+      "directionUrl": "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
     },
     {
       "id": 3,
@@ -189,7 +189,7 @@
       "lng": 79.1182495,
       "phone": "+91 70666 02959",
       "directionUrl": "https://maps.app.goo.gl/KkYbvatvrDfEk28d8"
-    }    
+    }
   ],
   "newCurationsSection": {
     "title": "New",
@@ -382,45 +382,113 @@
       }
     ]
   },
- "trendingSection": {
+  "trendingSection": {
     "subtitle": "Trending Searches",
     "title": "Most",
     "highlight": "Loved",
     "filters": [
       {
+        "label": "Idor Sunglasses",
+        "key": "idor"
+      },
+      {
+        "label": "Fiction Sunglasses",
+        "key": "fiction"
+      },
+      {
         "label": "Balmain Sunglasses",
         "key": "balmain"
-      },
-      {
-        "label": "Ray-Ban Sunglasses",
-        "key": "rayban"
-      },
-      {
-        "label": "Gucci Sunglasses",
-        "key": "gucci"
-      },
-      {
-        "label": "Oakley Sunglasses",
-        "key": "oakley"
-      },
-      {
-        "label": "Rimless Eyeglasses",
-        "key": "rimless"
-      },
-      {
-        "label": "Polarised Sunglasses",
-        "key": "polarised"
-      },
-      {
-        "label": "Wayfarer Sunglasses",
-        "key": "wayfarer"
       }
     ],
     "cards": {
-        "balmain": [
+      "idor": [
         {
           "id": 1,
-          "image": "https://in.glassesstation.com/media/thumbs/920x575/media/product_images/Balmain-OFFICIER-BPS-108A-58-ANGLEfw920fh575.jpg",
+          "image": "../images/Idor/idor1.webp",
+          "brand": "IDOR",
+          "name": "IDOR Premium Metal + Acetate High Quality Polarized Sunglass for Men | IDOR-98037",
+          "size": "Medium",
+          "price": "1,249"
+        },
+        {
+          "id": 2,
+          "image": "../images/Idor/idor2.webp",
+          "brand": "IDOR",
+          "name": "IDOR Premium Metal High Quality Polarized Sunglass for Unisex | IDOR-33224",
+          "size": "Medium",
+          "price": "1,299"
+        },
+        {
+          "id": 3,
+          "image": "../images/Idor/idor3.webp",
+          "brand": "IDOR",
+          "name": "IDOR Premium Metal + Acetate High Quality Sunglass for Unisex | IDOR-9169",
+          "size": "Medium",
+          "price": "899"
+        },
+        {
+          "id": 4,
+          "image": "../images/Idor/idor4.webp",
+          "brand": "IDOR",
+          "name": "IDOR Premium Metal High Quality Sunglass for Unisex | IDOR-7905",
+          "size": "Medium",
+          "price": "999"
+        },
+        {
+          "id": 5,
+          "image": "../images/Idor/idor5.webp",
+          "brand": "IDOR",
+          "name": "IDOR Premium Metal High Quality Sunglass for Unisex | IDOR-7313",
+          "size": "Medium",
+          "price": "1100"
+        }
+      ],
+      "fiction": [
+        {
+          "id": 1,
+          "image": "../images/Fiction/fiction1.webp",
+          "brand": "FICTION",
+          "name": "Fiction Italy Design Matte Navy Blue Square Eyeglasses – Premium Handcrafted Men’s Optical Frames RB-1013",
+          "size": "Medium",
+          "price": "499"
+        },
+        {
+          "id": 2,
+          "image": "../images/Fiction/fiction2.webp",
+          "brand": "FICTION",
+          "name": "Black Fiction X Sportiff Acetate Sunglass For Men and Women",
+          "size": "Medium",
+          "price": "299"
+        },
+        {
+          "id": 3,
+          "image": "../images/Fiction/fiction3.webp",
+          "brand": "FICTION",
+          "name": "Fiction Round Full-Rim Eyeglasses",
+          "size": "Medium",
+          "price": "1,000"
+        },
+        {
+          "id": 4,
+          "image": "../images/Fiction/fiction4.webp",
+          "brand": "FICTION",
+          "name": "FICTION Eyeglasses Modern Plastics II Collection",
+          "size": "Medium",
+          "price": "699"
+        },
+        {
+          "id": 5,
+          "image": "../images/Fiction/fiction5.webp",
+          "brand": "FICTION",
+          "name": "Fiction Italy Design Matte Navy Blue Square Eyeglasses – Premium Handcrafted Men’s Optical Frames RB-1013",
+          "size": "Medium",
+          "price": "499"
+        }
+      ],
+      "balmain": [
+        {
+          "id": 1,
+          "image": "/images/TrendingSection/balmain1.png",
           "brand": "BALMAIN",
           "name": "BALMAIN OFFICIER Prescription Sunglasses",
           "size": "Large",
@@ -428,7 +496,7 @@
         },
         {
           "id": 2,
-          "image": "https://in.shadestation.com/media/thumbs/920x575/media/product_images/Balmain-Sunglasses-BPS-164Afw920fh575.jpg",
+          "image": "/images/TrendingSection/balmain2.png",
           "brand": "BALMAIN",
           "name": "BALMAIN ARMY Sunglasses",
           "size": "Large",
@@ -436,7 +504,7 @@
         },
         {
           "id": 3,
-          "image": "https://cdn.coolframes.com/get_image_zoom.php?fid=294873&color=BPS-124A",
+          "image": "/images/TrendingSection/balmain3.png",
           "brand": "BALMAIN",
           "name": "Balmain SOLDAT Unisex Sunglasses, Black - Gold w/ Dark Grey",
           "size": "Large",
@@ -444,7 +512,7 @@
         },
         {
           "id": 4,
-          "image": "https://dayalopticalsindia.com/cdn/shop/files/BALMAIN_WONDERBOY_LIMITEDEDITION__BPS102-M_146_3045_800x_de3c9266-f186-4ea2-90c9-36f6b6eed8ff.webp?v=1734592884",
+          "image": "/images/TrendingSection/balmain4.png",
           "brand": "BALMAIN",
           "name": "Boy Balmain BPS-102M-146 Sunglasses",
           "size": "Large",
@@ -452,171 +520,11 @@
         },
         {
           "id": 5,
-          "image": "https://www.vijayopticians.com/cdn/shop/products/145.png?v=1744380255&width=1200",
+          "image": "/images/TrendingSection/balmain6.png",
           "brand": "BALMAIN",
           "name": "BALMAIN BPS 102F SLV BNE 146 WONDER BOY",
           "size": "Large",
           "price": "116,000"
-        }
-      ],
-      "rayban": [
-        {
-          "id": 1,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-          "brand": "Rayban",
-          "name": "Green Wayfarer Sunglasses For Men",
-          "size": "Large",
-          "price": 8890,
-          "rating": 4.8,
-          "ratingCount": 16
-        },
-        {
-          "id": 2,
-          "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025i0025862_1_lar.jpg",
-          "brand": "Rayban",
-          "name": "Classic Aviator Sunglasses For Men",
-          "size": "Medium",
-          "price": 7990,
-          "rating": 4.7,
-          "ratingCount": 12
-        },
-        {
-          "id": 3,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/S/R/SRB4251I6018G56_3_lar.jpg",
-          "brand": "Rayban",
-          "name": "Black Aviator Sunglasses For Men",
-          "size": "Large",
-          "price": 9190,
-          "rating": 4.6,
-          "ratingCount": 10
-        },
-        {
-          "id": 4,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/S/R/SRB356592753353_1_lar.jpg",
-          "brand": "Rayban",
-          "name": "Polarised Classic Aviator Sunglasses",
-          "size": "Medium",
-          "price": 9490,
-          "rating": 4.8,
-          "ratingCount": 22
-        },
-        {
-          "id": 5,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/r/b/rb3432i00159_1_lar.jpg",
-          "brand": "Rayban",
-          "name": "Matte Black Wayfarer Sunglasses",
-          "size": "Medium",
-          "price": 8590,
-          "rating": 4.5,
-          "ratingCount": 9
-        },
-        {
-          "id": 6,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/r/b/rb3432i00159_1_lar.jpg",
-          "brand": "Rayban",
-          "name": "Classic Square Frame Sunglasses",
-          "size": "Large",
-          "price": 8990,
-          "rating": 4.7,
-          "ratingCount": 14
-        },
-        {
-          "id": 7,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/r/b/rb3025i0025862_1_lar.jpg",
-          "brand": "Rayban",
-          "name": "Premium Metal Frame Aviator Sunglasses",
-          "size": "Large",
-          "price": 9790,
-          "rating": 4.9,
-          "ratingCount": 31
-        }
-      ],
-      "gucci": [
-        {
-          "id": 3,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/S/G/SGG1946S00148_1_lar.jpg",
-          "brand": "Gucci",
-          "name": "Grey Pillow Sunglasses For Men",
-          "price": 10690
-        },
-        {
-          "id": 4,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/S/G/SGG1985S00154_1_lar.jpg",
-          "brand": "Gucci",
-          "name": "Luxury Square Frame Sunglasses",
-          "size": "Medium",
-          "price": 12490
-        }
-      ],
-      "oakley": [
-        {
-          "id": 5,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/o/k/ok9417941716_1_lar.jpg",
-          "brand": "Oakley",
-          "name": "Sport Sunglasses With UV Protection",
-          "price": 12790
-        },
-        {
-          "id": 6,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/s/o/sok407540751460_1_lar.jpg",
-          "brand": "Oakley",
-          "name": "Performance Outdoor Sunglasses",
-          "size": "Large",
-          "price": 13990
-        }
-      ],
-      "rimless": [
-        {
-          "id": 7,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/t/w/tw1086mrm1_1_lar.jpg",
-          "brand": "Rimless",
-          "name": "Rimless Lightweight Eyeglasses",
-          "size": "Medium",
-          "price": 2590
-        },
-        {
-          "id": 8,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/t/w/tw1084mrm1_1_lar.jpg",
-          "brand": "Rimless",
-          "name": "Minimal Rimless Office Eyeglasses",
-          "size": "Medium",
-          "price": 2890
-        }
-      ],
-      "polarised": [
-        {
-          "id": 9,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/M/8/M8038BL3PV_1_lar.jpg",
-          "brand": "Polarised",
-          "name": "Polarised Driving Sunglasses",
-          "price": 9590,
-          "rating": 4.6,
-          "ratingCount": 8
-        },
-        {
-          "id": 10,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/P/5/P519GR2PV_1_lar.jpg",
-          "brand": "Polarised",
-          "name": "Polarised Outdoor Sunglasses",
-          "size": "Large",
-          "price": 9990
-        }
-      ],
-      "wayfarer": [
-        {
-          "id": 11,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/P/5/P548GY1V_1_lar.jpg",
-          "brand": "Wayfarer",
-          "name": "Black Wayfarer Sunglasses",
-          "size": "Medium",
-          "price": 1890
-        },
-        {
-          "id": 12,
-          "image": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/P/5/P542BL1PV_1_lar.jpg",
-          "brand": "Wayfarer",
-          "name": "Classic Wayfarer Sunglasses",
-          "price": 2190
         }
       ]
     }
@@ -663,28 +571,28 @@
           "title": "Four Reasons Why Opting for Polarized Glasses is a Wise Choice",
           "image": "https://images.unsplash.com/photo-1516826957135-700dedea698c",
           "category": "SUNGLASSES",
-           "route": "/products"
+          "route": "/products"
         },
         {
           "id": 4,
           "title": "Unleash Your Fashion Statement With Chic Sunglasses For Women",
           "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
           "category": "SUNGLASSES",
-           "route": "/products"
+          "route": "/products"
         },
         {
           "id": 5,
           "title": "Frame/Sunglass Size Guide",
           "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0",
           "category": "SUNGLASSES",
-           "route": "/products"
+          "route": "/products"
         },
         {
           "id": 6,
           "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
           "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
           "category": "EYEGLASSES",
-           "route": "/products"
+          "route": "/products"
         }
       ],
       "eyeglasses": [
@@ -693,7 +601,7 @@
           "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
           "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
           "category": "EYEGLASSES",
-           "route": "/products"
+          "route": "/products"
         }
       ],
       "titan": [
@@ -702,7 +610,7 @@
           "title": "Why Crizal Vision Care Is Leading The Eyewear Market",
           "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
           "category": "Crizal VISION",
-           "route": "/products"
+          "route": "/products"
         }
       ],
       "contact": [
@@ -711,7 +619,7 @@
           "title": "A Beginner Guide To Contact Lenses",
           "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
           "category": "CONTACT LENSES",
-           "route": "/products"
+          "route": "/products"
         }
       ],
       "lenses": [
@@ -720,7 +628,7 @@
           "title": "Different Types Of Lenses And Their Uses",
           "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
           "category": "LENSES",
-           "route": "/products"
+          "route": "/products"
         }
       ]
     }
