@@ -1,44 +1,40 @@
-.footer {
+/* ================================= */
+/* MAIN FOOTER */
+/* ================================= */
+
+.ko-footer {
   background: #0f4b4b;
   padding: 50px 60px;
   color: white;
 }
 
-.footer-grid {
+.ko-footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 50px;
-  /*  ~~~ TO ENABLED MENUS IN FOOTER REMEMBER TO REMOVE THIS  */
+
+  /* REMOVE THIS IF YOU WANT MENU LINKS */
   display: none;
 }
 
-.footer-column h4 {
+.ko-footer-column h4 {
   font-size: 14px;
   margin-bottom: 20px;
   color: #a9dfe0;
   letter-spacing: 1px;
 }
 
-.footer-column ul {
+.ko-footer-column ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
+/* ================================= */
+/* FOOTER LINKS */
+/* ================================= */
 
-
-/* =============================== */
-/* Correct Left Alignment Animation */
-/* =============================== */
-
-.footer-link {
+.ko-footer-link {
   position: relative;
   margin-bottom: 14px;
   cursor: pointer;
@@ -47,8 +43,9 @@
   transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
-/* Dot (absolute, no layout space) */
-.hover-dot {
+/* Hover dot */
+
+.ko-footer-hover-dot {
   position: absolute;
   left: 0;
   top: 50%;
@@ -60,32 +57,34 @@
   transition: transform 0.3s ease;
 }
 
-/* Hover animation */
-.footer-link:hover {
+.ko-footer-link:hover {
   padding-left: 14px;
   color: #4dd0d0;
 }
 
-.footer-link:hover .hover-dot {
+.ko-footer-link:hover .ko-footer-hover-dot {
   transform: translateY(-50%) scale(1);
 }
 
-
-
 /* ================================= */
-/* Footer Bottom Section */
+/* DIVIDER */
 /* ================================= */
 
-.footer-divider {
+.ko-footer-divider {
   width: 100%;
   height: 1px;
   background: rgba(255, 255, 255, 0.15);
   margin: 70px 0 50px;
-  /*  ~~~ TO ENABLED DIVIDER REMEBER TO REMOVE THIS  */
+
+  /* REMOVE THIS TO SHOW DIVIDER */
   display: none;
 }
 
-.footer-bottom {
+/* ================================= */
+/* FOOTER BOTTOM */
+/* ================================= */
+
+.ko-footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -94,246 +93,71 @@
 }
 
 /* LEFT SIDE */
-.footer-bottom-left {
+
+.ko-footer-bottom-left {
   max-width: 450px;
 }
 
-.footer-logo {
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-
-.footer-logo span {
-  color: #4dd0d0;
-}
-
-.footer-contact {
-  display: flex;
-  gap: 30px;
-  font-size: 14px;
-  margin-bottom: 15px;
-  opacity: 0.9;
-}
-
-.footer-copy {
-  font-size: 13px;
-  opacity: 0.7;
-}
-
-/* RIGHT SIDE */
-.footer-bottom-right {
-  display: flex;
-  gap: 70px;
-  align-items: flex-start;
-}
-
-/* App Section */
-.app-section p,
-.social-section p {
-  font-size: 14px;
-  margin-bottom: 15px;
-  opacity: 0.9;
-}
-
-.app-buttons {
-  display: flex;
-  gap: 20px;
-}
-
-.store-btn {
-  background: rgba(255, 255, 255, 0.08);
-  border: none;
-  padding: 14px 22px;
-  border-radius: 14px;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.store-btn:hover {
-  background: rgba(255, 255, 255, 0.18);
-}
-
-/* Social */
-.social-icons {
-  display: flex;
-  gap: 18px;
-}
-
-.social-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.social-icon:hover {
-  background: #4dd0d0;
-  color: #0f4b4b;
-}
-
-/* ================================= */
-/* Tablet (≤1024px) */
-/* ================================= */
-
-@media (max-width: 1024px) {
-
-  .footer {
-    padding: 40px 40px;
-  }
-
-  .footer-grid {
-    gap: 40px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .footer-bottom-right {
-    gap: 50px;
-  }
-
-}
-
-
-/* ================================= */
-/* Mobile (≤768px) */
-/* ================================= */
-
-@media (max-width: 768px) {
-
-  .footer {
-    padding: 35px 25px;
-  }
-
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-  }
-
-  .footer-column h4 {
-    font-size: 13px;
-  }
-
-  .footer-link {
-    font-size: 13px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 35px;
-  }
-
-  .footer-bottom-left {
-    max-width: 100%;
-  }
-
-  .footer-contact {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .footer-bottom-right {
-    width: 100%;
-    justify-content: space-between;
-    gap: 30px;
-  }
-
-}
-
-
-/* ================================= */
-/* Small Mobile (≤480px) */
-/* ================================= */
-
-@media (max-width: 480px) {
-
-  .footer {
-    padding: 30px 18px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .footer-logo {
-    font-size: 26px;
-  }
-
-  .footer-contact {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .footer-bottom-right {
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .app-buttons {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .store-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .social-icons {
-    gap: 12px;
-  }
-
-  .social-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-}
-
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.footer-contact-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: white;
-  font-size: 14px;
-}
-
-.footer-contact-item .footer-icon {
-  color: white;
-  font-size: 16px;
-}
-
-.footer-logo-img {
+.ko-footer-logo-img {
   height: 50px;
   margin-bottom: 12px;
   filter: brightness(0) invert(1);
 }
 
-.social-icons {
+.ko-footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ko-footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+.ko-footer-contact-item .ko-footer-icon {
+  color: white;
+  font-size: 16px;
+}
+
+.ko-footer-copy {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 12px;
+}
+
+/* RIGHT SIDE */
+
+.ko-footer-bottom-right {
+  display: flex;
+  gap: 70px;
+  align-items: flex-start;
+}
+
+/* STORE HOURS */
+
+.ko-store-hours p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* SOCIAL */
+
+.ko-social-section p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.ko-social-icons {
   display: flex;
   gap: 12px;
 }
 
-.social-icon {
+.ko-social-icon {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -347,6 +171,113 @@
   transition: 0.3s;
 }
 
-.social-icon:hover {
+.ko-social-icon:hover {
   background: #00bcd4;
+}
+
+/* ================================= */
+/* TABLET (≤1024px) */
+/* ================================= */
+
+@media (max-width: 1024px) {
+
+  .ko-footer {
+    padding: 40px 40px;
+  }
+
+  .ko-footer-grid {
+    gap: 40px;
+  }
+
+  .ko-footer-bottom {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .ko-footer-bottom-right {
+    gap: 50px;
+  }
+
+}
+
+/* ================================= */
+/* MOBILE (≤768px) */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+  .ko-footer {
+    padding: 35px 25px;
+  }
+
+  .ko-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+
+  .ko-footer-column h4 {
+    font-size: 13px;
+  }
+
+  .ko-footer-link {
+    font-size: 13px;
+  }
+
+  .ko-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  .ko-footer-bottom-left {
+    max-width: 100%;
+  }
+
+  .ko-footer-contact {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .ko-footer-bottom-right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+}
+
+/* ================================= */
+/* SMALL MOBILE (≤480px) */
+/* ================================= */
+
+@media (max-width: 480px) {
+
+  .ko-footer {
+    padding: 30px 18px;
+  }
+
+  .ko-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .ko-footer-contact {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ko-footer-bottom-right {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .ko-social-icons {
+    gap: 12px;
+  }
+
+  .ko-social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
 }
