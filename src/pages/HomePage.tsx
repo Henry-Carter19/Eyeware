@@ -12,13 +12,12 @@ import TrendingCarousel from "../components/ui/TrendingCarousel/TrendingCarousel
 import TestimonialsCarousel from "../components/ui/TestimonialsCarousel/TestimonialsCarousel";
 import BlogCarousel from "../components/ui/BlogCarousel/BlogCarousel";
 import GoToTop from "../components/ui/GoToTop/GoToTop";
-
 import ShopCollections from "../components/ui/ShopCollections/ShopCollections";
 import StoresCarousel from "../components/ui/StoresCarousel/StoresCarousel";
 
 const HomePage = () => {
 
-   const [data, setData] = useState<HomePageData | null>(null);
+  const [data, setData] = useState<HomePageData | null>(null);
 
   useEffect(() => {
     const base = process.env.PUBLIC_URL || "";
@@ -35,12 +34,11 @@ const HomePage = () => {
     <div>
       <HeroCarousel banners={data.heroBanners} />
       <StoresCarousel stroreData={data.storeData} />
-  
-      <BrandsCarousel brands={data.brands} />
-      <NewCurations sectionConfig={data.newCurationsSection} />
       <FindStoreSection />
-      <HypeSection hypeData={data.hypeCards} />
       <NewCurations sectionConfig={data.exclusiveDealsSection} />
+      <NewCurations sectionConfig={data.newCurationsSection} />
+      <BrandsCarousel brands={data.brands} />
+      <HypeSection hypeData={data.hypeCards} />
       <FeaturedCollectionsOnlyFocus />
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <TrendingCarousel trendingSection={data.trendingSection} />
@@ -49,20 +47,6 @@ const HomePage = () => {
       <ShopCollections shopCollection={data.collections} />
       <FaqSection faqData={data.faq} />
       <GoToTop />
-
-
-      {/* <ProductCarousel
-        title={data.bestsellersSection.title}
-        highlight={data.bestsellersSection.highlight}
-        cards={data.bestsellersSection.cards}
-      />
-      <ProductCarousel
-        subtitle="Trending Searches"
-        title="Most"
-        highlight="Loved"
-        filters={data.trendingSection.filters}
-        filteredCards={data.trendingSection.cards}
-      /> */}
     </div>
   );
 };

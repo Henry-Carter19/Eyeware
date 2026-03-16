@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Eye, MapPin, Headphones, Menu, ChevronDown, Instagram } from "lucide-react";
 import "./Header.css";
+import { Shop } from "../../ShopLocator/ShopLocator/types.shop";
+import { useWhatsApp } from "../../../utils/whatsapp";
 
 interface MenuItem {
   label: string;
@@ -17,11 +19,14 @@ interface MenuSection {
 
 interface MenuData {
   menuSunGlassesData: MenuSection[];
+  shops: any;
 }
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
   const [menuData, setMenuData] = useState<MenuData | null>(null);
+
+   const { sendMessage } = useWhatsApp();
 
   const message = encodeURIComponent(
     `Hello Sir/Madam,
@@ -45,6 +50,27 @@ Thank you.`
 
     loadMenu();
   }, []);
+
+    const handleAppointment = (shop: Shop) => {
+      const phoneNumber = "917066602959"; 
+  
+      const message = `Hello Kubade OptiCare,
+  
+  I would like to book an appointment.
+  
+  Store: ${shop.name}
+  Address: ${shop.address}
+  
+  Preferred Date:
+  Preferred Time:
+  
+  Location:
+  ${shop.directionUrl}
+  
+  Please confirm availability.`;
+  
+      sendMessage(phoneNumber, message);
+    };
 
   return (
     <>
@@ -126,7 +152,7 @@ Thank you.`
 
           {/* STORE BUTTON */}
           <div className="mobile-store-section">
-            <a href="/stores" className="store-btn">
+            <a href="/stores" className="store-btn-navbar" rel="noopener noreferrer">
               Stores
             </a>
           </div>
@@ -150,7 +176,7 @@ Thank you.`
             </a>
 
             <a
-              href={`https://wa.me/918381001406?text=${message}`}
+              href={`https://wa.me/917066602959?text=${message}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -161,8 +187,8 @@ Thank you.`
           {/* PHONE NUMBER */}
           <div className="mobile-phone">
             {" "}
-            <a href="tel:+918381001406" className="mobile-phone">
-              +91 83810 01406
+            <a href="tel:+917066602959" className="mobile-phone">
+              +91 70666 02959
             </a>
           </div>
         </div>
@@ -197,11 +223,11 @@ Thank you.`
               <div className="top-links d-none d-md-flex align-items-center gap-3">
                 <div className="dropdown hover-dropdown">
                   <span className="d-flex align-items-center gap-1">
-                    <Eye size={14} /> Eye Testing <ChevronDown />
+                    <Eye size={14} /> Offers <ChevronDown />
                   </span>
 
                   <ul className="dropdown-menu">
-                    <li>
+                    {/* <li>
                       <a className="dropdown-item" rel="noopener noreferrer" href="#">
                         Digital Eye Strain Test
                       </a>
@@ -215,9 +241,10 @@ Thank you.`
                       <a className="dropdown-item" rel="noopener noreferrer" href="#">
                         Instore Free Eye Test
                       </a>
-                    </li>
+                    </li> */}
                     <li>
-                      <a className="dropdown-item" rel="noopener noreferrer" href="#">
+                      <a className="dropdown-item" 
+                      onClick={()=>handleAppointment(menuData?.shops)}>
                         Book Appointment
                       </a>
                     </li>
@@ -254,19 +281,11 @@ Thank you.`
 
                 <ul className="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a className="dropdown-item">Eye Testing</a>
+                    <a className="dropdown-item"  onClick={()=>handleAppointment(menuData?.shops)} >
+                      Book Appointment</a>
                   </li>
                   <li>
-                    <a className="dropdown-item">Hearing Test</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item">Sign In</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item">Track Order</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item">Find Store</a>
+                    <a className="dropdown-item"  href="/stores">Find Store</a>
                   </li>
                 </ul>
               </div>
@@ -323,7 +342,7 @@ Thank you.`
           {/* RIGHT SIDE SOCIAL + PHONE */}
           <div className="ms-auto d-flex align-items-center gap-4">
             {/* STORES BUTTON */}
-            <a href="/stores" className="store-btn">
+            <a href="/stores" className="store-btn-navbar" rel="noopener noreferrer">
               Stores
             </a>
 
@@ -345,7 +364,7 @@ Thank you.`
             </a>
 
             <a
-              href={`https://wa.me/918381001406?text=${message}`}
+              href={`https://wa.me/917066602959?text=${message}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -353,8 +372,8 @@ Thank you.`
             </a>
 
             {/* Phone Number (Clickable) */}
-            <a href="tel:+918381001406" className="phone-call" rel="noopener noreferrer">
-              +91 83810 01406
+            <a href="tel:+917066602959" className="phone-call" rel="noopener noreferrer">
+              +91 70666 02959
             </a>
           </div>
         </div>
