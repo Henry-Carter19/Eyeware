@@ -13,7 +13,7 @@ import { StoreItem } from "../../../types/home.types";
 import { getDirectionHref } from "../../ShopLocator/ShopLocator/mapLinks";
 
 interface Props {
-  stroreData: StoreItem[]; 
+  stroreData: StoreItem[];
 }
 
 const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
@@ -30,9 +30,9 @@ const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
   }, []);
 
   const handleAppointment = (shop: StoreItem) => {
-      const phoneNumber = "917066602959"; // Kubade OptiCare's WhatsApp number
-  
-      const message = `Hello Kubade OptiCare,
+    const phoneNumber = "917066602959"; // Kubade OptiCare's WhatsApp number
+
+    const message = `Hello Kubade OptiCare,
   
       I would like to book an appointment.
   
@@ -46,20 +46,19 @@ const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
       ${shop.directionUrl}
   
       Please confirm availability.`;
-  
-      sendMessage(phoneNumber, message);
-    };
 
-  const showNavigation = !(isDesktop && stroreData.length <= 3);
+    sendMessage(phoneNumber, message);
+  };
+
+  const showNavigation = !(isDesktop && stroreData.length <= 4);
 
   return (
     <section className="storesCarousel-section common-section-padding">
       <h2 className="storesCarousel-title">Stores</h2>
-
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        slidesPerView={3}
-        spaceBetween={30}
+        slidesPerView={4}
+        spaceBetween={20}
         loop
         speed={1000}
         autoplay={{
@@ -69,9 +68,9 @@ const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
         navigation={
           showNavigation
             ? {
-                nextEl: ".storesCarousel-next",
-                prevEl: ".storesCarousel-prev",
-              }
+              nextEl: ".storesCarousel-next",
+              prevEl: ".storesCarousel-prev",
+            }
             : false
         }
         pagination={{
@@ -79,9 +78,10 @@ const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
           clickable: true,
         }}
         breakpoints={{
-          0: { slidesPerView: 1, spaceBetween: 16 },
-          640: { slidesPerView: 2, spaceBetween: 20 },
-          1024: { slidesPerView: 3, spaceBetween: 30 },
+          0: { slidesPerView: 1, spaceBetween: 12 },
+          640: { slidesPerView: 2, spaceBetween: 16 },
+          900: { slidesPerView: 3, spaceBetween: 18 },
+          1200: { slidesPerView: 4, spaceBetween: 20 }, // laptop
         }}
       >
         {stroreData?.map((shop) => (
@@ -96,9 +96,9 @@ const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
               <div className="storesCarousel-buttonRow">
                 <a
                   href={getDirectionHref(shop.directionUrl,
-                          shop.lat,
-                          shop.lng,
-                          shop.name,)}
+                    shop.lat,
+                    shop.lng,
+                    shop.name,)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="storesCarousel-secondaryButton"
