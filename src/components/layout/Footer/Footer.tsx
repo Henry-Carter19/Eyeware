@@ -64,14 +64,14 @@ const footerData: FooterSection[] = [
 
 const Footer: React.FC = () => {
   const navigate = useNavigate();
-const message = encodeURIComponent(
-`Hello Sir/Madam,
+  const message = encodeURIComponent(
+    `Hello Sir/Madam,
 
 I would like to know more about your products and services at Kubade OptiCare. 
 Please assist me with the details.
 
 Thank you.`
-);
+  );
   return (
     <footer className="footer">
       <div className="footer-grid">
@@ -123,6 +123,10 @@ Thank you.`
               <MapPin className="footer-icon" size={18} />
               Matruseva Sangh Hospital, Kothi Road, Mahal, Nagpur - 440032
             </span>
+            <span className="footer-contact-item">
+              <MapPin className="footer-icon" size={18} />
+              Vayusena Nagar Dabha, Shop No. 02 Arya Avani Complex, Airforce Civilian Society ,Vayusena Nagar Dabha, Nagpur - 440023
+            </span>
 
             <span className="footer-contact-item">
               <Phone className="footer-icon" size={18} />
@@ -155,10 +159,10 @@ Thank you.`
                 <Facebook size={20} />
               </a>
 
-              <a  target="_blank"
-                  href={`https://wa.me/917066602959?text=${message}`}
-                  className="social-icon"
-                  rel="noopener noreferrer" 
+              <a target="_blank"
+                href={`https://wa.me/917066602959?text=${message}`}
+                className="social-icon"
+                rel="noopener noreferrer"
               >
                 <MessageCircle size={20} />
               </a>

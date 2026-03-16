@@ -703,7 +703,7 @@
     {
       "id": 1,
       "title": "Kids",
-      "image": "/images/Collection/c1.png",
+      "image": "/images/Collection/kids.png",
       "url": "/products"
     },
     {
@@ -728,36 +728,6 @@
       "id": 5,
       "title": "Platinum",
       "image": "/images/Collection/c5.png",
-      "url": "/products"
-    },
-    {
-      "id": 6,
-      "title": "Kids",
-      "image": "/images/Collection/c6.png",
-      "url": "/products"
-    },
-    {
-      "id": 7,
-      "title": "Youth",
-      "image": "/images/Collection/c7.png",
-      "url": "/products"
-    },
-    {
-      "id": 8,
-      "title": "Workwear",
-      "image": "/images/Collection/c8.png",
-      "url": "/products"
-    },
-    {
-      "id": 9,
-      "title": "Silvers",
-      "image": "/images/Collection/c9.png",
-      "url": "/products"
-    },
-    {
-      "id": 10,
-      "title": "Platinum",
-      "image": "/images/Collection/c10.png",
       "url": "/products"
     }
   ]
