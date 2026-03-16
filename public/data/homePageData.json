@@ -404,7 +404,7 @@
       "idor": [
         {
           "id": 1,
-          "image": "../images/Idor/idor1.webp",
+          "image": "../images/Idor/idor1.png",
           "brand": "IDOR",
           "name": "IDOR Premium Metal + Acetate High Quality Polarized Sunglass for Men | IDOR-98037",
           "size": "Medium",
@@ -412,7 +412,7 @@
         },
         {
           "id": 2,
-          "image": "../images/Idor/idor2.webp",
+          "image": "../images/Idor/idor2.png",
           "brand": "IDOR",
           "name": "IDOR Premium Metal High Quality Polarized Sunglass for Unisex | IDOR-33224",
           "size": "Medium",
@@ -420,7 +420,7 @@
         },
         {
           "id": 3,
-          "image": "../images/Idor/idor3.webp",
+          "image": "../images/Idor/idor3.png",
           "brand": "IDOR",
           "name": "IDOR Premium Metal + Acetate High Quality Sunglass for Unisex | IDOR-9169",
           "size": "Medium",
@@ -428,7 +428,7 @@
         },
         {
           "id": 4,
-          "image": "../images/Idor/idor4.webp",
+          "image": "../images/Idor/idor4.png",
           "brand": "IDOR",
           "name": "IDOR Premium Metal High Quality Sunglass for Unisex | IDOR-7905",
           "size": "Medium",
@@ -436,7 +436,7 @@
         },
         {
           "id": 5,
-          "image": "../images/Idor/idor5.webp",
+          "image": "../images/Idor/idor5.png",
           "brand": "IDOR",
           "name": "IDOR Premium Metal High Quality Sunglass for Unisex | IDOR-7313",
           "size": "Medium",
@@ -446,7 +446,7 @@
       "fiction": [
         {
           "id": 1,
-          "image": "../images/Fiction/fiction1.webp",
+          "image": "../images/Fiction/fiction1.png",
           "brand": "FICTION",
           "name": "Fiction Italy Design Matte Navy Blue Square Eyeglasses – Premium Handcrafted Men’s Optical Frames RB-1013",
           "size": "Medium",
@@ -454,7 +454,7 @@
         },
         {
           "id": 2,
-          "image": "../images/Fiction/fiction2.webp",
+          "image": "../images/Fiction/fiction2.png",
           "brand": "FICTION",
           "name": "Black Fiction X Sportiff Acetate Sunglass For Men and Women",
           "size": "Medium",
@@ -462,7 +462,7 @@
         },
         {
           "id": 3,
-          "image": "../images/Fiction/fiction3.webp",
+          "image": "../images/Fiction/fiction3.png",
           "brand": "FICTION",
           "name": "Fiction Round Full-Rim Eyeglasses",
           "size": "Medium",
@@ -470,7 +470,7 @@
         },
         {
           "id": 4,
-          "image": "../images/Fiction/fiction4.webp",
+          "image": "../images/Fiction/fiction4.png",
           "brand": "FICTION",
           "name": "FICTION Eyeglasses Modern Plastics II Collection",
           "size": "Medium",
@@ -478,7 +478,7 @@
         },
         {
           "id": 5,
-          "image": "../images/Fiction/fiction5.webp",
+          "image": "../images/Fiction/fiction5.png",
           "brand": "FICTION",
           "name": "Fiction Italy Design Matte Navy Blue Square Eyeglasses – Premium Handcrafted Men’s Optical Frames RB-1013",
           "size": "Medium",
@@ -703,7 +703,7 @@
     {
       "id": 1,
       "title": "Kids",
-      "image": "/images/Collection/c1.png",
+      "image": "/images/Collection/kids.png",
       "url": "/products"
     },
     {
@@ -728,36 +728,6 @@
       "id": 5,
       "title": "Platinum",
       "image": "/images/Collection/c5.png",
-      "url": "/products"
-    },
-    {
-      "id": 6,
-      "title": "Kids",
-      "image": "/images/Collection/c6.png",
-      "url": "/products"
-    },
-    {
-      "id": 7,
-      "title": "Youth",
-      "image": "/images/Collection/c7.png",
-      "url": "/products"
-    },
-    {
-      "id": 8,
-      "title": "Workwear",
-      "image": "/images/Collection/c8.png",
-      "url": "/products"
-    },
-    {
-      "id": 9,
-      "title": "Silvers",
-      "image": "/images/Collection/c9.png",
-      "url": "/products"
-    },
-    {
-      "id": 10,
-      "title": "Platinum",
-      "image": "/images/Collection/c10.png",
       "url": "/products"
     }
   ]
