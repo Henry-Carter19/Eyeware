@@ -156,9 +156,9 @@ Thank you.`
               </a>
 
               <a  target="_blank"
-                  href={`https://wa.me/918381001406?text=${message}`}
+                  href={`https://wa.me/917066602959?text=${message}`}
                   className="social-icon"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer" 
               >
                 <MessageCircle size={20} />
               </a>

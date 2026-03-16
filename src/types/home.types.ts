@@ -118,8 +118,10 @@ export interface StoreItem {
   area: string;
   street: string;
   address: string;
-  lat?: number;
-  lng?: number;
+  lat: number;
+  lng: number;
+  directionUrl: string;
+  phone: string;
 }
 
 export interface HomePageData {
