@@ -388,6 +388,10 @@
     "highlight": "Loved",
     "filters": [
       {
+        "label": "Balmain Sunglasses",
+        "key": "balmain"
+      },
+      {
         "label": "Ray-Ban Sunglasses",
         "key": "rayban"
       },
@@ -413,6 +417,48 @@
       }
     ],
     "cards": {
+        "balmain": [
+        {
+          "id": 1,
+          "image": "https://in.glassesstation.com/media/thumbs/920x575/media/product_images/Balmain-OFFICIER-BPS-108A-58-ANGLEfw920fh575.jpg",
+          "brand": "BALMAIN",
+          "name": "BALMAIN OFFICIER Prescription Sunglasses",
+          "size": "Large",
+          "price": "67,103"
+        },
+        {
+          "id": 2,
+          "image": "https://in.shadestation.com/media/thumbs/920x575/media/product_images/Balmain-Sunglasses-BPS-164Afw920fh575.jpg",
+          "brand": "BALMAIN",
+          "name": "BALMAIN ARMY Sunglasses",
+          "size": "Large",
+          "price": "51,935"
+        },
+        {
+          "id": 3,
+          "image": "https://cdn.coolframes.com/get_image_zoom.php?fid=294873&color=BPS-124A",
+          "brand": "BALMAIN",
+          "name": "Balmain SOLDAT Unisex Sunglasses, Black - Gold w/ Dark Grey",
+          "size": "Large",
+          "price": "61,892"
+        },
+        {
+          "id": 4,
+          "image": "https://dayalopticalsindia.com/cdn/shop/files/BALMAIN_WONDERBOY_LIMITEDEDITION__BPS102-M_146_3045_800x_de3c9266-f186-4ea2-90c9-36f6b6eed8ff.webp?v=1734592884",
+          "brand": "BALMAIN",
+          "name": "Boy Balmain BPS-102M-146 Sunglasses",
+          "size": "Large",
+          "price": "1,44,650"
+        },
+        {
+          "id": 5,
+          "image": "https://www.vijayopticians.com/cdn/shop/products/145.png?v=1744380255&width=1200",
+          "brand": "BALMAIN",
+          "name": "BALMAIN BPS 102F SLV BNE 146 WONDER BOY",
+          "size": "Large",
+          "price": "116,000"
+        }
+      ],
       "rayban": [
         {
           "id": 1,
