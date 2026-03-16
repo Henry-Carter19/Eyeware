@@ -164,9 +164,9 @@
       "street": "Swami Vivekananda Netralay, Beside Parth Medical Store",
       "address": "Shrikrishna Nagar, Nagpur - 440024, Maharashtra",
       "lat": 21.1256055,
-    "lng": 79.1182495,
-    "phone": "+91 70666 02959",
-    "directionUrl": "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
+      "lng": 79.1182495,
+      "phone": "+91 70666 02959",
+      "directionUrl": "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
     },
     {
       "id": 3,
@@ -189,7 +189,7 @@
       "lng": 79.1182495,
       "phone": "+91 70666 02959",
       "directionUrl": "https://maps.app.goo.gl/KkYbvatvrDfEk28d8"
-    }    
+    }
   ],
   "newCurationsSection": {
     "title": "New",
@@ -382,7 +382,7 @@
       }
     ]
   },
- "trendingSection": {
+  "trendingSection": {
     "subtitle": "Trending Searches",
     "title": "Most",
     "highlight": "Loved",
@@ -417,7 +417,7 @@
       }
     ],
     "cards": {
-        "balmain": [
+      "balmain": [
         {
           "id": 1,
           "image": "https://in.glassesstation.com/media/thumbs/920x575/media/product_images/Balmain-OFFICIER-BPS-108A-58-ANGLEfw920fh575.jpg",
@@ -663,28 +663,28 @@
           "title": "Four Reasons Why Opting for Polarized Glasses is a Wise Choice",
           "image": "https://images.unsplash.com/photo-1516826957135-700dedea698c",
           "category": "SUNGLASSES",
-           "route": "/products"
+          "route": "/products"
         },
         {
           "id": 4,
           "title": "Unleash Your Fashion Statement With Chic Sunglasses For Women",
           "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
           "category": "SUNGLASSES",
-           "route": "/products"
+          "route": "/products"
         },
         {
           "id": 5,
           "title": "Frame/Sunglass Size Guide",
           "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0",
           "category": "SUNGLASSES",
-           "route": "/products"
+          "route": "/products"
         },
         {
           "id": 6,
           "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
           "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
           "category": "EYEGLASSES",
-           "route": "/products"
+          "route": "/products"
         }
       ],
       "eyeglasses": [
@@ -693,7 +693,7 @@
           "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
           "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
           "category": "EYEGLASSES",
-           "route": "/products"
+          "route": "/products"
         }
       ],
       "titan": [
@@ -702,7 +702,7 @@
           "title": "Why Crizal Vision Care Is Leading The Eyewear Market",
           "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
           "category": "Crizal VISION",
-           "route": "/products"
+          "route": "/products"
         }
       ],
       "contact": [
@@ -711,7 +711,7 @@
           "title": "A Beginner Guide To Contact Lenses",
           "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
           "category": "CONTACT LENSES",
-           "route": "/products"
+          "route": "/products"
         }
       ],
       "lenses": [
@@ -720,7 +720,7 @@
           "title": "Different Types Of Lenses And Their Uses",
           "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
           "category": "LENSES",
-           "route": "/products"
+          "route": "/products"
         }
       ]
     }
@@ -795,7 +795,7 @@
     {
       "id": 1,
       "title": "Kids",
-      "image": "/images/Collection/c1.png",
+      "image": "/images/Collection/kids.png",
       "url": "/products"
     },
     {
@@ -820,36 +820,6 @@
       "id": 5,
       "title": "Platinum",
       "image": "/images/Collection/c5.png",
-      "url": "/products"
-    },
-    {
-      "id": 6,
-      "title": "Kids",
-      "image": "/images/Collection/c6.png",
-      "url": "/products"
-    },
-    {
-      "id": 7,
-      "title": "Youth",
-      "image": "/images/Collection/c7.png",
-      "url": "/products"
-    },
-    {
-      "id": 8,
-      "title": "Workwear",
-      "image": "/images/Collection/c8.png",
-      "url": "/products"
-    },
-    {
-      "id": 9,
-      "title": "Silvers",
-      "image": "/images/Collection/c9.png",
-      "url": "/products"
-    },
-    {
-      "id": 10,
-      "title": "Platinum",
-      "image": "/images/Collection/c10.png",
       "url": "/products"
     }
   ]
