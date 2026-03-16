@@ -107,7 +107,7 @@ Thank you.`
           />
 
           {/* Contact */}
-          <div className="footer-contact">
+          <div className="footer-contact"> 
 
             <span className="footer-contact-item">
               <MapPin className="footer-icon" size={18} />

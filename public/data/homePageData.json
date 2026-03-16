@@ -321,63 +321,87 @@
     "highlight": "Bestsellers",
     "cards": [
       {
-        "id": 1,
-        "badge": "Bestseller",
-        "image": "https://api.titaneyeplus.com/media/catalog/product/t/s/tsr0028wfc4mbkv_1_lar.jpg",
-        "brand": "Tees By Fastrack",
-        "name": "Crystal Wayfarer Eyeglasses For Men And Women",
-        "size": "Medium",
-        "price": 420,
-        "oldPrice": 1050,
-        "discount": "60% Off",
-        "rating": null
-      },
-      {
-        "id": 2,
-        "badge": "New",
-        "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
-        "brand": "Ace by Crizal",
-        "name": "Black CatEye Eyeglasses For Women",
-        "size": "Medium",
-        "price": 1100,
-        "rating": null
-      },
-      {
         "id": 3,
-        "badge": "New",
-        "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025il020558_1_lar.jpg",
-        "brand": "Fastrack",
-        "name": "Black Wayfarer Eyeglasses For Men",
-        "price": 800,
+        "badge": "Trending",
+        "image": "../images/Fiction/fiction3.png",
+        "brand": "FICTION",
+        "name": "Fiction Round Full-Rim Eyeglasses",
+        "size": "Medium",
+        "price": 1000,
+        "oldPrice": 1899,
+       "discount": "",
         "rating": null
       },
       {
         "id": 4,
-        "image": "https://api.titaneyeplus.com/media/catalog/product/M/2/M281BR4V_1_lar.jpg",
-        "brand": "Fastrack",
-        "name": "Green Wayfarer Sunglasses For Men",
-        "size": "Medium",
-        "price": 950,
-        "rating": 4.8,
-        "ratingCount": 16
+        "badge": "Premium",
+        "image": "/images/TrendingSection/balmain1.png",
+        "brand": "BALMAIN",
+        "name": "BALMAIN OFFICIER Prescription Sunglasses",
+        "size": "Large",
+        "price": 67103,
+        "oldPrice": 82000,
+        "discount": "",
+        "rating": null
       },
       {
         "id": 5,
-        "badge": "New",
-        "image": "https://api.titaneyeplus.com/media/catalog/product/p/3/p358bk2_3_lar.jpg",
-        "brand": "Ace by Crizal",
-        "name": "Black CatEye Eyeglasses For Women",
-        "size": "Medium",
-        "price": 1100,
+        "badge": "Luxury",
+        "image": "/images/TrendingSection/balmain4.png",
+        "brand": "BALMAIN",
+        "name": "Boy Balmain BPS-102M-146 Sunglasses",
+        "size": "Large",
+        "price": 144650,
+        "oldPrice": 170000,
+        "discount": "",
         "rating": null
       },
       {
         "id": 6,
-        "badge": "New",
-        "image": "https://api.titaneyeplus.com/media/catalog/product/r/b/rb3025il020558_1_lar.jpg",
-        "brand": "Fastrack",
-        "name": "Black Wayfarer Eyeglasses For Men",
-        "price": 800,
+        "badge": "Popular",
+        "image": "../images/scavin/ScavinUnisexGreyLensAviatorSunglasses.webp",
+        "brand": "SCAVIN",
+        "name": "Unisex Grey Lens & Black Aviator Sunglasses",
+        "size": "All",
+        "price": 3499,
+        "oldPrice": 4999,
+        "discount": "",
+        "rating": null
+      },
+      {
+        "id": 7,
+        "badge": "Hot",
+        "image": "../images/scavin/ScavinUnisexGreyLensGunmetal-TonedAviatorSunglasses.webp",
+        "brand": "SCAVIN",
+        "name": "Scavin Unisex Grey Lens Gunmetal-Toned Aviator Sunglasses",
+        "size": "All",
+        "price": 2499,
+        "oldPrice": 3799,
+        "discount": "",
+        "rating": null
+      },
+      {
+        "id": 8,
+        "badge": "Trending",
+        "image": "../images/Idor/idor4.png",
+        "brand": "IDOR",
+        "name": "IDOR Premium Metal High Quality Sunglass for Unisex | IDOR-7905",
+        "size": "Medium",
+        "price": 999,
+        "oldPrice": 1799,
+        "discount": "",
+        "rating": null
+      },
+      {
+        "id": 9,
+        "badge": "Popular",
+        "image": "../images/Idor/idor5.png",
+        "brand": "IDOR",
+        "name": "IDOR Premium Metal High Quality Sunglass for Unisex | IDOR-7313",
+        "size": "Medium",
+        "price": 1100,
+        "oldPrice": 1999,
+        "discount": "",
         "rating": null
       }
     ]
@@ -398,6 +422,10 @@
       {
         "label": "Balmain Sunglasses",
         "key": "balmain"
+      },
+      {
+        "label": "Scavin Sunglasses",
+        "key": "scavin"
       }
     ],
     "cards": {
@@ -525,6 +553,48 @@
           "name": "BALMAIN BPS 102F SLV BNE 146 WONDER BOY",
           "size": "Large",
           "price": "116,000"
+        }
+      ],
+      "scavin": [
+        {
+          "id": 1,
+          "image": "../images/scavin/ScavinRimlessTitaniumRectangleEyeGlasses.webp",
+          "brand": "SCAVIN",
+          "name": "Scavin Rimless Titanium Rectangle Eye Glasses",
+          "size": "All",
+          "price": "3,919"
+        },
+        {
+          "id": 2,
+          "image": "../images/scavin/ScavinUnisexGreyLensAviatorSunglasses.webp",
+          "brand": "SCAVIN",
+          "name": "Unisex Grey Lens & Black Aviator Sunglasses",
+          "size": "All",
+          "price": "3,499"
+        },
+        {
+          "id": 3,
+          "image": "../images/scavin/ScavinFullRimMetalAviatorEyeGlasses.webp",
+          "brand": "SCAVIN",
+          "name": "Scavin Full Rim Metal Aviator Eye Glasses",
+          "size": "All",
+          "price": "2,079"
+        },
+        {
+          "id": 4,
+          "image": "../images/scavin/ScavinFullRimAcetateOvalEyeGlasses.webp",
+          "brand": "SCAVIN",
+          "name": "Scavin Full Rim Acetate Oval Eye Glasses",
+          "size": "All",
+          "price": "1,999"
+        },
+        {
+          "id": 5,
+          "image": "../images/scavin/ScavinUnisexGreyLensGunmetal-TonedAviatorSunglasses.webp",
+          "brand": "SCAVIN",
+          "name": "Scavin Unisex Grey Lens Gunmetal-Toned Aviator Sunglasses",
+          "size": "All",
+          "price": "2,499"
         }
       ]
     }
