@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { StoreItem } from "../../../types/home.types";
+import { getDirectionHref } from "../../ShopLocator/ShopLocator/mapLinks";
 
 interface Props {
   stroreData: StoreItem[];
@@ -28,44 +29,36 @@ const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const getDirectionHref = (lat?: number, lng?: number) => {
-    if (lat && lng) {
-      return `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
-    }
-    return "#";
-  };
-
   const handleAppointment = (shop: StoreItem) => {
-    const phoneNumber = "918381001406";
+    const phoneNumber = "917066602959"; // Kubade OptiCare's WhatsApp number
 
     const message = `Hello Kubade OptiCare,
-
-I would like to book an appointment.
-
-Store: ${shop.name}
-Address: ${shop.area}, ${shop.street}, ${shop.address}
-
-Preferred Date:
-Preferred Time:
-
-Location:
-${getDirectionHref(shop.lat, shop.lng)}
-
-Please confirm availability.`;
+  
+      I would like to book an appointment.
+  
+      Store: ${shop.name}
+      Address: ${shop.address}
+  
+      Preferred Date:
+      Preferred Time:
+  
+      Location:
+      ${shop.directionUrl}
+  
+      Please confirm availability.`;
 
     sendMessage(phoneNumber, message);
   };
 
-  const showNavigation = !(isDesktop && stroreData.length <= 3);
+  const showNavigation = !(isDesktop && stroreData.length <= 4);
 
   return (
     <section className="storesCarousel-section common-section-padding">
       <h2 className="storesCarousel-title">Stores</h2>
-
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        slidesPerView={3}
-        spaceBetween={30}
+        slidesPerView={4}
+        spaceBetween={20}
         loop
         speed={1000}
         autoplay={{
@@ -75,9 +68,9 @@ Please confirm availability.`;
         navigation={
           showNavigation
             ? {
-                nextEl: ".storesCarousel-next",
-                prevEl: ".storesCarousel-prev",
-              }
+              nextEl: ".storesCarousel-next",
+              prevEl: ".storesCarousel-prev",
+            }
             : false
         }
         pagination={{
@@ -85,9 +78,10 @@ Please confirm availability.`;
           clickable: true,
         }}
         breakpoints={{
-          0: { slidesPerView: 1, spaceBetween: 16 },
-          640: { slidesPerView: 2, spaceBetween: 20 },
-          1024: { slidesPerView: 3, spaceBetween: 30 },
+          0: { slidesPerView: 1, spaceBetween: 12 },
+          640: { slidesPerView: 2, spaceBetween: 16 },
+          900: { slidesPerView: 3, spaceBetween: 18 },
+          1200: { slidesPerView: 4, spaceBetween: 20 }, // laptop
         }}
       >
         {stroreData?.map((shop) => (
@@ -101,7 +95,10 @@ Please confirm availability.`;
 
               <div className="storesCarousel-buttonRow">
                 <a
-                  href={getDirectionHref(shop.lat, shop.lng)}
+                  href={getDirectionHref(shop.directionUrl,
+                    shop.lat,
+                    shop.lng,
+                    shop.name,)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="storesCarousel-secondaryButton"

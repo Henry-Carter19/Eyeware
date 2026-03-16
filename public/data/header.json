@@ -85,6 +85,27 @@
       "id": "Cases",
       "path": "/accessories/cases"
     }
-  ]
+  ],
+  "shops": {
+      "id": 1,
+      "name": "Kubade Opticare Nandanwan",
+      "shortAddress": "Sudampuri, Bhande Plot Square",
+      "address": "Sudampuri Opp-Career Campus, Nandanwan Road, Bhande Plot Square, Nagpur - 440009, Maharashtra",
+      "timing": "10:30 am - 8:30 pm",
+      "status": "Open",
+      "rating": 4.9,
+      "reviews": 210,
+      "services": [
+        "eye test",
+        "consultation",
+        "repairs",
+        "sales"
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOzQzhYjUZgbtmeGYGdDlYrd_207PzzCRBuuP8t=w521-h240-k-no?auto=format&fit=crop&w=1200&q=80",
+      "lat": 21.1256055,
+      "lng": 79.1182495,
+      "phone": "+91 70666 02959",
+      "directionUrl": "https://maps.app.goo.gl/JD9geWcQYBt5kcmk9"
+    }
 }
 
