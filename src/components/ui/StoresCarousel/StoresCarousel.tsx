@@ -30,7 +30,7 @@ const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
   }, []);
 
   const handleAppointment = (shop: StoreItem) => {
-      const phoneNumber = "918381001406"; // Kubade OptiCare's WhatsApp number
+      const phoneNumber = "917066602959"; // Kubade OptiCare's WhatsApp number
   
       const message = `Hello Kubade OptiCare,
   

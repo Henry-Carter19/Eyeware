@@ -52,7 +52,7 @@ Thank you.`
   }, []);
 
     const handleAppointment = (shop: Shop) => {
-      const phoneNumber = "918381001406";
+      const phoneNumber = "917066602959"; 
   
       const message = `Hello Kubade OptiCare,
   
@@ -176,7 +176,7 @@ Thank you.`
             </a>
 
             <a
-              href={`https://wa.me/918381001406?text=${message}`}
+              href={`https://wa.me/917066602959?text=${message}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -187,8 +187,8 @@ Thank you.`
           {/* PHONE NUMBER */}
           <div className="mobile-phone">
             {" "}
-            <a href="tel:+918381001406" className="mobile-phone">
-              +91 83810 01406
+            <a href="tel:+917066602959" className="mobile-phone">
+              +91 70666 02959
             </a>
           </div>
         </div>
@@ -223,7 +223,7 @@ Thank you.`
               <div className="top-links d-none d-md-flex align-items-center gap-3">
                 <div className="dropdown hover-dropdown">
                   <span className="d-flex align-items-center gap-1">
-                    <Eye size={14} /> Eye Testing <ChevronDown />
+                    <Eye size={14} /> Offers <ChevronDown />
                   </span>
 
                   <ul className="dropdown-menu">
@@ -281,19 +281,11 @@ Thank you.`
 
                 <ul className="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a className="dropdown-item">Eye Testing</a>
+                    <a className="dropdown-item"  onClick={()=>handleAppointment(menuData?.shops)} >
+                      Book Appointment</a>
                   </li>
                   <li>
-                    <a className="dropdown-item">Hearing Test</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item">Sign In</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item">Track Order</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item">Find Store</a>
+                    <a className="dropdown-item"  href="/stores">Find Store</a>
                   </li>
                 </ul>
               </div>
@@ -372,7 +364,7 @@ Thank you.`
             </a>
 
             <a
-              href={`https://wa.me/918381001406?text=${message}`}
+              href={`https://wa.me/917066602959?text=${message}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -380,8 +372,8 @@ Thank you.`
             </a>
 
             {/* Phone Number (Clickable) */}
-            <a href="tel:+918381001406" className="phone-call" rel="noopener noreferrer">
-              +91 83810 01406
+            <a href="tel:+917066602959" className="phone-call" rel="noopener noreferrer">
+              +91 70666 02959
             </a>
           </div>
         </div>

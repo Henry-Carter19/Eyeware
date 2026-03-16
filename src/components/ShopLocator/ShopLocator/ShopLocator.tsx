@@ -126,7 +126,7 @@ export default function ShopLocator() {
   }, [selectedShopId]);
 
   const handleAppointment = (shop: Shop) => {
-    const phoneNumber = "918381001406";
+    const phoneNumber = "917066602959";
 
     const message = `Hello Kubade OptiCare,
 

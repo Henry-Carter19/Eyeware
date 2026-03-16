@@ -50,7 +50,7 @@ Price: ₹${product.price}
 Product Link:
 ${window.location.href}`;
 
-    sendMessage("918381001406", message);
+    sendMessage("917066602959", message);
   };
 
   return (
