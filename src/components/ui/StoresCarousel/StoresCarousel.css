@@ -1,12 +1,10 @@
 /* SECTION */
 
 .storesCarousel-section {
-  background: linear-gradient(
-    120deg,
-    #eef2f6 0%,
-    #dfe6ed 50%,
-    #d3dbe3 100%
-  );
+  background: linear-gradient(120deg,
+      #eef2f6 0%,
+      #dfe6ed 50%,
+      #d3dbe3 100%);
   position: relative;
 }
 
@@ -31,7 +29,7 @@
   height: auto;
 }
 
-.storesCarousel-section .swiper-slide > div {
+.storesCarousel-section .swiper-slide>div {
   width: 100%;
 }
 
@@ -39,9 +37,9 @@
 
 .storesCarousel-section .storesCarousel-card {
   background: #fff;
-  border-radius: 26px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;
@@ -55,23 +53,20 @@
 /* TEXT */
 
 .storesCarousel-section .storesCarousel-area {
-  font-size: var(--font-lg);
+  font-size: var(--font-md);
   font-weight: 700;
-  margin-bottom: 6px;
-  color: #111827;
+  margin-bottom: 4px;
 }
 
 .storesCarousel-section .storesCarousel-street {
-  font-size: var(--font-md);
-  color: #374151;
-  margin-bottom: 12px;
+  font-size: var(--font-sm);
+  margin-bottom: 8px;
 }
 
 .storesCarousel-section .storesCarousel-address {
-  font-size: var(--font-sm);
-  color: #6b7280;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 16px;
 }
 
 /* BUTTONS */
@@ -172,6 +167,14 @@
 
   .storesCarousel-section .storesCarousel-street {
     font-size: var(--font-md);
+  }
+
+  .storesCarousel-section .storesCarousel-title {
+    margin-bottom: 15px;
+  }
+
+  .storesCarousel-section .storesCarousel-pagination {
+    margin-top: 0px;
   }
 
 }
