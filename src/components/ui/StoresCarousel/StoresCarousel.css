@@ -80,12 +80,13 @@
 .storesCarousel-section .storesCarousel-secondaryButton,
 .storesCarousel-section .storesCarousel-primaryButton {
   flex: 1;
-  height: 35px;
+  height: 40px;
   border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-xs);
+  /* font-size: var(--font-xs) !important; */
+  font-size: 11px !important;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;

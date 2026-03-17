@@ -64,28 +64,29 @@ const footerData: FooterSection[] = [
 
 const Footer: React.FC = () => {
   const navigate = useNavigate();
-  const message = encodeURIComponent(
-    `Hello Sir/Madam,
 
-I would like to know more about your products and services at Kubade OptiCare. 
+  const message = encodeURIComponent(`Hello Sir/Madam,
+
+I would like to know more about your products and services at Kubade OptiCare.
 Please assist me with the details.
 
-Thank you.`
-  );
+Thank you.`);
+
   return (
-    <footer className="footer">
-      <div className="footer-grid">
+    <footer className="ko-footer">
+      <div className="ko-footer-grid">
         {footerData.map((section) => (
-          <div key={section.title} className="footer-column">
+          <div key={section.title} className="ko-footer-column">
             <h4>{section.title}</h4>
+
             <ul>
               {section.links.map((link) => (
                 <li
                   key={link.label}
-                  className="footer-link"
+                  className="ko-footer-link"
                   onClick={() => navigate(link.path)}
                 >
-                  <span className="hover-dot" />
+                  <span className="ko-footer-hover-dot" />
                   {link.label}
                 </li>
               ))}
@@ -94,80 +95,97 @@ Thank you.`
         ))}
       </div>
 
-      <div className="footer-divider" />
+      <div className="ko-footer-divider" />
 
-      <div className="footer-bottom">
-        <div className="footer-bottom-left">
+      <div className="ko-footer-bottom">
+        <div className="ko-footer-bottom-left">
 
-          {/* Logo */}
           <img
             src="/images/logo.png"
             alt="Kubade OptiCare"
-            className="footer-logo-img"
+            className="ko-footer-logo-img"
           />
 
-          {/* Contact */}
-          <div className="footer-contact">
+          <div className="ko-footer-contact">
 
-            <span className="footer-contact-item">
-              <MapPin className="footer-icon" size={18} />
+            <span className="ko-footer-contact-item">
+              <MapPin className="ko-footer-icon" size={18} />
               Sudampuri Opp-Career Campus, Nandanwan Road, Bhande Plot Square, Nagpur - 440009
             </span>
 
-            <span className="footer-contact-item">
-              <MapPin className="footer-icon" size={18} />
+            <span className="ko-footer-contact-item">
+              <MapPin className="ko-footer-icon" size={18} />
               Swami Vivekananda Netralay, Beside Parth Medical Store, Shrikrishna Nagar, Nagpur - 440024
             </span>
 
-            <span className="footer-contact-item">
-              <MapPin className="footer-icon" size={18} />
+            <span className="ko-footer-contact-item">
+              <MapPin className="ko-footer-icon" size={18} />
               Matruseva Sangh Hospital, Kothi Road, Mahal, Nagpur - 440032
             </span>
-            <span className="footer-contact-item">
-              <MapPin className="footer-icon" size={18} />
-              Vayusena Nagar Dabha, Shop No. 02 Arya Avani Complex, Airforce Civilian Society ,Vayusena Nagar Dabha, Nagpur - 440023
+
+            <span className="ko-footer-contact-item">
+              <MapPin className="ko-footer-icon" size={18} />
+              Vayusena Nagar Dabha, Shop No.02 Arya Avani Complex, Airforce Civilian Society, Vayusena Nagar Dabha, Nagpur - 440023
             </span>
 
-            <span className="footer-contact-item">
-              <Phone className="footer-icon" size={18} />
+            <span className="ko-footer-contact-item">
+              <Phone className="ko-footer-icon" size={18} />
               +91 70666 02959
             </span>
 
           </div>
 
-          <p className="footer-copy">
+          <p className="ko-footer-copy">
             © 2026 Kubade OptiCare. All Rights Reserved.
           </p>
+
         </div>
 
-        <div className="footer-bottom-right">
-          <div className="store-hours">
+        <div className="ko-footer-bottom-right">
+
+          <div className="ko-store-hours">
             <p><strong>Store Hours</strong></p>
             <p>Monday - Saturday: 9:30 AM – 9:30 PM</p>
             <p>Sunday: Closed</p>
           </div>
 
-          <div className="social-section">
+          <div className="ko-social-section">
+
             <p>Follow us on:</p>
 
-            <div className="social-icons">
-              <a target="_blank" href="https://www.instagram.com/kubadeopticare1/" className="social-icon">
+            <div className="ko-social-icons">
+
+              <a
+                target="_blank"
+                href="https://www.instagram.com/kubadeopticare1/"
+                className="ko-social-icon"
+                rel="noopener noreferrer"
+              >
                 <Instagram size={20} />
               </a>
 
-              <a target="_blank" href="https://www.facebook.com/profile.php?id=61556689014525" className="social-icon">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61556689014525"
+                className="ko-social-icon"
+                rel="noopener noreferrer"
+              >
                 <Facebook size={20} />
               </a>
 
-              <a target="_blank"
+              <a
+                target="_blank"
                 href={`https://wa.me/917066602959?text=${message}`}
-                className="social-icon"
+                className="ko-social-icon"
                 rel="noopener noreferrer"
               >
                 <MessageCircle size={20} />
               </a>
+
             </div>
+
           </div>
+
         </div>
       </div>
     </footer>
