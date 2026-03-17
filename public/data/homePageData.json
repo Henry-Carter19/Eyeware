@@ -345,18 +345,6 @@
         "rating": null
       },
       {
-        "id": 5,
-        "badge": "Luxury",
-        "image": "/images/TrendingSection/balmain4.png",
-        "brand": "BALMAIN",
-        "name": "Boy Balmain BPS-102M-146 Sunglasses",
-        "size": "Large",
-        "price": 144650,
-        "oldPrice": 170000,
-        "discount": "",
-        "rating": null
-      },
-      {
         "id": 6,
         "badge": "Popular",
         "image": "../images/scavin/ScavinUnisexGreyLensAviatorSunglasses.webp",
@@ -377,30 +365,6 @@
         "size": "All",
         "price": 2499,
         "oldPrice": 3799,
-        "discount": "",
-        "rating": null
-      },
-      {
-        "id": 8,
-        "badge": "Trending",
-        "image": "../images/Idor/idor4.png",
-        "brand": "IDOR",
-        "name": "IDOR Premium Metal High Quality Sunglass for Unisex | IDOR-7905",
-        "size": "Medium",
-        "price": 999,
-        "oldPrice": 1799,
-        "discount": "",
-        "rating": null
-      },
-      {
-        "id": 9,
-        "badge": "Popular",
-        "image": "../images/Idor/idor5.png",
-        "brand": "IDOR",
-        "name": "IDOR Premium Metal High Quality Sunglass for Unisex | IDOR-7313",
-        "size": "Medium",
-        "price": 1100,
-        "oldPrice": 1999,
         "discount": "",
         "rating": null
       }
@@ -458,17 +422,17 @@
           "id": 4,
           "image": "../images/Idor/idor4.png",
           "brand": "IDOR",
-          "name": "IDOR Premium Metal High Quality Sunglass for Unisex | IDOR-7905",
+          "name": "IDOR Premium UV Protection Stylish Sunglasses for Men & Women | 2508",
           "size": "Medium",
-          "price": "999"
+          "price": "899"
         },
         {
           "id": 5,
           "image": "../images/Idor/idor5.png",
           "brand": "IDOR",
-          "name": "IDOR Premium Metal High Quality Sunglass for Unisex | IDOR-7313",
+          "name": "IDOR Unisex Black Lens & Black Square Sunglasses",
           "size": "Medium",
-          "price": "1100"
+          "price": "1234"
         }
       ],
       "fiction": [
@@ -542,9 +506,9 @@
           "id": 4,
           "image": "/images/TrendingSection/balmain4.png",
           "brand": "BALMAIN",
-          "name": "Boy Balmain BPS-102M-146 Sunglasses",
+          "name": "BALMAIN - Brigade IV sunglasses",
           "size": "Large",
-          "price": "1,44,650"
+          "price": "15,999"
         },
         {
           "id": 5,
@@ -566,9 +530,9 @@
         },
         {
           "id": 2,
-          "image": "../images/scavin/ScavinUnisexGreyLensAviatorSunglasses.webp",
+          "image": "../images/scavin/scavin4.png",
           "brand": "SCAVIN",
-          "name": "Unisex Grey Lens & Black Aviator Sunglasses",
+          "name": "Scavin Unisex Grey Lens Gunmetal-Toned UV Protected Aviator Sunglasses",
           "size": "All",
           "price": "3,499"
         },
