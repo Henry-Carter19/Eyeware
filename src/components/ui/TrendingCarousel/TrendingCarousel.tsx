@@ -3,6 +3,7 @@ import "./TrendingCarousel.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { ChevronLeft, ChevronRight, MoveUpRight, Star } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,6 +19,7 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
   const [activeFilter, setActiveFilter] = useState(
     trendingSection.filters[0].key,
   );
+  const navigate = useNavigate();
 
   const cards = trendingSection.cards[activeFilter] || [];
 
@@ -70,7 +72,7 @@ const TrendingCarousel: React.FC<Props> = ({ trendingSection }) => {
       >
         {cards.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="trend-card">
+            <div className="trend-card" onClick={() => navigate('/products')}>
               <img src={item.image} className="trend-img" />
 
               {item.rating && (
