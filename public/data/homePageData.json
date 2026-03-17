@@ -321,7 +321,7 @@
     "highlight": "Bestsellers",
     "cards": [
       {
-        "id": 3,
+        "id": 1,
         "badge": "Trending",
         "image": "../images/Fiction/fiction3.png",
         "brand": "FICTION",
@@ -329,6 +329,30 @@
         "size": "Medium",
         "price": 1000,
         "oldPrice": 1899,
+        "discount": "",
+        "rating": null
+      },
+      {
+        "id": 2,
+        "badge": "Trending",
+        "image": "../images/scavin/ScavinFullRimMetalAviatorEyeGlasses.webp",
+        "brand": "SCAVIN",
+        "name": "Scavin Full Rim Metal Aviator Eye Glasses",
+        "size": "All",
+        "price": 2079,
+        "oldPrice": 2999,
+       "discount": "",
+        "rating": null
+      },
+      {
+        "id": 3,
+        "badge": "Best Seller",
+        "image": "../images/Idor/idor4.png",
+        "brand": "IDOR",
+        "name": "IDOR Premium UV Protection Stylish Sunglasses for Men & Women | 2508",
+        "size": "Medium",
+        "price": 899,
+        "oldPrice": 1599,
        "discount": "",
         "rating": null
       },
@@ -345,26 +369,26 @@
         "rating": null
       },
       {
-        "id": 6,
-        "badge": "Popular",
-        "image": "../images/scavin/ScavinUnisexGreyLensAviatorSunglasses.webp",
+        "id": 7,
+        "badge": "New",
+        "image": "../images/scavin/ScavinFullRimAcetateOvalEyeGlasses.webp",
         "brand": "SCAVIN",
-        "name": "Unisex Grey Lens & Black Aviator Sunglasses",
+        "name": "Scavin Full Rim Acetate Oval Eye Glasses",
         "size": "All",
-        "price": 3499,
-        "oldPrice": 4999,
+        "price": 1999,
+        "oldPrice": 2799,
         "discount": "",
         "rating": null
       },
       {
-        "id": 7,
-        "badge": "Hot",
-        "image": "../images/scavin/ScavinUnisexGreyLensGunmetal-TonedAviatorSunglasses.webp",
-        "brand": "SCAVIN",
-        "name": "Scavin Unisex Grey Lens Gunmetal-Toned Aviator Sunglasses",
-        "size": "All",
-        "price": 2499,
-        "oldPrice": 3799,
+        "id": 8,
+        "badge": "",
+        "image": "../images/Fiction/fiction5.png",
+        "brand": "FICTION",
+        "name": "Fiction Italy Design Matte Navy Blue Square Eyeglasses",
+        "size": "Medium",
+        "price": 499,
+        "oldPrice": 999,
         "discount": "",
         "rating": null
       }
@@ -440,7 +464,7 @@
           "id": 1,
           "image": "../images/Fiction/fiction1.png",
           "brand": "FICTION",
-          "name": "Fiction Italy Design Matte Navy Blue Square Eyeglasses – Premium Handcrafted Men’s Optical Frames RB-1013",
+          "name": "Fiction Italy Design Matte Navy Blue Square Eyeglasses – RB-1013",
           "size": "Medium",
           "price": "499"
         },
@@ -451,6 +475,14 @@
           "name": "Black Fiction X Sportiff Acetate Sunglass For Men and Women",
           "size": "Medium",
           "price": "299"
+        },
+         {
+          "id": 5,
+          "image": "../images/Fiction/fiction5.png",
+          "brand": "FICTION",
+          "name": "Fiction Italy Design Matte Navy Blue Square Eyeglasses - RB-1013",
+          "size": "Medium",
+          "price": "499"
         },
         {
           "id": 3,
@@ -467,14 +499,6 @@
           "name": "FICTION Eyeglasses Modern Plastics II Collection",
           "size": "Medium",
           "price": "699"
-        },
-        {
-          "id": 5,
-          "image": "../images/Fiction/fiction5.png",
-          "brand": "FICTION",
-          "name": "Fiction Italy Design Matte Navy Blue Square Eyeglasses – Premium Handcrafted Men’s Optical Frames RB-1013",
-          "size": "Medium",
-          "price": "499"
         }
       ],
       "balmain": [
