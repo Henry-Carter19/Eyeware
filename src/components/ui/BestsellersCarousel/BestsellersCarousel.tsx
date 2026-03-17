@@ -52,9 +52,9 @@ const BestsellersCarousel: React.FC<Props> = ({ bestsellersSection }) => {
                 </div>
               )}
 
-              <div className="wishlist">
+              {/* <div className="wishlist">
                 <Heart size={20} />
-              </div>
+              </div> */}
 
               <img src={item.image} alt="" className="product-img" />
 

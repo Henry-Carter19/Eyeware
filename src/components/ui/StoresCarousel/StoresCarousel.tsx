@@ -13,7 +13,7 @@ import { StoreItem } from "../../../types/home.types";
 import { getDirectionHref } from "../../ShopLocator/ShopLocator/mapLinks";
 
 interface Props {
-  stroreData: StoreItem[];
+  stroreData: StoreItem[]; 
 }
 
 const StoresCarousel: React.FC<Props> = ({ stroreData }) => {
