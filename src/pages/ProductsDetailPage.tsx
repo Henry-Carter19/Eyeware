@@ -67,10 +67,10 @@ ${window.location.href}`;
           <Col lg={5} md={12}>
             <div className="detail-left">
               <div className="image-card">
-                <button className="try-btn">
+                {/* <button className="try-btn">
                   <Camera size={18} />
                   <span className="try-btn-text">TRY ON</span>
-                </button>
+                </button> */}
 
                 <div className="zoom-container">
                   <img

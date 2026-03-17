@@ -227,21 +227,6 @@ Thank you.`
                   </span>
 
                   <ul className="dropdown-menu">
-                    {/* <li>
-                      <a className="dropdown-item" rel="noopener noreferrer" href="#">
-                        Digital Eye Strain Test
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" rel="noopener noreferrer" href="#">
-                        Online Eye Screening
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" rel="noopener noreferrer" href="#">
-                        Instore Free Eye Test
-                      </a>
-                    </li> */}
                     <li>
                       <a className="dropdown-item" 
                       onClick={()=>handleAppointment(menuData?.shops)}>
@@ -321,8 +306,6 @@ Thank you.`
                     <Link to="/products?color=Gold">Smart Sunglasses</Link>
                     <Link to="/products?style=Classic">Donald</Link>
                     <Link to="/products?shape=Cat%2520Eye">Glow Up</Link>
-                    {/* <Link to="#">Whiplash</Link>
-                    <Link to="#">Vivid Geometry</Link> */}
                   </div>
 
                   <div className="col-12 col-md-3"></div>

@@ -1,89 +1,21 @@
 {
-  "menuEyeGlassesData": [
-    {
-      "title": "GENDER",
-      "items": [
-        { "label": "All", "path": "/eyeglasses/all" },
-        { "label": "Men", "path": "/eyeglasses/men" },
-        { "label": "Women", "path": "/eyeglasses/women" },
-        { "label": "Kids", "path": "/eyeglasses/kids" }
-      ]
-    },
-    {
-      "title": "SHAPE",
-      "items": [
-        { "label": "Rectangle", "path": "/eyeglasses/shape/rectangle" },
-        { "label": "Round", "path": "/eyeglasses/shape/round" },
-        { "label": "Cat Eye", "path": "/eyeglasses/shape/cat-eye" },
-        { "label": "Wayfarer", "path": "/eyeglasses/shape/wayfarer" }
-      ]
-    },
-    {
-      "title": "TOP BRANDS",
-      "items": [
-        { "label": "Titan", "path": "/eyeglasses/brand/titan" },
-        { "label": "Rayban", "path": "/eyeglasses/brand/rayban" },
-        { "label": "Fastrack", "path": "/eyeglasses/brand/fastrack" },
-        { "label": "Vogue", "path": "/eyeglasses/brand/vogue" }
-      ]
-    }
-  ],
-
   "menuSunGlassesData": [
     {
       "title": "GENDER",
       "items": [
-        { "label": "All", "path": "/sunglasses/all" },
-        { "label": "Men", "path": "/sunglasses/men" },
-        { "label": "Women", "path": "/sunglasses/women" },
-        { "label": "Kids", "path": "/sunglasses/kids" }
+        { "label": "All", "path": "/products" },
+        { "label": "Men", "path": "/products?gender=Men" },
+        { "label": "Women", "path": "/products?gender=Women" },
+        { "label": "Kids", "path": "/products?gender=Kids" }
       ]
     },
     {
       "title": "COLLECTION",
       "items": [
-        { "label": "Smart Sunglasses", "path": "/sunglasses/collection/smart-sunglasses" },
-        { "label": "Donald", "path": "/sunglasses/collection/donald" },
-        { "label": "Glow Up", "path": "/sunglasses/collection/glow-up" },
-        { "label": "Whiplash", "path": "/sunglasses/collection/whiplash" },
-        { "label": "Vivid Geometry", "path": "/sunglasses/collection/vivid-geometry" }
+        { "label": "Smart Sunglasses", "path": "/products?color=Gold" },
+        { "label": "Donald", "path": "/products?style=Classic" },
+        { "label": "Glow Up", "path": "/products?shape=Cat%2520Eye" }
       ]
-    }
-  ],
-
-  "menuContactLensesData": [
-    {
-      "title": "Bausch & Lomb",
-      "id": "BauschAndLomb",
-      "path": "/contact-lenses/bausch-and-lomb"
-    },
-    {
-      "title": "Johnson & Johnson",
-      "id": "JohnsonAndJohnson",
-      "path": "/contact-lenses/johnson-and-johnson"
-    },
-    {
-      "title": "Cooper Vision",
-      "id": "CooperVision",
-      "path": "/contact-lenses/cooper-vision"
-    }
-  ],
-
-  "menuAccessoriesData": [
-    {
-      "title": "Cleaning Cloth",
-      "id": "CleaningCloth",
-      "path": "/accessories/cleaning-cloth"
-    },
-    {
-      "title": "Lens Spray",
-      "id": "LensSpray",
-      "path": "/accessories/lens-spray"
-    },
-    {
-      "title": "Cases",
-      "id": "Cases",
-      "path": "/accessories/cases"
     }
   ],
   "shops": {
