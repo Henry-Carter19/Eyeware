@@ -6,13 +6,20 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { BestsellerSection } from "../../../types/home.types";
-import { ChevronLeft, ChevronRight, Heart, Star } from "lucide-react";
+import { ChevronLeft, ChevronRight,  Star } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   bestsellersSection: BestsellerSection;
 }
 
 const BestsellersCarousel: React.FC<Props> = ({ bestsellersSection }) => {
+  const navigate = useNavigate();
+
+  const handleSlideClick = () => {
+    navigate('/products');
+  };
+
   return (
     <section className="BestsellersCarousel-section common-section-padding">
       <h2 className="BestsellersCarousel-title">
@@ -43,7 +50,7 @@ const BestsellersCarousel: React.FC<Props> = ({ bestsellersSection }) => {
       >
         {bestsellersSection?.cards?.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="product-card">
+            <div className="product-card" onClick={handleSlideClick}>
               {item.badge && (
                 <div
                   className={`badge ${item.badge === "New" ? "new" : "best"}`}
@@ -51,10 +58,6 @@ const BestsellersCarousel: React.FC<Props> = ({ bestsellersSection }) => {
                   {item.badge}
                 </div>
               )}
-
-              <div className="wishlist">
-                <Heart size={20} />
-              </div>
 
               <img src={item.image} alt="" className="product-img" />
 
