@@ -65,8 +65,8 @@
 
 .blog-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  /* object-fit: cover; */
 }
 
 /* Overlay */
@@ -172,5 +172,22 @@
   .blog-next svg {
     width: 14px;
     height: 14px;
+  }
+}
+
+
+/* Hide arrows by default (desktop / laptop) */
+.blog-prev,
+.blog-next {
+  display: none;
+}
+
+/* Show arrows only on mobile */
+@media (max-width: 768px) {
+  .blog-prev,
+  .blog-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
