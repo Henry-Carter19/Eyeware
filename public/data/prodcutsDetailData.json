@@ -101,7 +101,7 @@
             "price": 2079,
             "currency": "INR",
             "taxIncluded": true,
-            "peopleBought": 568, 
+            "peopleBought": 568,
             "size": "All",
             "rating": 4.3,
             "ratingCount": 6,
@@ -189,21 +189,20 @@
         {
             "id": "p3",
             "layoutType": "detail",
-            "brand": "SCAVIN",
-            "title": "Scavin Full Rim Metal Aviator Eye Glasses",
-            "price": 2079,
+            "brand": "BALMAIN",
+            "title": "BALMAIN OFFICIER Prescription Sunglasses",
+            "price": 67103,
             "currency": "INR",
             "taxIncluded": true,
-            "peopleBought": 568,
-            "size": "All",
-            "rating": 4.3,
-            "ratingCount": 6,
+            "peopleBought": 120,
+            "size": "Large",
+            "rating": 4.8,
+            "ratingCount": 5,
             "images": [
-                "/images/ProductDetails/product1.webp",
-                "/images/ProductDetails/product2.jpg",
-                "/images/ProductDetails/product3.jpg",
-                "/images/ProductDetails/product4.jpg",
-                "/images/ProductDetails/product5.jpg"
+                "/images/ProductDetails/p-balmain1.png",
+                "/images/ProductDetails/p-balmain2.png",
+                "/images/ProductDetails/p-balmain3.png",
+                "/images/ProductDetails/p-balmain5.png"
             ],
             "isNew": false,
             "offers": [],
@@ -218,7 +217,7 @@
                 "templeLength": null,
                 "lensHeight": null,
                 "unit": "mm",
-                "images": [
+                 "images": [
                     "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg",
                     "https://api.titaneyeplus.com/media/theme/product-details/compatibility/bridge.svg",
                     "https://api.titaneyeplus.com/media/theme/product-details/compatibility/temple.svg",
@@ -240,26 +239,26 @@
                 },
                 {
                     "id": 3,
-                    "title": "6 months\nwarranty",
+                    "title": "1 year\nwarranty",
                     "icon": "/warranty.svg",
                     "bgColor": "#fff4dc"
                 }
             ],
             "description": {
-                "text": "Scavin Full Rim Metal Aviator Eye Glasses designed with a modern gunmetal finish and lightweight metal frame suitable for everyday wear.",
-                "sku": "SCAVIN-AVIATOR"
+                "text": "BALMAIN OFFICIER luxury prescription sunglasses featuring a premium gold aviator frame designed for style, durability, and high-end fashion appeal.",
+                "sku": "BALMAIN-OFFICIER"
             },
             "productInformation": {
-                "sku": "SCAVIN-AVIATOR",
-                "brand": "SCAVIN",
+                "sku": "BALMAIN-OFFICIER",
+                "brand": "BALMAIN",
                 "gender": "Unisex",
-                "lensColor": "Clear",
+                "lensColor": "Dark",
                 "frameShape": "Aviator",
                 "frameMaterial": "Metal",
-                "lensType": "Prescription Ready",
+                "lensType": "Prescription Sunglasses",
                 "rimDetails": "Full Rim",
-                "warranty": "6 months",
-                "countryOfOrigin": "India"
+                "warranty": "1 year",
+                "countryOfOrigin": "France"
             },
             "relatedLinks": [
                 {
@@ -269,12 +268,12 @@
                 },
                 {
                     "id": 2,
-                    "label": "Try on all Scavin eyeglasses",
+                    "label": "Try on all Balmain sunglasses",
                     "type": "brand"
                 },
                 {
                     "id": 3,
-                    "label": "Explore all eyeglasses",
+                    "label": "Explore all sunglasses",
                     "type": "all"
                 }
             ]
