@@ -42,7 +42,7 @@ const HomePage = () => {
       <FeaturedCollectionsOnlyFocus />
       <BestsellersCarousel bestsellersSection={data.bestsellersSection} />
       <TrendingCarousel trendingSection={data.trendingSection} />
-      <TestimonialsCarousel testimonialsSection={data.testimonialsSection} />
+      {/* <TestimonialsCarousel testimonialsSection={data.testimonialsSection} /> */}
       <BlogCarousel blogSection={data.blogSection} />
       <ShopCollections shopCollection={data.collections} />
       <FaqSection faqData={data.faq} />

@@ -3,21 +3,21 @@
         {
             "id": "p1",
             "layoutType": "detail",
-            "brand": "SCAVIN",
-            "title": "Scavin Full Rim Metal Aviator Eye Glasses",
-            "price": 2079,
+            "brand": "IDOR",
+            "title": "IDOR Premium Metal + Acetate High Quality Polarized Sunglass for Men | IDOR-98037",
+            "price": 1249,
             "currency": "INR",
             "taxIncluded": true,
-            "peopleBought": 568,
-            "size": "All",
-            "rating": 4.3,
-            "ratingCount": 6,
+            "peopleBought": 850,
+            "size": "Medium",
+            "rating": 4.5,
+            "ratingCount": 12,
             "images": [
-                "/images/ProductDetails/product1.webp",
-                "/images/ProductDetails/product2.jpg",
-                "/images/ProductDetails/product3.jpg",
-                "/images/ProductDetails/product4.jpg",
-                "/images/ProductDetails/product5.jpg"
+                "/images/ProductDetails/p-idor1.png",
+                "/images/ProductDetails/p-idor2.jpg",
+                "/images/ProductDetails/p-idor3.jpg",
+                "/images/ProductDetails/p-idor4.jpg",
+                "/images/ProductDetails/p-idor5.jpg"
             ],
             "isNew": false,
             "offers": [],
@@ -60,17 +60,17 @@
                 }
             ],
             "description": {
-                "text": "Scavin Full Rim Metal Aviator Eye Glasses designed with a modern gunmetal finish and lightweight metal frame suitable for everyday wear.",
-                "sku": "SCAVIN-AVIATOR"
+                "text": "IDOR Premium Metal + Acetate polarized sunglasses designed for men with a stylish square frame and durable premium finish suitable for daily wear and outdoor protection.",
+                "sku": "IDOR-98037"
             },
             "productInformation": {
-                "sku": "SCAVIN-AVIATOR",
-                "brand": "SCAVIN",
-                "gender": "Unisex",
-                "lensColor": "Clear",
-                "frameShape": "Aviator",
-                "frameMaterial": "Metal",
-                "lensType": "Prescription Ready",
+                "sku": "IDOR-98037",
+                "brand": "IDOR",
+                "gender": "Men",
+                "lensColor": "Black",
+                "frameShape": "Square",
+                "frameMaterial": "Metal + Acetate",
+                "lensType": "Polarized",
                 "rimDetails": "Full Rim",
                 "warranty": "6 months",
                 "countryOfOrigin": "India"
@@ -78,17 +78,17 @@
             "relatedLinks": [
                 {
                     "id": 1,
-                    "label": "Try on all aviator frames",
-                    "type": "aviator"
+                    "label": "Try on all square frames",
+                    "type": "square"
                 },
                 {
                     "id": 2,
-                    "label": "Try on all Scavin eyeglasses",
+                    "label": "Try on all IDOR sunglasses",
                     "type": "brand"
                 },
                 {
                     "id": 3,
-                    "label": "Explore all eyeglasses",
+                    "label": "Explore all sunglasses",
                     "type": "all"
                 }
             ]
