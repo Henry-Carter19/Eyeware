@@ -2,6 +2,7 @@ html,
 body {
   overflow-x: hidden;
 }
+
 /* SECTION */
 
 .storesCarousel-section {
@@ -24,7 +25,7 @@ body {
   position: relative;
   background: #e7ecf1;
   border-radius: 22px;
-  padding: 5px;
+  /* padding: 15px; */
   box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.6),
     0 8px 18px rgba(0, 0, 0, 0.08);
 
@@ -64,8 +65,8 @@ body {
 
   z-index: 10;
 
-  margin-top: 28px;
-  margin-left: -11px !important;
+  margin-top: 5px;
+  margin-left: -32px !important;
 }
 
 .storesCarousel-pin::after {
@@ -92,7 +93,7 @@ body {
 .storesCarousel-card {
   background: #f8fafc;
   border-radius: 18px;
-  padding: 19px 18px 24px 27px;
+  padding: 12px 10px 20px 20px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 
   display: flex;
@@ -107,7 +108,7 @@ body {
 .storesCarousel-area {
   font-size: var(--font-md);
   font-weight: 700;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .storesCarousel-street {
@@ -119,7 +120,7 @@ body {
 .storesCarousel-address {
   font-size: 12px;
   line-height: 1.5;
-  margin-bottom: 14px;
+  margin-bottom: 2px;
 
   min-height: 38px;
   /*    FIX uneven height */
@@ -165,7 +166,7 @@ body {
 /* SECONDARY */
 .storesCarousel-secondaryButton {
   border: 1px solid #d1d5db;
-  background: #fff;
+  background: #f3f4f4;
   color: #2563eb;
 }
 
@@ -248,14 +249,20 @@ body {
 
 @media (max-width: 480px) {
   .storesCarousel-buttonRow {
-    flex-direction: column;   /*    stack buttons */
+    flex-direction: column;
+    /*    stack buttons */
     gap: 10px;
   }
 
   .storesCarousel-primaryButton,
   .storesCarousel-secondaryButton {
     width: 100%;
-    font-size: 12px;          /* slightly bigger for readability */
+    font-size: 12px;
+    /* slightly bigger for readability */
     padding: 10px;
   }
+}
+
+section.storesCarousel-section.common-section-padding {
+  padding: 25px;
 }
