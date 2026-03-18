@@ -682,21 +682,21 @@
         {
           "id": 11,
           "title": "Experience sharp and comfortable vision for your everyday lifestyle",
-          "image": "../images/Blog/singlevision.png",
+          "image": "/images/Blog/singlevision.png",
           "category": "LENSES",
           "route": "/products"
         },
         {
           "id": 12,
           "title": "Perfect balance of near and far vision in one lens",
-          "image": "../images/Blog/bifocal.png",
+          "image": "/images/Blog/bifocal.png",
           "category": "LENSES",
           "route": "/products"
         },
         {
           "id": 13,
           "title": "Enjoy natural vision flow from near to far without interruptions",
-          "image": "../images/Blog/progressive.webp",
+          "image": "/images/Blog/progressive.webp",
           "category": "LENSES",
           "route": "/products"
         }
