@@ -31,9 +31,8 @@ const BlogCarousel: React.FC<Props> = ({ blogSection }) => {
         {blogSection.filters.map((filter) => (
           <button
             key={filter.key}
-            className={`blog-filter-btn ${
-              activeFilter === filter.key ? "active" : ""
-            }`}
+            className={`blog-filter-btn ${activeFilter === filter.key ? "active" : ""
+              }`}
             onClick={() => setActiveFilter(filter.key)}
           >
             {filter.label}
@@ -46,9 +45,8 @@ const BlogCarousel: React.FC<Props> = ({ blogSection }) => {
       <div className="blog-slider">
         <Swiper
           modules={[Navigation]}
-          slidesPerView={6}
           spaceBetween={18}
-          centeredSlides={false}
+          centeredSlides={true}
           navigation={{
             nextEl: ".blog-next",
             prevEl: ".blog-prev",
@@ -56,23 +54,23 @@ const BlogCarousel: React.FC<Props> = ({ blogSection }) => {
           breakpoints={{
             0: {
               slidesPerView: 1.2,
-              centeredSlides: false,
+              centeredSlides: true,
             },
             480: {
               slidesPerView: 2,
-              centeredSlides: false,
+              centeredSlides: true,
             },
             768: {
               slidesPerView: 3,
+              centeredSlides: false,
             },
             1024: {
               slidesPerView: 4,
+              centeredSlides: false,
             },
             1280: {
-              slidesPerView: 5,
-            },
-            1440: {
-              slidesPerView: 6,
+              slidesPerView: 4,
+              centeredSlides: false,
             },
           }}
         >
