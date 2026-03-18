@@ -2,10 +2,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Eye, MapPin, Headphones, Menu, ChevronDown, Instagram } from "lucide-react";
+import { Eye, MapPin, Headphones, Menu, ChevronDown, X } from "lucide-react";
 import "./Header.css";
 import { Shop } from "../../ShopLocator/ShopLocator/types.shop";
 import { useWhatsApp } from "../../../utils/whatsapp";
+
+import GeoLocationImg from "../../../../public/images/StoreSection/geolocation.webp";
 
 interface MenuItem {
   label: string;
@@ -25,8 +27,9 @@ interface MenuData {
 const Header: React.FC = () => {
   const navigate = useNavigate();
   const [menuData, setMenuData] = useState<MenuData | null>(null);
+  const [showOfferModal, setShowOfferModal] = useState(false);
 
-   const { sendMessage } = useWhatsApp();
+  const { sendMessage } = useWhatsApp();
 
   const message = encodeURIComponent(
     `Hello Sir/Madam,
@@ -34,7 +37,7 @@ const Header: React.FC = () => {
 I would like to know more about your products and services at Kubade OptiCare. 
 Please assist me with the details.
 
-Thank you.`
+Thank you.`,
   );
 
   useEffect(() => {
@@ -51,10 +54,10 @@ Thank you.`
     loadMenu();
   }, []);
 
-    const handleAppointment = (shop: Shop) => {
-      const phoneNumber = "917066602959"; 
-  
-      const message = `Hello Kubade OptiCare,
+  const handleAppointment = (shop: Shop) => {
+    const phoneNumber = "917066602959";
+
+    const message = `Hello Kubade OptiCare,
   
   I would like to book an appointment.
   
@@ -68,9 +71,9 @@ Thank you.`
   ${shop.directionUrl}
   
   Please confirm availability.`;
-  
-      sendMessage(phoneNumber, message);
-    };
+
+    sendMessage(phoneNumber, message);
+  };
 
   return (
     <>
@@ -152,9 +155,18 @@ Thank you.`
 
           {/* STORE BUTTON */}
           <div className="mobile-store-section">
-            <a href="/stores" className="store-btn-navbar" rel="noopener noreferrer">
-              Stores
-            </a>
+            <Link
+              to="/stores"
+              className="store-btn-navbar"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/images/StoreSection/geolocation.webp"
+                alt="Stores location"
+                className="store-btn-icon"
+              />
+              <span>Stores</span>
+            </Link>
           </div>
 
           {/* SOCIAL ICONS */}
@@ -228,23 +240,24 @@ Thank you.`
 
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" 
-                      onClick={()=>handleAppointment(menuData?.shops)}>
+                      <a
+                        className="dropdown-item"
+                        onClick={() => handleAppointment(menuData?.shops)}
+                      >
                         Book Appointment
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="dropdown-item"
+                        onClick={() => setShowOfferModal(true)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        Buy 1 Get 1
                       </a>
                     </li>
                   </ul>
                 </div>
-
-                {/* <span>Hearing Test</span>
-
-                <span className="d-flex align-items-center gap-1">
-                  <User size={14}/> Sign In
-                </span>
-
-                <span className="d-flex align-items-center gap-1">
-                  <Truck size={14}/> Track Order
-                </span> */}
 
                 <span
                   className="d-flex align-items-center gap-1"
@@ -266,11 +279,26 @@ Thank you.`
 
                 <ul className="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a className="dropdown-item"  onClick={()=>handleAppointment(menuData?.shops)} >
-                      Book Appointment</a>
+                    <a
+                      className="dropdown-item"
+                      onClick={() => setShowOfferModal(true)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Buy 1 Get 1
+                    </a>
                   </li>
                   <li>
-                    <a className="dropdown-item"  href="/stores">Find Store</a>
+                    <a
+                      className="dropdown-item"
+                      onClick={() => handleAppointment(menuData?.shops)}
+                    >
+                      Book Appointment
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/stores">
+                      Find Store
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -325,9 +353,18 @@ Thank you.`
           {/* RIGHT SIDE SOCIAL + PHONE */}
           <div className="ms-auto d-flex align-items-center gap-4">
             {/* STORES BUTTON */}
-            <a href="/stores" className="store-btn-navbar" rel="noopener noreferrer">
-              Stores
-            </a>
+            <Link
+              to="/stores"
+              className="store-btn-navbar"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/images/StoreSection/geolocation.webp"
+                alt="Stores location"
+                className="store-btn-icon"
+              />
+              <span>Stores</span>
+            </Link>
 
             {/* Social Icons */}
             <a
@@ -355,12 +392,43 @@ Thank you.`
             </a>
 
             {/* Phone Number (Clickable) */}
-            <a href="tel:+917066602959" className="phone-call" rel="noopener noreferrer">
+            <a
+              href="tel:+917066602959"
+              className="phone-call"
+              rel="noopener noreferrer"
+            >
               +91 70666 02959
             </a>
           </div>
         </div>
       </nav>
+
+      {showOfferModal && (
+        <div
+          className="offer-modal-overlay"
+          onClick={() => setShowOfferModal(false)}
+        >
+          <div
+            className="offer-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* IMAGE SECTION */}
+            <div className="offer-modal-image-wrapper">
+              <img src="/images/offer/offer.png" alt="Buy 1 Get 1 Offer" />
+            </div>
+
+            {/* RIGHT SIDE EMPTY AREA */}
+            <div className="offer-modal-side">
+              <button
+                className="offer-modal-close"
+                onClick={() => setShowOfferModal(false)}
+              >
+                <X size={26} />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

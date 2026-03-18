@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HeroBanner } from "../../../types/home.types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -14,11 +14,24 @@ interface Props {
 }
 
 const HeroCarousel: React.FC<Props> = ({ banners }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // 🔥 important
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="hero-carousel">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        loop={true}
+        loop
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
@@ -32,14 +45,20 @@ const HeroCarousel: React.FC<Props> = ({ banners }) => {
       >
         {banners.map((banner) => (
           <SwiperSlide key={banner.id}>
-            <div className="carousel-slide">
-              <img src={banner.image} alt="hero-banner" />
+            <div
+              className="carousel-slide"
+              style={{
+                backgroundImage: `url(${banner.image})`,
+
+              }}
+            >
+              <div className="overlay" />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* Custom Arrows */}
+      {/* Arrows */}
       <button className="arrow custom-prev">&#10094;</button>
       <button className="arrow custom-next">&#10095;</button>
     </div>
