@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Eye, MapPin, Headphones, Menu, ChevronDown, Instagram } from "lucide-react";
+import { Eye, MapPin, Headphones, Menu, ChevronDown, X } from "lucide-react";
 import "./Header.css";
 import { Shop } from "../../ShopLocator/ShopLocator/types.shop";
 import { useWhatsApp } from "../../../utils/whatsapp";
@@ -25,8 +25,9 @@ interface MenuData {
 const Header: React.FC = () => {
   const navigate = useNavigate();
   const [menuData, setMenuData] = useState<MenuData | null>(null);
+  const [showOfferModal, setShowOfferModal] = useState(false);
 
-   const { sendMessage } = useWhatsApp();
+  const { sendMessage } = useWhatsApp();
 
   const message = encodeURIComponent(
     `Hello Sir/Madam,
@@ -51,10 +52,10 @@ Thank you.`
     loadMenu();
   }, []);
 
-    const handleAppointment = (shop: Shop) => {
-      const phoneNumber = "917066602959"; 
-  
-      const message = `Hello Kubade OptiCare,
+  const handleAppointment = (shop: Shop) => {
+    const phoneNumber = "917066602959";
+
+    const message = `Hello Kubade OptiCare,
   
   I would like to book an appointment.
   
@@ -68,9 +69,9 @@ Thank you.`
   ${shop.directionUrl}
   
   Please confirm availability.`;
-  
-      sendMessage(phoneNumber, message);
-    };
+
+    sendMessage(phoneNumber, message);
+  };
 
   return (
     <>
@@ -228,23 +229,21 @@ Thank you.`
 
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" 
-                      onClick={()=>handleAppointment(menuData?.shops)}>
+                      <a className="dropdown-item"
+                        onClick={() => handleAppointment(menuData?.shops)}>
                         Book Appointment
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="dropdown-item"
+                        onClick={() => setShowOfferModal(true)}
+                        style={{ cursor: "pointer" }} >
+                        Buy 1 Get 1
                       </a>
                     </li>
                   </ul>
                 </div>
-
-                {/* <span>Hearing Test</span>
-
-                <span className="d-flex align-items-center gap-1">
-                  <User size={14}/> Sign In
-                </span>
-
-                <span className="d-flex align-items-center gap-1">
-                  <Truck size={14}/> Track Order
-                </span> */}
 
                 <span
                   className="d-flex align-items-center gap-1"
@@ -265,12 +264,20 @@ Thank you.`
                 </button>
 
                 <ul className="dropdown-menu dropdown-menu-end">
+                   <li>
+                      <a
+                        className="dropdown-item"
+                        onClick={() => setShowOfferModal(true)}
+                        style={{ cursor: "pointer" }} >
+                        Buy 1 Get 1
+                      </a>
+                    </li>
                   <li>
-                    <a className="dropdown-item"  onClick={()=>handleAppointment(menuData?.shops)} >
+                    <a className="dropdown-item" onClick={() => handleAppointment(menuData?.shops)} >
                       Book Appointment</a>
                   </li>
                   <li>
-                    <a className="dropdown-item"  href="/stores">Find Store</a>
+                    <a className="dropdown-item" href="/stores">Find Store</a>
                   </li>
                 </ul>
               </div>
@@ -361,6 +368,39 @@ Thank you.`
           </div>
         </div>
       </nav>
+
+
+      {showOfferModal && (
+        <div
+          className="offer-modal-overlay"
+          onClick={() => setShowOfferModal(false)}
+        >
+          <div
+            className="offer-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+
+            {/* IMAGE SECTION */}
+            <div className="offer-modal-image-wrapper">
+              <img
+                src="/images/offer/offer.png"
+                alt="Buy 1 Get 1 Offer"
+              />
+            </div>
+
+            {/* RIGHT SIDE EMPTY AREA */}
+            <div className="offer-modal-side">
+              <button
+                className="offer-modal-close"
+                onClick={() => setShowOfferModal(false)}
+              >
+                <X size={26} />
+              </button>
+            </div>
+
+          </div>
+        </div>
+      )}
     </>
   );
 };
