@@ -7,6 +7,8 @@ import "./Header.css";
 import { Shop } from "../../ShopLocator/ShopLocator/types.shop";
 import { useWhatsApp } from "../../../utils/whatsapp";
 
+import GeoLocationImg from "../../../../public/images/StoreSection/geolocation.webp";
+
 interface MenuItem {
   label: string;
   path: string;
@@ -35,7 +37,7 @@ const Header: React.FC = () => {
 I would like to know more about your products and services at Kubade OptiCare. 
 Please assist me with the details.
 
-Thank you.`
+Thank you.`,
   );
 
   useEffect(() => {
@@ -153,9 +155,18 @@ Thank you.`
 
           {/* STORE BUTTON */}
           <div className="mobile-store-section">
-            <a href="/stores" className="store-btn-navbar" rel="noopener noreferrer">
-              Stores
-            </a>
+            <Link
+              to="/stores"
+              className="store-btn-navbar"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/images/StoreSection/geolocation.webp"
+                alt="Stores location"
+                className="store-btn-icon"
+              />
+              <span>Stores</span>
+            </Link>
           </div>
 
           {/* SOCIAL ICONS */}
@@ -229,8 +240,10 @@ Thank you.`
 
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item"
-                        onClick={() => handleAppointment(menuData?.shops)}>
+                      <a
+                        className="dropdown-item"
+                        onClick={() => handleAppointment(menuData?.shops)}
+                      >
                         Book Appointment
                       </a>
                     </li>
@@ -238,7 +251,8 @@ Thank you.`
                       <a
                         className="dropdown-item"
                         onClick={() => setShowOfferModal(true)}
-                        style={{ cursor: "pointer" }} >
+                        style={{ cursor: "pointer" }}
+                      >
                         Buy 1 Get 1
                       </a>
                     </li>
@@ -264,20 +278,27 @@ Thank you.`
                 </button>
 
                 <ul className="dropdown-menu dropdown-menu-end">
-                   <li>
-                      <a
-                        className="dropdown-item"
-                        onClick={() => setShowOfferModal(true)}
-                        style={{ cursor: "pointer" }} >
-                        Buy 1 Get 1
-                      </a>
-                    </li>
                   <li>
-                    <a className="dropdown-item" onClick={() => handleAppointment(menuData?.shops)} >
-                      Book Appointment</a>
+                    <a
+                      className="dropdown-item"
+                      onClick={() => setShowOfferModal(true)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Buy 1 Get 1
+                    </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/stores">Find Store</a>
+                    <a
+                      className="dropdown-item"
+                      onClick={() => handleAppointment(menuData?.shops)}
+                    >
+                      Book Appointment
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/stores">
+                      Find Store
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -332,9 +353,18 @@ Thank you.`
           {/* RIGHT SIDE SOCIAL + PHONE */}
           <div className="ms-auto d-flex align-items-center gap-4">
             {/* STORES BUTTON */}
-            <a href="/stores" className="store-btn-navbar" rel="noopener noreferrer">
-              Stores
-            </a>
+            <Link
+              to="/stores"
+              className="store-btn-navbar"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/images/StoreSection/geolocation.webp"
+                alt="Stores location"
+                className="store-btn-icon"
+              />
+              <span>Stores</span>
+            </Link>
 
             {/* Social Icons */}
             <a
@@ -362,13 +392,16 @@ Thank you.`
             </a>
 
             {/* Phone Number (Clickable) */}
-            <a href="tel:+917066602959" className="phone-call" rel="noopener noreferrer">
+            <a
+              href="tel:+917066602959"
+              className="phone-call"
+              rel="noopener noreferrer"
+            >
               +91 70666 02959
             </a>
           </div>
         </div>
       </nav>
-
 
       {showOfferModal && (
         <div
@@ -379,13 +412,9 @@ Thank you.`
             className="offer-modal-content"
             onClick={(e) => e.stopPropagation()}
           >
-
             {/* IMAGE SECTION */}
             <div className="offer-modal-image-wrapper">
-              <img
-                src="/images/offer/offer.png"
-                alt="Buy 1 Get 1 Offer"
-              />
+              <img src="/images/offer/offer.png" alt="Buy 1 Get 1 Offer" />
             </div>
 
             {/* RIGHT SIDE EMPTY AREA */}
@@ -397,7 +426,6 @@ Thank you.`
                 <X size={26} />
               </button>
             </div>
-
           </div>
         </div>
       )}

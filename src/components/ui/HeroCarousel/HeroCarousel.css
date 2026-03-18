@@ -1,112 +1,122 @@
+/* =============================== */
+/* HERO CAROUSEL BASE */
+/* =============================== */
+
 .hero-carousel {
   position: relative;
   width: 100%;
-  height: 520px;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
 }
 
-.hero-carousel .hero-swiper {
+/* Swiper */
+.hero-swiper {
   width: 100%;
   height: 100%;
 }
 
-.hero-carousel .carousel-slide {
-  width: 100%;
-  height: 600px;
-}
-
-.hero-carousel .carousel-slide img {
+/* Slide */
+.carousel-slide {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-size: cover;
+  background-position: 70% 60%;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-/* Custom Arrows */
-.hero-carousel .custom-prev {
+/*   FIXED OVERLAY */
+.carousel-slide .overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  /* background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.3),
+    transparent
+  ); */
+}
+
+/* =============================== */
+/* CUSTOM ARROWS */
+/* =============================== */
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.3s ease;
+}
+
+.custom-prev {
   left: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  cursor: pointer;
-  z-index: 20;
-  transition: all 0.35s ease;
 }
 
-.hero-carousel .custom-next {
+.custom-next {
   right: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  cursor: pointer;
-  z-index: 20;
-  transition: all 0.35s ease;
 }
 
-/* Pagination Dots */
-.hero-carousel .swiper-pagination {
+.custom-prev:hover,
+.custom-next:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* =============================== */
+/* PAGINATION */
+/* =============================== */
+
+.swiper-pagination {
   bottom: 20px !important;
+  z-index: 10;
 }
 
-.hero-carousel .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.6);
   opacity: 1;
 }
 
-.hero-carousel .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
   background: white;
 }
 
-
-
 /* =============================== */
-/* Responsive */
+/* RESPONSIVE */
 /* =============================== */
 
-/* Large tablets / small laptops */
-@media (max-width: 1200px) {
-
-  .hero-carousel {
-    height: 420px;
-  }
-
-  .hero-carousel .carousel-slide {
-    height: 420px;
-  }
-
-}
-
-/* Tablets */
+/* Tablet */
 @media (max-width: 992px) {
 
   .hero-carousel {
-    height: 360px;
+    aspect-ratio: auto;   /*   remove strict ratio */
+    height: 380px;        /*   fixed height (important) */
   }
 
-  .hero-carousel .carousel-slide {
-    height: 360px;
+  .carousel-slide {
+    background-size: cover;
+    background-position: 35% center; /*   strong left shift */
+  }
+
+  .custom-prev,
+  .custom-next {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
   }
 
 }
@@ -115,53 +125,32 @@
 @media (max-width: 768px) {
 
   .hero-carousel {
-    height: 260px;
+    aspect-ratio: auto;
+    /*   REMOVE fixed ratio */
+    height: 280px;
+    /*   control height manually */
   }
 
-  .hero-carousel .carousel-slide {
-    height: 260px;
+  .carousel-slide {
+    background-size: contain;
+    /*   NO CROP */
+    background-position: center;
+    background-color: #000;
+    /* fill empty space */
   }
 
-  .hero-carousel .arrow {
-    width: 36px;
-    height: 36px;
-    font-size: 20px;
-  }
-
-  .hero-carousel .custom-prev {
-    left: 20px;
-  }
-
-  .hero-carousel .custom-next {
-    right: 20px;
+  .custom-prev,
+  .custom-next {
+    display: none;
   }
 
 }
 
-/* Small mobile */
+/* Small Mobile */
 @media (max-width: 480px) {
 
   .hero-carousel {
-    height: 200px;
-  }
-
-  .hero-carousel .carousel-slide {
-    height: 200px;
-  }
-
-  .hero-carousel .arrow {
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-  }
-
-  .hero-carousel .swiper-pagination {
-    bottom: 10px !important;
-  }
-
-  .hero-carousel .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
+    height: 240px;
   }
 
 }

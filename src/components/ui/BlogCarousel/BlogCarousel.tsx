@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./BlogCarousel.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -14,6 +15,7 @@ interface Props {
 
 const BlogCarousel: React.FC<Props> = ({ blogSection }) => {
   const [activeFilter, setActiveFilter] = useState(blogSection.filters[0].key);
+  const navigate = useNavigate();
 
   const cards = blogSection.cards[activeFilter] || [];
 
@@ -76,7 +78,7 @@ const BlogCarousel: React.FC<Props> = ({ blogSection }) => {
         >
           {cards.map((blog) => (
             <SwiperSlide key={blog.id}>
-              <div className="blog-card">
+              <div className="blog-card" onClick={() => navigate('/products')}>
                 <img src={blog.image} alt={blog.title} />
 
                 <div className="blog-overlay">
