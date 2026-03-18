@@ -177,7 +177,7 @@
       "lat": 21.1256055,
       "lng": 79.1182495,
       "phone": "+91 70666 02959",
-     "directionUrl": "https://maps.app.goo.gl/gUtQz9DVpyxznUgt7"
+      "directionUrl": "https://maps.app.goo.gl/gUtQz9DVpyxznUgt7"
     },
     {
       "id": 4,
@@ -341,7 +341,7 @@
         "size": "All",
         "price": 2079,
         "oldPrice": 2999,
-       "discount": "",
+        "discount": "",
         "rating": null
       },
       {
@@ -353,7 +353,7 @@
         "size": "Medium",
         "price": 899,
         "oldPrice": 1599,
-       "discount": "",
+        "discount": "",
         "rating": null
       },
       {
@@ -476,7 +476,7 @@
           "size": "Medium",
           "price": "299"
         },
-         {
+        {
           "id": 5,
           "image": "../images/Fiction/fiction5.png",
           "brand": "FICTION",
@@ -612,79 +612,91 @@
       "sunglasses": [
         {
           "id": 1,
-          "title": "Battle of the Styles: Mirrored Sunglasses vs Polaroid Sunglasses",
-          "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+          "title": "Yellow lenses enhance contrast and reduce glare during night driving.",
+          "image": "/images/Blog/night.png",
           "category": "SUNGLASSES",
           "route": "/products"
         },
         {
           "id": 2,
-          "title": "Choosing and Caring for Sunglasses: Protect Your Eyes with Style",
-          "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+          "title": "Reduce glare from sunlight and reflective surfaces.",
+          "image": "/images/Blog/polarized.png",
           "category": "SUNGLASSES",
           "route": "/products"
         },
         {
           "id": 3,
-          "title": "Four Reasons Why Opting for Polarized Glasses is a Wise Choice",
-          "image": "https://images.unsplash.com/photo-1516826957135-700dedea698c",
+          "title": "Protect eyes from dust, debris, and airborne particles.",
+          "image": "/images/Blog/safety.png",
           "category": "SUNGLASSES",
-          "route": "/products"
-        },
-        {
-          "id": 4,
-          "title": "Unleash Your Fashion Statement With Chic Sunglasses For Women",
-          "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
-          "category": "SUNGLASSES",
-          "route": "/products"
-        },
-        {
-          "id": 5,
-          "title": "Frame/Sunglass Size Guide",
-          "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0",
-          "category": "SUNGLASSES",
-          "route": "/products"
-        },
-        {
-          "id": 6,
-          "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
-          "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
-          "category": "EYEGLASSES",
           "route": "/products"
         }
       ],
       "eyeglasses": [
         {
-          "id": 6,
-          "title": "How To Choose The Perfect Eyeglasses For Your Face Shape",
-          "image": "https://images.unsplash.com/photo-1556306535-38febf6782e7",
+          "id": 4,
+          "title": "Sturdy frame design that offers strong support and durability.",
+          "image": "/images/Blog/fullframe.png",
           "category": "EYEGLASSES",
           "route": "/products"
-        }
-      ],
-      "titan": [
+        },
         {
-          "id": 7,
-          "title": "Why Crizal Vision Care Is Leading The Eyewear Market",
-          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-          "category": "Crizal VISION",
+          "id": 5,
+          "title": "Comfortable for all-day wear with a barely-there feel.",
+          "image": "/images/Blog/rimless.png",
+          "category": "EYEGLASSES",
+          "route": "/products"
+        },
+        {
+          "id": 6,
+          "title": "Provides a modern look while maintaining strong lens support.",
+          "image": "/images/Blog/supra.png",
+          "category": "EYEGLASSES",
           "route": "/products"
         }
       ],
       "contact": [
         {
           "id": 8,
-          "title": "A Beginner Guide To Contact Lenses",
-          "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+          "title": "Designed for long-term use with proper cleaning and care.",
+          "image": "/images/Blog/yearly.png",
+          "category": "CONTACT LENSES",
+          "route": "/products"
+        },
+        {
+          "id": 9,
+          "title": "Designed for daily wear and replaced once every month.",
+          "image": "/images/Blog/monthly.png",
+          "category": "CONTACT LENSES",
+          "route": "/products"
+        },
+        {
+          "id": 10,
+          "title": "Fresh lenses for single-day use, ensuring maximum hygiene.",
+          "image": "/images/Blog/oneday.png",
           "category": "CONTACT LENSES",
           "route": "/products"
         }
       ],
       "lenses": [
         {
-          "id": 9,
-          "title": "Different Types Of Lenses And Their Uses",
-          "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+          "id": 11,
+          "title": "Experience sharp and comfortable vision for your everyday lifestyle",
+          "image": "../images/Blog/singlevision.png",
+          "category": "LENSES",
+          "route": "/products"
+        },
+        {
+          "id": 12,
+          "title": "Perfect balance of near and far vision in one lens",
+          "image": "../images/Blog/bifocal.png",
+          "category": "LENSES",
+          "route": "/products"
+        },
+        {
+          "id": 13,
+          "title": "Enjoy natural vision flow from near to far without interruptions",
+          "image": "../images/Blog/progressive.webp",
           "category": "LENSES",
           "route": "/products"
         }
