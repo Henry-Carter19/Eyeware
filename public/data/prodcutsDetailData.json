@@ -202,6 +202,7 @@
                 "/images/ProductDetails/p-balmain1.png",
                 "/images/ProductDetails/p-balmain2.png",
                 "/images/ProductDetails/p-balmain3.png",
+                "/images/ProductDetails/p-balmain4.png",
                 "/images/ProductDetails/p-balmain5.png"
             ],
             "isNew": false,
@@ -217,7 +218,7 @@
                 "templeLength": null,
                 "lensHeight": null,
                 "unit": "mm",
-                 "images": [
+                "images": [
                     "https://api.titaneyeplus.com/media/theme/product-details/compatibility/eye.svg",
                     "https://api.titaneyeplus.com/media/theme/product-details/compatibility/bridge.svg",
                     "https://api.titaneyeplus.com/media/theme/product-details/compatibility/temple.svg",
@@ -282,20 +283,21 @@
             "id": "p4",
             "layoutType": "detail",
             "brand": "SCAVIN",
-            "title": "Scavin Full Rim Metal Aviator Eye Glasses",
-            "price": 2079,
+            "title": "Scavin Rimless Titanium Rectangle Eye Glasses",
+            "price": 3919,
             "currency": "INR",
             "taxIncluded": true,
-            "peopleBought": 568,
+            "peopleBought": 260,
             "size": "All",
-            "rating": 4.3,
-            "ratingCount": 6,
+            "rating": 4.4,
+            "ratingCount": 7,
             "images": [
-                "/images/ProductDetails/product1.webp",
-                "/images/ProductDetails/product2.jpg",
-                "/images/ProductDetails/product3.jpg",
-                "/images/ProductDetails/product4.jpg",
-                "/images/ProductDetails/product5.jpg"
+                "/images/ProductDetails/p-scavin1.webp",
+                "/images/ProductDetails/p-scavin2.png",
+                "/images/ProductDetails/p-scavin3.png",
+                "/images/ProductDetails/p-scavin4.png",
+                "/images/ProductDetails/p-scavin5.png",
+                "/images/ProductDetails/p-scavin6.png"
             ],
             "isNew": false,
             "offers": [],
@@ -338,26 +340,26 @@
                 }
             ],
             "description": {
-                "text": "Scavin Full Rim Metal Aviator Eye Glasses designed with a modern gunmetal finish and lightweight metal frame suitable for everyday wear.",
-                "sku": "SCAVIN-AVIATOR"
+                "text": "Scavin Rimless Titanium Rectangle eyeglasses designed with a lightweight titanium frame and sleek silver finish for a clean modern look.",
+                "sku": "SCAVIN-RIMLESS-RECTANGLE"
             },
             "productInformation": {
-                "sku": "SCAVIN-AVIATOR",
+                "sku": "SCAVIN-RIMLESS-RECTANGLE",
                 "brand": "SCAVIN",
-                "gender": "Unisex",
+                "gender": "Women",
                 "lensColor": "Clear",
-                "frameShape": "Aviator",
-                "frameMaterial": "Metal",
+                "frameShape": "Rectangle",
+                "frameMaterial": "Titanium",
                 "lensType": "Prescription Ready",
-                "rimDetails": "Full Rim",
+                "rimDetails": "Rimless",
                 "warranty": "6 months",
                 "countryOfOrigin": "India"
             },
             "relatedLinks": [
                 {
                     "id": 1,
-                    "label": "Try on all aviator frames",
-                    "type": "aviator"
+                    "label": "Try on all rectangle frames",
+                    "type": "rectangle"
                 },
                 {
                     "id": 2,
